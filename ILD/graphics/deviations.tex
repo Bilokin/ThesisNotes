@@ -1,0 +1,75 @@
+\begin{figure}[H]
+  \centering
+\setlength{\unitlength}{1.5mm}
+%\setlength{\unitlength}{\textwidth} 
+
+\begin{picture}(150,90)
+\linethickness{0.3mm}
+%\begin{center}
+%compose x axis
+  \put(9,33){\line(0,1){2}}
+  \put(5,34){\line(1,0){8}}  
+  \put(15,34){...} 
+  \put(21,34){\vector(1,0){60}} 
+  \put(82,33){\Large{$\delta g^Z_R / g^Z_R$}}
+  \multiput(31,33)(10,0){5}{\line(0,1){2}} 
+  \put(6.5,31){\footnotesize{-330\%}} 
+  \put(29,31){\footnotesize{-20\%}} 
+  \put(39,31){\footnotesize{-10\%}}
+  \put(60,31){\footnotesize{10\%}}
+  \put(70,31){\footnotesize{20\%}}
+%compose y-axis
+  \put(51,4){\vector(0,1){60}} 
+  \put(45,66){\Large{$\delta g^Z_L / g^Z_L$}}
+  \multiput(50,14)(0,10){5}{\line(1,0){2}} 
+  \put(45,13.5){\footnotesize{-20\%}} 
+  \put(45,23.5){\footnotesize{-10\%}} 
+  \put(45.5,43.5){\footnotesize{10\%}} 
+  \put(45.5,53.5){\footnotesize{20\%}}
+%Add models
+  \put(51,34){\color{red}\circle*{2}} 
+  \put(53,36){\color{red}SM}
+  \put(51,24){\color{britishracinggreen}\circle*{1.5}}
+  \put(53,23){\color{britishracinggreen}Light top partners~\cite{Grojean:2013qca}}
+  \put(41,24){\color{britishracinggreen}\circle*{1.5}} 
+  \put(21,26){\color{britishracinggreen} Light top partners}
+ \put(21,23){\color{britishracinggreen} Alternative 1~\cite{bib:panico-priv}}
+  \put(76,59){\color{britishracinggreen}\circle*{1.5}} 
+  \put(56,61.5){\color{britishracinggreen} Light top partners Alternative 2~\cite{bib:panico-priv}}
+  %\put(53,23){\color{green}Composite Higgs with SO(5)/SO(4)}%~\cite{Grojean:2013qca}}
+   \put(51,19){\color{cyan}\circle*{1.5}} 
+   \put(53,18){\color{cyan}Little Higgs~\cite{Berger:2005ht}}
+  \put(51,14){\color{gray}\circle*{1.5}} 
+  \put(53,13){\color{gray}RS with Custodial SU(2)~\cite{Carena:2006bn}}
+  \put(51,9){\color{orange}\circle*{1.5}} 
+  \put(53,8){\color{orange}Composite Top~\cite{Pomarol:2008bh}}
+  \put(31,14){\color{magenta}\circle*{1.5}} 
+  \put(20,16){\color{magenta}5D Emergent~\cite{Cui:2010ds}}
+  \put(56,29){\color{camel}\circle*{1.5}} 
+  \put(58,28){\color{camel}4D Composite Higgs Models~\cite{Barducci:2015aoa}}
+  \put(9,34){\color{blue}\circle*{1.5}} 
+  \put(1,36){\color{blue}RS with Z-Z' Mixing~\cite{Djouadi:2006rk}}
+%make a box to put the ILC precision into
+\multiput(56,40)(30,0){2}{\line(0,1){12}} 
+\multiput(56,40)(0,12){2}{\line(1,0){30}}
+\put(61,47){\large{ILC Precision}}
+%embed the covariance ellipse
+\color{red}
+% Ellipse:  u = 71.0  v = 43.0  a = 2.45336  b = 0.631947  phi = 16.9866 Grad
+\qbezier(73.3463, 43.7167)(73.2699, 43.9671)(72.5286, 43.9342)
+\qbezier(72.5286, 43.9342)(71.7873, 43.9013)(70.8154, 43.6044)
+\qbezier(70.8154, 43.6044)(69.8435, 43.3075)(69.2103, 42.9205)
+\qbezier(69.2103, 42.9205)(68.5772, 42.5336)(68.6537, 42.2833)
+\qbezier(68.6537, 42.2833)(68.7301, 42.0329)(69.4714, 42.0658)
+\qbezier(69.4714, 42.0658)(70.2127, 42.0987)(71.1846, 42.3956)
+\qbezier(71.1846, 42.3956)(72.1565, 42.6925)(72.7897, 43.0795)
+\qbezier(72.7897, 43.0795)(73.4228, 43.4664)(73.3463, 43.7167)
+\end{picture}
+
+
+
+
+
+\caption{\sl Predictions of several models that incorporate Randall-Sundrum (RS) models and/or compositeness or Little Higgs models on the deviations of the left- and right-handed couplings of the $t$~quark to the $Z^0$ boson. The ellipse in the frame in the upper right corner indicates the precision that can be expected for the ILC running at a centre-of-mass energy of $\sqrt[]{s} = 500\,GeV$ after having accumulated ${\mathcal L}=500\,fb^{-1}$ of integrated luminosity shared equally between the beam polarisations $P(e^-),\,P(e^+) =\pm0.8,\mp0.3$. The original version of this figure can be found in~\cite{bib:ILCTOP}.}
+\label{fig:models-rp}
+\end{figure}
