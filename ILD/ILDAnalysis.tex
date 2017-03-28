@@ -650,6 +650,8 @@ The distributions of the $dE/dx$ as a function of particle momentum and $|\cos\t
 A simple cut-based algorithm was developed to identify the particle type (PID) using $dE/dx$ information after angular correction, which can identify kaons with 97.\% purity and 87.7\% efficiency.
 The results of the hadron identification are displayed in Fig.~\ref{fig:dEdxResults_3}.
 
+The angular correction is now included in the latest version of the {\sc ilcsoft} distribution.
+
 \begin{figure}[h]
 {\centering
     \includegraphics[width=0.55\textwidth]{ILD/plots/dedx-results.pdf}
@@ -657,14 +659,34 @@ The results of the hadron identification are displayed in Fig.~\ref{fig:dEdxResu
     }
     \label{fig:dEdxResults_3}
   }
+ 
 \end{figure}
 
-The angular correction is now included in the latest version of the {\sc ilcsoft} distribution.
+
+Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and the correlation between kaon charge and the b-hadron charge in Fig.~\ref{fig:KaonOscillation_3}, one can conclude that the reconstructed charged kaons from the reconstructed vertices provide a reliable information on the charge of the initial b-hadron or b-quark. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \section{Top quark production at the ILC}
+%Direct electroweak production of the top quark pairs
+The dominant decay mode of the top quark is $t\to bW$, which is 99.8\% of all top decays. 
+Therefore the $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
+\begin{itemize}
+	\item The fully hadronic decay $t\bar{t} \to bq\bar{q} \bar{b} q\bar{q}$ is 46.2\% of the events;
+	\item The semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ is 43.5\% of the events;
+	\item The fully leptonic decay $t\bar{t} \to b l^- \nu_{l^-} \bar{b} l^+\nu_{l^+}$ 10.3\% of the events;	
+\end{itemize}
+%The large production cross section
+%The 350 GeV threshold mass scan 
+%The 500 GeV coupling 
+
 \subsection{Top quark decay modes}
+
 \subsection{Top quark reconstruction}
 \subsection{Background processes}
+\input{ILD/tables/ttbar-sigma}
 \subsection{Results}
 
 
