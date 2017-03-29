@@ -257,14 +257,14 @@ These algorithms operate Particle Flow Objects (PFO), that are reconstructed usi
 {\centering
     \includegraphics[width=0.95\textwidth]{graphics/calirometry_traditional_new.jpg}
     \caption{\sl Left: Illustration of a jet energy estimation, which is based only on the calorimeter information. Right: Illustration of the Particle flow algorithms, which measure jet energy as a sum of charged and neutral particle energies.}
-    \label{fig:ILCjetrms}
+    \label{fig:PFAillustration}
   }
 \end{figure}
 %Tracking
 
 First stage of the PFO formation is an individual track reconstruction using tracker information. Tracks have the form of a helix, as a consequence of magnetic field influence on charged particles.  The most common algorithm used is Kalman Filter.
 %clusterization
-Then, the energy depositions in the ECAL and HCAL are organized into topological clusters, which are grouped into showers, that correspond to the individual interactions of final-state particles. In general case, the showers, left by hadrons, differ from photon or electron clusters. The granularity of the calorimeter plays an essential role in the clusterization process. High-granular calorimeters are able to separate close-by energy depositions, left by different particles. The illustration of Particle flow process is given in Fig.~\ref{fig:ILCjetrms}.
+Then, the energy depositions in the ECAL and HCAL are organized into topological clusters, which are grouped into showers, that correspond to the individual interactions of final-state particles. In general case, the showers, left by hadrons, differ from photon or electron clusters. The granularity of the calorimeter plays an essential role in the clusterization process. High-granular calorimeters are able to separate close-by energy depositions, left by different particles. The illustration of Particle flow process is given in Fig.~\ref{fig:PFAillustration}.
 
 Typically, the PFA creates objects of the following types:
 \begin{itemize}

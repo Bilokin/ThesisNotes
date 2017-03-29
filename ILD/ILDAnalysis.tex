@@ -107,7 +107,7 @@ Including the Run II data of the LHC with a higher center-of-mass energy will si
 %ttZ cross section measurements
 
 \subsubsection{Measurements at LEP and SLC}
-The electron-positron colliders have a large production cross section of $e^+e^- \to q\bar{q}$ process mediated by $Z^0$ boson or a virtual photon. The total cross sections of various \sm\ processes for $e^+e^-$ machines are shown in Fig.~\ref{fig:ILCeplus}.
+The electron-positron colliders have a large production cross section of $e^+e^- \to q\bar{q}$ process mediated by $Z^0$ boson or a virtual photon. The total cross sections of various \sm\ processes for $e^+e^-$ machines are shown in Fig.~\ref{fig:LCcrosssection}.
 
 The circular LEP~I and the linear SLC colliders staged at $Z^0$ pole, where the $q\bar{q}$ cross section is maximal, benefiting from significantly increased event rate. 
 The measurements resulted in an extremely precise cross section determination and a forward-backward asymmetry measurements. 
@@ -131,7 +131,7 @@ The b-quark coupling analysis can be done at all center-of-mass energies, schedu
 {\centering
     \includegraphics[clip, trim=0.5cm 5cm 0.5cm 7cm, width=0.95\textwidth]{ILD/graphics/epem_sm-hepph.pdf}
     \caption{\sl Tree-level cross sections of major \sm\ processes at linear colliders as function of center-of-mass energy assuming no polarization of the initial state.}
-    \label{fig:ILCeplus}
+    \label{fig:LCcrosssection}
   }
 \end{figure}
 
@@ -170,6 +170,7 @@ The development of the jet charge measurement will open access to the fully hadr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Jet charge reconstruction}
+\label{sec:JetChargeReconstruction}
 An information about a bottom jet charge is useful for all \sm\ processes, where b-jets appear as decay products, particularly, it can be applied for reconstruction of forward-backward asymmetry in $e^+e^-\to t\bar{t}$ and $e^+e^- \to b\bar{b}$ processes. 
 The main challenge for these processes is a high purity and efficiency of the charge reconstruction, which requires an ultimate performance from all subdetectors of the experiment. 
 
@@ -314,13 +315,13 @@ One can look for the charged kaons among the generated prongs of the b-hadrons a
 \begin{figure}[h]
 {\centering
     \includegraphics[width=0.45\textwidth]{ILD/plots/kaon-oscillation.pdf}
-    \caption{\sl The multiplicity of b-hadrons with $K^\pm$ among the generated prongs (green) and multiplicity of b-hadrons with $K^\pm$ of opposite charge to b-hadron charge.
+    \caption{\sl The multiplicity of all b-hadrons with a $K^\pm$-meson among the generated prongs (green) and the multiplicity of b-hadrons with $K^\pm$ of opposite charge to b-hadron charge (red).
     }
     \label{fig:KaonOscillation_3}
   }
 \end{figure}
 
-About 87\% of b-hadrons are set to have correlated $K^\pm$ charge in the generator, which makes the $K^\pm$ charge a reliable indication of the initial b-quark charge
+About 87\% of b-hadrons are set to have correlated $K^\pm$ charge in the generator, which makes the $K^\pm$ charge a reliable indication of the initial b-quark charge.
 %The design of the ILD vertex detector is optimized to have the best offset resolution 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -654,7 +655,7 @@ The angular correction is now included in the latest version of the {\sc ilcsoft
 
 \begin{figure}[h]
 {\centering
-    \includegraphics[width=0.55\textwidth]{ILD/plots/dedx-results.pdf}
+    \includegraphics[width=0.45\textwidth]{ILD/plots/dedx-results.pdf}
     \caption{\sl Correlation histogram between generated particle type and reconstructed particle type produced by the cut-based PID algorithm.
     }
     \label{fig:dEdxResults_3}
@@ -671,18 +672,28 @@ Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and 
 
 \section{Top quark production at the ILC}
 %Direct electroweak production of the top quark pairs
-The dominant decay mode of the top quark is $t\to bW$, which is 99.8\% of all top decays. 
-Therefore the $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
+This section of the thesis describes an application of the jet charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the forward-backward asymmetry measurement for $e^+e^- \to t\bar{t}$ process, which is used to determine the electroweak couplings of the top quark.
+
+The measurements of the top quark properties is one of the key points of the \sm\ physics program at the ILC.
+
+The dominant decay mode of the top quark is $t\to bW$, which is 99.8\% of all top decays, the $W^\pm$ boson can decay to a lepton-neutrino pair or a quark pair creates a six fermion final state of the process.
+Therefore, the $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
 \begin{itemize}
 	\item The fully hadronic decay $t\bar{t} \to bq\bar{q} \bar{b} q\bar{q}$ is 46.2\% of the events;
 	\item The semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ is 43.5\% of the events;
 	\item The fully leptonic decay $t\bar{t} \to b l^- \nu_{l^-} \bar{b} l^+\nu_{l^+}$ 10.3\% of the events;	
 \end{itemize}
+In this section of the thesis, the semileptonic $t\bar{t}$ decays are used because of the following reasons:
+\begin{itemize}
+	\item The semileptonic top pair decays have clear signature of two b-jets and isolated lepton from $W^\pm$ boson, which makes them easily reconstructable, contrary to the fully hadronic and fully leptonic decays;
+	\item The results obtained via the jet charge technique application can be used to extend the previously developed studies~\cite{bib:ILCTOP}.
+\end{itemize}
+The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,GeV. 
 %The large production cross section
 %The 350 GeV threshold mass scan 
 %The 500 GeV coupling 
 
-\subsection{Top quark decay modes}
+%\subsection{Top quark decay modes}
 
 \subsection{Top quark reconstruction}
 \subsection{Background processes}
