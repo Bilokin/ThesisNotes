@@ -524,9 +524,9 @@ An algorithm, called VertexChargeRecovery, was developed to increase the jet cha
 \begin{equation}
 \epsilon/\sigma > 2 + 25\cdot\alpha\text{ and } \alpha < 0.08.
 \end{equation}
-\item The algorithm creates new reconstructed vertices with add selected prongs and links them to the given jet.
+The recovery algorithm might have different behavior in simulation, than in real experiment, therefore, one should use a data-driven charge purity measurements, described in Sec.~\ref{sec:ChargePurity}, to test and tune the recovery parameters.
+\item The algorithm creates new reconstructed vertices with old and recovered reconstructed prongs and links them to a given jet.
 \end{itemize}
-
 
 \begin{figure}[h]
 {\centering
@@ -536,6 +536,8 @@ An algorithm, called VertexChargeRecovery, was developed to increase the jet cha
     \label{fig:RecoveryPurity_3}
   }
 \end{figure}
+
+
 Hence, VertexChargeRecovery is made to have an output, identical to the output of the LCFI+ algorithms, which allows for a clear comparison of the jet charge reconstruction performance before and after vertex recovery usage.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -578,8 +580,8 @@ The slightly increased rate of jets with $N_{rec} > N_{gen}$ can be seen, which 
 
 The vertex recovery decreases the fraction of missing prongs from 10.4\% to 6.2\%. The new polar angle and momentum distributions are shown in Fig.~\ref{fig:RecoveryMissingTracks_3}, from which one can see the following changes:
 \begin{itemize}
-\item The algorithm is not changing the categories of b-hadron prongs, which have no reconstructed tracks;
-\item The reconstructed prongs with no assigned VXD or FTD hits are not used either;
+\item The algorithm does not changes the categories of b-hadron prongs, which have no reconstructed tracks;
+\item The reconstructed prongs with no assigned VXD or FTD hits are not recovered by the program;
 \item The most of the missing prongs, which have no corresponding PFO are successfully associated to the correct reconstructed vertices;
 \item The large peak of the missing prongs at $|\cos\theta| \approx 0.8$ is successfully eliminated;
 \item The prongs in the region of the strong background, as can be seen in Fig.~\ref{fig:RecoveryPurity_3}, are not used by the program;
@@ -672,23 +674,34 @@ Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and 
 
 \section{Top quark production at the ILC}
 %Direct electroweak production of the top quark pairs
-This section of the thesis describes an application of the jet charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the forward-backward asymmetry measurement for $e^+e^- \to t\bar{t}$ process, which is used to determine the electroweak couplings of the top quark.
+This section of the thesis describes an application of the jet charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the forward-backward asymmetry measurement for $e^+e^- \to t\bar{t}$ process at ILC, which is used to determine the electroweak couplings of the top quark.
 
 The measurements of the top quark properties is one of the key points of the \sm\ physics program at the ILC.
 
-The dominant decay mode of the top quark is $t\to bW$, which is 99.8\% of all top decays, the $W^\pm$ boson can decay to a lepton-neutrino pair or a quark pair creates a six fermion final state of the process.
-Therefore, the $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
+\subsubsection{Properties of the top quark}
+
+The top quark is the heaviest elementary particle in the \sm\ with measured mass of 173.34$\pm$0.27(stat)$\pm$0.71(syst) \,GeV~\cite{bib:TopMass}, which implies a very short lifetime of approximately 5$\cdot10^{-25}$\,s.
+The top quark lifetime is short comparing to a time needed for hadronization process  (10$^{-23}$\,s), therefore, the top quark decays too fast to form hadrons. 
+This fact permits to study the bare quark properties, like spin, via its decay particles. 
+
+The dominant decay mode of the top quark is $t\to bW^+$, which is 99.8\% of all top decays, the $W^\pm$ boson can decay to a lepton-neutrino pair or to a quark pair, which implies a six fermion final state of the $e^+e^-\to t\bar{t}$ process.
+The $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
 \begin{itemize}
-	\item The fully hadronic decay $t\bar{t} \to bq\bar{q} \bar{b} q\bar{q}$ is 46.2\% of the events;
-	\item The semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ is 43.5\% of the events;
-	\item The fully leptonic decay $t\bar{t} \to b l^- \nu_{l^-} \bar{b} l^+\nu_{l^+}$ 10.3\% of the events;	
+	\item Fully hadronic decay $t\bar{t} \to bq\bar{q} \bar{b} q\bar{q}$ -  46.2\% of branching ratio;
+	\item Semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ - 43.5\% of branching ratio;
+	\item Fully leptonic decay $t\bar{t} \to b l^- \nu_{l^-} \bar{b} l^+\nu_{l^+}$ - 10.3\% of branching ratio.	
 \end{itemize}
-In this section of the thesis, the semileptonic $t\bar{t}$ decays are used because of the following reasons:
-\begin{itemize}
-	\item The semileptonic top pair decays have clear signature of two b-jets and isolated lepton from $W^\pm$ boson, which makes them easily reconstructable, contrary to the fully hadronic and fully leptonic decays;
-	\item The results obtained via the jet charge technique application can be used to extend the previously developed studies~\cite{bib:ILCTOP}.
-\end{itemize}
+At the ILC it is possible to reconstruct and study all decay modes of the $t\bar{t}$ pair.
+\subsection{Setup of the study}
 The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,GeV. 
+In this section of the thesis, the semileptonic $t\bar{t}$   pairs produced at $\sqrt{s}=500$\,GeV are studied. % because of the following reasons:
+%\begin{itemize}
+	%\item The semileptonic top pair decays have clear signature of two b-jets and isolated lepton from $W^\pm$ boson, which makes them easily reconstructable, contrary to the fully hadronic and fully leptonic decays;
+	%\item The results obtained via the jet charge technique application can be used to extend the previously developed studies~\cite{bib:ILCTOP}.
+%\end{itemize}
+The clear process signature of two b-jets, two light jets and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for forward-backward asymmetry measurement. 
+The chosen center-of-mass energy allows for top pair production free from  $t\bar{t}$ threshold QCD effects.
+
 %The large production cross section
 %The 350 GeV threshold mass scan 
 %The 500 GeV coupling 
@@ -704,6 +717,8 @@ The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,G
 \section{Bottom quark production at the ILC}
 
 \subsection{Bottom quark reconstruction}
+\subsection{Charge purity measurement}
+\label{sec:ChargePurity}
 \subsection{Corrections to the polar angle}
 \subsection{Background processes}
 \subsection{Results}
