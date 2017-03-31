@@ -691,13 +691,22 @@ The $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
 	\item Semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ - 43.5\% of branching ratio;
 	\item Fully leptonic decay $t\bar{t} \to b l^- \nu_{l^-} \bar{b} l^+\nu_{l^+}$ - 10.3\% of branching ratio.	
 \end{itemize}
+
 At the ILC it is possible to reconstruct and study all decay modes of the $t\bar{t}$ pair.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Setup of the study}
 %The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,GeV. 
-In this section of the thesis, the semileptonic $t\bar{t}$   pairs produced at $\sqrt{s}=500$\,GeV are studied.
-The clear process signature of two b-jets, two light jets and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for forward-backward asymmetry measurement. 
-The chosen center-of-mass energy allows for top pair production free from  $t\bar{t}$ threshold QCD effects.
+In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\sqrt{s}=500$\,GeV are studied using full ILD simulation.
+The chosen center-of-mass energy allows for top pair production free from $t\bar{t}$ threshold QCD effects.
+The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \small\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
+The clear process signature of two b-jets, two light jets and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for forward-backward asymmetry measurement. 
+This choice also allows for a direct comparison and combination of the new results obtained by the b-jet charge measurement technique with previous studies done using $W^\pm$ lepton charge method~\cite{bib:ILCTOP}.
+
+This thesis concentrates on the left-handed electron polarization case, because of lepton migration problem caused by the $W^\pm$ kinematics.
+%The setup of the 
 %The large production cross section
 %The 350 GeV threshold mass scan 
 %The 500 GeV coupling 
@@ -705,7 +714,33 @@ The chosen center-of-mass energy allows for top pair production free from  $t\ba
 %\subsection{Top quark decay modes}
 
 \subsection{Top quark reconstruction}
+In this thesis, the top reconstruction method, which was developed for~\cite{bib:ILCTOP} is applied, which has the following steps:
+\begin{itemize}
+	\item Isolated lepton identification is done using LAL LeptonFinder algorithm~\cite{bib:Doublet}, which is designed to find an energetic lepton or a lepton, which has a significant transverse momentum with respect to the neighbored jets. 
+	\item The events, after excluding the isolated lepton, are clustered to four jets using Durham jet clustering algorithm.
+	\item The b-jet tagging done by LCFI+ is used to identify the two b-jets. 
+	\item The last step of the top reconstruction is to associate one of the b-jets with the two light jets, which come from the hadronic $W^\pm$ decay.  One has two possibilities to combine the jets and one can choose the best combination using minimization of the following expression:
+	\begin{equation}
+	\label{formula:Chi2Top_3}
+	d^2_{t} = (\frac{m_{cand}-m_{t}}{\sigma_{m_t}})^2 + (\frac{E_{cand}-E_{beam}}{\sigma_{E_{beam}}})^2+(\frac{p^*_b-68\,GeV}{\sigma_{p^*_b}})^2 + (\frac{\cos\theta_{bW}-0.23}{\sigma_{\cos\theta_{bW}}})^2,
+	\end{equation}
+	where $m_{cand}$ and $E_{cand}$ are the invariant mass and the energy of the top quark candidate, $m_t$ and $E_{beam}$ are the input top quark mass and the nominal beam energy of 250\,GeV, $p^*_b$ is the momentum of the b quarks in the top quark frame with nominal value of 68\,GeV and $\cos\theta_{bW}$ is the angle between the b quark and the $W^\pm$ boson with a nominal value of 0.23.
+\end{itemize}
+
+The reconstructed distributions of the top and $W^\pm$ invariant masses are shown in Fig.~\ref{fig:TopWmass_3}, which is an illustration of the reconstruction flow. 
+
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.55\textwidth]{ILD/plots/top-w-mass.pdf}
+		\caption{\sl Reconstructed invariant mass distributions of the hadronic top quark and hadronic $W^\pm$ boson decays.
+		}
+		\label{fig:TopWmass_3}
+	}
+	
+\end{figure}
+
 \subsection{Background processes}
+Several \sm\ processes give a rise to the six fermion final state, 
 \input{ILD/tables/ttbar-sigma}
 \subsection{Results}
 
