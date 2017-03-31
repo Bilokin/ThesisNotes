@@ -148,12 +148,22 @@ The first top quark electroweak coupling analysis at the ILC was carried out by 
 The first challenge of the $A_{FB}$ measurements in hadronic channels is the quark charge identification. Therefore, the semileptonic top decays are used in~\cite{bib:ILCTOP}, where lepton from leptonic top quark decay provides the charge information, and jets from hadronic top quark decays are used for top polar angle reconstruction. 
 The next challenge is the assigning the lepton to the bottom quark jet from the same parent top quark, which is not trivial in left-handed case because of the lepton migration effect, caused by $W^\pm$ kinematics. There was found two possible ways to solve the lepton migration effect problem - the kinematical $\chi^2_{top}$ cut or finding the correct combination with the b-jet charge. The advantage of the combination with the b-jet charge is that this method do not require precise knowledge of the top quark decay kinematics, as it is needed for the $\chi^2_{top}$ cut method. The reconstructed top polar angle distribution for semileptonic decay of the top quark pair is shown in Fig.~\ref{fig:ILCTOPAFB}.
 The first attempt to use the jet charge technique in fully hadronic top decays was done by [Amjad thesis], but it required large simulation-dependent corrections. 
-\begin{figure}[h]
-{\centering
-    \includegraphics[width=0.55\textwidth]{ILD/graphics/AFB_wbkg_chi2cut.pdf}
-    \caption{\sl Reconstructed top quark polar angle distribution using $\chi^2_{top}$ cut compared with the prediction by the event generator for two configurations of the beam polarizations~\cite{bib:ILCTOP}.}
-    \label{fig:ILCTOPAFB}
-  }
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/graphics/EPS_AFB_nocut.pdf}
+		\caption{\label{fig:ILCTOPAFB_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/graphics/AFB_wbkg_chi2cut.pdf}
+		\caption{\label{fig:ILCTOPAFB_b_3} }
+	\end{subfigure}
+	\caption{\sl Reconstructed top quark polar angle before (a) and after $\chi^2_{top}$ cut (b) distributions compared with the prediction by the event generator for two configurations of the beam polarizations~\cite{bib:ILCTOP}. }
+
+	    \label{fig:ILCTOPAFB}
 \end{figure}
 
 The development of the jet charge measurement will open access to the fully hadronic top decay channels without any Monte-Carlo corrections and, moreover, it will allow a study of electroweak coupling of the bottom quark, which was never done using ILC environment. 
@@ -261,7 +271,7 @@ The TruthVertexFinder is able to find vertices from b-hadron decays and subseque
 \end{subfigure}% 
   \begin{subfigure}{0.5\textwidth}
 \centering
-    \includegraphics[width=0.9\textwidth]{ILD/plots/gen-c-vtx.pdf}
+    \includegraphics[width=0.95\textwidth]{ILD/plots/gen-c-vtx.pdf}
 \caption{\label{fig:GenVtx_b_3} }
 \end{subfigure}
     \caption{\sl Distributions of the b-vertex charge multiplicity~(a) and c-vertex charge multiplicity~(b). }
@@ -282,7 +292,7 @@ As can be seen from Fig.~\ref{fig:GenVtxOffset_3}, the c-vertex prong offsets ar
 \end{subfigure}% 
   \begin{subfigure}{0.5\textwidth}
 \centering
-    \includegraphics[width=0.9\textwidth]{ILD/plots/gen-cvtx-offsets.pdf}
+    \includegraphics[width=0.95\textwidth]{ILD/plots/gen-cvtx-offsets.pdf}
 \caption{\label{fig:GenVtxOffset_b_3} }
 \end{subfigure}
     \caption{\sl Distributions of the b-vertex (a) and c-vertex prong offsets~(b). }
@@ -303,7 +313,7 @@ Regarding the similarity of the distributions for two processes shown in Figures
 \end{subfigure}% 
   \begin{subfigure}{0.5\textwidth}
 \centering
-    \includegraphics[width=0.9\textwidth]{ILD/plots/gen-hadron-distance.pdf}
+    \includegraphics[width=0.95\textwidth]{ILD/plots/gen-hadron-distance.pdf}
 \caption{\label{fig:GenHadronParams_b_3} }
 \end{subfigure}
     \caption{\sl Left: Distribution of the b-hadron charge multiplicity. The odd multiplicities correspond to the charged hadrons and the even multiplicities correspond to the neutral hadron decays.   Right: Distribution of the b-hadron distance of flight. }
@@ -401,7 +411,7 @@ On can conclude, that the reconstruction algorithms start to lose their efficien
 \end{subfigure}% 
   \begin{subfigure}{0.5\textwidth}
 \centering
-    \includegraphics[width=0.9\textwidth]{ILD/plots/rec-missed-s-vtx.pdf}
+    \includegraphics[width=0.95\textwidth]{ILD/plots/rec-missed-s-vtx.pdf}
 \caption{\label{fig:RecMissedParams_b_3} }
 \end{subfigure}
     \caption{\sl Distributions of the average prong momentum~(a) and offset (b) of the missed and reconstructed vertices. }
@@ -458,7 +468,7 @@ A detailed study was made to reveal the reasons behind the missing prongs, which
 \end{subfigure}% 
   \begin{subfigure}{0.5\textwidth}
 \centering
-    \includegraphics[width=0.9\textwidth]{ILD/plots/missed-momentum.pdf}
+    \includegraphics[width=0.95\textwidth]{ILD/plots/missed-momentum.pdf}
 \caption{\label{fig:MissingTracks_p_3} }
 \end{subfigure}
     \caption{\sl Polar angle~(a) and momentum~(b) distributions of the missing prongs subdivided into different categories. This is a stacked histogram. The peak at $|\cos\theta| \approx 0 $ is caused by the gap between TPC endplates, the peak at  $|\cos\theta| \approx 0.8$ is caused by barrel-endcap transition in the \ecal\ and the rapid increase at $|\cos\theta| \approx 0.9$ is caused by the barrel-endcap transition in the VXD and FTD system. }
@@ -571,7 +581,7 @@ The slightly increased rate of jets with $N_{rec} > N_{gen}$ can be seen, which 
 \end{subfigure}% 
   \begin{subfigure}{0.5\textwidth}
 \centering
-    \includegraphics[width=0.9\textwidth]{ILD/plots/recovery-missed-p.pdf}
+    \includegraphics[width=0.95\textwidth]{ILD/plots/recovery-missed-p.pdf}
 \caption{\label{fig:RecoveryMissingTracks_p_3} }
 \end{subfigure}
     \caption{\sl Polar angle~(a) and momentum~(b) distributions of the missing prongs after vertex charge recovery subdivided into different categories. These are stacked histograms. }
