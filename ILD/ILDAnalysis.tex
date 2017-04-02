@@ -677,6 +677,8 @@ The angular correction is now included in the latest version of the {\sc ilcsoft
 
 
 Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and the correlation between kaon charge and the b-hadron charge in Fig.~\ref{fig:KaonOscillation_3}, one can conclude that the reconstructed charged kaons from the reconstructed vertices provide a reliable information on the charge of the initial b-hadron or b-quark. 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -712,10 +714,10 @@ In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\s
 The chosen center-of-mass energy allows for top pair production free from $t\bar{t}$ threshold QCD effects.
 The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \small\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
-The clear process signature of two b-jets, two light jets and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for forward-backward asymmetry measurement. 
-This choice also allows for a direct comparison and combination of the new results obtained by the b-jet charge measurement technique with previous studies done using $W^\pm$ lepton charge method~\cite{bib:ILCTOP}.
+The clear process signature of two b-jets, two light jets and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for the forward-backward asymmetry $A_{FB}$ measurement. 
+This choice is motivated to use the b-jet charge measurement to recover lepton migration effect, described in~\cite{bib:ILCTOP}, it also allows for a direct comparison and combination of the new results with previous studies done using $W^\pm$ lepton charge method.
 
-This thesis concentrates on the left-handed electron polarization case, because of lepton migration problem caused by the $W^\pm$ kinematics.
+This chapter concentrates only on the left-handed electron polarization case, because of lepton migration problem caused by the $W^\pm$ kinematics.
 %The setup of the 
 %The large production cross section
 %The 350 GeV threshold mass scan 
@@ -757,11 +759,31 @@ The previous studies~\cite{bib:ILCTOP}\cite{bib:Doublet} shown that the major ba
 
 One can use the kinematical cuts to suppress background processes from~\cite{bib:Doublet}.
 The prevoius studies demonstrated, that the purity of the full semileptonic \ttbar\ process selection is 91\% and final selection efficiency is 54\%~\cite{bib:ILCTOP}.
-The residual background is homogeneously distributed in $\cos\theta$, as it is shown in Fig.~\ref{fig:ILCTOPAFB}, which allows to concentrate our studies on signal process only. 
+The residual background is homogeneously distributed in $\cos\theta$, as it is shown in Fig.~\ref{fig:ILCTOPAFB}, which allows to concentrate our studies on the signal process only. 
 
 
 \subsection{Results}
 
+In this studies, the top polar angle is calculated from the decay products of the of the hadronic top decay.
+In case of the reconstructed $\bar{t}$ quark, the polar angle is changed from $\theta_{\bar{t}} \to \theta_{t} + \pi$, or $\cos\theta_{\bar{t}} \to -\cos\theta_{t}$. 
+
+The charge of the reconstructed top quark in this studies can be defined using three basic signatures: jet charge measurement using secondary vertices or vertex charge, reconstructed kaon charge, and $W^\pm$ lepton charge. 
+All three basic methods, which are demonstrated in Fig.~\ref{fig:OneCharge_3}, have significant impurity, which cause the divergence between the generated polar angle distribution and all reconstructed curves. 
+
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/one-charge.pdf}
+		\caption{\sl Generated polar angle distribution compared to reconstructed polar angle using single vertex charge (a), single kaon charge (b) and $W^\pm$ lepton charge(c).
+		}
+		\label{fig:OneCharge_3}
+	}
+	
+\end{figure}
+
+The quality of the top polar angle and forward-backward asymmetry reconstruction can be estimated by the ratio of the reconstructed $A_{FB}^{rec}$ over generated $A^{gen}_{FB}$.
+For single vertex and kaon charge methods the $A_{FB}^{rec}/A^{gen}_{FB} \approx 63\%$, while for the $W^\pm$ lepton charge method is 74\%. 
+
+To avoid the charge migrations, one can use only the compatible combinations of these charges 
 
 \section{Bottom quark production at the ILC}
 
