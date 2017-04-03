@@ -642,9 +642,10 @@ where $\theta$ is the polar angle of the particle.
 This angular is known to be applied at other experiments, which have the TPC devices~\cite{bib:HARP}.
 
 The distributions of the $dE/dx$ as a function of particle momentum and $|\cos\theta|$ after the angular correction (\ref{formula:dEdxCorrection}) are displayed in Fig.~\ref{fig:dEdxAfter_3}.
+%116.90%
 \begin{figure}[h]
 {\centering
-    \includegraphics[width=0.95\textwidth]{ILD/plots/dedx-before.pdf}
+    \includegraphics[clip, trim=8cm 18.5cm 7cm 4cm,width=0.95\textwidth]{ILD/plots/dedx-before.png}
     \caption{\sl The energy deposition per track length $dE/dx$ as function of the particle momentum, the particle polar angle $|\cos\theta|$ for different particles. Two gray lines separate out the region with a maximal kaon concentration. 
     }
     \label{fig:dEdxBefore_3}
@@ -653,7 +654,7 @@ The distributions of the $dE/dx$ as a function of particle momentum and $|\cos\t
 
 \begin{figure}[h]
 {\centering
-    \includegraphics[width=0.95\textwidth]{ILD/plots/dedx-after.pdf}
+    \includegraphics[clip, trim=8cm 18.5cm 7cm 4cm, width=0.95\textwidth]{ILD/plots/dedx-after.png}
     \caption{\sl The energy deposition per track length $dE/dx$ as function of the particle momentum, the particle polar angle $|\cos\theta|$ for different particles after application of the angular correction, described in text. Two gray lines separate out the region with a maximal kaon concentration. 
     }
     \label{fig:dEdxAfter_3}
@@ -768,7 +769,8 @@ In this studies, the top polar angle is calculated from the decay products of th
 In case of the reconstructed $\bar{t}$ quark, the polar angle is changed from $\theta_{\bar{t}} \to \theta_{t} + \pi$, or $\cos\theta_{\bar{t}} \to -\cos\theta_{t}$. 
 
 The charge of the reconstructed top quark in this studies can be defined using three basic signatures: jet charge measurement using secondary vertices or vertex charge, reconstructed kaon charge, and $W^\pm$ lepton charge. 
-All three basic methods, which are demonstrated in Fig.~\ref{fig:OneCharge_3}, have significant impurity, which cause the divergence between the generated polar angle distribution and all reconstructed curves. 
+All three basic methods, which are demonstrated in Fig.~\ref{fig:OneCharge_3}, have significant charge impurity, which cause a confusion of reconstructed top quark with anti-top quark.
+These charge migrations result in the divergence between the generated polar angle distribution and reconstructed curves of all three methods. 
 
 \begin{figure}[h]
 	{\centering
@@ -783,7 +785,14 @@ All three basic methods, which are demonstrated in Fig.~\ref{fig:OneCharge_3}, h
 The quality of the top polar angle and forward-backward asymmetry reconstruction can be estimated by the ratio of the reconstructed $A_{FB}^{rec}$ over generated $A^{gen}_{FB}$.
 For single vertex and kaon charge methods the $A_{FB}^{rec}/A^{gen}_{FB} \approx 63\%$, while for the $W^\pm$ lepton charge method is 74\%. 
 
-To avoid the charge migrations, one can use only the compatible combinations of these charges 
+To avoid the charge migrations, one can use only the compatible combinations of two or more charge signatures.
+In semileptonic \ttbar\ event one has two b-jets with vertex and kaon charge signatures each and a $W^\pm$ lepton charge signature. The general rules are:
+\begin{itemize}
+	\item The b-jets should have opposite both vertex and kaon charges;
+	\item The kaon and vertex charge should have the same sign within one b-jet;
+	\item The $W^\pm$ lepton charge should be opposite to the b-jet charges within one reconstructed top or anti-top quark decayed leptonically; 
+	\item The  $W^\pm$ lepton charge should have same charge as the b-jet charges from hadronically decayed top quark
+\end{itemize}
 
 \section{Bottom quark production at the ILC}
 
