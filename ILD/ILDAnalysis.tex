@@ -689,7 +689,7 @@ Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and 
 %Direct electroweak production of the top quark pairs
 This section of the thesis describes an application of the jet charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the forward-backward asymmetry measurement for $e^+e^- \to t\bar{t}$ process at ILC, which is used to determine the electroweak couplings of the top quark.
 
-The measurements of the top quark properties is one of the key points of the \sm\ physics program at the ILC.
+%The measurements of the top quark properties is one of the key points of the \sm\ physics program at the ILC.
 
 \subsubsection{Properties of the top quark}
 
@@ -716,7 +716,7 @@ The chosen center-of-mass energy allows for top pair production free from $t\bar
 The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \small\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
 The clear process signature of two b-jets, two light jets and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for the forward-backward asymmetry $A_{FB}$ measurement. 
-This choice is motivated to use the b-jet charge measurement to recover lepton migration effect, described in~\cite{bib:ILCTOP}, it also allows for a direct comparison and combination of the new results with previous studies done using $W^\pm$ lepton charge method.
+This choice is motivated to use the b-jet charge measurement to overcome the $W^\pm$ lepton migration effect, described in~\cite{bib:ILCTOP}, it also allows for a direct comparison and combination of the new results with previous studies done using $W^\pm$ lepton charge method.
 
 This chapter concentrates only on the left-handed electron polarization case, because of lepton migration problem caused by the $W^\pm$ kinematics.
 %The setup of the 
@@ -762,7 +762,9 @@ One can use the kinematical cuts to suppress background processes from~\cite{bib
 The prevoius studies demonstrated, that the purity of the full semileptonic \ttbar\ process selection is 91\% and final selection efficiency is 54\%~\cite{bib:ILCTOP}.
 The residual background is homogeneously distributed in $\cos\theta$, as it is shown in Fig.~\ref{fig:ILCTOPAFB}, which allows to concentrate our studies on the signal process only. 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Results}
 
 In this studies, the top polar angle is calculated from the hadronic decay products of the top quark.
@@ -785,9 +787,14 @@ These charge migrations result in the divergence between the generated polar ang
 
 The quality of the top polar angle and forward-backward asymmetry reconstruction can be estimated by the ratio of the reconstructed $A_{FB}^{rec}$ over generated $A^{gen}_{FB}$.
 For single vertex and kaon charge methods the $A_{FB}^{rec}/A^{gen}_{FB} \approx 63\%$, while for the $W^\pm$ lepton charge method is 74\% without any additional cuts. 
+Hence, the standalone b-jet charges and $W^\pm$ lepton charge signatures are not reliable enough to compute the top polar angle and $A_{FB}$ precisely. 
 
-To avoid the charge migrations, one can use the compatible combinations of two or more charge signatures.
-In semileptonic \ttbar\ event one has two b-jets with vertex and kaon charge signatures each and one $W^\pm$ lepton charge signature. The general charge combination rules are:
+\subsubsection{Charge combination}
+
+To decrease this charge impurity, one can use the compatible combinations of two or more charge signatures.
+In a semileptonic \ttbar\ event one can have two b-jets with vertex and kaon charge signatures each and one $W^\pm$ lepton charge signature. 
+%The general charge combination rules are:
+On has the following charge combination rules to accept an event for the top polar angle and the $A_{FB}$ measurement:
 \begin{itemize}
 	\item Two b-jets should have opposite both vertex and kaon charges;
 	\item The kaon and vertex charge should have the same sign within one b-jet;
@@ -795,8 +802,23 @@ In semileptonic \ttbar\ event one has two b-jets with vertex and kaon charge sig
 	\item The  $W^\pm$ lepton charge should have same charge as the b-jet charges from hadronically decayed top quark.
 	\item The $W^\pm$ lepton charge can be used alone after cuts on the reconstructed top $\chi^2_{t}$ or top Lorentz gamma factor $\gamma_{top}$.
 \end{itemize}
+
+Accoriging to these rules, one has the following charge pair signatures for a semileptonic \ttbar event:
+\begin{itemize}
+	\item Vertex charge from one b-jet in combination with vertex charge from another b-jet, abbreviated as {\sc vtx+vtx};
+	\item Kaon charge from one b-jet in combination with kaon charge from another b-jet ({\sc kaon+kaon});
+	\item Vertex charge and kaon charge combination from the same b-jet ({\sc vtx+kaon});
+	\item Vertex charge and kaon charge combination from different b-jets ({\sc vtx+kaon'});
+	\item  Vertex charge from a b-jet  in combination with $W^\pm$ lepton charge ({\sc l+vtx});
+	\item  Kaon charge from a b-jet in combination with $W^\pm$ lepton charge ({\sc l+kaon});
+	\item $W^\pm$ lepton charge after a $\gamma_{top}$ cut  ({\sc l }cut).
+\end{itemize}
+
+To prove the concept of the b-jet charge measurement, the first four methods were used to compute top polar angle distribution shown in Fig.~. 
+
 To increase the purity can apply cuts on the b-hadron kinematics in case of the vertex charge usage, or on the reconstructed top $\chi^2_{t}$ in case of the  $W^\pm$ lepton charge application.
-In total one has 11 charge pair signatures. 
+
+
 
 \section{Bottom quark production at the ILC}
 
