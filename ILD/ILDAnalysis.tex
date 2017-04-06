@@ -808,7 +808,7 @@ On has the following charge combination rules to accept an event for the top pol
 	\item The kaon and vertex charge should have the same sign within one b-jet;
 	\item The $W^\pm$ lepton charge should be opposite to the b-jet charges within one reconstructed top or anti-top quark decayed leptonically; 
 	\item The  $W^\pm$ lepton charge should have same charge as the b-jet charges from hadronically decayed top quark.
-	\item The $W^\pm$ lepton charge can be used alone after cuts on the reconstructed top $\chi^2_{t}$ or top Lorentz gamma factor $\gamma_{top}$.
+	\item The $W^\pm$ lepton charge can be used alone after cuts on the reconstructed top $\chi^2_{t}$.
 \end{itemize}
 
 Accoriging to these rules, one has the following charge pair signatures for a semileptonic \ttbar event:
@@ -819,7 +819,7 @@ Accoriging to these rules, one has the following charge pair signatures for a se
 	\item Vertex charge and kaon charge combination from different b-jets ({\sc vtx+kaon'});
 	\item  Vertex charge from a b-jet  in combination with $W^\pm$ lepton charge ({\sc l+vtx});
 	\item  Kaon charge from a b-jet in combination with $W^\pm$ lepton charge ({\sc l+kaon});
-	\item $W^\pm$ lepton charge after a $\gamma_{top}$ cut  ({\sc l }cut).
+	\item $W^\pm$ lepton charge after a $\chi^2_{t}$ cut  ({\sc l }cut).
 \end{itemize}
 To increase the vertex charge purity can apply the following cuts on the b-hadron kinematics in case of the vertex charge usage:
 \begin{equation}
@@ -864,9 +864,24 @@ However, the effects of the vertex charge recovery are much more essential for t
 
 The events with $W^\pm$ lepton charge migration can be efficiently rejected using  a cut on  $\chi^2_{top}$~[Jeremy], which is defined as:
 \begin{equation}
+	\label{formula:Chi2TopLepton_3}
 	\chi^2_{top} = (\frac{\gamma_t-1.435}{\sigma_{\gamma_{t}}})^2 + (\frac{p^*_b-60}{\sigma_{\gamma_{p^*_b}}})^2 + (\frac{\cos\theta_{bW} - 0.23}{\sigma_{\cos\theta_{bW}}})^2,
 \end{equation}
-where $p^*_b$ and $\cos\theta_{bW}$ have been used in Eq.~\ref{formula:Chi2Top_3} and Lorentz factor $\gamma_t=E_{t}/m_{t}$ of the reconstructed top quark decayed hadronically. The almost all events with $\chi^2_{top} < 15$ have correct combination of a b-jet with hadronic $W^\pm$, which propagated into a correct interpretation of the $W^\pm$ lepton charge.
+where $p^*_b$ and $\cos\theta_{bW}$ have been used in Eq.~\ref{formula:Chi2Top_3} and Lorentz factor $\gamma_t=E_{t}/m_{t}$ of the reconstructed top quark decayed hadronically. The distributions of the events with correctly assigned lepton and migrated lepton for all variables used in \ref{formula:Chi2TopLepton_3} are shown in Fig.~
+
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/top-lepton-variables.pdf}
+		\caption{\sl Distributions of $\gamma_t$ (a), $p^*_b$ (b) and $\cos\theta_{bW}$ (c) variables used for $W^\pm$ lepton charge reconstruction. The events are subdivided into correctly and incorrectly assigned lepton categories.
+		}
+		\label{fig:TopChiVariables_3}
+	}
+	
+\end{figure}
+
+
+More than 93\% of the events with $\chi^2_{top} < 15$ have correct combination of a b-jet with hadronic $W^\pm$, which propagated into a correct interpretation of the $W^\pm$ lepton charge.
+
 The application of all possible pair combination of the vertex charge, kaon charge and $W^\pm$ lepton charge to the top polar angle reconstruction can be seen in Fig.~\ref{fig:TopAsymmetryChi_a_3}. 
 
 
@@ -885,7 +900,7 @@ The application of all possible pair combination of the vertex charge, kaon char
 	\label{fig:TopAsymmetryChi_3}
 \end{figure}
 
-This method allows to reconstruct the top forward-backward asymmetry with $A_{FB}^{rec}/A^{gen}_{FB} = 93\%$ with the final efficiency of 39\%, which improves the published result~\cite{bib:ILCTOP} by 28\%. 
+This method allows to reconstruct the top forward-backward asymmetry with $A_{FB}^{rec}/A^{gen}_{FB} = 93\%$ with the final efficiency of 38\%, which improves the published result~\cite{bib:ILCTOP} by 24\%. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
