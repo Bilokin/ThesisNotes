@@ -711,6 +711,7 @@ e	\item Semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ - 43.5\% of b
 	\item Fully leptonic decay $t\bar{t} \to b l^- \nu_{l^-} \bar{b} l^+\nu_{l^+}$ - 10.3\% of branching ratio.	
 \end{itemize}
 
+
 At the ILC it is possible to reconstruct and study all decay modes of the $t\bar{t}$ pair.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -722,12 +723,11 @@ The chosen center-of-mass energy allows for top pair production free from $t\bar
 The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \small\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
 The clear process signature of two b-jets, two light jets from $W^\pm$ boson and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for the forward-backward asymmetry $A_{FB}$ measurement. 
-This choice is motivated to use the b-jet charge measurement to overcome the $W^\pm$ lepton migration effect, described in~\cite{bib:ILCTOP}, it also allows for a direct comparison and combination of the new results with previous studies done using $W^\pm$ lepton charge method.
+%This choice is motivated to use the b-jet charge measurement to overcome the $W^\pm$ lepton migration effect, described in~\cite{bib:ILCTOP}, it also allows for a direct comparison and combination of the new results with previous studies done using $W^\pm$ lepton charge method.
 
-The $W^\pm$ boson kinematics strongly depends on the polarization of the initial state:
 %This chapter concentrates only on the left-handed electron polarization case, because of the lepton migration problem caused by the $W^\pm$ kinematics. 
-The previous studies found  
-The main goal of the study is to increase method efficiency using new b-jet charge measurement methods, which should bring down the statistical uncertainties on the \ttbar Z$^0$ form factors and couplings.  
+%The previous studies found  
+The main goal of the study is to increase method efficiency by involving new b-jet charge measurement methods, which should bring down the statistical uncertainties on the \ttbar Z$^0$ form factors and couplings.  
 
 %\subsection{Top quark decay modes}
 
@@ -757,15 +757,22 @@ The reconstructed distributions of the top and $W^\pm$ invariant masses are show
 	
 \end{figure}
 
+The $W^\pm$ boson kinematics in \ttbar\ process strongly depends on the polarization of the initial state:
+\begin{itemize}
+	\item In case of a right-handed electron beam the events are enriched with right-handed top quarks. Due to the structure of the weak interaction, top quark decays into energetic $W^\pm$ boson, which is emitted into a top quark direction, and a relatively soft b-quark;
+	\item In case of a left-handed electron beam the sample is enriched by left-handed top quarks, which decay into soft $W^\pm$ bosons and energetic b-quarks, which are predominantly aligned with the top quark direction. 
+\end{itemize}
+This effect can lead to an incorrect assignment of b-jet and $W^\pm$ jets, which complicates the top quark charge reconstruction needed for the forward-backward asymmetry measurement. 
+
 \subsection{Background processes}
 The main background processes are summarized in Table~\ref{table:ttbarsigma}. 
 The previous studies~\cite{bib:ILCTOP}\cite{bib:Doublet} shown that the major backgrounds to the semileptonic \ttbar\ decay are the single top process and fully hadronic or fully leptonic \ttbar\ decays. 
 %Several \sm\ processes give a rise to the six fermion final state, 
 \input{ILD/tables/ttbar-sigma}
 
-One can reuse the kinematical cuts to suppress background processes from~\cite{bib:Doublet}[Jeremy] defined in Table~\ref{table:ttbarselection}
+One can use the kinematical cuts to suppress the background processes, which were originally developed in ~\cite{bib:Doublet}[Jeremy] and defined in Table~\ref{table:ttbarselection}
 \input{ILD/tables/ttbar-selection}
-The prevoius studies demonstrated, that the purity of the full semileptonic \ttbar\ process selection is 91\% and final selection efficiency is 54\%~\cite{bib:ILCTOP}.
+The prevoius studies demonstrated, that the purity of the full semileptonic \ttbar\ process selection is 91\% and final event selection efficiency is 54\%~\cite{bib:ILCTOP}.
 The residual background is homogeneously distributed in $\cos\theta$, as it is shown in Fig.~\ref{fig:ILCTOPAFB}, which allows to concentrate our studies on the signal process only. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -773,13 +780,13 @@ The residual background is homogeneously distributed in $\cos\theta$, as it is s
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Results}
 
-In this studies, the top polar angle is be calculated  of the top or anti-top quark, which decayed hadronically.
+In this studies, the top polar angle is calculated by using the reconstructed top or anti-top quark, which decayed hadronically.
 In case of the reconstructed $\bar{t}$ quark, the polar angle is changed from $\theta_{\bar{t}} \to \theta_{t} + \pi$, or $\cos\theta_{\bar{t}} \to -\cos\theta_{t}$. 
 Hence, the main challange of the study is to correctly identify the charge of the reconstructed hadronic top or anti-top quark. 
 
 The charge of the reconstructed top quark in this studies can be defined using three basic signatures: jet charge measurement using reconstructed secondary vertices or vertex charge, reconstructed kaon charge, and $W^\pm$ lepton charge. 
-All three basic methods, which are demonstrated in Fig.~\ref{fig:OneCharge_3}, have significant charge impurity, which cause a confusion of reconstructed top quark with an anti-top quark.
-These charge migrations result in the divergence between the generated polar angle distribution and reconstructed curves of all three methods. 
+All three basic methods, which are demonstrated in Fig.~\ref{fig:OneCharge_3}, have significant charge impurity in case of left-handed electron beam, which cause a confusion of a top quark with an anti-top quark.
+These charge migrations result in the divergence between the generated polar angle distribution and reconstructed curves for all three methods. 
 
 \begin{figure}[h]
 	{\centering
@@ -802,16 +809,16 @@ Hence, the standalone b-jet charges and $W^\pm$ lepton charge signatures are not
 To decrease this charge impurity, one can use the compatible combinations of two or more charge signatures.
 In a semileptonic \ttbar\ event one can have two b-jets with vertex and kaon charge signatures each and one $W^\pm$ lepton charge signature. 
 %The general charge combination rules are:
-On has the following charge combination rules to accept an event for the top polar angle and the $A_{FB}$ measurement:
+One has the following charge combination rules to accept an event for the top polar angle and the $A_{FB}$ measurement:
 \begin{itemize}
 	\item Two b-jets should have opposite both vertex and kaon charges;
 	\item The kaon and vertex charge should have the same sign within one b-jet;
 	\item The $W^\pm$ lepton charge should be opposite to the b-jet charges within one reconstructed top or anti-top quark decayed leptonically; 
-	\item The  $W^\pm$ lepton charge should have same charge as the b-jet charges from hadronically decayed top quark.
+	\item The  $W^\pm$ lepton charge should have the same charge as the b-jet charges from hadronically decayed top quark.
 	\item The $W^\pm$ lepton charge can be used alone after cuts on the reconstructed top $\chi^2_{t}$.
 \end{itemize}
 
-Accoriging to these rules, one has the following charge pair signatures for a semileptonic \ttbar event:
+According to these rules, one has the following charge pair signatures for a semileptonic \ttbar event:
 \begin{itemize}
 	\item Vertex charge from one b-jet in combination with vertex charge from another b-jet, abbreviated as {\sc vtx+vtx};
 	\item Kaon charge from one b-jet in combination with kaon charge from another b-jet ({\sc kaon+kaon});
@@ -821,6 +828,7 @@ Accoriging to these rules, one has the following charge pair signatures for a se
 	\item  Kaon charge from a b-jet in combination with $W^\pm$ lepton charge ({\sc l+kaon});
 	\item $W^\pm$ lepton charge after a $\chi^2_{t}$ cut  ({\sc l }cut).
 \end{itemize}
+Multiple reconstructed charge pair signatures are possible within one event.
 To increase the vertex charge purity can apply the following cuts on the b-hadron kinematics in case of the vertex charge usage:
 \begin{equation}
 	btag > 0.8\text{ and } |p|_{had} > 35\text{\,GeV}.
@@ -832,9 +840,12 @@ One can use the purity distributions in Fig.~\ref{fig:RecoveryPurity_3} to optim
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Standalone jet charge application}
 
-To prove the concept of the b-jet charge measurement, the first four methods were used to compute top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}, where one can see a good agreement between the generated and reconstructed top polar angle histograms. 
-The combined b-jet charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with total efficiency of 18\%.
-The most used method is the vertex charge and kaon charge combination from the same b-jet, as can be seen from Fig.~\ref{fig:TopAsymmetryNoCutBjet_b_3}, which is due to the chosen cuts on the b-tag. 
+To prove the concept of the b-jet charge measurement, one can use the vertex charge and kaon charge combinations to compute the top polar angle. 
+In case of the left-handed electron beam, the b-quarks are emitted in the direction of the initial top quark, which makes possible the standalone application the b-jet charge measurement. 
+
+The vertex charge and kaon charge methods were used to compute top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}, where one can see a good agreement between the generated and reconstructed top polar angle histograms. 
+The combined b-jet charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with total efficiency of 15\%.
+The most used method is the vertex charge and kaon charge combination from the same b-jet, as can be seen from Fig.~\ref{fig:TopAsymmetryNoCutBjet_b_3}, which is due to the chosen asymmetric cuts on the b-tag values. 
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}{0.5\textwidth}
@@ -850,11 +861,11 @@ The most used method is the vertex charge and kaon charge combination from the s
 	\label{fig:TopAsymmetryNoCutBjet_3}
 \end{figure}
 
-One can purify the sample by changing the cuts on the b-hadron kinematics, but with a penalty on statistics of the sample. 
+One can purify the sample by changing the cuts on the b-hadron kinematics, but with a penalty on sample statistics. 
 
 This result proves, that the  b-jet charge measurement can be used directly on the fully hadronic \ttbar\ decays for left-handed electron polarization, which will significantly increase the statistics needed for top coupling estimation. 
 
-The vertex charge recovery increases the statistics by 7\% and the $A_{FB}^{rec}/A^{gen}_{FB}$ ratio by 4\%. 
+The vertex charge recovery increases the overall statistics by 7\% and the $A_{FB}^{rec}/A^{gen}_{FB}$ ratio by 4\%. 
 However, the effects of the vertex charge recovery are much more essential for the $e^+e^-\to b\bar{b}$ process, discussed in Section~\ref{sec:BBBarresults}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -862,7 +873,7 @@ However, the effects of the vertex charge recovery are much more essential for t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Jet charge and lepton charge combination}
 
-The events with $W^\pm$ lepton charge migration can be efficiently rejected using  a cut on  $\chi^2_{top}$~[Jeremy], which is defined as:
+The events with $W^\pm$ lepton charge migration can be efficiently rejected using  a cut on $\chi^2_{top}$~[Jeremy], which is defined as:
 \begin{equation}
 	\label{formula:Chi2TopLepton_3}
 	\chi^2_{top} = (\frac{\gamma_t-1.435}{\sigma_{\gamma_{t}}})^2 + (\frac{p^*_b-68}{\sigma_{\gamma_{p^*_b}}})^2 + (\frac{\cos\theta_{bW} - 0.23}{\sigma_{\cos\theta_{bW}}})^2,
@@ -881,9 +892,9 @@ The distributions of the events with correctly assigned lepton and migrated lept
 \end{figure}
 
 
-More than 93\% of the events with $\chi^2_{top} < 15$ have correct combination of a b-jet with hadronic $W^\pm$, which propagates into a correct interpretation of the $W^\pm$ lepton charge.
+More than 93\% of the events with $\chi^2_{top} < 15$ have a correct combination of a b-jet with hadronic $W^\pm$, which propagates into a correct interpretation of the $W^\pm$ lepton charge.
 
-The application of all possible pair combination of the vertex charge, kaon charge and $W^\pm$ lepton charge to the top polar angle reconstruction can be seen in Fig.~\ref{fig:TopAsymmetryChi_a_3}. 
+The application of all possible pair combinations of the vertex charge, kaon charge and $W^\pm$ lepton charge to the top polar angle reconstruction shown in Fig.~\ref{fig:TopAsymmetryChi_a_3}. 
 
 
 \begin{figure}[h]
@@ -901,12 +912,21 @@ The application of all possible pair combination of the vertex charge, kaon char
 	\label{fig:TopAsymmetryChi_3}
 \end{figure}
 
-This method allows to reconstruct the top forward-backward asymmetry with $A_{FB}^{rec}/A^{gen}_{FB} = 93\%$ with the final efficiency of 38\%, which improves the published result~\cite{bib:ILCTOP} by 24\%. 
+This method allows to reconstruct the top forward-backward asymmetry with $A_{FB}^{rec}/A^{gen}_{FB} = 93\%$ with the final efficiency of 38\%, which improves the previous result~\cite{bib:ILCTOP} by 24\%. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Outlook}
+As it was shown, the involvement of the b-jet charge measurement to semileptonic \ttbar pair decays significantly increases the statistics used for $A_{FB}$ computation.
+Besides the jet charge application, the statistics in the left-handed case can be largely increased by the reconstruction of the hadronic tau lepton decays, which were not used in present studies. 
+Another possible way to reduce the charge migration effects is to reconstruct the leptonic top decays, which can give a hint for correct top decay products association and a more efficient background rejection.
+
+The jet charge measurement is a completely independent reconstruction tool, which allows to study the top decay kinematics, control the systematics effects.
+
+The most important application of the jet charge measurement lie in the fully hadronic \ttbar decays, where one has no other sources of top quark charge information. 
+In left-handed electron beam case, one can directly apply the b-jet charge measurement, as it was done to produce top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}. 
+However, in the right-handed electron beam, the incorrect $W^\pm$ jets and b-jet association will lead to a significant distortion in the top polar angle distribution. Therefore, one should look for $W^\pm$ c-jet charge, using kaon charge, to control the top quark reconstruction quality. 
 
 \section{Bottom quark production at the ILC}
 
