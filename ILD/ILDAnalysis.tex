@@ -723,6 +723,17 @@ The chosen center-of-mass energy allows for top pair production free from $t\bar
 The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \small\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
 The clear process signature of two b-jets, two light jets from $W^\pm$ boson and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for the forward-backward asymmetry $A_{FB}$ measurement. 
+An example of a \ttbar\ event in the ILD environment is shown in Fig.~\ref{fig:TopEvent_3}.
+
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.55\textwidth]{ILD/graphics/ild-ttbar.png}
+		\caption{\sl Event display of the \ttbar\ pair production process in the ILD simulation.
+		}
+		\label{fig:TopEvent_3}
+	}
+	
+\end{figure}
 %This choice is motivated to use the b-jet charge measurement to overcome the $W^\pm$ lepton migration effect, described in~\cite{bib:ILCTOP}, it also allows for a direct comparison and combination of the new results with previous studies done using $W^\pm$ lepton charge method.
 
 %This chapter concentrates only on the left-handed electron polarization case, because of the lepton migration problem caused by the $W^\pm$ kinematics. 
@@ -914,9 +925,12 @@ The application of all possible pair combinations of the vertex charge, kaon cha
 
 This method allows to reconstruct the top forward-backward asymmetry with $A_{FB}^{rec}/A^{gen}_{FB} = 94\%$ with the final efficiency of 38.6\%, which improves the previous result~\cite{bib:ILCTOP} by 25\%. 
 
+The most used method is combination of the vertex charge with the $W^\pm$ lepton charge because the $W^\pm$ lepton is required to be reconstructed in every selected event. 
+\subsubsection{Precision on top quark form factors }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection{Outlook}
 As it was shown, the involvement of the b-jet charge measurement to semileptonic \ttbar pair decays significantly increases the statistics used for $A_{FB}$ computation.
 Besides the jet charge application, the statistics in the left-handed case can be largely increased by the reconstruction of the hadronic tau lepton decays, which were not used in present studies. 
@@ -927,14 +941,42 @@ The jet charge measurement is a completely independent reconstruction tool, whic
 The most important application of the jet charge measurement lie in the fully hadronic \ttbar decays, where one has no other sources of information on top quark charge. 
 In left-handed electron beam case, one can directly apply the b-jet charge measurement, as it was done to produce top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}. 
 However, in the right-handed electron beam, the incorrect $W^\pm$ jets and b-jet association will lead to a significant distortion in the top polar angle distribution. Therefore, one should look for $W^\pm$ c-jet charge, using kaon charge, to control the top quark reconstruction quality. 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bottom quark production at the ILC}
+%Motivation
+The LEP measurement of forward-backward asymmetry at the $Z^0$ pole left 2.5$\sigma_{LEP}$ tension with the \sm\ prediction, which can be an impact of a \bsm\ modification of the b-quark couplings to vector bosons.
+The resolution of the LEP \afbb\ tension requires 
+This is the main motivation of the $e^+e^-\to$\bbbar\ studies at the $250$,\,GeV stage of the ILC, which are presented in this chapter. 
 
-\subsection{Bottom quark reconstruction}
+The $e^+e^-\to$\bbbar\ process has never been studied using the ILC environment. 
+\subsection{Setup of the study}
+In this studies the signal $e^+e^-\to b\bar{b}$ process on center-of-mass energy of 250\,GeV. 
+A large statistics sample of integrated luminosity $L_{int}= 500$\,fb{$^{-1}$} is used for both polarizations in the ILD simulation environment. 
+Same version of the event generators and {\sc ilcsoft} distributions as for the \ttbar production study are used.
+
+
+\subsection{Bottom quark reconstruction and the background processes}
+The bottom quarks appear as two b-jets in the detector, which significantly simplifies the process reconstruction. 
+An example of the \bbbar\ pair event display in the ILD environment is demonstrated in Fig.~\ref{fig:BottomEvent_3}. 
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.55\textwidth]{ILD/graphics/ild-bbbar.png}
+		\caption{\sl Event display of the $e^+e^-\to b\bar{b}$ process in the ILD simulation.
+		}
+		\label{fig:BottomEvent_3}
+	}
+	
+\end{figure}
+
+The  of the \bbbar\ events are reconstructed as two jets. 
+The most important background processes are the so called $Z^0$ return background and hadronic decays of diboson processes, like $e^+e^-\to Z^0Z^0\to$\,hadrons.
+\input{ILD/tables/bbbar-sigma}
 \subsection{Charge purity measurement}
 \label{sec:ChargePurity}
 \subsection{Corrections to the polar angle}
-\subsection{Background processes}
+
 \subsection{Results}
 \label{sec:BBBarresults}
 \subsection{Coupling measurements}
