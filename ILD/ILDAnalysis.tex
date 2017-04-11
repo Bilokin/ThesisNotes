@@ -78,7 +78,7 @@ The total cross section can be measured knowing the number of accepted events $N
 \end{equation}
 The forward-backward asymmetry is an observable, which counts the difference between the number of events in the forward region and backward regions:
 \begin{equation}
-	A_{fb} = \frac{\sigma(cos\theta > 0) - \sigma(cos\theta < 0)}{\sigma(cos\theta > 0) + \sigma(cos\theta < 0)}.
+	A_{FB} = \frac{\sigma(cos\theta > 0) - \sigma(cos\theta < 0)}{\sigma(cos\theta > 0) + \sigma(cos\theta < 0)}.
 \end{equation}
 
 
@@ -97,19 +97,21 @@ These theories have additional weak bosons $Z'$ or $W'$ with a mixing to the \sm
 The possible compositness of heavy quarks can also leave an imprint on the their electroweak couplings, which is described by various technicolor theories.
 These models can have different impact on the left-handed or right handed couplings. 
 
+\begin{figure}[h]
+	{\centering
+		\includegraphics[clip, trim=4cm 7cm 2cm 10cm, width=0.95\textwidth]{ILD/graphics/plot.pdf}
+		\caption{\sl Predictions of several models that incorporate Randall-Sundrum (RS) models and/or compositeness or Little Higgs models on the deviations of the left- and right-handed couplings of the $t$~quark to the $Z^0$ boson. The ellipse in the frame in the upper right corner indicates the precision that can be expected for the ILC running at a center-of-mass energy of $\sqrt[]{s} = 500\,GeV$ after having accumulated ${\mathcal L}=500\,fb^{-1}$ of integrated luminosity shared equally between the beam polarizations $P(e^-),\,P(e^+) =\pm0.8,\mp0.3$. The original version of this figure can be found in~\cite{bib:ILCTOP}.}
+		\label{fig:DeviationsTop}
+	}
+\end{figure}
+
 The relative deviations of the left-handed and right-handed couplings of the top quark are predicted by various BSM theories are shown in Fig.~\ref{fig:DeviationsTop}.
 A precise measurement of the top coupling allows for identification of the particular BSM theory.  
 The experiments with polarized beams have an advantage of detection of sign flip of the right-handed coupling $g_R^Z$, which can be produced by the Randall-Sundrum models with $Z^0$-$Z'$ mixing~\cite{bib:RSTOP}.
 %
 %Many \bsm\ models predict deviations on the heavy quark couplings to the Higgs and weak bosons.
 
-\begin{figure}[h]
-{\centering
-    \includegraphics[clip, trim=4cm 7cm 2cm 10cm, width=0.95\textwidth]{ILD/graphics/plot.pdf}
-    \caption{\sl Predictions of several models that incorporate Randall-Sundrum (RS) models and/or compositeness or Little Higgs models on the deviations of the left- and right-handed couplings of the $t$~quark to the $Z^0$ boson. The ellipse in the frame in the upper right corner indicates the precision that can be expected for the ILC running at a center-of-mass energy of $\sqrt[]{s} = 500\,GeV$ after having accumulated ${\mathcal L}=500\,fb^{-1}$ of integrated luminosity shared equally between the beam polarizations $P(e^-),\,P(e^+) =\pm0.8,\mp0.3$. The original version of this figure can be found in~\cite{bib:ILCTOP}.}
-    \label{fig:DeviationsTop}
-  }
-\end{figure}
+
 %\input{ILD/graphics/deviations}
 %Supersymmetric models  -  have different set of Higgs couplings to the up and down type quarks.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,11 +119,28 @@ The experiments with polarized beams have an advantage of detection of sign flip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Status of the measurements and simulation studies}
 %mass measurements
+
+\subsubsection{Measurements at LEP and SLC}
+The electron-positron colliders have a large production cross section of $e^+e^- \to q\bar{q}$ process mediated by $Z^0$ boson or a virtual photon. The total cross sections of various \sm\ processes for $e^+e^-$ machines are shown in Fig.~\ref{fig:LCcrosssection}.
+
+The circular LEP~I and the linear SLC colliders staged at the $Z^0$ pole, where the $q\bar{q}$ cross section is maximal, benefiting from significantly increased event rate. 
+The measurements resulted in an extremely precise cross section determination and a forward-backward asymmetry measurements. 
+The measured cross section value has full compatibility with the \sm\ calculations. 
+On the other hand, the measured b-quark forward-backward asymmetry $A_{FB}^b$  value at LEP has 2.5\,$\sigma$ tension with a recent electroweak fit predictions~\cite{bib:AfbSMFit}.
+The measurement of the $A_{FB}^b$ value at the SLC have 27\% higher uncertainty than LEP results~\cite{bib:SLC}.
+
+The measurements outside $Z^0$ pole were done by the LEP~II collider, which collected the most integrated luminosity at around 190\,GeV energy, where $e^+e^- \to W^+W^-$ process has a maximum of its cross section.
+The measured $A_{FB}^b$ at this center-of-mass energy is within 2\,$\sigma$ from the tree level \sm\ prediction.
+
+The precise knowledge of the $Zb\bar{b}$ vertex at LEP~I allowed to put constraints on the top quark mass~\cite{bib:LEPTOP}.
+%$A_{fb}^b(\sqrt[]{s} = 190.7\,\text{GeV})=0.51\pm0.058$
+%Unfortunately, the beam energies of LEP~II and SLC was not high enough to produce single top or top quark pairs, therefore, the precise determination of the top electroweak couplings is left for the future electron-positron machines.
+
 \subsubsection{LHC and TeVatron measurements}
 The initial state at hadron colliders allows a strong production of the top quark pairs via $gg\to t\bar{t}$ or $q\bar{q}\to t\bar{t}$ processes. 
 Therefore, the hadron machines can measure the top mass and strong couplings of the top quark with a high precision. 
 The TeVatron, which has proton-antiproton beams, can produce single top process at a higher rate than proton-proton machines. 
-This process involve $tbW$ vertex and therefore, its cross section depends on weak coupling of the top quark. 
+This process involve $tbW$ vertex and therefore, its total cross section depends on weak coupling of the top quark. 
 The measurement of single top cross section at TeVatron is found to be consistent with the \sm\ predictions~\cite{bib:TeVstop} with about 16\% uncertainty.
 
 The forward-backward asymmetry at hadron colliders for strong interaction vertex $gt\bar{t}$ has been measured to be consistent with the \sm\ expectations~\cite{bib:TeVAfb}. 
@@ -143,20 +162,6 @@ Including the Run II data of the LHC with a higher center-of-mass energy will si
 \end{figure}
 %ttZ cross section measurements
 
-\subsubsection{Measurements at LEP and SLC}
-The electron-positron colliders have a large production cross section of $e^+e^- \to q\bar{q}$ process mediated by $Z^0$ boson or a virtual photon. The total cross sections of various \sm\ processes for $e^+e^-$ machines are shown in Fig.~\ref{fig:LCcrosssection}.
-
-The circular LEP~I and the linear SLC colliders staged at the $Z^0$ pole, where the $q\bar{q}$ cross section is maximal, benefiting from significantly increased event rate. 
-The measurements resulted in an extremely precise cross section determination and a forward-backward asymmetry measurements. 
-The measured cross section value has full compatibility with the \sm\ calculations. 
-On the other hand, the measured b-quark forward-backward asymmetry $A_{FB}^b$  value at LEP has 2.5\,$\sigma$ tension with a recent electroweak fit predictions~\cite{bib:AfbSMFit}.
-The measurement of the $A_{FB}^b$ value at the SLC have 27\% higher uncertainty than LEP results~\cite{bib:SLC}.
-
-The measurements outside $Z^0$ pole were done by the LEP~II collider, which collected the most integrated luminosity at around 190\,GeV energy, where $e^+e^- \to W^+W^-$ process has a maximum of its cross section.
-The measured $A_{FB}^b$ at this center-of-mass energy is within 2\,$\sigma$ from tree level \sm\ prediction.
-
-%$A_{fb}^b(\sqrt[]{s} = 190.7\,\text{GeV})=0.51\pm0.058$
-%Unfortunately, the beam energies of LEP~II and SLC was not high enough to produce single top or top quark pairs, therefore, the precise determination of the top electroweak couplings is left for the future electron-positron machines.
 
 %2.5s tension by LEP in bbar asymmetry
 \subsubsection{Future linear colliders}
