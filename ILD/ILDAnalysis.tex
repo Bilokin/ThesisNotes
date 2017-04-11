@@ -7,10 +7,11 @@ Many \bsm\ theories can modify heavy quark properties, therefore, precise measur
 This section of the thesis concentrates on the electroweak interaction of the top and bottom quarks, corresponding observables, heavy quark production at linear colliders and possible influence of New Physics.
 %the higgs is tightly connected to the top quark via coupling that is proportional to the top mass
 %The bottom quark is in the same doublet as top
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Total cross section and forward-backward asymmetry}
+\subsection{Description of the heavy quark production}
 %First, one needs to define the most convenient parametrization of coupling or form factors of interest, and then express the observable quantities in terms of defined form factors. 
 
 At the electron-positron colliders the heavy quarks are mainly produced via $f\bar{f}X$ vertex, where $X$ stands for neutral vector bosons, photon or $Z^0$ boson.  The current at $f\bar{f}X$ vertex can be expressed via form factors $F$ as 
@@ -41,11 +42,35 @@ In case of the polarized beams, the fermion form factors can be expressed in ter
     \mathcal{F}^R_{ij} = - F^\gamma_{ij} +  \frac{\sin^2\theta_W}{\cos\theta_W\sin\theta_W}\frac{s}{s-M^2_Z+i\Gamma_ZM_Z}F^Z_{ij}    
 \end{eqnarray}
 where $i=1,2$ and $j=V,A$.
-The first observable is the cross section for $f\bar{f}$ for electron beam polarization $I=L,R$ can be expressed in terms of these form factors:
+The key expression for the present studies is the differential cross section of $f\bar{f}$ production for electron beam polarization $I=L,R$, expressed via the defined form factors:
+\begin{multline}
+% \frac{\pi\alpha^2 N_c\beta}{s}
+\label{formula:DiffSigma_3}
+\frac{d\sigma^I}{d\cos\theta} = \frac{3}{4} \mathcal{A} N_c \beta[ (1+\cos^2\theta) [(\mF_{1A}+\mF_{2V})^2+(\beta \mF_{1A})^2] - \\-4 \cos\theta (\mF_{1A}+\mF_{2V})\beta \mF_{1A} +\\+ \sin^2\theta [\gamma ^{-2} (\mF_{1V} +\gamma^2 \mF_{2V})^2] ]
+\end{multline}
+where $\mathcal{A} = 4\pi\alpha^2/3s$ with $\alpha$ as the electromagnetic running coupling, $N_c$ is a number of quark colors, $\beta$ and $\gamma$ are the velocity and the Lorentz factor of the produced fermion, respectively. 
+
+One can derive from (\ref{formula:DiffSigma_3}) the total cross section, an observable, which can be expressed as
+%2\frac{4\pi\alpha^2}{3s}N_c\beta
 \begin{equation}
-	\sigma_I = 2\frac{4\pi\alpha^2}{3s}N_c\beta[(1+\frac{1}{2}\gamma^{-2})(\mathcal{F}^I_{1V})^2 + (\beta\mathcal{F}^I_{1A})^2+3\mathcal{F}^I_{1V}\mathcal{F}^I_{2V}+(1+\frac{1}{2}\gamma^{2})(\mathcal{F}^I_{2V})^2],
+	\sigma_I = 2\mathcal{A}N_c\beta[(1+\frac{1}{2}\gamma^{-2})(\mathcal{F}^I_{1V})^2 + (\beta\mathcal{F}^I_{1A})^2+3\mathcal{F}^I_{1V}\mathcal{F}^I_{2V}+(1+\frac{1}{2}\gamma^{2})(\mathcal{F}^I_{2V})^2],
 \end{equation}
-where $\alpha$ is the electromagnetic running coupling, $N_c$ is a number of quark colors, $\beta$ and $\gamma$ are the velocity and the Lorentz factor of produced fermion, respectively. 
+The term $\beta \mF_{1A}$ describes the reduced sensitivity to the axial form factors near the $f\bar{f}$ production threshold. 
+
+
+Another typical observable is the forward-backward asymmetry, which is defined as
+\begin{equation}
+A_{FB}^I = \mp \mathcal{A} N_c \frac{3\beta\mathcal{F}^I_{1A}(\mathcal{F}^I_{1V} + \mathcal{F}^I_{2V})}{\sigma^I}.
+\label{formula:AfbForm_3},
+\end{equation}
+
+This observable is sensitive to the axial form factor $\mathcal{F}^I_{1A}$, therefore it is crucial to measure $A_{fb}^I$ precisely to reduce uncertainty on the corresponding form factors.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Observables of interest}
+The conventional approach used to estimate the couplings or form factors of the fermion $f$ to the vector bosons $\gamma /Z^0$ is to measure the total cross section $\sigma_I$ and forward-backward asymmetry \afb.
+ 
 The total cross section can be measured knowing the number of accepted events $N$, selection efficiency $\epsilon$ and integrated luminosity $\mathcal{L}_I$
 \begin{equation}
 	\sigma_I = \frac{N}{\epsilon \mathcal{L}_I}.
@@ -55,25 +80,24 @@ The forward-backward asymmetry is an observable, which counts the difference bet
 \begin{equation}
 	A_{fb} = \frac{\sigma(cos\theta > 0) - \sigma(cos\theta < 0)}{\sigma(cos\theta > 0) + \sigma(cos\theta < 0)}.
 \end{equation}
-In case of polarized beams at $e^+e^-$ machines, it can be expressed as
-\begin{equation}
-	A_{fb}^I = \frac{-3\beta\mathcal{F}^I_{1A}(\mathcal{F}^I_{1V} + \mathcal{F}^I_{2V})}{2[(1+\frac{1}{2}\gamma^{-2})(\mathcal{F}^I_{1V})^2 + (\beta\mathcal{F}^I_{1A})^2+3\mathcal{F}^I_{1V}\mathcal{F}^I_{2V}+(1+\frac{1}{2}\gamma^{2})(\mathcal{F}^I_{2V})^2]}.
-    \label{formula:AfbForm_3}
-\end{equation}
-This observable is sensitive to the axial form factor $\mathcal{F}^I_{1A}$, therefore the it is crucial to measure $A_{fb}^I$ precisely to reduce uncertainty on the corresponding form factors.
+
 
 %single top
-Another source of top quark production at linear colliders is the single top process. %which is shown in Fig. \ref{fig:singletop_3}. 
-This process allows top quark production at 250\,GeV center-of-mass energy, but the study of the single top production is not included in the thesis. 
-
+%Another source of top quark production at linear colliders is the single top process. %which is shown in Fig. \ref{fig:singletop_3}. 
+%This process allows top quark production at 250\,GeV center-of-mass energy, but the study of the single top production is not included in the thesis. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{New Physics influence}
-The heavy quarks and the Higgs boson are often subject of \bsm\ deviations.
-For example, supersymmetric extensions of the \sm\ predict different set of Higgs couplings to the up type and down type quarks. 
-\bsm\ theories with additional weak bosons $Z'$ or $W'$ can have a mixing with the \sm\ bosons, which can modify the electroweak couplings of the heavy quarks. 
-The extradimentional extensions of the \sm\ like Randall-Sundrum models are able to provide an explanation to the mass hierarchy, and have additional weak boson excitations. 
+%The heavy quarks and the Higgs boson are often subject of \bsm\ deviations.
+%For example, supersymmetric extensions of the \sm\ predict different set of Higgs couplings to the up type and down type quarks. 
 
+The extradimentional extensions of the \sm\ like Randall-Sundrum models are able to provide an explanation to the mass hierarchy, and have additional weak boson excitations. 
+These theories have additional weak bosons $Z'$ or $W'$ with a mixing to the \sm\ bosons, which can modify the electroweak couplings of the heavy quarks. 
 The possible compositness of heavy quarks can also leave an imprint on the their electroweak couplings, which is described by various technicolor theories.
-The relative deviations of left-handed and right-handed couplings of the top quark are predicted by various BSM theories are shown in Fig.~\ref{fig:DeviationsTop}.
+These models can have different impact on the left-handed or right handed couplings. 
+
+The relative deviations of the left-handed and right-handed couplings of the top quark are predicted by various BSM theories are shown in Fig.~\ref{fig:DeviationsTop}.
 A precise measurement of the top coupling allows for identification of the particular BSM theory.  
 The experiments with polarized beams have an advantage of detection of sign flip of the right-handed coupling $g_R^Z$, which can be produced by the Randall-Sundrum models with $Z^0$-$Z'$ mixing~\cite{bib:RSTOP}.
 %
@@ -88,6 +112,9 @@ The experiments with polarized beams have an advantage of detection of sign flip
 \end{figure}
 %\input{ILD/graphics/deviations}
 %Supersymmetric models  -  have different set of Higgs couplings to the up and down type quarks.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Status of the measurements and simulation studies}
 %mass measurements
 \subsubsection{LHC and TeVatron measurements}
@@ -99,11 +126,21 @@ The measurement of single top cross section at TeVatron is found to be consisten
 
 The forward-backward asymmetry at hadron colliders for strong interaction vertex $gt\bar{t}$ has been measured to be consistent with the \sm\ expectations~\cite{bib:TeVAfb}. 
 
-To measure the electroweak couplings of the top quark at hadron colliders, the associate production of top quark pair with $Z^0$ boson is required. 
-Study of $t\bar{t}Z^0$ process has been done at LHC experiments using Run I data with $\sqrt{s} = 8$\,TeV shows compatible rates of the signal process with the \sm, but more statistics is required to measure the cross section precisely~\cite{bib:CMSttz2014}. 
+To measure the electroweak couplings of the top quark at hadron colliders, the associate production of top quark pair with $Z^0$ or $W^\pm$ bosons is required. 
+Study of the $t\bar{t}Z^0$ process has been done at the LHC experiments using Run I data with $\sqrt{s} = 8$\,TeV shows compatible rates of the signal process with the \sm, but more statistics is required to measure the cross section precisely~\cite{bib:CMSttz2014}. The cross section fit results for the $t\bar{t}Z^0$ and   $t\bar{t}W^\pm$ processes are shown in Fig~\ref{fig:LHCTopTopZ_3}.
 Including the Run II data of the LHC with a higher center-of-mass energy will significantly improve $t\bar{t}Z^0$ measurement.
 %Main channel of the top quark production is gluons
-
+\begin{figure}[h]
+	{\centering
+		\includegraphics[ width=0.55\textwidth]{ILD/graphics/fit_2d.pdf}
+		\caption{\sl The result of the two-dimensional best fit for ttW and ttZ cross sections (cross symbol) is shown along with its 68 and 95\% confidence level contours. The result of this fit is
+			superimposed with the separate ttW and ttZ cross section measurements, and the corresponding
+			1 standard deviation (1$\sigma$) bands, obtained from the dilepton, and the trilepton/four-lepton
+			channels, respectively. The figure also shows the predictions from theory and the corresponding
+			uncertainties.~\cite{bib:ILCTOP}.}
+		\label{fig:LCHTopTopZ_3}
+	}
+\end{figure}
 %ttZ cross section measurements
 
 \subsubsection{Measurements at LEP and SLC}
@@ -119,7 +156,7 @@ The measurements outside $Z^0$ pole were done by the LEP~II collider, which coll
 The measured $A_{FB}^b$ at this center-of-mass energy is within 2\,$\sigma$ from tree level \sm\ prediction.
 
 %$A_{fb}^b(\sqrt[]{s} = 190.7\,\text{GeV})=0.51\pm0.058$
-Unfortunately, the beam energies of LEP~II and SLC was not high enough to produce single top or top quark pairs, therefore, the precise determination of the top electroweak couplings is left for the future electron-positron machines.
+%Unfortunately, the beam energies of LEP~II and SLC was not high enough to produce single top or top quark pairs, therefore, the precise determination of the top electroweak couplings is left for the future electron-positron machines.
 
 %2.5s tension by LEP in bbar asymmetry
 \subsubsection{Future linear colliders}
@@ -769,12 +806,12 @@ The reconstructed distributions of the top and $W^\pm$ invariant masses are show
 	
 \end{figure}
 
-The $W^\pm$ boson kinematics in \ttbar\ process strongly depends on the polarization of the initial state:
+The $W^\pm$ boson kinematics in the \ttbar\ process strongly depends on the polarization of the initial state:
 \begin{itemize}
 	\item In case of a right-handed electron beam the events are enriched with right-handed top quarks. Due to the structure of the weak interaction, top quark decays into energetic $W^\pm$ boson, which is emitted into a top quark direction, and a relatively soft b-quark;
 	\item In case of a left-handed electron beam the sample is enriched by left-handed top quarks, which decay into soft $W^\pm$ bosons and energetic b-quarks, which are predominantly aligned with the top quark direction. 
 \end{itemize}
-This effect can lead to an incorrect assignment of b-jet and $W^\pm$ jets, which complicates the top quark charge reconstruction needed for the forward-backward asymmetry measurement. 
+Possible incorrect assignment of b-jet and $W^\pm$ jets complicates the top quark charge reconstruction needed for the top polar angle measurement. 
 
 \subsection{Background processes}
 The main background processes are summarized in Table~\ref{table:ttbarsigma}. 
