@@ -202,21 +202,21 @@ The study of the top couplings at CLIC was done in [Garcia Garcia thesis].
 The first top quark electroweak coupling analysis at the ILC was carried out by the ILC group in Orsay, resulting in the paper~\cite{bib:ILCTOP}, where the uncertainties on the form factors \ref{formula:SMformFactors_3} and the couplings \ref{formula:EWcouplings_3} were estimated using the ILD environment.
 
 
-The $A_{FB}$ measurements in hadronic \ttbar\ channel are  is the quark charge identification. Therefore, the semileptonic top decays are used in~\cite{bib:ILCTOP}, where  a lepton from leptonic top quark decay $t\to b l \bar{\nu_l}$ provides the charge information, and jets from hadronic top quark decays $t \to b q \bar{q}'$ are used for top polar angle reconstruction. 
-The next challenge is the assigning the lepton to the bottom quark jet from the same parent top quark, which is not trivial in left-handed case because of the lepton migration effect, caused by $W^\pm$ kinematics. 
-There was found two possible ways to solve the lepton migration effect problem - by doing a kinematical cut on $\chi^2_{top}$, which is a measure of hadronic top reconstruction quality, or by finding a correct combination of lepton charge with the b-jet charge. 
+The semileptonic top decays were used in~\cite{bib:ILCTOP}, where  a lepton from leptonic top quark decay $t\to b l \bar{\nu_l}$ provides the charge information, and jets from hadronic top quark decays $t \to b q \bar{q}'$ are used for top polar angle reconstruction. 
+The accidental assignement of the hadronic $W^\pm$ jets to the b-jet for leptonic  top quark decays leads to the migration effect in the left-handed electron beam case, caused by $W^\pm$ kinematics. 
+There are two possible ways to remedy the migration effect problem - by doing a kinematical cut on $\chi^2_{top}$, which is a measure of hadronic top reconstruction quality, or by finding a correct combination of lepton charge with the b-jet charge. 
 The main advantage of the combination with the b-jet charge is that this method do not require precise knowledge of the top quark decay kinematics, as it is needed for the $\chi^2_{top}$ cut method. The reconstructed top polar angle distribution for semileptonic decay of the top quark pair is shown in Fig.~\ref{fig:ILCTOPAFB}, where one can see the $W^\pm$ lepton migration effect caused by the $W^\pm$ kinematics and a it solution by the kinematical cut on $\chi^2_{top}$.
 
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.95\textwidth]{ILD/graphics/EPS_AFB_nocut.pdf}
+		\includegraphics[clip, trim=0.9cm 0cm 0.9cm 0cm,width=0.99\textwidth]{ILD/graphics/EPS_AFB_nocut.pdf}
 		\caption{\label{fig:ILCTOPAFB_a_3} }
 	\end{subfigure}% 
 	\begin{subfigure}{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.95\textwidth]{ILD/graphics/AFB_wbkg_chi2cut.pdf}
+		\includegraphics[clip, trim=0.9cm 0cm 0.9cm 0cm,width=0.99\textwidth]{ILD/graphics/AFB_wbkg_chi2cut.pdf}
 		\caption{\label{fig:ILCTOPAFB_b_3} }
 	\end{subfigure}
 	\caption{\sl Reconstructed top quark polar angle before (a) and after $\chi^2_{top}$ cut (b) distributions compared with the prediction by the event generator for two configurations of the beam polarizations~\cite{bib:ILCTOP}. }
@@ -244,10 +244,10 @@ The development of the jet charge measurement will increase the statistics for s
 
 \section{Jet charge reconstruction}
 \label{sec:JetChargeReconstruction}
-An information about a bottom jet charge is useful for all \sm\ processes, where b-jets appear as decay products, particularly, it can be applied for reconstruction of forward-backward asymmetry in $e^+e^-\to t\bar{t}$ and $e^+e^- \to b\bar{b}$ processes. 
-The main challenge for these processes is a high purity and efficiency of the charge reconstruction, which requires an ultimate performance from all subdetectors of the experiment. 
+An information about the bottom jet charge is useful for all \sm\ processes, where b-jets appear as decay products, particularly, it can be applied for reconstruction of forward-backward asymmetry in $e^+e^-\to t\bar{t}$ and $e^+e^- \to b\bar{b}$ processes. 
+For these processes is high purity and efficiency of the charge reconstruction requires an ultimate performance from all subdetectors of the experiment. 
 
-One of the main goals of this thesis is to increase purity and efficiency of the b-jet charge measurement in the ILD environment. 
+One of the main goals of this thesis is to develop a method of the b-jet charge measurement with high purity and efficiency. 
 To do so, first, it is necessary to measure performance of the standard reconstruction algorithm and find sources of charge impurities, and then develop an algorithm to improve it. 
 
 
@@ -256,8 +256,8 @@ To do so, first, it is necessary to measure performance of the standard reconstr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Setup of the study}
 
-All studies in this and next chapters are done using full simulation of the baseline ILD experiment. 
-The jet charge measurement study uses $e^+e^- \to b\bar{b}$ at $\sqrt[]{s} = 250$\,GeV and semileptonic decay mode of the $e^+e^- \to t\bar{t}$ at $\sqrt[]{s} = 500$\,GeV processes generated using {\sc whizard}~1.95 event generator. 
+All studies in this and the next chapters are done using full simulation of the baseline ILD experiment. 
+The jet charge measurement study uses $e^+e^- \to b\bar{b}$ at $\sqrt[]{s} = 250$\,GeV and the semileptonic decay mode of the $e^+e^- \to t\bar{t}$ at $\sqrt[]{s} = 500$\,GeV processes generated using {\sc whizard}~1.95 event generator. 
 The hadronization of the quarks and gluons is done by the {\sc pythia}~6.205 event generator.
 The distributions of the b-hadron momentum, generated by {\sc pythia} for the 250\,GeV $b\bar{b}$ and the 500\,GeV $t\bar{t}$ pairs are shown in Fig.~\ref{fig:GenHadronMomentum_3}. 
 The distributions have different peak energies, bur the energy range is the same. Further analysis shows, that this difference has small impact on the performance of the jet charge reconstruction.
@@ -270,16 +270,16 @@ The distributions have different peak energies, bur the energy range is the same
 \end{figure}
 
 The $B^0-\bar{B}^0$ oscillations are enabled in the {\sc pythia} simulation. 
-The ILD layout and the interaction of particles with the detector material are simulated by the {\sc mokka} framework, largely based on the \geant\ toolkit, which is also responsible for creation of the hits in the simulated subdetectors. 
+The ILD layout and the interaction of particles with the detector material are simulated by the {\sc mokka} framework, that provides the geometry interface to the \geant\ toolkit, that simulates the detector response. 
 
 All reconstruction algorithms, along with the {\sc mokka} framework are part of the {\sc ilcsoft} software toolkit.
-The modular structure of the {\sc ilcsoft} allows to  launch each reconstruction algorithm independently. 
+The modular structure of the {\sc ilcsoft} allows for independent execution of each reconstruction algorithm. 
 
-The ILD collaboration defines the order of the standard reconstruction chain, which is applied to all studies done using the full simulation of the ILD experiment. 
+%The ILD collaboration defines the order of the standard reconstruction chain, which is applied to all studies done using the full simulation of the ILD experiment. 
 
 The most relevant standard reconstruction algorithms of the {\sc ilcsoft} for the jet charge measurement are:
 \begin{itemize}
-\item The MarlinTrk package organize the hits, created by particles in the ILD trackers into reconstructed tracks. The track parametrization in described in~\cite{bib:LCIOtrack}. Each reconstructed track has an associated covariance matrix;
+\item The MarlinTrk package organize the hits, created by particles in the ILD trackers into reconstructed tracks. The track parametrization in described in~\cite{bib:LCIOtrack}. Each reconstructed track has 5 reconstructed fit parameters and the corresponding associated covariance matrix with 15 parameters; The most important for the thesis are the impact parameters $d_0$ and $z_0$ with corresponding uncertainties $\sigma_{d_0}$ and $\sigma_{z_0}$.
 \item The PandoraPFA package is responsible for the clusterization of the calorimeter hits and creation of the Particle Flow Objects. The track covariance matrix is used to compute the covariance matrix of the reconstructed particle momentum; 
 \item The primary and secondary vertex reconstruction is done by the LCFI+ algorithm. 
 \end{itemize}
