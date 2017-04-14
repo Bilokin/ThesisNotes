@@ -304,26 +304,37 @@ The b-quark hadronization modes are displayed in Table~\ref{table:bhadrons}.
 
 These branching fractions are approximate and may have a dependency on the initial and final state kinematic and production environment~\cite{bib:PDG}.
 However, the presence of the \Bzs\ meson increase number of the neutral hadronization modes, which will cause additional complications for the charge measurement. 
+The illustration of the b-quark hadronization and common decay modes is given in Fig.~\ref{fig:Bmodes_3}.
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.55\textwidth]{ILD/plots/b-modes}
+		\caption{\sl The illustration of the b-quark hadronisation and decay modes with the corresponiding decay rates in percent. Modes in the red circle are not tracked by the TruthVertexFinder.}
+		\label{fig:Bmodes_3}
+	}
+\end{figure}
 
 %b-hadron decays, typically, the charged pions, kaons, leptons or protons, 
 Due to the Lorentz boost given by the initial b-quark energy, the b-hadron can travel several millimeters before its decay. Due to this flight distance, the charged particles from the b-hadron decays will have an offset with respect to the primary interaction point, which is the main signature of the b-quark jets. 
 
 %Therefore we expect two vertices
-The B meson have very frequent $D^0$ or $D^\pm$ meson decay modes, mediated by the weak interaction. The charmed $D$ mesons have $c\tau \approx 120 - 300$\,$\mu$m, which gives a possibility to the charmed mesons to travel away from the initial B meson decay vertex. 
+The B meson have $D^0$ or $D^\pm$ meson decay modes of about 80\% decay rate, mediated by the weak interaction. The charmed $D$ mesons have $c\tau \approx 120 - 300$\,$\mu$m, which gives a possibility to the charmed mesons to travel away from the initial B meson decay vertex. 
 Hence, one expects to detect two vertices from one b-jet in most of the cases: the secondary, which corresponds to the b-hadron decay, and the tertiary vertex created by the c-hadron decays. 
 
-The $D^0$ or $D^\pm$ mesons have approximately 74\% probability to decay into a charged $K^\pm$ meson plus other particles. The $K^\pm$ mesons have a long lifetime with $c\tau = 3.7$\,m and a high mass of 493.6\,MeV comparing to another charged particles from B meson decays, like pions or leptons, which can be use to identify kaons by the energy deposition. The $K^\pm$ mesons from B meson decays are the end products of the $b\to c\to s$ decay chain mediated by the weak interaction, therefore, the charge of the $K^\pm$ mesons should correlate with the initial b-quark charge. About 87\% of b-hadrons are set to have correlated $K^\pm$ charge in the generator, which makes the $K^\pm$ charge a reliable indication of the initial b-quark charge.
+The $K^\pm$ mesons from B meson decays are the end products of the $b\to c\to s$ decay chain mediated by the weak interaction. 
+The $K^\pm$ mesons have a long lifetime with $c\tau = 3.7$\,m and a high mass of 493.6\,MeV comparing with another long-lived charged particles from B meson decays, like pions or leptons, which can be use to identify kaons by the energy deposition. 
+In the generator, about 87\% of b-hadrons are set to have correlated $K^\pm$ charge in the generator, which makes the $K^\pm$ charge a reliable indication of the initial b-quark charge.
 On contrary, the b-baryons tend to produce protons, which have an opposite sign of charge to the initial b-quark charge. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Generated vertices}
-A typical output of the event generators is a list of generated particles with parent-child relations.The TruthVertexFinder algorithm was developed to find the generated vertices, and included into the {\sc ilcsoft} distribution. This algorithm detects the generated b-hadrons, finds the related charged particles, which can leave reconstructable tracks and organizes them into the generated secondary or tertiary vertices.
+The output of the event generators is a list of generated particles with parent-child relations.The TruthVertexFinder algorithm was developed to find the generated vertices.%, and included into the {\sc ilcsoft} distribution. 
+This algorithm detects the generated b-hadrons, finds the related charged particles, which can leave reconstructable tracks and organizes them into the generated secondary or tertiary vertices.
 \begin{figure}[h]
 	{\centering
 		\includegraphics[width=0.75\textwidth]{ILD/plots/offset-graph.pdf}
-		\caption{\sl Illustration of particle offset variable, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}_0$ is a reference point of a given particle, defined in \cite{bib:LCIOtrack}, $\alpha$ is the angle between $\vec{p}$ and $\vec{s}_{vtx}$ and $\epsilon$ is an offset of the particle. 
+		\caption{\sl Illustration of particle offset variable $\epsilon$, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}_0$ is a point of the closest approach of a given particle. 
 		}
 		\label{fig:OffsetPic_3}
 	}
@@ -336,10 +347,10 @@ A typical output of the event generators is a list of generated particles with p
 
 %The b-hadrons can be identified by measuring the charged tracks, which have an offset from primary interaction point caused by the b-hadron lifetime.
 %B*
-The high-energy b-quarks can hadronize into excited states of the b-hadrons, which can decay into a ground state by emitting charged or neutral pion. 
-The charged pion from the excited b-hadrons can distort the charge multiplicity distributions and further comparison with the reconstructed vertices, therefore, the TruthVertexFinder selects only ground state hadrons within a decay chain. 
+The high-energy b-quarks can hadronize into excited states of the b-hadrons, which can decay into their ground state by emitting charged or neutral pion. 
+The charged pion from the excited b-hadrons can distort the charge multiplicity distributions and further comparison with the reconstructed vertices. Therefore, the TruthVertexFinder selects only ground state hadrons within a decay chain. 
 
-The TruthVertexFinder is able to find vertices from b-hadron decays and subsequent c-hadron decay vertices. The distributions of generated b- and c-vertices are displayed in Fig.~\ref{fig:GenVtx_3}. The c-vertex multiplicity distribution is consistent with~\cite{bib:PDG}. One can notice that about 31\% of the b-vertices and 13\% of the c-vertices decay into one generated prong, which poses a challenge to the vertexing algorithms. 
+The TruthVertexFinder finds vertices from b-hadron decays and subsequent c-hadron decay vertices. The distributions of generated b- and c-vertices are displayed in Fig.~\ref{fig:GenVtx_3}. The c-vertex multiplicity distribution is consistent with~\cite{bib:PDG}. One can notice that about 31\% of the b-vertices and 13\% of the c-vertices decay into one generated prong, which poses a challenge to the vertexing algorithms., which will be addressed in Sec.~\ref{sec:MisVertices}.
 
 \begin{figure}[h]
 \centering
@@ -356,7 +367,7 @@ The TruthVertexFinder is able to find vertices from b-hadron decays and subseque
     \label{fig:GenVtx_3}
 \end{figure}
 
-The particle offset or the impact parameter is a minimal distance between the particle trajectory and the interaction point. 
+The particle offset or the impact parameter is the minimal distance between the particle trajectory and the interaction point, as illustrated in Fig.~\ref{fig:OffsetPic_3}.
 This is the main observable used by the vertex reconstruction algorithms. 
 The offset distributions of the generated b-vertex and c-vertex prongs are shown in Fig.~\ref{fig:GenVtxOffset_3}.
 Majority of the generated prongs have large offsets above the ILD impact parameter resolution of 5\,$\mu$m. 
@@ -380,7 +391,7 @@ As can be seen from Fig.~\ref{fig:GenVtxOffset_3}, the c-vertex prong offsets ar
 The distributions of the total charge multiplicity and the flight distance of the b-hadrons are displayed in Fig.~\ref{fig:GenHadronParams_3}.
 The imbalance between the odd and even number of multiplicities is caused by the presence of the \Bzs\ hadronization modes.
 
-Regarding the similarity of the distributions for two processes shown in Figures ~\ref{fig:GenVtx_3}, \ref{fig:GenHadronParams_3} and \ref{fig:GenVtxOffset_3}, the performance of a vertexing algorithm should be identical for the same energy and the direction of the b-hadron decays.
+Regarding the similarity of the distributions for two processes shown in Figures~\ref{fig:GenVtx_3}, \ref{fig:GenHadronParams_3} and \ref{fig:GenVtxOffset_3}, the performance of a vertexing algorithm should be identical for the same energy and the direction of the b-hadron decays.
 
 
 \begin{figure}[h]
@@ -419,15 +430,15 @@ In this section, only the standard reconstruction chain is used to study the b-j
 
 
 %\subsubsection{Baseline jet charge reconstruction}
-The jet charge can be computed as a sum of the reconstructed particles charges, associated to the reconstructed vertices, which belong to a given jet. 
+The jet charge is computed as a sum of the reconstructed particles charges, associated to the reconstructed vertices, which belong to a given jet. 
 Therefore, the vertexing algorithm should correctly associate all secondary or tertiary vertex particles to have a correct jet charge measurement. 
-The correctly reconstructed jet charge should have the same sign of charge as the generated charged b-hadron or it should have reconstructed zero charge if the generated b-hadron is neutral. 
+The correctly reconstructed jet charge should have the same  charge as the generated b-hadron. 
 Regarding the b-hadron multiplicity, shown in Fig.~\ref{fig:GenHadronParams_3}, this task is not trivial. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Jet charge purity state of the art}
+\subsubsection{Jet charge purity: State of the art}
 The charge purity $P_B$ is defined to be the number of correctly reconstructed jet charges divided by the total number of jets. 
 The previous studies done in the fully hadronic $t\bar{t}$ decays~[Amjad] have shown that the total jet charge purity $P_B$ is about 60\%.
 The total jet charge for the considered $b\bar{b}$ process  is $P_B(b\bar{b}) = 66\%$ and for semileptonic decay of the  $t\bar{t}$ pair is $P_B(t\bar{t}) = 64\%$. 
@@ -465,6 +476,7 @@ But first, one needs to study the reasons behind the missing prongs and analyze 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Missing vertices}
+\label{sec:MisVertices}
 The reconstruction algorithm can lose a vertex if the generated b-hadron properties, like number of generated prongs, b-hadron momentum or polar angle, are in the poor acceptance of the detector. 
 The non-reconstructed vertices contain approximately 22\% of all generated b-hadron prongs. 
 The b-hadron vertices with generated low momentum prongs or low offset prongs have higher chances to be missed by the reconstruction algorithms. 
