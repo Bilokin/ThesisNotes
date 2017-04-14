@@ -405,7 +405,7 @@ Regarding the similarity of the distributions for two processes shown in Figures
     \includegraphics[width=0.95\textwidth]{ILD/plots/gen-hadron-distance.pdf}
 \caption{\label{fig:GenHadronParams_b_3} }
 \end{subfigure}
-    \caption{\sl Left: Distribution of the b-hadron charge multiplicity. The odd multiplicities correspond to the charged hadrons and the even multiplicities correspond to the neutral hadron decays.   Right: Distribution of the b-hadron distance of flight. }
+    \caption{\sl Left: Distribution of the b-hadron charge multiplicity. The odd multiplicities correspond to the charged hadrons and the even multiplicities correspond to the neutral hadron decays. Right: Distribution of the b-hadron distance of flight. }
     \label{fig:GenHadronParams_3}
 \end{figure}
 
@@ -417,13 +417,13 @@ Regarding the similarity of the distributions for two processes shown in Figures
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Standard vertex reconstruction in the ILD}
-The LCFI+ package finds the secondary and tertiary vertices and tags the b- and c-jets using the final reconstructed charged particles, the Particle Flow objects.
+The LCFI+ package finds the secondary and tertiary vertices and tags the b- and c-jets using the charged particles among the Particle Flow objects.
 It has several stages of the vertex reconstruction and flavor-tagging, which are implemented in the following algorithms:
 \begin{itemize}
 \item PrimaryVertexFinder finds the position of the primary interaction point and the corresponding charged particles;
-\item BuildUpVertex forms the reconstructed vertex candidates, which can have two or more associated charged particles, referred in text as reconstructed prongs;
+\item BuildUpVertex forms the reconstructed vertex candidates, which can have two or more associated charged particles, referred in the text as reconstructed prongs;
 \item JetVertexRefiner finds vertices with only one prong using the reconstructed vertex candidates and it organizes the vertex candidates into maximum two reconstructed vertices per jet.
-\item FlavorTag algorithm calculates b-tag and c-tag values for a jet, using the finalized jet vertices from the JetVertexRefiner.
+\item FlavorTag algorithm calculates b-tag and c-tag values for a jet, using the finalized jet vertices from the JetVertexRefiner. The b-tag and c-tag values are the measure of b- and c-likeness of a jet, respectively, both observables have values from 0 to 1. 
 \end{itemize}
 
 In this section, only the standard reconstruction chain is used to study the b-jet charge measurement. 
@@ -439,14 +439,18 @@ Regarding the b-hadron multiplicity, shown in Fig.~\ref{fig:GenHadronParams_3}, 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Jet charge purity: State of the art}
-The charge purity $P_B$ is defined to be the number of correctly reconstructed jet charges divided by the total number of jets. 
-The previous studies done in the fully hadronic $t\bar{t}$ decays~[Amjad] have shown that the total jet charge purity $P_B$ is about 60\%.
+The charge purity $P_B$ is defined as the number of correctly reconstructed jet charges $N_{correct}$ divided by the total number of jets $N_{total}$:
+\begin{equation}
+	\label{formula:Purity_3}
+	P_B = \frac{N_{correct}}{N_{total}}.
+\end{equation} 
+The previous studies caried out for the fully hadronic $t\bar{t}$ decays~[Amjad] have shown that the total jet charge purity $P_B$ is about 60\%.
 The total jet charge for the considered $b\bar{b}$ process  is $P_B(b\bar{b}) = 66\%$ and for semileptonic decay of the  $t\bar{t}$ pair is $P_B(t\bar{t}) = 64\%$. 
 The small difference between these values is caused mostly by the difference in the generated momentum  distributions displayed in Fig.~\ref{fig:GenHadronMomentum_3} and by the difference in the jets environments.
 
 Using the output of the TruthVertexFinder, one can compare the generated vertices with the corresponding reconstructed vertices, detected by the LCFI+ algorithms. 
-The number of the generated prongs $N_{gen}$ can be compared to the number of the reconstructed prongs $N_{rec}$ on the jet-per-jet basis as it is shown in Fig.~\ref{fig:Table_3}. 
-The jets, which have no associated reconstructed vertices, will cause the efficiency decrease in the jet charge measurement, however, they have no influence on the method purity.
+Figure~\ref{fig:Table_3} shows the comparison of the number of the generated prongs $N_{gen}$ with the number of the reconstructed prongs $N_{rec}$ on the jet-per-jet basis. 
+The row with $N_{rec} = 0$ are the jets, which have no associated reconstructed vertices, will cause the efficiency decrease in the jet charge measurement, however, they have no influence on the method purity.
 The jets with reconstructed vertices have the following statistics:
 \begin{itemize}
 \item Only 49\% of these jets are perfectly reconstructed and have $N_{rec}=N_{gen}$;
@@ -463,12 +467,13 @@ The jets with reconstructed vertices have the following statistics:
   }
 \end{figure}
 
-The jets with $N_{rec}=N_{gen}$ have the charge purity of more than 97\%, while all other jets have an almost random reconstructed jet charge with the corresponding charge purity about 35\%. 
-Hence, the purity reduction is mainly caused by the jets, which have lost the prongs from their reconstructed vertices. 
-The application of cuts, for example on jet b-tag$>0.8$ and reconstructed b-hadron momentum $|p_{had}| > 20$\,GeV, increases the fraction of correctly reconstructed jets up to 55\%, however with an efficiency penalty of 17\%.
-The cuts on the b-tag value are necessary to reject background processes and will be adjusted to archieve the best background suppression. 
-
+The jets with $N_{rec}=N_{gen}$ have the charge purity of more than 97\%, while all other jets have an almost random reconstructed jet charge with the corresponding charge purity about 35\%.
 The fraction of entries above diagonal in Fig.~\ref{fig:Table_3} is small, comparing to the fraction of events above the diagonal. 
+Hence, the purity reduction is mainly caused by the jets, which have lost the prongs from their reconstructed vertices. 
+%The application of cuts, for example on jet b-tag$>0.8$ and reconstructed b-hadron momentum $|p_{had}| > 20$\,GeV, increases the fraction of correctly reconstructed jets up to 55\%, however with an efficiency penalty of 17\%.
+%The cuts on the b-tag value are necessary to reject background processes and will be adjusted to archieve the best background suppression. 
+
+
 Therefore, there is a possibility to develop a recovery algorithm, which can add the missing prongs to the reconstructed vertices, with a slight increase of the number of jets with contaminated vertices. 
 But first, one needs to study the reasons behind the missing prongs and analyze the possibility to recover them. 
 
@@ -477,11 +482,11 @@ But first, one needs to study the reasons behind the missing prongs and analyze 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Missing vertices}
 \label{sec:MisVertices}
-The reconstruction algorithm can lose a vertex if the generated b-hadron properties, like number of generated prongs, b-hadron momentum or polar angle, are in the poor acceptance of the detector. 
-The non-reconstructed vertices contain approximately 22\% of all generated b-hadron prongs. 
-The b-hadron vertices with generated low momentum prongs or low offset prongs have higher chances to be missed by the reconstruction algorithms. 
-The distributions of the average prong offset and momentum for reconstructed vertices and missed vertices are shown in Fig.~\ref{fig:RecMissedParams_3}. 
-On can conclude, that the reconstruction algorithms start to lose their efficiency at below 4\,GeV average prong momentum and below 0.5\,mm average prong offset. 
+%The vertex reconstruction algorithm may fail if the generated b-hadron properties, like number of generated prongs, b-hadron momentum or polar angle, are in the poor acceptance of the detector. 
+%The non-reconstructed vertices contain approximately 22\% of all generated b-hadron prongs. 
+%The b-hadron vertices with generated low momentum prongs or low offset prongs have higher chances to be missed by the reconstruction algorithms. 
+%The distributions of the average prong offset and momentum for reconstructed vertices and missed vertices are shown in Fig.~\ref{fig:RecMissedParams_3}. 
+%On can conclude, that the reconstruction algorithms start to lose their efficiency at below 4\,GeV average prong momentum and below 0.5\,mm average prong offset. 
 
 \begin{figure}[h]
 \centering
@@ -508,16 +513,15 @@ On can conclude, that the reconstruction algorithms start to lose their efficien
 \end{figure}
 
 The polar angle distributions of the missing vertices is displayed in Fig.~\ref{fig:MissedCos_3}. 
-One can summarize the reasons to not reconstruct a vertex as following: 
+One can summarize the reasons for missing vertices as following: 
 \begin{itemize}
-\item Neutral decay vertex - vertex cannot be reconstructed if it has no generated prongs;
-\item Low energy of the generated b-hadron - cause a low flight distance, low offsets or low momentum of the generated prongs, which makes difficult to separate out the b-hadron prongs from the other particles in a b-jet;
-\item One prong decay vertex can be lost if there was no other vertices reconstructed in a given b-jet;
-\item The most of the b-hadrons, produced in the forward region, or outside the barrel VXD acceptance $|\cos\theta_{vtx}| > 0.95$, are not reconstructed, which is a reason of a low precision on the impact parameters of the reconstructed prongs. 
-\item "Higgs-like" increase at $|\cos\theta_{vtx}| \approx 0.8$ is discussed in Sec.~\ref{sec:MissingProngs}.
+\item Neutral decay vertex - the vertex cannot be reconstructed if it has no generated prongs;
+\item Low energy of the generated b-hadron causes a short flight distance, small offsets or low momentum of the generated prongs, which makes it difficult to separate out the b-hadron prongs from the other particles in a b-jet;
+\item A one prong decay vertex can be lost if there was no other vertices reconstructed in a given b-jet;
+\item Most of the b-hadrons, produced in the forward region, or outside the barrel VXD acceptance $|\cos\theta_{vtx}| > 0.95$, are not reconstructed, which is due to a low precision on the impact parameters of the reconstructed prongs. 
 \end{itemize}
 
-An attempt was made to reduce the vertexing inefficiency in the forward region
+%An attempt was made to reduce the vertexing inefficiency in the forward region
 
 The missing vertices are difficult to recover, however they have essentially no impact on the jet charge purity, therefore the further studies are focused on the missing prongs of the reconstructed vertices.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -525,13 +529,13 @@ The missing vertices are difficult to recover, however they have essentially no 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Missing prongs from the reconstructed vertices}
 \label{sec:MissingProngs}
-The quality of vertex reconstruction strongly depends on all reconstruction algorithms as well as on various geometry aspects of the ILD experiment. 
+The quality of the vertex reconstruction strongly depends on all reconstruction algorithms as well as on various geometry aspects of the ILD experiment. 
 
 %Using TruthVertexFinder information and truth links to the reconstructed particles, one can find, that the 
-The missing reconstructed prongs are approximately 10.4\% of the total generated prongs for the baseline vertex reconstruction. 
-A detailed study was made to reveal the reasons behind the missing prongs, which can be summarized as follows:
+The missing reconstructed prongs are approximately 10.4\% of the total generated prongs for the standard vertex reconstruction. 
+The reasons for the missing prongs can be summarized as follows:
 \begin{itemize}
-\item No tracking information - the MarlinTrk algorithms failed to reconstruct the track. This category is tiny - only 0.93\% of the generated prongs;
+\item No tracking information - the MarlinTrk algorithms fails to reconstruct the track. This category is tiny - only 0.93\% of the generated prongs;
 \item No associated hits in the VXD or FTD - the track segment from the Vertex Detector or Forward Tracking Discs was not connected to the large TPC track segment. Such reconstructed particles have uncertainties on the impact parameters, which makes them not suitable for vertexing algorithms. They are 2.\% of the generated prongs;
 \item No reconstructed PFO - the PandoraPFO failed to create the PFO from a reconstructed track, which makes it not usable for LCFI+ algorithms - 3.2\%  of the generated prongs;
 \item Low generated momentum $|p|$ or offset $\epsilon$ - the reconstructed particle was produced with impact parameters below the detector resolution - 3.1\%  of the generated prongs;
