@@ -536,9 +536,9 @@ The missing reconstructed prongs are approximately 10.4\% of the total generated
 The reasons for the missing prongs can be summarized as follows:
 \begin{itemize}
 \item No tracking information - the MarlinTrk algorithms fails to reconstruct the track. This category is tiny - only 0.93\% of the generated prongs;
-\item No associated hits in the VXD or FTD - the track segment from the Vertex Detector or Forward Tracking Discs was not connected to the large TPC track segment. Such reconstructed particles have uncertainties on the impact parameters, which makes them not suitable for vertexing algorithms. They are 2.\% of the generated prongs;
-\item No reconstructed PFO - the PandoraPFO failed to create the PFO from a reconstructed track, which makes it not usable for LCFI+ algorithms - 3.2\%  of the generated prongs;
-\item Low generated momentum $|p|$ or offset $\epsilon$ - the reconstructed particle was produced with impact parameters below the detector resolution - 3.1\%  of the generated prongs;
+\item No associated hits in the VXD or FTD - the track segment from the Vertex Detector or Forward Tracking Disks was not connected to the long TPC track segment. These reconstructed particles have large uncertainties on the impact parameters, which makes them not suitable for vertexing algorithms. They constitute 2.\% of the generated prongs;
+\item No reconstructed PFO - the PandoraPFA failed to create the PFO from a reconstructed track. These tracks are discarded by the LCFI+ algorithms - 3.2\%  of the generated prongs;
+\item Low generated momentum or offset  - the reconstructed particle was produced with impact parameters below the detector resolution - 3.1\%  of the generated prongs;
 \item Other reasons, mostly because of the vertex fitting problems - 1.7\% of the generated prongs.
 \end{itemize}
 
@@ -559,7 +559,7 @@ The reasons for the missing prongs can be summarized as follows:
     \label{fig:MissingTracks_3}
 \end{figure}
 
-These categories of the missing prongs can be illustrated on the polar angle histogram, shown in Fig.~\ref{fig:MissingTracks_3}, which also reveals the following problems connected to the ILD geometry:
+These categories of the missing prongs can be illustrated on the polar angle histogram, shown in Fig.~\ref{fig:MissingTracks_cos_3}, which also reveals the following problems connected to the ILD geometry:
 \begin{itemize}
 \item Small peak at $|\cos\theta| \approx 0$ is caused by the insensitive gap between the TPC endplates, which induce a problem with a connection between the VXD track segments and the reduced TPC track segment;
 \item Large peak at $|\cos\theta| \approx 0.8$ is caused by the PandoraPFO, which fails to connect a well reconstructed track with an offset to a segmented cluster situated in the \ecal\ barrel-endcap transition. This problem is specific to the b-hadron tracks;
