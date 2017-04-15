@@ -537,7 +537,7 @@ The reasons for the missing prongs can be summarized as follows:
 \begin{itemize}
 \item No tracking information - the MarlinTrk algorithms fails to reconstruct the track. This category is tiny - only 0.93\% of the generated prongs;
 \item No associated hits in the VXD or FTD - the track segment from the Vertex Detector or Forward Tracking Disks was not connected to the long TPC track segment. These reconstructed particles have large uncertainties on the impact parameters, which makes them not suitable for vertexing algorithms. They constitute 2.\% of the generated prongs;
-\item No reconstructed PFO - the PandoraPFA failed to create the PFO from a reconstructed track. These tracks are discarded by the LCFI+ algorithms - 3.2\%  of the generated prongs;
+\item No reconstructed PFO - the PandoraPFA fails to create the PFO from a reconstructed track. These tracks are discarded by the LCFI+ algorithms - 3.2\%  of the generated prongs;
 \item Low generated momentum or offset  - the reconstructed particle was produced with impact parameters below the detector resolution - 3.1\%  of the generated prongs;
 \item Other reasons, mostly because of the vertex fitting problems - 1.7\% of the generated prongs.
 \end{itemize}
@@ -559,11 +559,11 @@ The reasons for the missing prongs can be summarized as follows:
     \label{fig:MissingTracks_3}
 \end{figure}
 
-These categories of the missing prongs can be illustrated on the polar angle histogram, shown in Fig.~\ref{fig:MissingTracks_cos_3}, which also reveals the following problems connected to the ILD geometry:
+These categories of the missing prongs can be illustrated by the polar angle histogram, shown in Fig.~\ref{fig:MissingTracks_cos_3}, which also reveals the following problems connected to the ILD geometry:
 \begin{itemize}
 \item Small peak at $|\cos\theta| \approx 0$ is caused by the TPC anode gap. 
-\item Large peak at $|\cos\theta| \approx 0.8$ is caused by the PandoraPFO, which fails to connect a well reconstructed track with an offset to a segmented cluster situated in the barrel-endcap transition. This problem is specific to the b-hadron tracks;
-\item Increase at $|\cos\theta| \approx 0.9$ correspond to the end of the full 3 double layer VXD acceptance, which cause an increase in the impact parameter uncertainties of the reconstructed tracks. %caused by a connection problem between the VXD track segments, which are in the acceptance region of the two double-sided VXD layers, and the FTD track segments.
+\item Large peak at $|\cos\theta| \approx 0.8$ is caused by the PandoraPFO, which fails to connect a well reconstructed track with an offset to a segmented cluster located in the calorimeter barrel-endcap transition. This problem is specific to the b-hadron tracks;
+\item Increase at $|\cos\theta| \approx 0.9$ correspond to the end of the full 3 double layer VXD acceptance, resulting in an increase in the impact parameter uncertainties of the reconstructed tracks. %caused by a connection problem between the VXD track segments, which are in the acceptance region of the two double-sided VXD layers, and the FTD track segments.
 \end{itemize}
 
 The recoverable prongs are those, which were lost because of the reconstruction problems, like the problems with the PFO creation, and not by the limited detector acceptance.  
@@ -573,21 +573,23 @@ The recoverable prongs are those, which were lost because of the reconstruction 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Vertex charge recovery}
 \label{sec:VtxRecovery}
-The main challenge for the vertex recovery algorithm is to add the missing prongs to the reconstructed vertices as many as possible, without introducing too much particles with non b-hadron origin or the background particles. 
+The objective of the vertex recovery algorithm is to add accurately the missing prongs to the reconstructed vertices, without contamination by the particles with non b-hadron origin or the background particles. 
 
-The most important observable for any vertexing algorithm is the particle offset $\epsilon$.
-The uncertainty on the offset $\sigma$ for a given reconstructed charged particle can be computed as 
+%The most important observable for any vertexing algorithm is the particle offset $\epsilon$.
+%The uncertainty on the offset $\sigma$ for a given reconstructed charged particle can be computed as 
+%\begin{equation}
+%	\sigma = \sqrt[]{\sigma_{d_{0}}^2 + \sigma_{z_0}^2},
+%%\end{equation}
+% 
+
+
+In this studies we use the following definition of the offset significance:
+
 \begin{equation}
-	\sigma = \sqrt[]{\sigma_{d_{0}}^2 + \sigma_{z_0}^2},
+	\epsilon/\sigma = |\frac{d_0}{\sigma_{d_0}}| + |\frac{z_0 }{ \sigma_{z_0}}|,
 \end{equation}
-where $\sigma_{d_{0}}$ and $\sigma_{z_0}$ are the covariance matrix elements, provided by the track reconstruction algorithms. 
-Value of $\sigma$ strongly depends on the momentum of the particle, its polar angle and number of VXD or FTD hits. 
-
-To handle correctly the forward particles one can adopt the following definition of the offset deviation:
-
-\begin{equation}
-	\epsilon/\sigma = |\frac{d_0}{\sigma_{d_0}}| + |\frac{z_0 }{ \sigma_{z_0}}|
-\end{equation}
+where $\sigma_{d_{0}}$ and $\sigma_{z_0}$ are the covariance matrix elements, provided by the track reconstruction algorithms.
+Value of offset significance strongly depends on the momentum of the particle, its polar angle and number of VXD or FTD hits. 
 
 Typically, the b-hadrons prongs are generated with large offsets (Fig.~\ref{fig:GenHadronParams_b_3}), but the reconstruction can miss a reconstructed prong if it has a small offset deviation. 
 Hence, one needs another spatial separation variable, combined with the offset deviation $\epsilon/\sigma$. 
