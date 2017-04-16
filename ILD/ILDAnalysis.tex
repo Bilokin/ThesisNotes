@@ -712,7 +712,7 @@ To summarize, the VertexChargeRecovery is able to significantly improve the jet 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Using the $dE/dx$ information}
 
-Another way to measure the b-jet charge is to identify among the reconstructed b-hadron prongs the charged kaon $K^\pm$, which carry the information about the initial b-quark charge. 
+A complementary method to measure the b-jet charge is to identify among the reconstructed b-hadron prongs the charged kaon $K^\pm$, which carry the information about the initial b-quark charge. 
 
 The charged kaons have much higher mass than the charged pions and lower mass than protons, which give a possibility to identify charged kaons by the energy deposition of the hits in the subdetectors. 
 
@@ -840,7 +840,7 @@ The reconstructed distributions of the top and $W^\pm$ invariant masses are show
 
 \begin{figure}[h]
 	{\centering
-		\includegraphics[width=0.55\textwidth]{ILD/plots/top-w-mass.pdf}
+		\includegraphics[width=0.55\textwidth]{ILD/plots/top-w-mass-new.pdf}
 		\caption{\sl Reconstructed invariant mass distributions of the hadronic top quark and hadronic $W^\pm$ boson decays.
 		}
 		\label{fig:TopWmass_3}
@@ -936,6 +936,16 @@ In case of the left-handed electron beam, the b-quarks are emitted in the direct
 
 The vertex charge and kaon charge methods were used to compute top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}, where one can see a good agreement between the generated and reconstructed top polar angle histograms. 
 The combined b-jet charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with total efficiency of 16\%.
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.55\textwidth]{ILD/plots/top-gamma.pdf}
+		\caption{\sl Sum of leptonic and hadronic Lorentz gamma factors separated into wrong and correct hadronic decay combinations.
+		}
+		\label{fig:TopWmass_3}
+	}
+	
+\end{figure}
+
 The most used method is the vertex charge and kaon charge combination from the same b-jet, as can be seen from Fig.~\ref{fig:TopAsymmetryNoCutBjet_b_3}, which is due to the chosen asymmetric cuts on the b-tag values. 
 \begin{figure}[h]
 	\centering
@@ -967,7 +977,7 @@ However, the effects of the vertex charge recovery are much more essential for t
 The events with $W^\pm$ lepton charge migration can be efficiently rejected using  a cut on $\chi^2_{top}$~[Jeremy], which is defined as:
 \begin{equation}
 	\label{formula:Chi2TopLepton_3}
-	\chi^2_{top} = (\frac{\gamma_t-1.435}{\sigma_{\gamma_{t}}})^2 + (\frac{p^*_b-68}{\sigma_{\gamma_{p^*_b}}})^2 + (\frac{\cos\theta_{bW} - 0.23}{\sigma_{\cos\theta_{bW}}})^2,
+	\chi^2_{top} = (\frac{\gamma_t^{had}-1.435}{\sigma_{\gamma_{t}}})^2 + (\frac{p^*_b-68}{\sigma_{\gamma_{p^*_b}}})^2 + (\frac{\cos\theta_{bW} - 0.23}{\sigma_{\cos\theta_{bW}}})^2,
 \end{equation}
 where $p^*_b$ and $\cos\theta_{bW}$ have been used in Eq.~\ref{formula:Chi2Top_3} and Lorentz factor $\gamma_t=E_{t}/m_{t}$ of the reconstructed top quark decayed hadronically. The $\chi^2_{top}$ is constructed to be minimal at the peaks of the used variable distributions, where the concentration of the correctly reconstructed events is maximal, considering the corresponding distribution width.
 The distributions of the events with correctly assigned lepton and migrated lepton for all variables used in \ref{formula:Chi2TopLepton_3} are shown in Fig.~\ref{fig:TopChiVariables_3}.
