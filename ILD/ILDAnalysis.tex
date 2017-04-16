@@ -402,10 +402,10 @@ Regarding the similarity of the distributions for two processes shown in Figures
 \end{subfigure}% 
   \begin{subfigure}{0.5\textwidth}
 \centering
-    \includegraphics[width=0.95\textwidth]{ILD/plots/gen-hadron-distance.pdf}
+    \includegraphics[width=0.95\textwidth]{ILD/plots/jet-multi.pdf}
 \caption{\label{fig:GenHadronParams_b_3} }
 \end{subfigure}
-    \caption{\sl Left: Distribution of the b-hadron charge multiplicity. The odd multiplicities correspond to the charged hadrons and the even multiplicities correspond to the neutral hadron decays. Right: Distribution of the b-hadron distance of flight. }
+    \caption{\sl Left: Distribution of the b-hadron charge multiplicity. The odd multiplicities correspond to the charged hadrons and the even multiplicities correspond to the neutral hadron decays. Right: Distribution of the reconsructed b-jet multiplicities for two processes. }
     \label{fig:GenHadronParams_3}
 \end{figure}
 
@@ -433,7 +433,7 @@ In this section, only the standard reconstruction chain is used to study the b-j
 The jet charge is computed as a sum of the reconstructed particles charges, associated to the reconstructed vertices, which belong to a given jet. 
 Therefore, the vertexing algorithm should correctly associate all secondary or tertiary vertex particles to have a correct jet charge measurement. 
 The correctly reconstructed jet charge should have the same  charge as the generated b-hadron. 
-Regarding the b-hadron multiplicity, shown in Fig.~\ref{fig:GenHadronParams_3}, this task is not trivial. 
+Regarding the b-hadron multiplicity, shown in Fig.~\ref{fig:GenHadronParams_a_3}, and the b-jet multiplicity in Fig.~\ref{fig:GenHadronParams_b_3} this task is not trivial. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -616,7 +616,7 @@ An algorithm, called VertexChargeRecovery, was developed to increase the jet cha
 \item Preparation of the prong candidates - the algorithm uses all charged particles within a given jet as prong candidates. To recover the prongs, which has no reconstructed PFO, the program iterates throughout all reconstructed tracks and reconstructs them as charged PFOs without an associated calorimeter cluster. These new Particle Flow particles are used only if they have no duplicates in the previously selected jet particles;
 \item All prong candidates are compared to the reconstructed prongs to avoid duplicates;
 \item The separation variables $\alpha$ and $\epsilon$ are calculated for each prong candidate and a given reconstructed vertex;
-\item The selection condition can be defined using the $\alpha$ and $\epsilon$ distributions for true b-hadron prongs and background particles, which are displayed in Fig.~\ref{fig:RecoveryPurity_3}. The standard condition is
+\item The selection condition can be defined using the $\alpha$ and $\epsilon$ distributions for true b-hadron prongs and background particles, which are displayed in Fig.~\ref{fig:RecoveryPurity_3}, suggest the following cuts:
 \begin{equation}
 \epsilon/\sigma > 2 + 25\cdot\alpha\text{ and } \alpha < 0.08.
 \end{equation}
@@ -685,7 +685,7 @@ The vertex recovery decreases the fraction of missing prongs from 10.4\% to 6.2\
 \item The vertex recovery can use all particles, even the ones with a small momentum, below 1\,GeV or outside the barrel VXD acceptance. 
 \end{itemize}
 
-To resolve the inefficiencies, caused by the tracking, one can apply different VXD tracking algorithms, like minivector tracking. 
+%To resolve the inefficiencies, caused by the tracking, one can apply different VXD tracking algorithms, like minivector tracking. 
 
 The central result of the algorithm is that it enhances the jet charge purity from 66\% to 73\%, despite increase of the contamination by the  background particles from 3\% to 4\%.
 Figure~\ref{fig:RecoveryPurityComparison_3} demonstrates the improvement of the jet charge purity as function of the jet b-tag, reconstructed b-hadron momentum, $N_{rec}$ and the polar angle of the b-hadron  $|\cos\theta_{vtx}|$.
@@ -697,22 +697,22 @@ Figure~\ref{fig:RecoveryPurityComparison_3} demonstrates the improvement of the 
     \label{fig:RecoveryPurityComparison_3}
   }
 \end{figure}
-One can see the following changes done by the recovery algorithm:
+One can see the following changes induced by the recovery algorithm:
 \begin{itemize}
-\item Jets with a b-tag$>0.3$ have higher chances to be recovered. The b-tag value strongly depends on the offsets of the reconstructed prongs, the low b-tag jets have less significant offsets of particles, which makes them  harder to recover. 
-\item The algorithm improves the jets with a moderate reconstructed b-hadron momentum. The algorithm should be tuned to work with highly collimated vertices produced by high momentum b-hadrons.
-\item The large improvement can be seen to the jets or reconstructed b-hadrons with low number of reconstructed prongs, especially for $N_{rec}=3$. For higher multiplicity, the algorithm should recover all tracks correctly, which is not trivial. Hence, almost no improvement is seen for the reconstructed b-hadrons with large $N_{rec}$.
-\item The algorithm is capable to increase the purity in the barrel VXD acceptance and restore the damage done by the non-reconstructed PFO particles at $|\cos\theta_{vtx}| \approx 0.8$. 
+\item Jets with a high b-tag have higher chances to be recovered. The b-tag value strongly depends on the offsets of the reconstructed prongs, the low b-tag jets have less significant offsets of particles, which makes them  harder to recover. 
+\item The algorithm improves the jets with a moderate reconstructed b-hadron momentum. %The algorithm should be tuned to work with highly collimated vertices produced by high momentum b-hadrons.
+\item The large improvement can be seen for the jets or reconstructed b-hadrons with low number of reconstructed prongs, especially for $N_{rec}=3$.% For higher multiplicity, the algorithm should recover all tracks correctly, which is not trivial. Hence, almost no improvement is seen for the reconstructed b-hadrons with large $N_{rec}$.
+\item The algorithm is capable to increase the purity in the barrel VXD acceptance and recover the non-reconstructed PFO particles at $|\cos\theta_{vtx}| \approx 0.8$. 
 \end{itemize}
 The jet charge purity can be also increased by applying cuts on the reconstructed observables up to 80\% purity with 60\% efficiency or by application of MVA algorithm.
 
-To summarize, the VertexChargeRecovery is able to significantly improve the jet charge purity and equalize it in the polar angle spectrum, which is crucial for reconstruction of heavy quark differential cross section and forward-backward asymmetry. 
+To summarize, the VertexChargeRecovery is able to significantly improve the jet charge purity and equalize it in the polar angle spectrum, which is crucial for reconstruction of heavy quark differential cross section. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Using the $dE/dx$ information}
 
-An alternative method to measure the b-jet charge is to identify among the reconstructed b-hadron prongs the charged kaon $K^\pm$, which carry the information about the initial b-quark charge. 
+Another way to measure the b-jet charge is to identify among the reconstructed b-hadron prongs the charged kaon $K^\pm$, which carry the information about the initial b-quark charge. 
 
 The charged kaons have much higher mass than the charged pions and lower mass than protons, which give a possibility to identify charged kaons by the energy deposition of the hits in the subdetectors. 
 
