@@ -834,9 +834,10 @@ In this thesis, the top reconstruction method, which was developed for~\cite{bib
 	d^2_{t} = (\frac{m_{cand}-m_{t}}{\sigma_{m_t}})^2 + (\frac{E_{cand}-E_{beam}}{\sigma_{E_{beam}}})^2+(\frac{p^*_b-68\,GeV}{\sigma_{p^*_b}})^2 + (\frac{\cos\theta_{bW}-0.23}{\sigma_{\cos\theta_{bW}}})^2,
 	\end{equation}
 	where $m_{cand}$ and $E_{cand}$ are the invariant mass and the energy of the top quark candidate, $m_t$ and $E_{beam}$ are the input top quark mass and the nominal beam energy of 250\,GeV, $p^*_b$ is the momentum of the b quarks in the top quark frame with nominal value of 68\,GeV and $\cos\theta_{bW}$ is the angle between the b quark and the $W^\pm$ boson with a nominal value of 0.23.
+	\item The neutrino from leptonic $W^\pm$ boson decay is reconstructed using the recoil momentum method. The reconstructed neutrino is used to calculate the leptonic $W^\pm$ boson mass and leptonic top quark mass. 
 \end{itemize}
 
-The reconstructed distributions of the top and $W^\pm$ invariant masses are shown in Fig.~\ref{fig:TopWmass_3}, which is an illustration of the reconstruction flo
+The reconstructed distributions of the top quark and $W^\pm$ boson invariant masses are shown in Fig.~\ref{fig:TopWmass_3}.
 
 \begin{figure}[h]
 	{\centering
@@ -939,9 +940,9 @@ The combined b-jet charge measurement shows a good precision on the asymmetry $A
 \begin{figure}[h]
 	{\centering
 		\includegraphics[width=0.55\textwidth]{ILD/plots/top-gamma.pdf}
-		\caption{\sl Sum of leptonic and hadronic Lorentz gamma factors separated into wrong and correct hadronic decay combinations.
+		\caption{\sl Sum of Lorentz gamma factors leptonic and hadronic separated into wrongly and correctly reconstructed hadronic decay combinations.
 		}
-		\label{fig:TopWmass_3}
+		\label{fig:TopGamma_3}
 	}
 	
 \end{figure}
@@ -962,7 +963,8 @@ The most used method is the vertex charge and kaon charge combination from the s
 	\label{fig:TopAsymmetryNoCutBjet_3}
 \end{figure}
 
-One can purify the sample by changing the cuts on the b-hadron kinematics, but with a penalty on sample statistics. 
+The sample in enriched by the good hadronic top quark combination using the cut $\gamma^{lep}_t + \gamma^{had}_t > 2.4$ as suggested by the histogram in Fig.~\ref{fig:TopGamma_3}, where Lorentz factor $\gamma_t = E_t / m_t$ depends on the reconstructed top quark energy $E_t$ and mass $m_t$.
+%One can purify the sample by changing the cuts on the b-hadron kinematics, but with a penalty on sample statistics. 
 
 This result proves, that the  b-jet charge measurement can be used directly on the fully hadronic \ttbar\ decays for left-handed electron polarization, which will significantly increase the statistics needed for top coupling estimation. 
 
