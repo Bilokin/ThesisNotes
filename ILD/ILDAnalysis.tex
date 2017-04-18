@@ -423,9 +423,17 @@ It has several stages of the vertex reconstruction and flavor-tagging, which are
 \item PrimaryVertexFinder finds the position of the primary interaction point and the corresponding charged particles;
 \item BuildUpVertex forms the reconstructed vertex candidates, which can have two or more associated charged particles, referred in the text as reconstructed prongs;
 \item JetVertexRefiner finds vertices with only one prong using the reconstructed vertex candidates and it organizes the vertex candidates into maximum two reconstructed vertices per jet.
-\item FlavorTag algorithm calculates b-tag and c-tag values for a jet, using the finalized jet vertices from the JetVertexRefiner. The b-tag and c-tag values are the measure of b- and c-likeness of a jet, respectively, both observables have values from 0 to 1. 
+\item FlavorTag algorithm calculates b-tag and c-tag values for a jet, using the finalized jet vertices from the JetVertexRefiner. The b-tag and c-tag values are the measure of b- and c-likeness of a jet, respectively, both observables have values from 0 to 1. Performance of the flavor-tagging algorithm is shown in Fig.~\ref{fig:LCFIplus_3}.
 \end{itemize}
 
+\begin{figure}[h]
+	{\centering
+		\includegraphics[width=0.45\textwidth]{ILD/graphics/btag-cbg.eps}
+		\caption{\sl The tagging efficiency is shown for b-jets with the mis-identification	fraction evaluated using c-jets. Solid lines correspond to the case of 2-jet events at $\sqrt{s} = 91$\,GeV. Dashed lines correspond to the case of 6-jet events at	$\sqrt{s} = 500$\,GeV. Dotted lines correspond to the case of 6-jet events at $\sqrt{s} = 1000$\,GeV~\cite{bib:LCFI}.
+		}
+		\label{fig:LCFIplus_3}
+	}
+\end{figure}
 In this section, only the standard reconstruction chain is used to study the b-jet charge measurement. 
 
 
