@@ -1050,19 +1050,18 @@ However, in the right-handed electron beam, the incorrect $W^\pm$ jets and b-jet
 \section{Bottom quark production at the ILC}
 %Motivation
 The LEP measurement of forward-backward asymmetry at the $Z^0$ pole left 2.5$\sigma_{LEP}$ tension with the \sm\ prediction, which can be an impact of a \bsm\ modification of the b-quark couplings to vector bosons.
-The resolution of the LEP \afbb\ tension requires new level the collider experiment precision.
+The resolution of the LEP \afbb\ tension requires new level of the collider experiment precision.
 This is the main motivation of the $e^+e^-\to$\bbbar\ studies at the $250$\,GeV stage of the ILC, which are presented in this chapter. 
 
 The $e^+e^-\to b\bar{b}$ process has never been studied using the ILC environment. 
 \subsection{Setup of the study}
-In this studies the signal $e^+e^-\to b\bar{b}$ process on center-of-mass energy of 250\,GeV. 
+In this studies the signal parocess is $e^+e^-\to b\bar{b}$ process on the center-of-mass energy of 250\,GeV. 
 A large statistics sample of integrated luminosity $L_{int}= 250$\,fb{$^{-1}$} is used for both polarizations in the ILD simulation environment. 
 Same version of the event generators and the {\sc ilcsoft} distribution as for the \ttbar\ study are used.
 
 
 \subsection{Bottom quark reconstruction and the background processes}
 The bottom quarks appear as two b-jets in the detector, which significantly simplifies the process reconstruction. 
-An example of the \bbbar\ pair event display in the ILD environment is demonstrated in Fig.~\ref{fig:BottomEvent_3}. 
 \begin{figure}[h]
 	{\centering
 		\includegraphics[width=0.55\textwidth]{ILD/graphics/ild-bbbar.png}
@@ -1072,11 +1071,20 @@ An example of the \bbbar\ pair event display in the ILD environment is demonstra
 	}
 	
 \end{figure}
+The \bbbar\ events are simply reconstructed as a simple two jet event, which are sorted by the b-tag value.
+An example of the \bbbar\ pair event display in the ILD environment is shown in Fig.~\ref{fig:BottomEvent_3}. 
 
-The \bbbar\ events are reconstructed as two jets. 
+The main challenge is to reject the background processes, which can distort the reconstructed polar angle spectrum of the b-quark. 
+T1he most significant background processes are the so called $Z^0$ return background and the hadronic decays of diboson processes, like the hadronic decays of $e^+e^-\to Z^0Z^0$ or $e^+e^-\to Z^0H$ process. The process $e^+e^-\to W^\pm W^\mp$ has higher cross section than the signal, but the $W^\pm$ bosons have small branching ratio to the b-quark, hence, this process is easily rejected by b-tag cuts. 
 
-The most important background processes are the so called $Z^0$ return background and the hadronic decays of diboson processes, like $e^+e^-\to Z^0Z^0\to$\,hadrons.
-
+The $Z^0Z^0$ and $Z^0H$ pairs have large branching fractions to the b-quarks. 
+The defined cuts against the background processes are the following:
+\begin{itemize}
+	\item Value of the first jet b-tag should be higher than 0.8 and b-tag of the second jets is higher 0.3;
+	\item Invariant mass of two jets $m_{Inv} > 180$\,GeV and maximal photon energy $E^{max}_\gamma < 40$\,GeV;
+	\item Sum of the jet masses $m_1+m_2<120$\,GeV;
+	\item Sphericity of the event, which is defined as $S_{I} = \sum p_i / E$, should be less than 0.2.
+\end{itemize}
 \input{ILD/tables/bbbar-sigma}
 
 \input{ILD/tables/bbbar-selection}
