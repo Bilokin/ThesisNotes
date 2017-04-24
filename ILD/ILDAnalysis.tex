@@ -1062,7 +1062,7 @@ A large statistics sample of integrated luminosity $L_{int}= 250$\,fb{$^{-1}$} i
 Same version of the event generators and the {\sc ilcsoft} distribution as for the \ttbar\ study are used.
 
 
-\subsection{Bottom quark reconstruction and the background processes}
+\subsection{Bottom quark reconstruction and the background rejection}
 The bottom quarks appear as two b-jets in the detector, which significantly simplifies the process reconstruction. 
 \begin{figure}[h]
 	{\centering
@@ -1088,16 +1088,25 @@ The defined cuts against the background processes are the following:
 	\item Sum of the jet masses $m_1+m_2<120$\,GeV;
 	\item Sphericity of the event, which is defined as $S_{I} = \sum p_i / E$, should be less than 0.2.
 \end{itemize}
+These cuts are applied equally to both beam polarizations.
 The successive application of the preselection cuts is demonstrated in Table~\ref{table:bbbarselection}.
 
 \input{ILD/tables/bbbar-sigma}
-The purity of the signal selection for the left-handed beam configuration is 98.2\%.
+As one can see from the Table~\ref{table:bbbarselection}, the largest background contribution is coming from the \bbbar\ $Z^0$ return events, which is also true for the right-handed beam configuration, due to very high $e^+e^-\to Z^0\gamma$ process cross section.
+This signal selection technique  aimed at a very high purity, for the left-handed beam configuration the selection purity is 98.2\% and for the right-handed beam thefinal efficiency is the same 48\%, but the purity is decreased - 95\%, because of smaller signal cross section.
+
 \input{ILD/tables/bbbar-selection}
+
+
 \subsection{Results}
 \label{sec:BBBarresults}
+In these studies the same approach as for \ttbar\ polar angle computation is applied. In \bbbar\ process analysis, one has no other charge information sources available, except the b-jet information. 
+Therefore, in this chapter, only the reconstructed vertex charge and kaon charge are computed and applied to the b-quark polar angle reconstruction. 
+
 \subsubsection{Polar angle reconstruction}
 \subsubsection{Charge purity measurement}
 \label{sec:ChargePurity}
 \subsubsection{Corrections to the polar angle}
 \subsection{Coupling measurements}
+\subsection{Precision on the b-quark form factors}
 \section*{Conclusions}
