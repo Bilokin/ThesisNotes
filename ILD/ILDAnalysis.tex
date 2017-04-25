@@ -499,7 +499,7 @@ But first, one needs to study the reasons behind the missing prongs and analyze 
 %The distributions of the average prong offset and momentum for reconstructed vertices and missed vertices are shown in Fig.~\ref{fig:RecMissedParams_3}. 
 %On can conclude, that the reconstruction algorithms start to lose their efficiency at below 4\,GeV average prong momentum and below 0.5\,mm average prong offset. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=0.95\textwidth]{ILD/plots/rec-missed-p-vtx.pdf}
@@ -636,14 +636,6 @@ The recovery algorithm might have different behavior in simulation, than in real
 \end{itemize}
 
 \begin{figure}[h]
-{\centering
-    \includegraphics[width=0.95\textwidth]{ILD/plots/recovery-purity.pdf}
-    \caption{\sl Distribution of the separation variables, the angle $\alpha$ and the offset significance $\epsilon/\sigma$ for the missing generated prongs and the background charged particles. Purity map shows the highest concentration of the missing generated prongs as compare to all charged particles. The black line demonstrates a possible cut function. %Right: Same comparison, but after a cut on the b-tag$> 0.8$ and a cut on the b-hadron momentum more than 20\,GeV. The diagonal contains 55\% of the jets after the cuts.
-    }
-    \label{fig:RecoveryPurity_3}
-  }
-\end{figure}
-\begin{figure}[H]
 	\centering
 	\begin{subfigure}{0.33\textwidth}
 		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
@@ -803,17 +795,17 @@ Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and 
 
 \section{Top quark production at the ILC}
 %Direct electroweak production of the top quark pairs
-This section of the thesis describes an application of the jet charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the forward-backward asymmetry measurement for $e^+e^- \to t\bar{t}$ process at ILC, which is used to determine the electroweak couplings of the top quark.
+This section of the thesis describes an application of the jet charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the polar angle measurement for $e^+e^- \to t\bar{t}$ process at ILC, which is used to determine the electroweak couplings of the top quark.
 
 %The measurements of the top quark properties is one of the key points of the \sm\ physics program at the ILC.
 
 \subsection{Properties of the top quark}
 
-The top quark is the heaviest elementary particle in the \sm\ with measured mass of 173.34$\pm$0.27(stat)$\pm$0.71(syst) \,GeV~\cite{bib:TopMass}, which implies a very short lifetime of approximately 5$\cdot10^{-25}$\,s.
-The top quark lifetime is short comparing to a time needed for hadronization process  (10$^{-23}$\,s), therefore, the top quark decays too fast to form hadrons. 
+The top quark is the heaviest elementary particle in the \sm\ with measured mass of 173.34$\pm$0.27(stat)$\pm$0.71(syst) \,GeV~\cite{bib:TopMass}. This implies a very short lifetime of approximately 5$\cdot10^{-25}$\,s.
+The top quark lifetime is short compared to a time needed for hadronization process  (10$^{-23}$\,s). Therefore, the top quark decays too fast to form hadrons. 
 This fact permits to study the bare quark properties, like spin, via its decay particles. 
 
-The dominant decay mode of the top quark is $t\to bW^+$, which is 99.8\% of all top decays, the $W^\pm$ boson can decay to a lepton-neutrino pair or to a quark pair, which implies a six fermion final state of the $e^+e^-\to t\bar{t}$ process.
+The dominant decay mode of the top quark is $t\to bW^+$, which is 99.8\% of all top decays in the \sm. The $W^\pm$ boson decays either into a lepton-neutrino pair or into a pair of quarks. The top quark decays thus leads to a six fermion final state of the $e^+e^-\to t\bar{t}$ process.
 The $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
 \begin{itemize}
 	\item Fully hadronic decay $t\bar{t} \to bq\bar{q} \bar{b} q\bar{q}$ -  46.2\% of branching ratio;
@@ -822,13 +814,14 @@ e	\item Semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ - 43.5\% of b
 \end{itemize}
 
 
-At the ILC it is possible to reconstruct and study all decay modes of the $t\bar{t}$ pair.
+At the ILC it is possible to reconstruct and study all decay modes of the $t\bar{t}$ pair with a high selection efficiency.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Setup of the study}
 %The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,GeV. 
-In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\sqrt{s}=500$\,GeV are studied using full ILD simulation.
+In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\sqrt{s}=500$\,GeV in the left-handed beam configuration are studied using full ILD simulation.
+The top quark polar angle in the right-handed beam configuration was successfully reconstructed in \cite{bib:Doublet}\cite{bib:ILCTOP}.
 The chosen center-of-mass energy allows for top pair production free from $t\bar{t}$ threshold QCD effects.
 The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \small\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
@@ -837,7 +830,7 @@ An example of a \ttbar\ event in the ILD environment is shown in Fig.~\ref{fig:T
 
 \begin{figure}[h]
 	{\centering
-		\includegraphics[width=0.55\textwidth]{ILD/graphics/ild-ttbar.png}
+		\includegraphics[clip, trim=0.cm 0cm 7.9cm 0cm, width=0.55\textwidth]{ILD/graphics/ild-ttbar.png}
 		\caption{\sl Event display of the \ttbar\ pair production process in the ILD simulation.
 		}
 		\label{fig:TopEvent_3}
@@ -982,7 +975,7 @@ The combined b-jet charge measurement shows a good precision on the asymmetry $A
 \begin{figure}[h]
 	{\centering
 		\includegraphics[width=0.55\textwidth]{ILD/plots/top-gamma.pdf}
-		\caption{\sl Sum of Lorentz gamma factors leptonic and hadronic separated into wrongly and correctly reconstructed hadronic decay combinations.
+		\caption{\sl Sum of the Lorentz gamma factors for leptonic and hadronic reconstructed tops separated into the wrongly and correctly reconstructed hadronic decay combinations.
 		}
 		\label{fig:TopGamma_3}
 	}
@@ -1026,14 +1019,26 @@ The events with $W^\pm$ lepton charge migration can be efficiently rejected usin
 where $p^*_b$ and $\cos\theta_{bW}$ have been used in Eq.~\ref{formula:Chi2Top_3} and Lorentz factor $\gamma_t=E_{t}/m_{t}$ of the reconstructed top quark decayed hadronically. The $\chi^2_{top}$ is constructed to be minimal at the peaks of the used variable distributions, where the concentration of the correctly reconstructed events is maximal, considering the corresponding distribution width.
 The distributions of the events with correctly assigned lepton and migrated lepton for all variables used in \ref{formula:Chi2TopLepton_3} are shown in Fig.~\ref{fig:TopChiVariables_3}.
 
-\begin{figure}[h]
-	{\centering
-		\includegraphics[width=0.95\textwidth]{ILD/plots/top-lepton-variables.pdf}
-		\caption{\sl Distributions of $\gamma_t$ (a), $p^*_b$ (b) and $\cos\theta_{bW}$ (c) variables used for $W^\pm$ lepton charge reconstruction. The events are subdivided into correctly and incorrectly assigned lepton categories.
-		}
-		\label{fig:TopChiVariables_3}
-	}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.33\textwidth}
+		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
+		\caption{\label{fig:TopChiVariables_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\includegraphics[clip, trim=6.78cm 0cm 7.3cm 0cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
+		\caption{\label{fig:TopChiVariables_b_3} }
+	\end{subfigure}
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\includegraphics[clip, trim=13.6cm 0cm 0.4cm 0.cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
+		\caption{\label{fig:TopChiVariables_c_3} }
+	\end{subfigure}
+	\caption{\sl Distributions of $\gamma_t$ (a), $p^*_b$ (b) and $\cos\theta_{bW}$ (c) variables used for $W^\pm$ lepton charge reconstruction. The events are subdivided into correctly and incorrectly assigned lepton categories. }
 	
+	\label{fig:TopChiVariables_3}
 \end{figure}
 
 
@@ -1097,7 +1102,7 @@ Same version of the event generators and the {\sc ilcsoft} distribution as for t
 The bottom quarks appear as two b-jets in the detector, which significantly simplifies the process reconstruction. 
 \begin{figure}[h]
 	{\centering
-		\includegraphics[width=0.55\textwidth]{ILD/graphics/ild-bbbar.png}
+		\includegraphics[clip, trim=0.cm 0cm 7.9cm 0cm, width=0.55\textwidth]{ILD/graphics/ild-bbbar.png}
 		\caption{\sl Event display of the $e^+e^-\to b\bar{b}$ process in the ILD simulation.
 		}
 		\label{fig:BottomEvent_3}
