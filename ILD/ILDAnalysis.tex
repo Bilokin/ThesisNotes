@@ -643,7 +643,26 @@ The recovery algorithm might have different behavior in simulation, than in real
     \label{fig:RecoveryPurity_3}
   }
 \end{figure}
-
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.33\textwidth}
+		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
+		\caption{\label{fig:RecoveryPurity_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\includegraphics[clip, trim=6.78cm 0cm 7.3cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
+		\caption{\label{fig:RecoveryPurity_b_3} }
+	\end{subfigure}
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\includegraphics[clip, trim=13.6cm 0cm 0.4cm 0.cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
+		\caption{\label{fig:RecoveryPurity_c_3} }
+	\end{subfigure}
+	\caption{\sl Distribution of the separation variables, the angle $\alpha$ and the offset significance $\epsilon/\sigma$ for the missing generated prongs and the background charged particles. Purity map shows the highest concentration of the missing generated prongs as compare to all charged particles. The black line demonstrates a possible cut function. }
+	
+	\label{fig:RecoveryPurity_3}
+\end{figure}
 
 Hence, VertexChargeRecovery is made to have an output, identical to the output of the LCFI+ algorithms, which allows for a clear comparison of the jet charge reconstruction performance before and after vertex recovery usage.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -891,14 +910,26 @@ The charge of the reconstructed top quark in this studies can be defined using t
 All three basic methods, which are demonstrated in Fig.~\ref{fig:OneCharge_3}, have significant charge impurity in case of left-handed electron beam, which cause a confusion of a top quark with an anti-top quark.
 These charge migrations result in the divergence between the generated polar angle distribution and reconstructed curves for all three methods. 
 
-\begin{figure}[h]
-	{\centering
-		\includegraphics[width=0.95\textwidth]{ILD/plots/one-charge.pdf}
-		\caption{\sl Generated polar angle distribution compared to reconstructed polar angle using single vertex charge (a), single kaon charge (b) and $W^\pm$ lepton charge(c).
-		}
-		\label{fig:OneCharge_3}
-	}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.33\textwidth}
+		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/one-charge.pdf}
+		\caption{\label{fig:OneCharge_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\includegraphics[clip, trim=6.78cm 0cm 7.3cm 0cm,width=0.99\textwidth]{ILD/plots/one-charge.pdf}
+		\caption{\label{fig:OneCharge_b_3} }
+	\end{subfigure}
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\includegraphics[clip, trim=13.6cm 0cm 0.4cm 0.cm,width=0.99\textwidth]{ILD/plots/one-charge.pdf}
+		\caption{\label{fig:OneCharge_c_3} }
+	\end{subfigure}
+	\caption{\sl Generated polar angle distribution compared to reconstructed polar angle using standalone vertex charge (a), standalone kaon charge (b) and $W^\pm$ lepton charge(c). }
 	
+	\label{fig:OneCharge_3}
 \end{figure}
 
 The quality of the top polar angle and the forward-backward asymmetry reconstruction can be estimated by the ratio of the reconstructed $A_{FB}^{rec}$ over generated $A^{gen}_{FB}$ values.
