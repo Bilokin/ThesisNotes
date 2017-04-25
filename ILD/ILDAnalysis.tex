@@ -459,7 +459,7 @@ The previous studies caried out for the fully hadronic $t\bar{t}$ decays~[Amjad]
 The total jet charge for the considered $b\bar{b}$ process  is $P_B(b\bar{b}) = 66\%$ and for semileptonic decay of the  $t\bar{t}$ pair is $P_B(t\bar{t}) = 64\%$. 
 The small difference between these values is caused mostly by the difference in the generated momentum  distributions displayed in Fig.~\ref{fig:GenHadronMomentum_3} and by the difference in the jets environments.
 
-Using the output of the TruthVertexFinder, one can compare the generated vertices with the corresponding reconstructed vertices, detected by the LCFI+ algorithms. 
+Using the output of the TruthVertexFinder, one compares the generated vertices with the corresponding reconstructed vertices, detected by the LCFI+ algorithms. 
 Figure~\ref{fig:Table_3} shows the comparison of the number of the generated prongs $N_{gen}$ with the number of the reconstructed prongs $N_{rec}$ on the jet-per-jet basis. 
 The row with $N_{rec} = 0$ are the jets, which have no associated reconstructed vertices, will cause the efficiency decrease in the jet charge measurement, however, they have no influence on the method purity.
 The jets with reconstructed vertices have the following statistics:
@@ -608,7 +608,7 @@ Hence, one needs another spatial separation variable, combined with the offset d
 Another separation variable can make use of the reconstructed vertex position and the reconstructed track candidate parameters. 
 
 The particle trajectory bending because of magnetic field is negligible at the small distance scales, like the b-hadron flight distance in Fig.~\ref{fig:GenHadronParams_b_3}. 
-Therefore, one can approximate the reconstructed track helix by the reconstructed vector of particle momentum. 
+Therefore, in this studies, the reconstructed track helix is approximated by the reconstructed vector of particle momentum. 
 
 This study uses an angle $\alpha$, as a second separation variable, defined as an angle between the vector of particle momentum $\vec{p}$ and the vector of difference between vertex position $\vec{s}$ and track reference point $\vec{t}$, defined in \cite{bib:LCIOtrack}. The separation variables, the angle $\alpha$ and the offset $\epsilon$, are illustrated in Fig.~\ref{fig:VtxRecovery_3}.
 
@@ -685,7 +685,7 @@ The slightly increased rate of jets with $N_{rec} > N_{gen}$ can be seen, which 
     \label{fig:RecoveryMissingTracks_3}
 \end{figure}
 
-The vertex recovery decreases the fraction of missing prongs from 10.4\% to 6.2\%. The new polar angle and momentum distributions are shown in Fig.~\ref{fig:RecoveryMissingTracks_3}, from which one can see the following changes:
+The vertex recovery decreases the fraction of missing prongs from 10.4\% to 6.2\%. The new polar angle and momentum distributions are shown in Fig.~\ref{fig:RecoveryMissingTracks_3}, from which one sees the following changes:
 \begin{itemize}
 \item The algorithm does not changes the categories of b-hadron prongs, which have no reconstructed tracks;
 \item The reconstructed prongs with no assigned VXD or FTD hits are not recovered by the program;
@@ -774,7 +774,7 @@ The angular correction is now included in the latest version of the {\sc ilcsoft
 \end{figure}
 
 
-Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and the correlation between kaon charge and the b-hadron charge in Fig.~\ref{fig:KaonOscillation_3}, one can conclude that the reconstructed charged kaons from the reconstructed vertices provide a reliable information on the charge of the initial b-hadron or b-quark. 
+Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and the correlation between kaon charge and the b-hadron charge in Fig.~\ref{fig:KaonOscillation_3}, one concludes that the reconstructed charged kaons from the reconstructed vertices provide a reliable information on the charge of the initial b-hadron or b-quark. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -839,7 +839,7 @@ In this thesis, the top reconstruction method, which was developed for~\cite{bib
 	\item Isolated lepton identification is done using LAL LeptonFinder algorithm~\cite{bib:Doublet}, which is designed to find an energetic lepton or a lepton, which has a significant transverse momentum with respect to the neighbored jets. 
 	\item The events, after excluding the isolated lepton, are clustered to four jets using Durham jet clustering algorithm.
 	\item The b-jet tagging done by LCFI+ is used to identify the two b-jets and sorted by btag value for the background rejection cuts. 
-	\item The last step of the top reconstruction is to associate one of the b-jets with the two light jets, which come from the hadronic $W^\pm$ decay.  One has two possibilities to combine the jets and one can choose the best combination using minimization of the following expression:
+	\item The last step of the top reconstruction is to associate one of the b-jets with the two light jets, which come from the hadronic $W^\pm$ decay.  One has two possibilities to combine the jets and one chooses the best combination using minimization of the following expression:
 	\begin{equation}
 	\label{formula:Chi2Top_3}
 	d^2_{t} = (\frac{m_{cand}-m_{t}}{\sigma_{m_t}})^2 + (\frac{E_{cand}-E_{beam}}{\sigma_{E_{beam}}})^2+(\frac{p^*_b-68\,GeV}{\sigma_{p^*_b}})^2 + (\frac{\cos\theta_{bW}-0.23}{\sigma_{\cos\theta_{bW}}})^2,
@@ -909,7 +909,7 @@ Hence, the standalone b-jet charges and $W^\pm$ lepton charge signatures are not
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Charge combination}
 
-To decrease this charge impurity, one can use the compatible combinations of two or more charge signatures.
+To decrease this charge impurity, one uses the compatible combinations of two or more charge signatures.
 In a semileptonic \ttbar\ event one can have two b-jets with vertex and kaon charge signatures each and one $W^\pm$ lepton charge signature. 
 %The general charge combination rules are:
 One has the following charge combination rules to accept an event for the top polar angle and the $A_{FB}$ measurement:
@@ -943,7 +943,7 @@ One can use the purity distributions in Fig.~\ref{fig:RecoveryPurity_3} to optim
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Standalone jet charge application}
 
-To prove the concept of the b-jet charge measurement, one can use the vertex charge and kaon charge combinations to compute the top polar angle. 
+In this section, to prove the concept of the b-jet charge measurement, only the vertex charge and kaon charge combinations are used to compute the top polar angle. 
 In case of the left-handed electron beam, the b-quarks are emitted in the direction of the initial top quark, which makes possible the standalone application the b-jet charge measurement. 
 
 The vertex charge and kaon charge methods were used to compute top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}, where one can see a good agreement between the generated and reconstructed top polar angle histograms. 
@@ -1104,6 +1104,10 @@ In these studies the same approach as for \ttbar\ polar angle computation is app
 Therefore, in this chapter, only the reconstructed vertex charge and kaon charge are computed and applied to the b-quark polar angle reconstruction. 
 
 \subsubsection{Polar angle reconstruction}
+The results for all possible combinations of the vertex and kaon charges for b-quark polar angle reconstruction is demonstrated in Fig.~
+
+%Both polarizations
+%
 \subsubsection{Charge purity measurement}
 \label{sec:ChargePurity}
 \subsubsection{Corrections to the polar angle}
