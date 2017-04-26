@@ -841,26 +841,26 @@ An example of a \ttbar\ event in the ILD environment is shown in Fig.~\ref{fig:T
 
 %This chapter concentrates only on the left-handed electron polarization case, because of the lepton migration problem caused by the $W^\pm$ kinematics. 
 %The previous studies found  
-The main goal of the study is to increase method efficiency by involving new b-jet charge measurement methods, which should bring down the statistical uncertainties on the \ttbar Z$^0$ form factors and couplings.  
+The main goal of the study is to develop an alternative method to paper~\cite{bib:ILCTOP} by involving new b-jet charge measurement techniques, which should bring down the statistical uncertainties on the \ttbar Z$^0$ form factors and couplings.  
 
 %\subsection{Top quark decay modes}
 
 \subsection{Top quark reconstruction}
-In this thesis, the top reconstruction method, which was developed for~\cite{bib:ILCTOP} is applied, which has the following steps:
+In this thesis, the top reconstruction method, which was developed for~\cite{bib:ILCTOP} is applied. It has the following steps:
 \begin{itemize}
-	\item Isolated lepton identification is done using LAL LeptonFinder algorithm~\cite{bib:Doublet}, which is designed to find an energetic lepton or a lepton, which has a significant transverse momentum with respect to the neighbored jets. 
-	\item The events, after excluding the isolated lepton, are clustered to four jets using Durham jet clustering algorithm.
+	\item Isolated lepton identification is done with the LAL LeptonFinder algorithm~\cite{bib:Doublet}, which is designed to find an energetic lepton or a lepton, which has a significant transverse momentum with respect to the neighbored jets. 
+	\item The events, after excluding the isolated lepton, are clustered into four jets by the Durham jet clustering algorithm.
 	\item The b-jet tagging done by LCFI+ is used to identify the two b-jets and sorted by btag value for the background rejection cuts. 
-	\item The last step of the top reconstruction is to associate one of the b-jets with the two light jets, which come from the hadronic $W^\pm$ decay.  One has two possibilities to combine the jets and one chooses the best combination using minimization of the following expression:
+	\item The last step of the top quark reconstruction is to associate one of the b-jets with the two light jets, which come from the hadronic $W^\pm$ decay.  One has two possibilities to combine the jets and one chooses the best combination by minimizing the following expression:
 	\begin{equation}
 	\label{formula:Chi2Top_3}
 	d^2_{t} = (\frac{m_{cand}-m_{t}}{\sigma_{m_t}})^2 + (\frac{E_{cand}-E_{beam}}{\sigma_{E_{beam}}})^2+(\frac{p^*_b-68\,GeV}{\sigma_{p^*_b}})^2 + (\frac{\cos\theta_{bW}-0.23}{\sigma_{\cos\theta_{bW}}})^2,
 	\end{equation}
-	where $m_{cand}$ and $E_{cand}$ are the invariant mass and the energy of the top quark candidate, $m_t$ and $E_{beam}$ are the input top quark mass and the nominal beam energy of 250\,GeV, $p^*_b$ is the momentum of the b quarks in the top quark frame with nominal value of 68\,GeV and $\cos\theta_{bW}$ is the angle between the b quark and the $W^\pm$ boson with a nominal value of 0.23.
+	where $m_{cand}$ and $E_{cand}$ are the invariant mass and the energy of the top quark candidate, $m_t$ and $E_{beam}$ are the input top quark mass and the nominal beam energy of 250\,GeV, $p^*_b$ is the momentum of the b quarks in the top quark rest frame with nominal value of 68\,GeV and $\cos\theta_{bW}$ is the angle between the b quark and the $W^\pm$ boson with a nominal value of 0.23.
 	\item The neutrino from leptonic $W^\pm$ boson decay is reconstructed using the recoil momentum method. The reconstructed neutrino is used to calculate the leptonic $W^\pm$ boson mass and leptonic top quark mass. 
 \end{itemize}
 
-The reconstructed distributions of the top quark and $W^\pm$ boson invariant masses are shown in Fig.~\ref{fig:TopWmass_3}.
+The reconstructed distributions of the top quark and $W^\pm$ boson invariant masses are shown in Fig.~\ref{fig:TopWmass_3}. The values of the reconstructed peaks indicate the correct reconstruction flow. 
 
 \begin{figure}[h]
 	{\centering
