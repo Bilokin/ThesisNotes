@@ -1,4 +1,5 @@
-	\section{Heavy quark phenomenology and New Physics}
+
+\section{Heavy quark phenomenology and New Physics}
 The mass od the top quark is comparable to the electroweak symmetry breaking scale. 
 This fact makes top quark a subject of many New Physics theories. 
 The measurements of the bottom quark properties, a partner of the top quark, have revealed a tension with \sm\ predictions. 
@@ -334,7 +335,7 @@ On contrary, the b-baryons tend to produce protons, which have an opposite sign 
 \subsubsection{Generated vertices}
 The output of the event generators is a list of generated particles with parent-child relations.The TruthVertexFinder algorithm was developed to find the generated vertices.%, and included into the {\sc ilcsoft} distribution. 
 This algorithm detects the generated b-hadrons, finds the related charged particles, which can leave reconstructable tracks and organizes them into the generated secondary or tertiary vertices.
-\begin{figure}[h]
+\begin{figure}
 	{\centering
 		\includegraphics[width=0.75\textwidth]{ILD/plots/offset-graph.pdf}
 		\caption{\sl Illustration of particle offset variable $\epsilon$, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}_0$ is a point of the closest approach of a given particle. 
@@ -355,7 +356,7 @@ The charged pion from the excited b-hadrons can distort the charge multiplicity 
 
 The TruthVertexFinder finds vertices from b-hadron decays and subsequent c-hadron decay vertices. The distributions of generated b- and c-vertices are displayed in Fig.~\ref{fig:GenVtx_3}. The c-vertex multiplicity distribution is consistent with~\cite{bib:PDG}. One can notice that about 31\% of the b-vertices and 13\% of the c-vertices decay into one generated prong, which poses a challenge to the vertexing algorithms., which will be addressed in Sec.~\ref{sec:MisVertices}.
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=0.95\textwidth]{ILD/plots/gen-b-vtx.pdf}
@@ -376,7 +377,7 @@ The offset distributions of the generated b-vertex and c-vertex prongs are shown
 Majority of the generated prongs have large offsets above the ILD impact parameter resolution of 5\,$\mu$m. 
 As can be seen from Fig.~\ref{fig:GenVtxOffset_3}, the c-vertex prong offsets are larger than b-vertex prong offsets, because of the additional distance traveled by c-hadron from the b-hadron decay point. 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=0.95\textwidth]{ILD/plots/gen-bvtx-offsets.pdf}
@@ -397,7 +398,7 @@ The imbalance between the odd and even number of multiplicities is caused by the
 Regarding the similarity of the distributions for two processes shown in Figures~\ref{fig:GenVtx_3}, \ref{fig:GenHadronParams_3} and \ref{fig:GenVtxOffset_3}, the performance of a vertexing algorithm should be identical for the same energy and the direction of the b-hadron decays.
 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=0.95\textwidth]{ILD/plots/gen-hadron-multiplicity.pdf}
@@ -429,7 +430,7 @@ It has several stages of the vertex reconstruction and flavor-tagging, which are
 \item FlavorTag algorithm calculates b-tag and c-tag values for a jet, using the finalized jet vertices from the JetVertexRefiner. The b-tag and c-tag values are the measure of b- and c-likeness of a jet, respectively, both observables have values from 0 to 1. Performance of the flavor-tagging algorithm is shown in Fig.~\ref{fig:LCFIplus_3}.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}
 	{\centering
 		\includegraphics[width=0.45\textwidth]{ILD/graphics/btag-cbg.eps}
 		\caption{\sl The tagging efficiency is shown for b-jets with the mis-identification	fraction evaluated using c-jets. Solid lines correspond to the case of 2-jet events at $\sqrt{s} = 91$\,GeV. Dashed lines correspond to the case of 6-jet events at	$\sqrt{s} = 500$\,GeV. Dotted lines correspond to the case of 6-jet events at $\sqrt{s} = 1000$\,GeV~\cite{bib:LCFI}.
@@ -469,7 +470,7 @@ The jets with reconstructed vertices have the following statistics:
 \item The rest 5\% are the jets with vertices, contaminated by particles with non b-hadron origin and have $N_{rec}>N_{gen}$.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}
 {\centering
     \includegraphics[width=0.55\textwidth]{ILD/plots/rec-gen-table.pdf}
     \caption{\sl Comparison of the number of reconstructed tracks $N_{gen}$ to the number of generated tracks $N_{rec}$ for a given b-jet. The number of entries is color-coded for each cell. The diagonal has 49\% of all entries and it contains the jets, which have the correctly reconstructed vertices. The b-jets below diagonal have vertices with one or more particles missed by reconstruction. The row $N_{rec} = 0$ corresponds to the b-jets with no reconstructed vertices. %Right: Same comparison, but after a cut on the b-tag$> 0.8$ and a cut on the b-hadron momentum more than 20\,GeV. The diagonal contains 55\% of the jets after the cuts.
@@ -499,29 +500,6 @@ But first, one needs to study the reasons behind the missing prongs and analyze 
 %The distributions of the average prong offset and momentum for reconstructed vertices and missed vertices are shown in Fig.~\ref{fig:RecMissedParams_3}. 
 %On can conclude, that the reconstruction algorithms start to lose their efficiency at below 4\,GeV average prong momentum and below 0.5\,mm average prong offset. 
 
-\begin{figure}[H]
-\centering
-\begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=0.95\textwidth]{ILD/plots/rec-missed-p-vtx.pdf}
-\caption{\label{fig:RecMissedParams_a_3} }
-\end{subfigure}% 
-  \begin{subfigure}{0.5\textwidth}
-\centering
-    \includegraphics[width=0.95\textwidth]{ILD/plots/rec-missed-s-vtx.pdf}
-\caption{\label{fig:RecMissedParams_b_3} }
-\end{subfigure}
-    \caption{\sl Distributions of the average prong momentum~(a) and offset (b) of the missed and reconstructed vertices. }
-    \label{fig:RecMissedParams_3}
-\end{figure}
-
-\begin{figure}[h]
-{\centering
-    \includegraphics[clip, trim=10.cm 0cm 0.cm 0cm, width=0.55\textwidth]{ILD/plots/missed-cos-vtx.pdf}
-    \caption{\sl Polar angle distribution of the missed vertices subdivided into different categories. This is a stacked histogram. The low momentum or low offset category are the missing vertices, which have the average prong momentum below  4\,GeV or below 0.5\,mm average prong offset.
-    }
-    \label{fig:MissedCos_3}
-  }
-\end{figure}
 
 The polar angle distributions of the missing vertices is displayed in Fig.~\ref{fig:MissedCos_3}. 
 One can summarize the reasons for missing vertices as following: 
@@ -532,6 +510,29 @@ One can summarize the reasons for missing vertices as following:
 \item Most of the b-hadrons, produced in the forward region, or outside the barrel VXD acceptance $|\cos\theta_{vtx}| > 0.95$, are not reconstructed, which is due to a low precision on the impact parameters of the reconstructed prongs. 
 \end{itemize}
 
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/rec-missed-p-vtx.pdf}
+		\caption{\label{fig:RecMissedParams_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/rec-missed-s-vtx.pdf}
+		\caption{\label{fig:RecMissedParams_b_3} }
+	\end{subfigure}
+	\caption{\sl Distributions of the average prong momentum~(a) and offset (b) of the missed and reconstructed vertices. }
+	\label{fig:RecMissedParams_3}
+\end{figure}
+
+\begin{figure}[h]
+	{\centering
+		\includegraphics[clip, trim=10.cm 0cm 0.cm 0cm, width=0.55\textwidth]{ILD/plots/missed-cos-vtx.pdf}
+		\caption{\sl Polar angle distribution of the missed vertices subdivided into different categories. This is a stacked histogram. The low momentum or low offset category are the missing vertices, which have the average prong momentum below  4\,GeV or below 0.5\,mm average prong offset.
+		}
+		\label{fig:MissedCos_3}
+	}
+\end{figure}
 %An attempt was made to reduce the vertexing inefficiency in the forward region
 
 The missing vertices are difficult to recover, however they have essentially no impact on the jet charge purity, therefore the further studies are focused on the missing prongs of the reconstructed vertices.
@@ -555,7 +556,7 @@ The reasons for the missing prongs can be summarized as follows:
 
 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=0.95\textwidth]{ILD/plots/missed-tracks.pdf}
@@ -612,7 +613,7 @@ Therefore, in this studies, the reconstructed track helix is approximated by the
 
 This study uses an angle $\alpha$, as a second separation variable, defined as an angle between the vector of particle momentum $\vec{p}$ and the vector of difference between vertex position $\vec{s}$ and track reference point $\vec{t}$, defined in \cite{bib:LCIOtrack}. The separation variables, the angle $\alpha$ and the offset $\epsilon$, are illustrated in Fig.~\ref{fig:VtxRecovery_3}.
 
-\begin{figure}[h]
+\begin{figure}
 {\centering
     \includegraphics[width=0.75\textwidth]{ILD/plots/recovery-graph.pdf}
     \caption{\sl Illustration of the chosen separation variables of the vertex charge recovery algorithm, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}$ is a reference point of a given particle, defined in \cite{bib:LCIOtrack}, $\alpha$ is the angle between $\vec{p}$ and $\vec{s}$ and $\epsilon$ is an offset distance of the particle. %Right: Same comparison, but after a cut on the b-tag$> 0.8$ and a cut on the b-hadron momentum more than 20\,GeV. The diagonal contains 55\% of the jets after the cuts.
@@ -635,7 +636,7 @@ The recovery algorithm might have different behavior in simulation, than in real
 \item The algorithm creates new reconstructed vertices with old and recovered reconstructed prongs and links them to a given jet.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.33\textwidth}
 		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
@@ -665,7 +666,7 @@ Hence, VertexChargeRecovery is made to have an output, identical to the output o
 The simple algorithm of the vertex recovery is limited by the requirement of the presence of a reconstructed vertex and the reconstruction quality of a missing b-hadron prong. 
 Nevertheless, this algorithm makes a significant improvement in the vertex reconstruction and the jet charge purity.
 
-\begin{figure}[h]
+\begin{figure}
 {\centering
     \includegraphics[width=0.55\textwidth]{ILD/plots/recovery-table.pdf}
     \caption{\sl Comparison of the number of reconstructed tracks $N_{gen}$ to the number of generated tracks $N_{rec}$ for a given b-jet after vertex charge recovery. The number of entries is color-coded for each cell. The fraction of the diagonal elements, which have the perfectly reconstructed vertices, is 62\% of all entries. The b-jets below diagonal have vertices with one or more particles missed by reconstruction. The row $N_{rec} = 0$ corresponds to the b-jets with no reconstructed vertices. %Right: Same comparison, but after a cut on the b-tag$> 0.8$ and a cut on the b-hadron momentum more than 20\,GeV. The diagonal contains 55\% of the jets after the cuts.
@@ -681,7 +682,7 @@ The slightly increased rate of jets with $N_{rec} > N_{gen}$ can be seen, which 
 
 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=0.95\textwidth]{ILD/plots/recovery-missed-cos.pdf}
@@ -711,7 +712,7 @@ The vertex recovery decreases the fraction of missing prongs from 10.4\% to 6.2\
 
 The central result of the algorithm is that it enhances the jet charge purity from 66\% to 73\%, despite increase of the contamination by the  background particles from 3\% to 4\%.
 Figure~\ref{fig:RecoveryPurityComparison_3} demonstrates the improvement of the jet charge purity as function of the jet b-tag, reconstructed b-hadron momentum, $N_{rec}$ and the polar angle of the b-hadron  $|\cos\theta_{vtx}|$.
-\begin{figure}[h]
+\begin{figure}
 {\centering
     \includegraphics[width=0.95\textwidth]{ILD/plots/recovery-purity-comparison.pdf}
     \caption{\sl Comparison of the purity as function of the jet b-tag, reconstructed b-hadron momentum, $N_{rec}$ and the polar angle $|\cos\theta|$ before and after the vertex recovery algorithm.  
@@ -751,7 +752,7 @@ This angular is known to be applied at other experiments, which have the TPC dev
 
 The distributions of the $dE/dx$ as a function of particle momentum and $|\cos\theta|$ after the angular correction (\ref{formula:dEdxCorrection}) are displayed in Fig.~\ref{fig:dEdxAfter_3}.
 %116.90%
-\begin{figure}[h]
+\begin{figure}
 {\centering
     \includegraphics[clip, trim=8cm 18.5cm 7cm 4cm,width=0.95\textwidth]{ILD/plots/dedx-before.png}
     \caption{\sl The energy deposition per track length $dE/dx$ as function of the particle momentum, the particle polar angle $|\cos\theta|$ for different particles. Two gray lines separate out the region with a maximal kaon concentration. 
@@ -760,7 +761,7 @@ The distributions of the $dE/dx$ as a function of particle momentum and $|\cos\t
   }
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}
 {\centering
     \includegraphics[clip, trim=8cm 18.5cm 7cm 4cm, width=0.95\textwidth]{ILD/plots/dedx-after.png}
     \caption{\sl The energy deposition per track length $dE/dx$ as function of the particle momentum, the particle polar angle $|\cos\theta|$ for different particles after application of the angular correction, described in text. Two gray lines separate out the region with a maximal kaon concentration. 
@@ -774,7 +775,7 @@ The results of the hadron identification are displayed in Fig.~\ref{fig:dEdxResu
 
 The angular correction is now included in the latest version of the {\sc ilcsoft} distribution.
 
-\begin{figure}[h]
+\begin{figure}
 {\centering
     \includegraphics[width=0.45\textwidth]{ILD/plots/dedx-results.pdf}
     \caption{\sl Correlation histogram between generated particle type and reconstructed particle type produced by the cut-based PID algorithm.
@@ -792,7 +793,7 @@ Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3} and 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\newpage
 \section{Top quark production at the ILC}
 %Direct electroweak production of the top quark pairs
 This section of the thesis describes an application of the jet charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the polar angle measurement for $e^+e^- \to t\bar{t}$ process at ILC, which is used to determine the electroweak couplings of the top quark.
@@ -828,7 +829,7 @@ The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$
 The clear process signature of two b-jets, two light jets from $W^\pm$ boson and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for the forward-backward asymmetry $A_{FB}$ measurement. 
 An example of a \ttbar\ event in the ILD environment is shown in Fig.~\ref{fig:TopEvent_3}.
 
-\begin{figure}[h]
+\begin{figure}
 	{\centering
 		\includegraphics[clip, trim=0.cm 0cm 7.9cm 0cm, width=0.55\textwidth]{ILD/graphics/ild-ttbar.png}
 		\caption{\sl Event display of the \ttbar\ pair production process in the ILD simulation.
@@ -906,7 +907,7 @@ These deviations are a consequence of a significant charge impurity which leads 
 %These charge migrations result in the divergence between the generated polar angle distribution and reconstructed curves for all three methods. 
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.33\textwidth}
 		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/one-charge.pdf}
@@ -969,7 +970,7 @@ In case of the left-handed electron beam, the b-quarks are emitted into the dire
 
 The vertex charge and kaon charge methods were used to compute top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}, where one sees a good agreement between the generated and reconstructed top polar angle histograms. 
 The combined b-jet charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with total efficiency of 16\%.
-\begin{figure}[h]
+\begin{figure}
 	{\centering
 		\includegraphics[width=0.55\textwidth]{ILD/plots/top-gamma.pdf}
 		\caption{\sl Sum of the Lorentz gamma factors for leptonic and hadronic reconstructed tops separated into the wrongly and correctly reconstructed hadronic decay combinations.
@@ -980,7 +981,7 @@ The combined b-jet charge measurement shows a good precision on the asymmetry $A
 \end{figure}
 
 The most used method is the vertex charge and kaon charge combination from the same b-jet, as can be seen from Fig.~\ref{fig:TopAsymmetryNoCutBjet_b_3}, which is due to the chosen asymmetric cuts on the b-tag values. 
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=0.95\textwidth]{ILD/plots/top-asymmetry-bonly-gcut.pdf}
@@ -1022,7 +1023,7 @@ where $p^*_b$ and $\cos\theta_{bW}$ have been used in Eq.~\ref{formula:Chi2Top_3
 The distributions of the events with correctly assigned leptons and migrated leptons for all variables used in \ref{formula:Chi2TopLepton_3} are shown in Fig.~\ref{fig:TopChiVariables_3}.
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.33\textwidth}
 		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
@@ -1049,7 +1050,7 @@ More than 93\% of the events with $\chi^2_{top} < 15$ have a correct combination
 The application of all possible pair combinations of the vertex charge, kaon charge and $W^\pm$ lepton charge to the top polar angle reconstruction shown in Fig.~\ref{fig:TopAsymmetryChi_a_3}. 
 
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=0.95\textwidth]{ILD/plots/top-asymmetry-lepton.pdf}
@@ -1102,7 +1103,7 @@ Same version of the event generators and the {\sc ilcsoft} distribution as for t
 
 \subsection{Bottom quark reconstruction and the background rejection}
 The bottom quarks appear as two b-jets in the detector, which significantly simplifies the process reconstruction. 
-\begin{figure}[h]
+\begin{figure}
 	{\centering
 		\includegraphics[clip, trim=0.cm 0cm 7.9cm 0cm, width=0.55\textwidth]{ILD/graphics/ild-bbbar.png}
 		\caption{\sl Event display of the $e^+e^-\to b\bar{b}$ process in the ILD simulation.
@@ -1144,10 +1145,14 @@ Therefore, in this chapter, only the reconstructed vertex charge and kaon charge
 \subsubsection{Polar angle reconstruction}
 In this section, the reconstruction of the signal process only is discussed using standard ILD reconstruction. %without application of vertex charge recovery algorithm.
 The b-quark polar angle is computed as the mean polar angle of two b-jets after charge calculation. 
-The results for all possible combinations of the vertex and kaon charges for b-quark polar angle reconstruction is demonstrated in Fig.~\ref{fig:BAsymmetryFirst_3}. The difference in the generated b-quark polar angle distributions are caused by the different the $Z^0$ boson couplings to the left-handed and the right-handed fermions. 
+Figure~\ref{fig:BAsymmetryFirst_3} demonstrates reconstructed b-quark polar angle compared to the generated distribution for both beam polarizations. 
+The generated $A_{FB}^{gen}$ values are:
+\begin{equation}
+	A_{FB}^{gen}(e^-_L e^+_R) = 0.705\text{ and }A_{FB}^{gen}(e^-_R e^+_L) = 0.26.
+\end{equation} 
+The difference in the generated b-quark polar angle distributions for two polarization configurations are caused by the different the $Z^0$ boson couplings to the left-handed and the right-handed fermions. 
 
-
-\begin{figure}[ht]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-nocorr-nobkg-left.pdf}
@@ -1162,14 +1167,15 @@ The results for all possible combinations of the vertex and kaon charges for b-q
 	\label{fig:BAsymmetryFirst_3}
 \end{figure}
 %Both polarizations
-There are two major problems are seen in the b-quark polar angle distributions:
+The reconstructed b-quark polar angle distributions have two major problems:
 \begin{itemize}
-	\item The large efficiency decrease in the forward region $|\cos\theta| > 0.85$. The main reason of this decrease is the inefficiency of the vertexing algorithms, which tend to not find any reconstructed vertex in the forward region, as seen in Fig.~\ref{fig:MissedCos_3}. The zoon in to the problematic region is shown in Fig.~ 
-	\item The residual charge impurity contaminates the backward region $\cos\theta < 0$ of both distributions in Fig.~\ref{fig:BAsymmetryFirst_3}. Due to the strong b-quark production asymmetry in the left-handed case the backward region is contaminated entirely by the events with misreconstructed b-jet charge as seen in Fig.~.
+	\item The residual charge impurity contaminates the backward region $\cos\theta < 0$ of both distributions in Fig.~\ref{fig:BAsymmetryFirst_3}. Due to the strong b-quark production asymmetry in the left-handed case the backward region is contaminated entirely by the events with misreconstructed b-jet charge as seen in Fig.~\ref{fig:BAsymmetryProblem_a_3}.
+	\item The large efficiency decrease in the forward region $|\cos\theta| > 0.85$. The main reason of this decrease is the inefficiency of the vertexing algorithms, which tend to not find any reconstructed vertex in the forward region, as seen in Fig.~\ref{fig:MissedCos_3}. The zoom into the problematic region is shown in Fig.~\ref{fig:BAsymmetryProblem_b_3};
+
 \end{itemize}
 
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-zoom-contamination.pdf}
@@ -1184,17 +1190,77 @@ There are two major problems are seen in the b-quark polar angle distributions:
 	\label{fig:BAsymmetryProblem_3}
 \end{figure}
 
-The forward inefficiency problem makes impossible the measurement of the $A_{FB}^b$ using a simple counting method. This problem can be avoided by the fitting the unaffected central bins with a function and extrapolating the fitted function on full polar angle range $(-1,1)$. However, the sensitivity of the current ILD experiment configuration to New Physics effects is lost for $|\cos\theta| > 0.85$.
+The forward inefficiency problem makes impossible the measurement of the $A_{FB}^b$ using a simple counting method. This problem can be avoided by the fitting the unaffected central bins with a function and extrapolating the fitted function on the full polar angle range $(-1,1)$. However, the sensitivity of the current ILD experiment configuration to New Physics effects is lost for $|\cos\theta| > 0.85$.
 
-Using the fitting method the reconstructed $A_{FB}^b$ value is calculated. The precision of the  $A_{FB}^b$ reconstruction is $A_{FB}^{rec}/A^{gen}_{FB} = 88\%$ in left-handed case and  $A_{FB}^{rec}/A^{gen}_{FB} = 89\%$ in the right-handed case.  
+Using the fitting method the reconstructed $A_{FB}^b$ value is calculated. The precision of the $A_{FB}^b$ reconstruction is $A_{FB}^{rec}/A^{gen}_{FB} = 88\%$ in left-handed case and  $A_{FB}^{rec}/A^{gen}_{FB} = 89\%$ in the right-handed case.  
 However, the backward region contamination problem requires large corrections for residual charge misreconstruction in the left-handed polarization case as compared to the right-handed polarization case. 
 
+The method of b-quark polar angle correction should be independent from the generated curve. 
 %
 \subsubsection{Charge purity measurement}
 \label{sec:ChargePurity}
+The adopted system of the b-jet charge measurement uses two compatible charge combinations, either the vertex charge or the kaon charge. 
+The measurement of the b-jet charge purity is done using the number of accepted and the number of rejected events. 
+Which means, that the following rules are established:
+\begin{itemize}
+	\item To accept an event one need to measure both charges correctly, or both charges incorrectly;
+	\item To reject an event, one need to measure one charge correctly and another incorrectly. 
+\end{itemize}
 
+Let $p$ be a probability of correct charge measurement or the charge purity, then $q = 1-p$ is a probability of the incorrect charge measurement. 
+Suppose, one has $N$ events, which is a sum of accepted event number $N_a$ and rejected event number $N_r$. 
+Then, the number of accepted events is:
+\begin{equation}
+	N_a = N p^2 + N q^2;
+	\label{formula:PurityA_3}
+\end{equation}
+While the number of rejected has the following expression:
+\begin{equation}
+	N_r = 2N pq;
+	\label{formula:PurityR_3}
+\end{equation}
+The probability $p$ is calculated using expressions (\ref{formula:PurityA_3}) and (\ref{formula:PurityR_3}).
+One defines the number of accepted events in the forward region $N_a^+$ and in the backward region $N_a^-$ 
+\begin{equation}
+	\begin{array}{l}
+	N_a^+ =  N^+_{true}p^2 + N^-_{true}q^2\\
+	N_a^- =  N^-_{true}p^2 + N^+_{true}q^2,
+	\end{array}
+	\label{formula:Correction_3}
+\end{equation}
+where $N_{true}^+$ and  $N_{true}^-$ are the true accepted event number the forward region and in the backward region, respectively.
+The terms proportional to $q^2$ are responsible for the contamination effect shown in Fig.~\ref{fig:BAsymmetryProblem_a_3}. 
+One calculates the correction to the polar angle using expression (\ref{formula:Correction_3}).
+
+The charge purity values are the following:
+\begin{itemize}
+	\item Vertex-vertex charge combination - 78\%;
+	\item Kaon-kaon charge combination  - 76\%;
+	\item Kaon-vertex charge combination from the same jet - 90\%;
+	\item Kaon-vertex charge combination from opposite jets - 77\%.
+\end{itemize}
+The kaon-vertex  charge measurement have higher value of purity than the vertex-vertex and kaon-kaon combinations.This is caused by charge correlations induced by the $B^0-\bar{B}^0$ oscillations. 
+Therefore, to avoid the charge correlations, the b-quark polar  angle and the corrections to the polar angle are calculated without the mixed charge combinations.
+
+The main advantage of this procedure is its independence from generator information. 
+Therefore, the vertex and kaon charge  purity values can be computed from the data, which allows to control the vertexing algorithms performance from the data. 
 \subsubsection{Corrections to the polar angle}
-\subsubsection{Recovery influence}
+The results after application of the data-driven corrections are shown in Fig.~\ref{fig:BAsymmetryCorrected_3}. 
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-corr-nobkg-left.pdf}
+		\caption{\label{fig:BAsymmetryCorrected_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-corr-nobkg-right.pdf}
+		\caption{\label{fig:BAsymmetryCorrected_b_3} }
+	\end{subfigure}
+	\caption{\sl Generated b-quark polar angle distribution compared to reconstructed polar angle in left-handed case (a) and right-handed case (b) using all possible charge signature combinations. Integrated luminosity used 250\ifb for both polarizations. }
+	\label{fig:BAsymmetryCorrected_3}
+\end{figure}
+\subsubsection{Vertex Charge Recovery influence}
 \subsection{Coupling measurements}
 \subsection{Precision on the b-quark form factors}
 \section*{Conclusions}
