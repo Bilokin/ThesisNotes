@@ -1089,13 +1089,13 @@ However, in the right-handed electron beam, the incorrect $W^\pm$ jets and b-jet
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bottom quark production at the ILC}
 %Motivation
-The LEP measurement of forward-backward asymmetry at the $Z^0$ pole left 2.5$\sigma_{LEP}$ tension with the \sm\ prediction, which can be an impact of a \bsm\ modification of the b-quark couplings to vector bosons.
+The LEP measurement of the forward-backward asymmetry at the $Z^0$ pole resulted in 2.5$\sigma_{LEP}$ tension with the \sm\ prediction, which can be an impact of a \bsm\ modification of the b-quark couplings to vector bosons.
 The resolution of the LEP \afbb\ tension requires new level of the collider experiment precision.
 This is the main motivation of the $e^+e^-\to b\bar{b}$ studies at the $250$\,GeV stage of the ILC, which are presented in this chapter. 
 
 The $e^+e^-\to b\bar{b}$ process has never been studied using the ILC environment. 
 \subsection{Setup of the study}
-In this studies the signal parocess is $e^+e^-\to b\bar{b}$ process on the center-of-mass energy of 250\,GeV. 
+In this studies the signal process is $e^+e^-\to b\bar{b}$ on the center-of-mass energy of 250\,GeV. 
 A large statistics sample of integrated luminosity $L_{int}= 250$\,fb{$^{-1}$} is used for both polarizations in the ILD simulation environment. 
 Same version of the event generators and the {\sc ilcsoft} distribution as for the \ttbar\ study are used.
 
@@ -1142,13 +1142,59 @@ In these studies the same approach as for \ttbar\ polar angle computation is app
 Therefore, in this chapter, only the reconstructed vertex charge and kaon charge are computed and applied to the b-quark polar angle reconstruction. 
 
 \subsubsection{Polar angle reconstruction}
-The results for all possible combinations of the vertex and kaon charges for b-quark polar angle reconstruction is demonstrated in Fig.~
+In this section, the reconstruction of the signal process only is discussed using standard ILD reconstruction. %without application of vertex charge recovery algorithm.
+The b-quark polar angle is computed as the mean polar angle of two b-jets after charge calculation. 
+The results for all possible combinations of the vertex and kaon charges for b-quark polar angle reconstruction is demonstrated in Fig.~\ref{fig:BAsymmetryFirst_3}. The difference in the generated b-quark polar angle distributions are caused by the different the $Z^0$ boson couplings to the left-handed and the right-handed fermions. 
 
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-nocorr-nobkg-left.pdf}
+		\caption{\label{fig:BAsymmetryFirst_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-nocorr-nobkg-right.pdf}
+		\caption{\label{fig:BAsymmetryFirst_b_3} }
+	\end{subfigure}
+	\caption{\sl Generated b-quark polar angle distribution compared to reconstructed polar angle in left-handed case (a) and right-handed case (b) using all possible charge signature combinations. Integrated luminosity used 250\ifb for both polarizations. }
+	\label{fig:BAsymmetryFirst_3}
+\end{figure}
 %Both polarizations
+There are two major problems are seen in the b-quark polar angle distributions:
+\begin{itemize}
+	\item The large efficiency decrease in the forward region $|\cos\theta| > 0.85$. The main reason of this decrease is the inefficiency of the vertexing algorithms, which tend to not find any reconstructed vertex in the forward region, as seen in Fig.~\ref{fig:MissedCos_3}. The zoon in to the problematic region is shown in Fig.~ 
+	\item The residual charge impurity contaminates the backward region $\cos\theta < 0$ of both distributions in Fig.~\ref{fig:BAsymmetryFirst_3}. Due to the strong b-quark production asymmetry in the left-handed case the backward region is contaminated entirely by the events with misreconstructed b-jet charge as seen in Fig.~.
+\end{itemize}
+
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-zoom-contamination.pdf}
+		\caption{\label{fig:BAsymmetryProblem_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-zoom-inefficiency.pdf}
+		\caption{\label{fig:BAsymmetryProblem_b_3} }
+	\end{subfigure}
+	\caption{\sl The demonstration of the contamination of backward region by the events with misreconstructed charge (a) and the forward region inefficiency of the b-quark polar angle measurements (b). }
+	\label{fig:BAsymmetryProblem_3}
+\end{figure}
+
+The forward inefficiency problem makes impossible the measurement of the $A_{FB}^b$ using a simple counting method. This problem can be avoided by the fitting the unaffected central bins with a function and extrapolating the fitted function on full polar angle range $(-1,1)$. However, the sensitivity of the current ILD experiment configuration to New Physics effects is lost for $|\cos\theta| > 0.85$.
+
+Using the fitting method the reconstructed $A_{FB}^b$ value is calculated. The precision of the  $A_{FB}^b$ reconstruction is $A_{FB}^{rec}/A^{gen}_{FB} = 88\%$ in left-handed case and  $A_{FB}^{rec}/A^{gen}_{FB} = 89\%$ in the right-handed case.  
+However, the backward region contamination problem requires large corrections for residual charge misreconstruction in the left-handed polarization case as compared to the right-handed polarization case. 
+
 %
 \subsubsection{Charge purity measurement}
 \label{sec:ChargePurity}
+
 \subsubsection{Corrections to the polar angle}
+\subsubsection{Recovery influence}
 \subsection{Coupling measurements}
 \subsection{Precision on the b-quark form factors}
 \section*{Conclusions}
