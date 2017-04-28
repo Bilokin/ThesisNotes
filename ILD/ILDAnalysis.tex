@@ -1234,8 +1234,8 @@ One calculates the correction to the polar angle using expression (\ref{formula:
 
 The charge purity values are the following:
 \begin{itemize}
-	\item Vertex-vertex charge combination - 78\%;
-	\item Kaon-kaon charge combination  - 76\%;
+	\item Vertex-vertex charge combination - 80\%;
+	\item Kaon-kaon charge combination  - 79\%;
 	\item Kaon-vertex charge combination from the same jet - 90\%;
 	\item Kaon-vertex charge combination from opposite jets - 77\%.
 \end{itemize}
@@ -1283,13 +1283,31 @@ Nice correspondence between the corrected and the generated curves makes the res
 \end{figure}
 The main improvements be the recovery are the following:
 \begin{itemize}
-	\item The number of accepted events is improved by 7\%;
+	\item The number of accepted events is improved by 9\%;
 	\item The $A_{FB}$ reconstruction is improved before correction by 3\%;
-	\item The vertex charge purity is 84\% after recovery using the data-driven measurement, as compared to 78\% before recovery;
-	\item The kaon charge purity stays the same, but the number of kaons is increased; 
-	\item The \textit{main improvement} of the vertex charge recovery is the almost constant charge purity in the barrel. region.
+	\item The vertex charge purity is 84\% after recovery using the data-driven measurement, as compared to 80\% before recovery;
+	\item The kaon charge purity stays the same, but the number of kaons is increased by 10\%; 
+	\item The \textit{main improvement} of the vertex charge recovery is the almost constant charge purity in the barrel. region, as can be seen in Fig.~\ref{fig:BAsymmetryRec_3}. This is the consequance of the recovering of the peaks of missing vertex particles as it is described in Sec.~\ref{sec:VtxRecovery}.
 \end{itemize}
-The data-driven charge purity measurement and the polar angle correction algorithm are proven to work with different vertexing algorithms. 
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/zoom-rec.pdf}
+		\caption{\label{fig:BAsymmetryRec_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/zoom-norec.pdf}
+		\caption{\label{fig:BAsymmetryRec_b_3} }
+	\end{subfigure}
+	\caption{\sl The demonstration of the vertex charge recovery improvement (a) compared to the standard algorithm (b). }
+	\label{fig:BAsymmetryRec_3}
+\end{figure}
+
+
+The data-driven charge purity measurement and the polar angle correction algorithm are proven to work with the different vertexing algorithms. 
+
 \subsection{Cross section measurements}
 \subsection{Coupling determination}
 \subsection{Precision on the b-quark form factors}
