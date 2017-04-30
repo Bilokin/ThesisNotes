@@ -1,11 +1,36 @@
 \section{Passage of particles through matter}
-The direct particle detection is possible if a particle undergo interaction with ordinary matter. %All detector 
-The particles can interact with free or bound electrons in matter, or with nuclei. 
+%The direct particle detection is possible if a particle undergo interaction with ordinary matter. %All detector 
 
+The main principle of the particle detection in particle physics is the detection via interaction with an ordinary condensed matter. 
+The particles can interact with free or bound electrons in matter, or with atomic nuclei. 
+The study of high-energy particles is done using the following methods:
+\begin{itemize}
+	\item Detection and measurement of radiative light emitted while travelling through matter of tracking devices;
+	\item High-energy photons or electrons in thick absorbers initiate electromagnetic cascades or showers, which are measured in electromagnetic calorimeters;
+	\item High-energy hadrons interact with matter nuclei via strong force creating  hadronic cascades, measured by hadronic calorimeters.
+\end{itemize}
 %Different regimes of energy losses
 \subsection{Electronic energy losses}
-
+The radiated photons by energetic charged particles lead to ionization, atomic, or collective excitation in ordinary matter. 
+The mean rate of energy loss per unit of length $<-dE/dx>$ by relativistic massive particles is described by Bethe-Bloch formula~\cite{bib:PDG}. 
+This equation depends on the particle charge and momentum, as well as on the matter properties, such as atomic mass and atomic number. 
+As an example, the energy loss of muons on copper target as function of particle momentum is demonstrated in Fig.~\ref{fig:BB_2}.
+For the studies presented in this thesis, the relevant energy range is from 100\,MeV up to 100\,GeV, which is the minimal energy loss region in Fig.~\ref{fig:BB_2}.
+The particles with a momentum corresponding to the minimun of the  $<-dE/dx>$ curve are called minimum ionizing particles or MIPs. 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{ECAL/graphics/rpp_icru49_cu.eps}
+	\caption{\label{fig:BB_2} \sl Stopping power or $<-dE/dx>$  for muons in copper as a function of $\beta\gamma = p/mc$, where $m$ is the muon mass, $p$ is muon momentum and $c$ is the speed of light. }
+\end{figure}
 \subsection{Electromagnetic showers}
+The emission of photon or bremsstrahlung process is the dominant process of the electron-matter and positron-matter interaction, due to the the low electron mass value. 
+The high-energy photons interact with matter via the convertion to $e^+e^-$ pair.
+Thus, passage of these particles in dense materials create an intense cascade of pair creation and photon radiation processes, i.e. electromagnetic cascades or showers.
+The main characteristic of the material is the radiation length $X^0$, defined as the mean distance over which a high-energy electron loses all but $1/e$ of its energy, or $7/9$ of the mean free path of high-energy photon. 
+The transverse size of the electromagnetic cascade is described by Moli\`ere radius $R_{m}$, which is defined as an average radius of a cylinder containing 90\% of an electromagnetic cascade. Moli\`ere radius is proportional to the radiation length of the material. 
+The radiation length and Moli\`ere radius values for various materials are shown in Table~\ref{table:material}.
+\input{ECAL/tables/material}
+%High-energy photons lose energy by $e^+e^-$ pair creation 
 \subsection{Hadronic showers}
 \subsection{Simulations}
 
