@@ -1,5 +1,4 @@
 \section{Passage of particles through matter}
-%The direct particle detection is possible if a particle undergo interaction with ordinary matter. %All detector 
 
 The main principle of the particle detection in particle physics is the detection via interaction with an ordinary condensed matter. 
 The particles can interact with free or bound electrons in matter, or with atomic nuclei. 
@@ -23,16 +22,36 @@ The particles with a momentum corresponding to the minimun of the  $<-dE/dx>$ cu
 	\caption{\label{fig:BB_2} \sl Stopping power or $<-dE/dx>$  for muons in copper as a function of $\beta\gamma = p/mc$, where $m$ is the muon mass, $p$ is muon momentum and $c$ is the speed of light. }
 \end{figure}
 \subsection{Electromagnetic showers}
-The emission of photon or bremsstrahlung process is the dominant process of the electron-matter and positron-matter interaction, due to the the low electron mass value. 
+The emission of photon or bremsstrahlung process is the dominant process of the energetic electron-matter and positron-matter interaction.
 The high-energy photons interact with matter via the convertion to $e^+e^-$ pair.
 Thus, passage of these particles in dense materials create an intense cascade of pair creation and photon radiation processes, i.e. electromagnetic cascades or showers.
-The main characteristic of the material is the radiation length $X^0$, defined as the mean distance over which a high-energy electron loses all but $1/e$ of its energy, or $7/9$ of the mean free path of high-energy photon. 
+Eventually, the electron energy falls below the critical energy of the bremsstrahlung, and then they lose their energy by ionization and atomic excitation processes.
+Below the $e^+e^-$ pair convertion threshold, the photons lose their energy in the material by the Compton scattering process. 
+
+The main characteristic of the material is the radiation length $X^0$, defined as the mean distance over which a high-energy electron loses all but $1/e$ of its energy, or $7/9$ of the mean free path of a high-energy photon. 
 The transverse size of the electromagnetic cascade is described by Moli\`ere radius $R_{m}$, which is defined as an average radius of a cylinder containing 90\% of an electromagnetic cascade. Moli\`ere radius is proportional to the radiation length of the material. 
-The radiation length and Moli\`ere radius values for various materials are shown in Table~\ref{table:material}.
+The radiation length and the Moli\`ere radius values for various materials are shown in Table~\ref{table:material}.
 \input{ECAL/tables/material}
-%High-energy photons lose energy by $e^+e^-$ pair creation 
+
 \subsection{Hadronic showers}
+All hadrons have an electric and a confined color charge. 
+Thus, the charged hadrons can interact with material via ionization process, and all hadrons, neutral and charged ones, can interact with matter nuclei via the strong force.
+The strong interaction with matter can be elastic and inelastic. 
+The elastic hadron-matter interaction is the nucleus excitation process, via gluon exchange, which do not change the hadron or nuclei composition. 
+The inelastic hadron-matter interaction often leads to a spallation of the target nuclei creating new stable or unstable hadrons. 
+The emitted relatively energetic  $\pi^0$ and $\eta$ mesons decaying into two photons give a rise to an electromagnetic shower. 
+The stable and long-lived hadrons, like pions, protons and neutrons, can escape the collision region. 
+Thus, the energy deposit value of the hadronic showers is highly fluctuating. 
+
+The material is characterized by the nuclear interaction length $\lambda_{I}$, which is defined as a mean material length reducing the number of passing by hadrons by the factor of $1/e$. 
+Specifically, the pion interaction length $\lambda_{\pi^\pm} > \lambda_{I}$, due to longer mean free path of the $\pi^\pm$ in the same type of material. 
+The   $\lambda_{\pi^\pm} $ and $ \lambda_{I}$ values for various materials are given in Table~\ref{table:material}.
 \subsection{Simulations}
+The most famous toolkit to simulate the passage of particles through matter is \geant\ simulation software~\cite{Allison:2006ve}. 
+It is used in a variety of application domains, including high energy physics, astrophysics and space science, medical physics and radiation protection. 
+The \geant\ physics processes cover variety of particle-matter interactions over a wide energy range.
+The description of highy-fluctuating processes, like hadron-matter interaction, can be done by using different approximations. 
+Thus, simulation of the hadron-matter interaction in \geant\ is implemented in physical models called \textit{physics lists}~\cite{bib:G4pl}.
 
 \section{Introduction}
 %General introduction
@@ -98,9 +117,14 @@ Each model has its own theoretical basis valid mainly in a specific energy range
 	\item \qgsp\ combines the Bertini model
 	at energies below 9.9\,GeV, with the Low Energy Parametrised model at energies above 9.9\,GeV;
 	\item \ftfp\ has a transition from the Bertini model to the Fritiof model around a primary particle energy of 4.5\,GeV.
-	\item \qbbc also intrapolates between the Bertini model and the Fitiof model however with a larger transition region.
+	\item \qbbc also intrapolates between the Bertini model and the Fritiof model however with a larger transition region.
 \end{itemize}
-
+The physics lists are illustrated in Fig.~\ref{fig:physicslist_2}.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{ECAL/graphics/physics-lists.png}
+	\caption{\label{fig:physicslist_2} \sl Illustration of the transitions between the different physics models within the used \geant\ physics lists.  }
+\end{figure}
 More information about these and other physics lists can be found in \cite{bib:G4pl}.
 
 \subsection{Event selection and preprocessing}
@@ -192,7 +216,7 @@ A typical inelastic hadronic interaction in the \ecal\ creates a shower with an 
 In the present analysis the interaction region is defined by all hits that have at least six neighbouring pads with a signal above the noise threshold. In this sense the neighbouring pads are always also part of the interaction region, which applies in particular at the border of the interaction region. The minimal value of six pads is chosen such that muon events remain unaffected meaning that a fake interaction region is found in only 1\% of single muon events. On the other hand for a value of five neighbouring pads about 10\% of muon events would get assigned a fake interaction region. Increasing the minimal value to seven neighbouring pads with hits reduces the fraction of events with a fake interaction still a bit but does not alter the results presented in the following.
 
 %The interaction region removal follows a principle similar to that of the isolated hit filter: a hit belongs to the interaction region if it has a number of neighbor hits above a certain threshold. The threshold value of 6 pads is chosen to leave  $\mathrm{\mu}^-$ events unaffected.
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -218,7 +242,7 @@ Figure \ref{fig:before} displays a simulated event after noise and isolated hits
 \subsection{Clusterisation}\label{sec:cluster}
 During the clusterisation step the energy depositions that are not associated to the interaction region are grouped into clusters by a topological principle. %This step is needed to separate secondary tracks into corresponding groups of hits, or clusters, for further classification. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/graphics/demo-v2.png}
 	\caption{\label{fig:democluster} \sl {\bf Check comment by Eigen on clarity of image} Illustration of the clusterisation step. The \ecal\ hits are represented by blue cubes, and the search region for adjacent hits is indicated by red cubes. The blue arrows point in the direction of the clusterisation flow. }
@@ -276,14 +300,14 @@ The correction term $\varepsilon N_{hits}$ in the definition of $\xi$ serves to 
 
 A deeper discussion of the effects of the  \ep\ is presented in Sec. \ref{sec:systematics}. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/plots/l-nhits.pdf}
 	\caption{\label{fig:lnhits} \sl Correlation between $N_{hits} - 1$ and cluster length $l$ in ${\sl g.u.}$ at the example of simulated pions with an energy of 10\,GeV using the \qgsp\ physics list. To guide the eye a line for $N_{hits} - 1=l$ is included in the figure.}
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/graphics/segmented-track-example.png}
 	\caption{\label{fig:demomerge} \sl An example of a segmented track in the \ecal\ from a single 6\,GeV $\mu^-$ in \ftfp\ Monte Carlo simulation.}
@@ -321,7 +345,7 @@ Therefore, these clusters are not considered in this discussion.
 Figure \ref{fig:epsilonsys} shows the dependence of $\left<N_{tracks}\right>$ on $\varepsilon$ for different beam energies\footnote{\label{note3}The mean number of tracks as function of $\varepsilon$ in data and simulation is given in Appendix~\ref{app:a} for future reference.}.
 Each curve has its minimum value at $\varepsilon = 0$ that is the mean number of ideal pencil-like tracks per event and saturates at large $\varepsilon$, when each cluster is taken as track-like.  
 %As can be seen from Fig. \ref{sec:systematics} mean number of tracks strongly depend on chosen \ep\ value that needs to be constrained. 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/plots/comparison.pdf}
 	\caption{\label{fig:epsilonsys} \sl Mean number of tracks found by the \tfa\ as a function of $\varepsilon$ for 2, 4, 6, 8 and 10\,GeV beam energy for the \qgsp\ physics list simulation. Events without a detected interaction region are discarded.}
@@ -330,7 +354,7 @@ Each curve has its minimum value at $\varepsilon = 0$ that is the mean number of
 For all clusters with a number of hits larger than 3, the simulated muon and electron samples are used to define a motivated choice for the value of  $\varepsilon$ to be applied for the track finding. 
 
 A Monte Carlo sample of $\mu^-$ is used to determine a lower bound on the \ep. The events for this study are selected if the number of hits is larger than the number of layers in the \ecalp. After this cut the muon tracks do not have a straight pencil-like shape, but rather a line with a number of adjacent hits generated by residual detector noise or $\delta$-rays. An example of such a track is given in Fig. \ref{fig:muonsys}.
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -413,7 +437,7 @@ In case of the \qgsp\ and \qbbc\  physics list the mean value is up to 20\% smal
 The observed discrepancy between data and the predictions by the {\sc Geant4} physics lists is consistent with an underestimation of the total energy deposition by the Monte Carlo models as reported in~\cite{Bilki:2014uep}.
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -428,7 +452,7 @@ The observed discrepancy between data and the predictions by the {\sc Geant4} ph
 	\caption{\label{fig:irexample} \sl {\bf Fig.~\ref{fig:efr2}: Remind me how the linear plot looks like} Comparison of $f_{IR}$ between data and Monte Carlo simulations for two {\sc Geant}4 physics lists for energies of 2 (a) and 10 (b) GeV of the primary particle, respectively. The first bin contains events without a detected interaction region. All histograms are normalised to unity. Error bars represent statistical uncertainties only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/plots/e-ir-graph.pdf}
 	\caption{\label{fig:irgraph} \sl  Mean fraction of energy deposition in the interaction region in \ecal\ for data and  Monte Carlo simulations for two {\sc Geant}4 physics lists as a function of the beam energy (2\,GeV to 10\,GeV). Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. The error bars represent statistical uncertainties and the error band the systematic error from the correction for double $\pi$ events.}
@@ -455,7 +479,7 @@ for energies of the primary particle of 2\,GeV and 10\,GeV. In both cases the me
 Figure \ref{fig:irrgraph} displays the dependence of the mean $r_{IR}$, $\left<r_{IR}\right>$, on the beam energy for the data and the three {\sc Geant4} physics lists. Here again, events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. The lateral size of the interaction region increases with increasing energy of the primary particle. For all tested energies the interaction region measured in data is constantly around 10\% wider than is the case of the {\sc Geant}4 physics lists that lead to identical results. 
 %An interpretation of this observation may be that the simulation is lacking energy depositions by secondaries with a comparatively long mean free path length. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -470,7 +494,7 @@ Figure \ref{fig:irrgraph} displays the dependence of the mean $r_{IR}$, $\left<r
 	\caption{\label{fig:rirexample} \sl {\bf Same remark as for Fig.~\ref{fig:efr2} } Comparison of $r_{IR}$ distributions for data and Monte Carlo simulations for two {\sc Geant}4 physics lists for energies of the primary particle of 2 (a) and 10 (b) GeV, respectively. All histograms are normalised to unity. Error bars represent statistical uncertainties only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/plots/r-ir-graph.pdf}
 	\caption{\label{fig:irrgraph} \sl Mean $r_{IR}$ for data and Monte Carlo simulations for two {\sc Geant}4 physics lists as a function of the beam energy. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical uncertainties only and the error band the systematic error from the correction for double $\pi$ events.}
@@ -485,7 +509,7 @@ The $N_{clusters}$ distribution is given in Fig. \ref{fig:clusterexample} for da
 
 Figure \ref{fig:clustergraph} shows the dependence of $\left<N_{clusters}\right>$  on different beam energies for data, \ftfp\ and \qgsp\ Monte Carlo simulations. At all energies the data are systematically above the Monte Carlo predictions with deviations of up to 7\%. The agreement tends to improves with increasing energy of the primary particle and is best at 10\,GeV. 
 %At 2 and 10\,GeV there is a good agreement between data and both simulation samples, but for intermediate beam energies the \tfa\ tends to find more clusters in data than in Monte Carlo.
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -500,7 +524,7 @@ Figure \ref{fig:clustergraph} shows the dependence of $\left<N_{clusters}\right>
 	\caption{\label{fig:clusterexample} \sl Comparison of the number of clusters found between data and Monte Carlo simulations for two {\sc Geant}4 physics lists for energies of the primary particle of 2 (a) and 10 (b) GeV, respectively. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical uncertainties only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/plots/cluster-graph.pdf}
 	\caption{\label{fig:clustergraph} \sl Mean number of clusters in the \ecal\ for data and  Monte Carlo simulations for two {\sc Geant}4 physics lists as a function of beam energy (2\,GeV to 10\,GeV). Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars on the graph represent statistical uncertainties and the error band the systematic error from the correction for double $\pi$ events.}
@@ -523,7 +547,7 @@ Both physics lists, presented in Fig.  \ref{fig:tracksgraph} underestimate the n
 The sensitivity to the \ep\ defined by Eq.~\ref{eq:sens} for ${\cal O}=N_{tracks}$, $\varepsilon_{1},=0.04$, $\varepsilon_{2},=0.02$ and $\varepsilon_{nom.}=0.03$   
 %$\Delta N_{tracks} = <N_{tracks}(\varepsilon = 0.04) - N_{tracks}(\varepsilon = 0.02)> /<N_{tracks}(\varepsilon = 0.03)> $ is used. 
 is shown in Fig. \ref{fig:dtracksgraph}. Within the chosen range the number of reconstructed tracks varies by about 10\% for both, data and the three {\sc Geant4} physics lists. 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -538,7 +562,7 @@ is shown in Fig. \ref{fig:dtracksgraph}. Within the chosen range the number of r
 	\caption{\label{fig:trackexample} \sl Comparison of the number of secondary tracks between data Monte Carlo simulations for two {\sc Geant}4 physics lists  for energies of the primary particle of 2 (a) and 10 (b) GeV. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical errors only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -566,7 +590,7 @@ Figure \ref{fig:trackshitsgraph} shows the dependence of $\left<N_{hits}^t\right
 The sensitivity to the \ep\  as defined by Eq.~\ref{eq:sens} for ${\cal O}=N_{hits}$, $\varepsilon_{1},=0.04$, $\varepsilon_{2},=0.02$ and $\varepsilon_{nom.}=0.03$ is shown in Fig. \ref{fig:dtrackshitsgraph}. For the chosen parameter range the sensitivity increases with increasing beam energy from 1\% to about 5\% for both, data and the three {\sc Geant4} physics lists. 
 %Figure \ref{fig:dtrackshitsgraph} demonstrates a similar behavior of parametric uncertainty on $N_{hits}^t$ for data and Monte Carlo. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -581,7 +605,7 @@ The sensitivity to the \ep\  as defined by Eq.~\ref{eq:sens} for ${\cal O}=N_{hi
 	\caption{\label{fig:trackhitsexample} \sl A comparison of the number of hits per reconstructed track between data and Monte Carlo simulations for two {\sc Geant}4 physics lists  or energies of the primary particle of 2 (a) and 10 (b) GeV, respectively. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. The distributions are normalised to unity. Error bars represent statistical uncertainties only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -628,7 +652,7 @@ The sensitivity to the \ep\  as defined by Eq.~\ref{eq:sens} for ${\cal O}=\thet
 %As supplementary information Fig. \ref{fig:thetaepsilonsys} shows a study of the dependence of $<\theta>$ on $\varepsilon$ for the different beam energies. The dependence is moderate except for 2\,GeV. In all
 %cases the results for $\varepsilon = 0.03$ are approximately in the center of a broad minimum corroborating the stability of the results shown in Figs. \ref{fig:thetaexample} and \ref{fig:phiexample}. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -643,7 +667,7 @@ The sensitivity to the \ep\  as defined by Eq.~\ref{eq:sens} for ${\cal O}=\thet
 	\caption{\label{fig:thetaexample} \sl Comparison of the polar angle $\theta$ of secondary tracks found between data and Monte Carlo simulations for two {\sc Geant}4 physics lists for energies of the primary particle of 2 (a) and 10 (b) GeV, respectively. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical uncertainties only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -658,7 +682,7 @@ The sensitivity to the \ep\  as defined by Eq.~\ref{eq:sens} for ${\cal O}=\thet
 	\caption{\label{fig:phiexample} \sl Comparison of the azimuthal angle $\phi$ of secondary tracks between data and Monte Carlo simulations for two {\sc Geant}4 physics lists for 2 (a) and 10 (b) GeV beam energies. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical uncertainties only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -693,7 +717,7 @@ The energy deposition by secondary tracks $E_{dep}^t$ using data for 2 and 10\,G
 Figure \ref{fig:calibrationgraph} presents the dependence of the most probable value (MPV) of the energy deposition in secondary tracks on beam energy. 
 It can be seen that the detector response is uniform within 1-2\% over the energy range of the primary particles in data and that also the energy deposition by the tracks is reproduced by the Monte Carlo simulations within 1-2\%.  
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -708,7 +732,7 @@ It can be seen that the detector response is uniform within 1-2\% over the energ
 	\caption{\label{fig:calib} \sl Histograms of the energy deposition in secondary tracks for the data with 2 (a) and 10 (b) GeV beam energies. The spectra are fitted by the convolution of a Landau and a Gaussian. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical uncertainties only.}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/plots/calibrationfit-graph.pdf}
 	\caption{\label{fig:calibrationgraph} \sl MPV of the Landau fit to the $E_{dep}^t$ distributions of the pencil-like secondary tracks as a function of the beam energy for $\pi^-$ data and three Monte Carlo samples. The MPV point the of 2\,GeV data sample is excluded because of the small statistics left after selection. Events without a detected interaction region  according to Sec.~\ref{sec:iazone} are discarded.  Error bars represent the statistical fit uncertainty.}
