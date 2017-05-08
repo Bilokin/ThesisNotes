@@ -1294,6 +1294,7 @@ The main improvements be the recovery are the following:
 	\item The vertex charge purity is 84\% after recovery using the data-driven measurement, as compared to 80\% before recovery;
 	\item The kaon charge purity stays the same, but the number of kaons is increased by 10\%; 
 	\item The vertex charge recovery provides close to constant charge purity in the barrel region of the ILD experiment, as can be seen in Fig.~\ref{fig:BAsymmetryRec_3}. This is the consequence of the recovery of the peaks of missing vertex particles as it is described in Sec.~\ref{sec:VtxRecovery}.
+	The residual efficiency decrease in the $|\cos\theta|\approx 0.8$ bin is caused by the jet energy resolution decrease.  
 \end{itemize}
 
 \begin{figure}
@@ -1363,8 +1364,31 @@ The final uncertainties on the measured total cross section and the forward-back
 		\includegraphics[width=0.95\textwidth]{ILD/plots/sigma-sqrts.pdf}
 		\caption{\label{fig:LEPILC_b_3} }
 	\end{subfigure}
-	\caption{\sl Tree level \sm\ forward-backward asymmetry (a) and total cross section prediction (b)}
+	\caption{\sl Tree level \sm\ forward-backward asymmetry (a) and total cross section prediction (b). Results of the low-energy experiments and LEP measurements are taken from~\cite{bib:LEPpuzzle}.}
 	\label{fig:LEPILC_3}
 \end{figure}
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/lep-result.pdf}
+		\caption{\label{fig:LEPILCResult_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/ilc-result.pdf}
+		\caption{\label{fig:LEPILCResult_b_3} }
+	\end{subfigure}
+	\caption{\sl Tree level 1\,$\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (a) and ILC (b). }
+	\label{fig:LEPILCResult_3}
+\end{figure}
 \subsection{Precision on the b-quark form factors}
+At the ILC, it will be possible to make an independent calculation of all b-quark form factors using the reconstructed b-quark polar angle.
+The reconstructed b-quark polar angle is described by the differential cross section of the \bbbar\ pair production in Eq.~\ref{formula:DiffSigma_3}.
+Thus, the distributions, presented in Fig.~\ref{fig:BAsymmetryFinal_3}, are fitted by the common function
+\begin{equation}
+	F (\cos\theta) = A (1+\cos^2\theta) + B\cos\theta + C \sin^2\theta.
+\end{equation}
+to find the parameters $A$, $B$ and $C$, which depend on the b-quark form factors. 
+
+\subsection{Outlook}
 \section*{Conclusions}
