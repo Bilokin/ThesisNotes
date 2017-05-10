@@ -1124,10 +1124,22 @@ The defined cuts against the background processes are the following:
 \begin{itemize}
 	\item Value of the first jet b-tag should be higher than 0.8 and b-tag of the second jets is higher 0.3;
 	\item Invariant mass of two jets $m_{Inv} > 180$\,GeV and maximal photon energy $E^{max}_\gamma < 40$\,GeV;
-	\item Sum of the jet masses $m_1+m_2<120$\,GeV;
-	\item Sphericity of the event, which is defined as $S_{I} = \sum p_i / E$, should be less than 0.2.
+	\item Sum of the jet masses $m^{jet}_1+m^{jet}_2<120$\,GeV;
+%	\item Sphericity of the event, which is defined as $S_{I} = \sum p_i / E$, should be less than 0.2.
 \end{itemize}
-These cuts are applied equally to both beam polarizations.
+The sum of the jet masses is changing with the b-jet polar angle as shown in Fig.~\ref{fig:JetMasses_3}. This deviation happens due to the degrading jet energy resolution towards the forward region of the detector. 
+\begin{figure}
+	{\centering
+		\includegraphics[width=0.55\textwidth]{ILD/plots/mass-correction.pdf}
+		\caption{\sl Mean sum of the jet masses as function of the polar angle of b-jets.   
+		}
+		\label{fig:JetMasses_3}
+	}
+	
+\end{figure}
+This behavior cause a bias in the b-quark polar angle distribution after the cut on  $m^{jet}_1+m^{jet}_2$ value. 
+Thus, a polar angle correction was introduced to remove the $m^{jet}_1+m^{jet}_2$ dependence on the $|\cos\theta|$.
+These cuts and the angular correction are applied equally to both beam polarizations.
 The successive application of the preselection cuts is demonstrated in Table~\ref{table:bbbarselection}.
 
 \input{ILD/tables/bbbar-sigma}
