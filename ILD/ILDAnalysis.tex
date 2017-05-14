@@ -144,9 +144,9 @@ The experiments with polarized beams have an advantage of detection of sign flip
 The electron-positron colliders have a large production cross section of $e^+e^- \to q\bar{q}$ process mediated by $Z^0$ boson or a virtual photon. The total cross sections of various \sm\ processes for the $e^+e^-$ machines are shown in Fig.~\ref{fig:LCcrosssection}.
 
 The circular LEP~I and the linear SLC colliders operated at the $Z^0$ pole, where the $e^+e^-$ cross section is maximal, benefiting from significantly increased event rate. 
-The measurements resulted in an extremely precise cross section determination and a forward-backward asymmetry measurements. 
-The measured cross section value has full compatibility with the \sm\ calculations. 
-On the other hand, the measured b-quark forward-backward asymmetry $A_{FB}^b$  value at LEP has 2.5\,$\sigma$ tension with a recent electroweak fit predictions~\cite{bib:AfbSMFit}.
+The measurements resulted in extremely precise b-quark fraction $R_b$ and the b-quark forward-backward asymmetry $A_{FB}^b$ measurements. 
+The measured $R_b$ value, which is the ratio of b-quark cross section over total hadronic cross section, has full compatibility with the \sm\ prediction. 
+On the other hand, the measured b-quark forward-backward asymmetry $A_{FB}^b$  value at LEP has 2.5\,$\sigma$ tension with the recent electroweak fit predictions~\cite{bib:AfbSMFit}.
 The measurement of the $A_{FB}^b$ value at the SLC have 27\% higher uncertainty than the LEP results~\cite{bib:SLC}.
 
 The measurements outside $Z^0$ pole were done by the LEP~II collider, which collected the most integrated luminosity at around 190\,GeV energy, at the $W^\pm$-pair production threshold. 
@@ -1177,7 +1177,7 @@ The difference in the generated b-quark polar angle distributions for two polari
 	\end{subfigure}% 
 	\begin{subfigure}{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-nocorr-nobkg-right.pdf}
+			\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-nocorr-nobkg-right.pdf}
 		\caption{\label{fig:BAsymmetryFirst_b_3} }
 	\end{subfigure}
 	\caption{\sl Generated b-quark polar angle distribution compared to reconstructed polar angle in left-handed case (a) and right-handed case (b) using all possible charge signature combinations. Integrated luminosity used 250\ifb for both polarizations. }
@@ -1230,28 +1230,29 @@ The method of b-quark polar angle correction should be independent from the gene
 
 \subsubsection{Vertex Charge Recovery influence}
 %change to no correction!!!!
-Nice correspondence between the corrected and the generated curves makes the results usable for the $Z^0$ coupling and form factor computation.
+The vertex charge recovery algorithm, described in Section~\ref{sec:VtxRecovery}, is applied to the b-quark polar angle measurement in attempt to decrease the discrepancies between generated and reconstructed distributions.
+The result of the recovery application is shown in Fig.~\ref{fig:BAsymmetryRec_3}.
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-rec-corr-nobkg-left.pdf}
-		\caption{\label{fig:BAsymmetryCorrectedRec_a_3} }
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-rec-nocorr-nobkg-left.pdf}
+		\caption{\label{fig:BAsymmetryRec_a_3} }
 	\end{subfigure}% 
 	\begin{subfigure}{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-rec-corr-nobkg-right.pdf}
-		\caption{\label{fig:BAsymmetryCorrectedRec_b_3} }
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-rec-nocorr-nobkg-right.pdf}
+		\caption{\label{fig:BAsymmetryRec_b_3} }
 	\end{subfigure}
-	\caption{\sl Generated b-quark polar angle distribution compared to reconstructed polar angle in left-handed case (a) and right-handed case (b) using the independent kaon and vertex charge combinations. The reconstructed distribution before correction is in black, corrected for the charge impurity is in blue color. }
-	\label{fig:BAsymmetryCorrectedRec_3}
+	\caption{\sl Generated b-quark polar angle distribution compared to reconstructed polar angle in left-handed case (a) and right-handed case (b) using the independent kaon and vertex charge combinations after application of the vertex charge recovery algorithm. }
+	\label{fig:BAsymmetryRec_3}
 \end{figure}
-The main improvements be the recovery are the following:
+The main improvements of the vertex charge recovery are the following:
 \begin{itemize}
 	\item The number of accepted events is improved by 9\%;
 	\item The $A_{FB}$ reconstruction is improved before correction by 3\%;
-	\item The vertex charge purity is 84\% after recovery using the data-driven measurement, as compared to 80\% before recovery;
+	\item The vertex charge purity is increased by 4\%;
 	\item The kaon charge purity stays the same, but the number of kaons is increased by 10\%; 
-	\item The vertex charge recovery provides close to constant charge purity in the barrel region of the ILD experiment, as can be seen in Fig.~\ref{fig:BAsymmetryRec_3}. This is the consequence of the recovery of the peaks of missing vertex particles as it is described in Sec.~\ref{sec:VtxRecovery}.
+	\item The vertex charge recovery provides close to constant charge purity in the barrel region of the ILD experiment, as can be seen in Fig.~\ref{fig:BAsymmetryRecZ_3}. This is the consequence of the recovery of the peaks of missing vertex particles as it is described in Sec.~\ref{sec:VtxRecovery}.
 	The residual efficiency decrease in the $|\cos\theta|\approx 0.8$ bin is caused by the jet energy resolution decrease.  
 \end{itemize}
 
@@ -1259,18 +1260,108 @@ The main improvements be the recovery are the following:
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=0.95\textwidth]{ILD/plots/zoom-rec.pdf}
-		\caption{\label{fig:BAsymmetryRec_a_3} }
+		\caption{\label{fig:BAsymmetryRecZ_a_3} }
 	\end{subfigure}% 
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.95\textwidth]{ILD/plots/zoom-norec.pdf}
-		\caption{\label{fig:BAsymmetryRec_b_3} }
+		\caption{\label{fig:BAsymmetryRecZ_b_3} }
 	\end{subfigure}
 	\caption{\sl The demonstration of the vertex charge recovery improvement (a) compared to the standard algorithm (b). }
-	\label{fig:BAsymmetryRec_3}
+	\label{fig:BAsymmetryRecZ_3}
 \end{figure}
 
-The data-driven charge purity measurement and the polar angle correction algorithm are proven to work with the different vertexing algorithms. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Make sure no generated quantity used
+\subsubsection{Charge purity measurement}
+\label{sec:ChargePurity}
+The knowledge of the charge purity from the reconstructed events, or the future ILC data is crucial for the present analysis. 
+%The adopted system of the
+The measurement of the b-jet charge purity is done using the number of accepted events $N_a$ and the number of rejected events $N_r$. 
+The b-jet charge measurement uses two compatible charge combinations, either the vertex charge or the kaon charge.
+ Which means, that the following rules are applied:
+\begin{itemize}
+	\item To accept an event one need to measure both charges correctly, or both charges incorrectly;
+	\item The rejected event has one charge correctly reconstructed and another incorrectly reconstructed. 
+\end{itemize}
+
+Let $p$ be a probability of correct charge measurement or the charge purity, then $q = 1-p$ is a probability of the incorrect charge measurement. 
+%Suppose, one has $N$ events, which is a sum of accepted event number $N_a$ and rejected event number $N_r$. 
+Then, the number of accepted events is:
+\begin{equation}
+	N_a = N p^2 + N q^2,
+	\label{formula:PurityA_3}
+\end{equation}
+while the number of rejected has the following expression:
+\begin{equation}
+	N_r = 2N pq,
+	\label{formula:PurityR_3}
+\end{equation}
+where $N = N_a + N_r$ is the total number of events.
+The charge purity $p$ is easily computed using expressions (\ref{formula:PurityA_3}) and (\ref{formula:PurityR_3}) for each charge pair combinations.
+
+The charge purity values are the following:
+\begin{itemize}
+	\item Vertex-vertex charge combination - 80\%;
+	\item Kaon-kaon charge combination  - 79\%;
+	\item Kaon-vertex charge combination from the same jet - 90\%;
+	\item Kaon-vertex charge combination from opposite jets - 77\%.
+\end{itemize}
+The kaon-vertex combination have much higher value of the charge purity than the vertex-vertex and kaon-kaon combinations. 
+The reconstruction algorithms can by accident lose a particle from the reconstructed secondary or tertiary vertices. 
+Thus, the true $B_0$ hadron will be reconstructed as a falsely charged hadron.
+The $B^0-\bar{B}^0$ oscillations can flip the charge of the $K$-meson, which will create a fake compatibility between the kaon and vertex charges.
+Hence, the measured purity of the kaon-vertex charge combination is falsely increased by the accidental kaon-vertex charge correlation.
+%This is caused by charge correlations induced by the $B^0-\bar{B}^0$ oscillations. 
+Therefore, to avoid the charge correlations, the b-quark polar  angle and the corrections to the polar angle are calculated without the mixed charge combinations.
+
+Again, the main advantage of this charge purity measurement procedure is its independence from the generator information. 
+Therefore, it can be directly applied to the future data, taken by the ILC.
+%Therefore, the vertex and kaon charge purity values can be computed from the data, which allows to control the vertexing algorithms performance from the data. 
+
+
+\subsubsection{Corrections to the polar angle}
+To resolve the discrepancy between the generated and the reconstructed polar angle distributions, shown in Fig.~\ref{fig:BAsymmetryProblem_a_3}, the polar angle spectrum is corrected using the measured purity $p$.
+Knowing the charge purity from the reconstruction, 
+To compute the correction, one defines the number of the accepted events in the forward region $N_a^+$ and in the backward region $N_a^-$ 
+\begin{equation}
+\begin{array}{l}
+N_a^+ =  N^+_{true}p^2 + N^-_{true}q^2\\
+N_a^- =  N^-_{true}p^2 + N^+_{true}q^2,
+\end{array}
+\label{formula:Correction_3}
+\end{equation}
+where $N_{true}^+$ and  $N_{true}^-$ are the true accepted event number the forward region and in the backward region, respectively.
+The terms proportional to $q^2$ are responsible for the contamination effect shown in Fig.~\ref{fig:BAsymmetryProblem_a_3}.
+The equation (\ref{formula:Correction_3}) is true for forward and backward bins in the b-quark polar angle histogram.
+%This computation is carried out for each bin of the b-quark polar angle histogram. 
+
+To simplify the procedure, the purity $p$ is calculated as an average for all bins of the polar angle histogram and charge pair combinations. 
+
+%One calculates the correction to the polar angle using expression (\ref{formula:Correction_3}). 
+
+The results after the application of the corrections for the charge impurity are shown in Fig.~\ref{fig:BAsymmetryCorrected_3}. 
+The precision of the $A_{FB}^b$ reconstruction is $A_{FB}^{rec}/A^{gen}_{FB} = 100.4\%\pm 0.2\%$ in left-handed case and  $A_{FB}^{rec}/A^{gen}_{FB} = 104\%\pm2.0\%$ in the right-handed case. 
+The errors on the $A_{FB}^{rec}$ are calculated using the fit uncertainties. 
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-rec-corr-nobkg-left.pdf}
+		\caption{\label{fig:BAsymmetryCorrected_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+			\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-rec-corr-nobkg-right.pdf}
+		\caption{\label{fig:BAsymmetryCorrected_b_3} }
+	\end{subfigure}
+	\caption{\sl Generated b-quark polar angle distribution compared to reconstructed polar angle in left-handed case (a) and right-handed case (b) using the independent kaon and vertex charge combinations. The reconstructed distribution before correction is in black, corrected for the charge impurity is in blue color. }
+	\label{fig:BAsymmetryCorrected_3}
+\end{figure}
+
+The data-driven charge purity measurement and the polar angle correction algorithm have been proven to work with the different vertexing algorithms. 
 The corrected b-quark polar angle distributions with the overlaid background processes after vertex recovery are shown in Fig.~\ref{fig:BAsymmetryFinal_3}.
 \begin{figure}
 	\centering
@@ -1292,96 +1383,6 @@ The final result of the $A_{FB}^b$ measurement is for the integrated luminosity 
 A_{FB}^{rec}(e^-_L e^+_R) = 0.708\pm0.0026 \text{ and }A_{FB}^{gen}(e^-_R e^+_L) =  0.275\pm 0.0061.
 \end{equation}
 This result needs to be scaled to the realisitic beam polarization and the runing scenarious at the ILC.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Make sure no generated quantity used
-\subsubsection{Charge purity measurement}
-\label{sec:ChargePurity}
-THe knowledge of the charge purity from the reconstructed events, or future ILC data is essential for the present analysis. 
-%The adopted system of the
-The measurement of the b-jet charge purity is done using the number of accepted events $N_a$ and the number of rejected events $N_r$. 
-The b-jet charge measurement uses two compatible charge combinations, either the vertex charge or the kaon charge.
- Which means, that the following rules are established:
-\begin{itemize}
-	\item To accept an event one need to measure both charges correctly, or both charges incorrectly;
-	\item To reject an event, one need to measure one charge correctly and another incorrectly. 
-\end{itemize}
-
-Let $p$ be a probability of correct charge measurement or the charge purity, then $q = 1-p$ is a probability of the incorrect charge measurement. 
-%Suppose, one has $N$ events, which is a sum of accepted event number $N_a$ and rejected event number $N_r$. 
-Then, the number of accepted events is:
-\begin{equation}
-	N_a = N p^2 + N q^2,
-	\label{formula:PurityA_3}
-\end{equation}
-While the number of rejected has the following expression:
-\begin{equation}
-	N_r = 2N pq,
-	\label{formula:PurityR_3}
-\end{equation}
-where $N = N_a + N_r$ is the total number of events.
-The charge purity $p$ is computed using expressions (\ref{formula:PurityA_3}) and (\ref{formula:PurityR_3}).
-
-The charge purity values are the following:
-\begin{itemize}
-	\item Vertex-vertex charge combination - 80\%;
-	\item Kaon-kaon charge combination  - 79\%;
-	\item Kaon-vertex charge combination from the same jet - 90\%;
-	\item Kaon-vertex charge combination from opposite jets - 77\%.
-\end{itemize}
-The kaon-vertex  charge measurement have higher value of purity than the vertex-vertex and kaon-kaon combinations. 
-The reconstruction algorithms can by accident lose a particle from the reconstructed secondary or tertiary vertices. 
-Thus, the true $B_0$ hadron will be reconstructed as a charged hadron.
-The $B^0-\bar{B}^0$ oscillations can flip the charge of the $K$-meson, which will create an fake compatibility between the kaon and vertex charges.
-Hence, the measured purity of the kaon-vertex charge combination is falsely increased by the accidental kaon-vertex charge correlation.
-%This is caused by charge correlations induced by the $B^0-\bar{B}^0$ oscillations. 
-Therefore, to avoid the charge correlations, the b-quark polar  angle and the corrections to the polar angle are calculated without the mixed charge combinations.
-
-The main advantage of this charge purity measurement procedure is its independence from generator information. 
-THerefore, it can be directly applied to the future data, taken by the ILC.
-%Therefore, the vertex and kaon charge purity values can be computed from the data, which allows to control the vertexing algorithms performance from the data. 
-
-
-\subsubsection{Corrections to the polar angle}
-To resolve the discrepancy between the generated and the reconstructed polar angle distributions, shown in Fig.~\ref{fig:BAsymmetryProblem_a_3}, the polar angle spectrum is corrected using the measured purity $p$.
-Knowing the charge purity from the reconstruction, 
-To compute the correction, one defines the number of accepted events in the forward region $N_a^+$ and in the backward region $N_a^-$ 
-\begin{equation}
-\begin{array}{l}
-N_a^+ =  N^+_{true}p^2 + N^-_{true}q^2\\
-N_a^- =  N^-_{true}p^2 + N^+_{true}q^2,
-\end{array}
-\label{formula:Correction_3}
-\end{equation}
-where $N_{true}^+$ and  $N_{true}^-$ are the true accepted event number the forward region and in the backward region, respectively.
-The terms proportional to $q^2$ are responsible for the contamination effect shown in Fig.~\ref{fig:BAsymmetryProblem_a_3}.
-The computation is possible for each bin of the b-quark polar angle histogram. 
-The equation (\ref{formula:Correction_3}) is true for a range in polar angle and or for a bins in the histogram.
-To simplify the procedure, the purity $p$ is calculated and averaged for all bins of the polar angle histogram. 
-
-%One calculates the correction to the polar angle using expression (\ref{formula:Correction_3}). 
-
-The results after application of the data-driven corrections are shown in Fig.~\ref{fig:BAsymmetryCorrected_3}. 
-The precision of the $A_{FB}^b$ reconstruction is $A_{FB}^{rec}/A^{gen}_{FB} = 100.4\%\pm 0.4\%$ in left-handed case and  $A_{FB}^{rec}/A^{gen}_{FB} = 104\%\pm5.7\%$ in the right-handed case. 
-The errors on the $A_{FB}^{rec}$ are calculated using the fit uncertainties. 
-
-\begin{figure}
-	\centering
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-corr-nobkg-left.pdf}
-		\caption{\label{fig:BAsymmetryCorrected_a_3} }
-	\end{subfigure}% 
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-norec-corr-nobkg-right.pdf}
-		\caption{\label{fig:BAsymmetryCorrected_b_3} }
-	\end{subfigure}
-	\caption{\sl Generated b-quark polar angle distribution compared to reconstructed polar angle in left-handed case (a) and right-handed case (b) using the independent kaon and vertex charge combinations. The reconstructed distribution before correction is in black, corrected for the charge impurity is in blue color. }
-	\label{fig:BAsymmetryCorrected_3}
-\end{figure}
-The further improvement of the results is done using the vertex charge recovery. 
-
 \subsection{Reachable accuracies at the ILC}
 The traditional method of the $Z^0$ coupling calculation requires an estimation of the uncertainties on the total cross section and the forward-backward asymmetry values. 
 The calculated uncertainties should correspond to the realistic running conditions at the ILC.
@@ -1402,9 +1403,10 @@ The final uncertainties on the measured total cross section and the forward-back
 \input{ILD/tables/bbbar-final}
 \subsection{Comparison to the LEP results}
 
-The ILC is able to provide a solution to the LEP tension of the $A_{FB}^b$ measurement with the \sm\ prediction.
-The $A_{FB}$ values as a function of $\sqrt{s}$ along with the experimental results and ILC expected precision is shown in Fig.~\ref{fig:LEPILC_3}. The LEP measurement on the $Z^0$ pole is still the most precise b-quark $A_{FB}$ measurement. 
-Using the $A_{FB}$ and total cross section expected precision.
+The ILC is able to provide a definite solution to the LEP tension of the $A_{FB}^b$ measurement with the \sm\ prediction.
+The $A_{FB}$ values as a function of $\sqrt{s}$ along with the experimental results and ILC expected precision is shown in Fig.~\ref{fig:LEPILC_3}.% The LEP measurement on the $Z^0$ pole is still the most precise b-quark $A_{FB}$ measurement.
+In this thesis, the expected results of the ILC are compared to the LEP~I measurements of the $A_{FB}$ and the $R_b$ values.
+
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
