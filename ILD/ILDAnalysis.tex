@@ -1216,12 +1216,13 @@ The polar angle histogram is fitted by the general differential cross section fu
 	\label{formula:PolarAngleFit_3}
 \end{equation}
 where $A$ and $B$ are the fitted parameters. 
+The parameter $A$ is proportional to the total cross section, while $B$ is proportional to the forward-backward asymmetry.
 After the fit, the function is extrapolated to the full polar angle spectrum.
 However, the sensitivity of the current ILD experiment configuration to New Physics effects is lost for $|\cos\theta| > 0.85$.
 
 Using the extracted polar angle function the reconstructed $A_{FB}^b$ value is calculated as
 \begin{eqnarray}
-	A_{FB} = \frac{3}{4}\frac{B}{2 A  + C}.
+	A_{FB} = \frac{3}{4}\frac{B}{2 A}.
 \end{eqnarray} 
 The precision of the $A_{FB}^b$ reconstruction is $A_{FB}^{rec}/A^{gen}_{FB} = 88\%$ in left-handed case and  $A_{FB}^{rec}/A^{gen}_{FB} = 89\%$ in the right-handed case.  
 However, the backward region contamination problem requires large corrections for residual charge misreconstruction in the left-handed polarization case as compared to the right-handed polarization case. 
@@ -1229,7 +1230,7 @@ However, the backward region contamination problem requires large corrections fo
 The method of b-quark polar angle correction should be independent from the generated curve. 
 
 \subsubsection{Vertex Charge Recovery influence}
-%change to no correction!!!!
+
 The vertex charge recovery algorithm, described in Section~\ref{sec:VtxRecovery}, is applied to the b-quark polar angle measurement in attempt to decrease the discrepancies between generated and reconstructed distributions.
 The result of the recovery application is shown in Fig.~\ref{fig:BAsymmetryRec_3}.
 \begin{figure}
@@ -1441,7 +1442,8 @@ This study leads to the following conclusions:
 \end{itemize}
 The LEP measurements allow for a sign flip of the right-handed coupling $g_R^Z$, however, it will produce 2\,$\sigma$ tension with TRISTAN data at 60\,GeV, as found in~\cite{bib:LEPpuzzle}.
 The $g_R^Z$ sign flip is easily detectable at the ILC, because the b-polar angle in right-handed beam configuration in Fig.~\ref{fig:BAsymmetryFinal_b_3} will be flipped around $\cos\theta_b = 0$. 
-Therefore, the further studies are concentrated on the solution with the \sm\ coupling sign.
+Therefore, the further studies are concentrated on the solution with the \sm\ coupling sign. 
+The corresponding parameter space is shown in Fig.~\ref{fig:LEPILCResult_a_3}.
 The estimated  central values of the $Z^0b\bar{b}$ couplings obtained at LEP are
 \begin{eqnarray}
 	\delta g_R^Z / g_R^Z = +27.6\% \pm 9.6\% \label{formula:LEPgR} \\
@@ -1449,15 +1451,24 @@ The estimated  central values of the $Z^0b\bar{b}$ couplings obtained at LEP are
 \end{eqnarray}
 
 
+The precision b-quark couplings at the ILC are estimated by the b-quark polar angle fit by the differential cross section function~\ref{formula:PolarAngleFit_3}.
+The extracted fit parameters $A^I$ and $B^I$ and the corresponding covariance matrix for two beam polarizations allow to calculate the $Z^0b\bar{b}$ couplings and the corresponding uncertainties. 
+The ILC will provide only one definite solution, dure to the $Z^0/\gamma$ interference terms in the cross section definition. 
+The numerical calculation agrees with the direct estimation on the following values:
+\
+
+
+
+
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.95\textwidth]{ILD/plots/lep-result-zoom.pdf}
+		\includegraphics[width=0.99\textwidth]{ILD/plots/lep-result-zoom.pdf}
 		\caption{\label{fig:LEPILCResult_a_3} }
 	\end{subfigure}% 
 	\begin{subfigure}{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.95\textwidth]{ILD/plots/ilc-result.pdf}
+		\includegraphics[width=0.99\textwidth]{ILD/plots/ilc-result.pdf}
 		\caption{\label{fig:LEPILCResult_b_3} }
 	\end{subfigure}
 	\caption{\sl Tree level $\pm 1\,\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (a) and ILC (b). Dashed guidelines show the \sm\ value.}
