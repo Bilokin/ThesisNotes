@@ -1212,14 +1212,14 @@ The  inefficiency in the forward region of the detector makes impossible the mea
 Thus, the b-quark polar angle analysis limited to the region of $|\cos\theta| < 0.85$.
 The polar angle histogram is fitted by the general differential cross section function:
 \begin{equation}
-	f(A,B,C) = A(1+\cos^2\theta) + B \cos\theta + C \sin^2\theta,
+	f(A,B) = A(1+\cos^2\theta) + B \cos\theta, %+ C \sin^2\theta,
 	\label{formula:PolarAngleFit_3}
 \end{equation}
-where $A$, $B$ and $C$ are the fitted parameters. 
+where $A$ and $B$ are the fitted parameters. 
 After the fit, the function is extrapolated to the full polar angle spectrum.
 However, the sensitivity of the current ILD experiment configuration to New Physics effects is lost for $|\cos\theta| > 0.85$.
 
-Using the extructed polar angle function the reconstructed $A_{FB}^b$ value is calculated as
+Using the extracted polar angle function the reconstructed $A_{FB}^b$ value is calculated as
 \begin{eqnarray}
 	A_{FB} = \frac{3}{4}\frac{B}{2 A  + C}.
 \end{eqnarray} 
@@ -1435,11 +1435,14 @@ This numerical result is obtained by scanning the parameter space of the left-ha
 \end{figure}
 This study leads to the following conclusions:
 \begin{itemize}
-	\item The value $g_R^Z$ has much larger uncertainty of $\pm$9.6\% as compared to the $\pm1$\% uncertainty on the $g_L^Z$ coupling;
+	\item The value $g_R^Z$ has much larger uncertainty of $\pm$9.6\% as compared to the $\pm 1$\% uncertainty on the $g_L^Z$ coupling;
 	\item The $g_R^Z$ is shifted w.r.t. the \sm\ value at $(0,0)$ by approximately $2.5\,\sigma$;
 	\item The LEP~I measurements at $Z^0$ pole had no interference between $Z^0$ and $\gamma$ propagators, which leads to the sign ambiguity of the $g_R^Z$ coupling. This fact is reflected in Fig.~\ref{fig:LEPResultFull_3} as a second allowed region around $\delta g_R^Z / g_R^Z \approx -2.25$. 
 \end{itemize}
-The central values of the couplings obtained at LEP are
+The LEP measurements allow for a sign flip of the right-handed coupling $g_R^Z$, however, it will produce 2\,$\sigma$ tension with TRISTAN data at 60\,GeV, as found in~\cite{bib:LEPpuzzle}.
+The $g_R^Z$ sign flip is easily detectable at the ILC, because the b-polar angle in right-handed beam configuration in Fig.~\ref{fig:BAsymmetryFinal_b_3} will be flipped around $\cos\theta_b = 0$. 
+Therefore, the further studies are concentrated on the solution with the \sm\ coupling sign.
+The estimated  central values of the $Z^0b\bar{b}$ couplings obtained at LEP are
 \begin{eqnarray}
 	\delta g_R^Z / g_R^Z = +27.6\% \pm 9.6\% \label{formula:LEPgR} \\
 	\delta  g_L^Z / g_L^Z = -0.9\% \pm 0.4\%.
@@ -1457,9 +1460,8 @@ The central values of the couplings obtained at LEP are
 		\includegraphics[width=0.95\textwidth]{ILD/plots/ilc-result.pdf}
 		\caption{\label{fig:LEPILCResult_b_3} }
 	\end{subfigure}
-	\caption{\sl Tree level 1\,$\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (a) and ILC (b). Dashed guidelines show the \sm\ value.}
+	\caption{\sl Tree level $\pm 1\,\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (a) and ILC (b). Dashed guidelines show the \sm\ value.}
 	\label{fig:LEPILCResult_3}
-
 \end{figure}
 \subsection{Precision on the b-quark form factors}
 At the ILC, it will be possible to make an independent calculation of all b-quark form factors using the reconstructed b-quark polar angle.
