@@ -1,21 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-I couldn't open style file utphys_mod.bst
----line 283 of file main.aux
- : \bibstyle{utphys_mod
- :                     }
-I'm skipping whatever remains of this command
-I couldn't open database file can055.bib
----line 284 of file main.aux
- : \bibdata{can055
- :                }
-I'm skipping whatever remains of this command
-I found no database files---while reading file main.aux
-I found no style file---while reading file main.aux
-You've used 39 entries,
+I found no \bibdata command---while reading file main.aux
+I found no \bibstyle command---while reading file main.aux
+You've used 18 entries,
             0 wiz_defined-function locations,
-            158 strings with 1339 characters,
+            119 strings with 840 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
@@ -54,4 +44,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 0
-(There were 4 error messages)
+(There were 2 error messages)
