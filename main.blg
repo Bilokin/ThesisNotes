@@ -17,45 +17,45 @@ Warning--empty journal in bib:G4pl
 Warning--empty year in bib:G4pl
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
-You've used 38 entries,
+You've used 39 entries,
             2118 wiz_defined-function locations,
-            720 strings with 10148 characters,
-and the built_in function-call counts, 11101 in all, are:
-= -- 1057
-> -- 479
+            730 strings with 10433 characters,
+and the built_in function-call counts, 11486 in all, are:
+= -- 1095
+> -- 498
 < -- 4
-+ -- 192
-- -- 154
-* -- 728
-:= -- 1879
-add.period$ -- 107
-call.type$ -- 38
-change.case$ -- 179
++ -- 199
+- -- 160
+* -- 754
+:= -- 1942
+add.period$ -- 110
+call.type$ -- 39
+change.case$ -- 183
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 442
-empty$ -- 920
-format.name$ -- 154
-if$ -- 2322
+cite$ -- 53
+duplicate$ -- 455
+empty$ -- 953
+format.name$ -- 160
+if$ -- 2408
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 31
-newline$ -- 186
-num.names$ -- 70
+int.to.str$ -- 39
+missing$ -- 33
+newline$ -- 191
+num.names$ -- 72
 pop$ -- 183
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 144
 quote$ -- 0
-skip$ -- 339
+skip$ -- 352
 stack$ -- 0
-substring$ -- 636
-swap$ -- 72
+substring$ -- 668
+swap$ -- 73
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 152
+type$ -- 156
 warning$ -- 14
-while$ -- 99
-width$ -- 40
-write$ -- 388
+while$ -- 103
+width$ -- 41
+write$ -- 399
 (There were 14 warnings)

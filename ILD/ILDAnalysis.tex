@@ -1403,6 +1403,9 @@ The realistic running conditions increase the statistical errors by a factor of 
 
 The final uncertainties on the measured total cross section and the forward-backward asymmetry values for the first $\sqrt{s}=$250\,GeV run of the ILC are displayed in Table~\ref{table:bbbarfinal}. These unceratinties are used to calculate the precision on the b-quark electroweak couplings and the b-quark electroweak form factor values.
 \input{ILD/tables/bbbar-final}
+
+One should pay attention to the statistical correlations between the observables, which influence the final precision on the form factors. The correlation factor between the left-handed parameters $A^L$ and $B^L$ is $\rho^L_{AB} = 0.86$, while for the right-handed parameters $\rho^R_{AB} = 0.3$.
+In general, the correlation factor value proportional to the $A_{FB}$ as $\rho_{AB} \approx 1.2 A_{FB}$.
 \subsection{Comparison to the LEP results}
 
 The ILC is able to provide a definite solution to the LEP tension of the $A_{FB}^b$ measurement with the \sm\ prediction.
@@ -1443,8 +1446,26 @@ This study leads to the following conclusions:
 	\item The $g_R^Z$ is shifted w.r.t. the \sm\ value at $(0,0)$ by approximately $2.5\,\sigma$;
 	\item The LEP~I measurements at $Z^0$ pole had no interference between $Z^0$ and $\gamma$ propagators, which leads to the sign ambiguity of the $g_R^Z$ coupling. This fact is reflected in Fig.~\ref{fig:LEPResultFull_3} as a second allowed region around $\delta g_R^Z / g_R^Z \approx -2.25$. 
 \end{itemize}
+These two coupling modification scenarios are called RSa for the flipped $g_R^Z$ coupling sign and RSb for the \sm\ $g_R^Z$ coupling sign in~\cite{bib:RSTOP}.
+The corresponding modifications of the b-quark polar angle are shown in Fig.~\ref{fig:dsResult_3}.
 The LEP measurements allow for a sign flip of the right-handed coupling $g_R^Z$, however, it will produce 2\,$\sigma$ tension with TRISTAN data at 60\,GeV, as found in~\cite{bib:RSTOP}.
-The $g_R^Z$ sign flip is easily detectable at the ILC, because the b-polar angle in right-handed beam configuration in Fig.~\ref{fig:BAsymmetryFinal_b_3} will be reflected around $\cos\theta_b = 0$. 
+The $g_R^Z$ sign flip is easily detectable at the ILC, because the b-polar angle in right-handed beam configuration will be reflected around $\cos\theta_b = 0$ as demonstrated in Fig.~\ref{fig:dsResult_b_3}. 
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.99\textwidth]{ILD/plots/ds-left.pdf}
+		\caption{\label{fig:dsResult_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.99\textwidth]{ILD/plots/ds-right.pdf}
+		\caption{\label{fig:dsResult_b_3} }
+	\end{subfigure}
+	\caption{\sl The possible b-quark polar angle modifications according to the LEP measurements. }
+	\label{fig:dsResult_3}
+\end{figure}
+
+Therefore, the LEP dev
 Therefore, the further studies are concentrated on the solution with the \sm\ $g_R^Z$ coupling sign. 
 The corresponding parameter space is shown in Fig.~\ref{fig:LEPILCResult_a_3}.
 The estimated  central values of the $Z^0b\bar{b}$ couplings obtained at LEP are
@@ -1452,6 +1473,7 @@ The estimated  central values of the $Z^0b\bar{b}$ couplings obtained at LEP are
 	\delta g_R^Z / g_R^Z = +25.4\% \pm 9.7\% \label{formula:LEPgR} \\
 	\delta  g_L^Z / g_L^Z = -0.9\% \pm 0.4\%.
 \end{eqnarray}
+
 
 
 The precision b-quark couplings at the ILC are estimated by the b-quark polar angle fit by the differential cross section function~\ref{formula:PolarAngleFit_3}.
@@ -1485,21 +1507,22 @@ which are achievable after the first $\sqrt{s} = 250$\,GeV physics run of the IL
 Therefore, the LEP deviation should be either fully confirmed or definitely discarded at the ILC. 
 Moreover, the ILC will be able to provide 5\,$\sigma$ deviation for a $\pm$11\% modification of the $g_R^Z$ coupling after the first 250\,GeV physics run.
 
-\subsection{Precision on the b-quark form factors}
+%\subsection{Precision on the b-quark form factors}
 The two parameter fit of b-quark polar angle distribution allows to determine four electroweak form factors independently.
 The expressions \ref{formula:PolFF_3} and \ref{formula:PolFF_3} are used to compute the form factors from the b-quark polar angle fit. 
 
 The relative precision on the b-quark form factors is shown in Fig.~\ref{fig:BQFF_3}. 
 The large 3.7\% relative uncertainty on the $\mathcal{F}^R_{1V}$ is due to the small absolute tree level \sm value of the form factor.
 Except the $\mathcal{F}^R_{1V}$, the relative precision on the electroweak b-quark form factors is 0.5\% or below is reachable at the first 250\,GeV physics run of the ILC. 
-\begin{figure}
-	{\centering
-		\includegraphics[width=0.55\textwidth]{ILD/plots/form-factors.pdf}
-		\caption{\sl The relative precision on the b-quark electroweak form factors achievable at the first $\sqrt{s}=250$\,GeV ILC physics run.  
-		}
-		\label{fig:BQFF_3}
-	}
-\end{figure}
+\input{ILD/tables/bbbar-ff}
+%\begin{figure}
+%	{\centering
+%		\includegraphics[width=0.55\textwidth]{ILD/plots/form-factors.pdf}
+%		\caption{\sl The relative precision on the b-quark electroweak form factors %achievable at the first $\sqrt{s}=250$\,GeV ILC physics run.  
+%		}
+%		\label{fig:BQFF_3}
+%	}
+%\end{figure}
 
 %At the ILC, it will be possible to make an independent calculation of all b-quark form factors using the reconstructed b-quark polar angle.
 %The reconstructed b-quark polar angle is described by the differential cross section of the \bbbar\ pair production in Eq.~\ref{formula:DiffSigma_3}.

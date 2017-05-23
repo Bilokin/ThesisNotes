@@ -14,6 +14,12 @@
 {First combination of Tevatron and LHC measurements of the top-quark mass}.
 \newblock 2014.
 
+\bibitem{bib:HiggsAtlas}
+Georges Aad et~al.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Phys. Lett.}, B716:1--29, 2012.
+
 \bibitem{bib:HiggsAtlas2}
 Georges Aad et~al.
 \newblock {Measurements of Higgs boson production and couplings in the
@@ -93,17 +99,17 @@ Jean-Claude Brient and Henri Videau.
 \newblock {The Calorimetry at the future e+ e- linear collider}.
 \newblock {\em eConf}, C010630:E3047, 2001.
 
+\bibitem{bib:HiggsCms}
+Serguei Chatrchyan et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys. Lett.}, B716:30--61, 2012.
+
 \bibitem{bib:RSTOP}
 Abdelhak Djouadi, Gregory Moreau, and Francois Richard.
 \newblock {Resolving the A(FB)**b puzzle in an extra dimensional model with an
   extended gauge structure}.
 \newblock {\em Nucl. Phys.}, B773:43--64, 2007.
-
-\bibitem{doublet:tel-00657967}
-Philippe Doublet.
-\newblock {\em {Hadrons in a highly granular SiW ECAL -- Top quark production
-  at the ILC}}.
-\newblock Theses, {Universit{\'e} Paris Sud - Paris XI}, October 2011.
 
 \bibitem{bib:Doublet}
 Philippe Doublet.
