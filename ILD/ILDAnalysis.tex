@@ -2,8 +2,8 @@
 \section{Heavy quark phenomenology and New Physics}
 \label{sec:Phenomenology}
 The mass of the top quark is comparable to the electroweak symmetry breaking scale. 
-This fact makes top quark a subject of many New Physics theories. 
-The measurements of the bottom quark properties, a partner of the top quark, have revealed a tension with \sm\ predictions. 
+This fact makes the top quark a subject of many New Physics theories. 
+The measurements of the bottom quark properties, the partner of the top quark, have revealed a tension with \sm\ predictions. 
 Many \bsm\ theories can modify heavy quark properties, therefore, precise measurements of heavy quark couplings are required for indirect searches of new particles and discrimination between various theories. 
 
 This section concentrates on the electroweak production of the top and bottom quarks pairs, corresponding observables, heavy quark production at linear colliders and possible influence of New Physics.
@@ -63,11 +63,11 @@ One can derive from (\ref{formula:DiffSigma_3}) the total cross section, a commo
 %2\frac{4\pi\alpha^2}{3s}N_c\beta
 \begin{equation}
 \label{formula:TotalSigma_3}
-\sigma_I = 2\mathcal{A}N_c\beta[(1+\frac{1}{2}\gamma^{-2})(\mathcal{F}^I_{1V})^2 + (\beta\mathcal{F}^I_{1A})^2+3\mathcal{F}^I_{1V}\mathcal{F}^I_{2V}+(1+\frac{1}{2}\gamma^{2})(\mathcal{F}^I_{2V})^2],
+\sigma^I_{total} = 2\mathcal{A}N_c\beta[(1+\frac{1}{2}\gamma^{-2})(\mathcal{F}^I_{1V})^2 + (\beta\mathcal{F}^I_{1A})^2+3\mathcal{F}^I_{1V}\mathcal{F}^I_{2V}+(1+\frac{1}{2}\gamma^{2})(\mathcal{F}^I_{2V})^2],
 \end{equation}
 The term $\beta \mF_{1A}$ describes the reduced sensitivity to the axial form factors near the $f\bar{f}$ production threshold. 
 
-The beams in the $e^+e^-$ colliders, like the ILC, will not be fully polarized, therefore one should take into account the electron beam polarization degree $\mathcal{P}$ and positron polarization degree $\mathcal{P}'$, therefore, the expression for the total cross section is
+The beams of the $e^+e^-$ colliders, like ILC, will not be fully polarized, therefore one should take into account the electron beam polarization degree $\mathcal{P}$ and positron polarization degree $\mathcal{P}'$, therefore, the expression for the total cross section is
 \begin{equation}
 \sigma_{\mathcal{P}\mathcal{P}'} = \frac{1}{4}[(1-\mathcal{P}\mathcal{P}')(\sigma_{LR}+\sigma_{RL} ) + (\mathcal{P} - \mathcal{P}')(\sigma_{RL} - \sigma_{LR})],
 \end{equation}
@@ -75,7 +75,7 @@ where the indices $L$ and $R$ indicate full polarization of the incoming electro
 
 Another typical observable is the forward-backward asymmetry, which is defined as
 \begin{equation}
-A_{FB}^I = \mp \mathcal{A} N_c \frac{3\beta\mathcal{F}^I_{1A}(\mathcal{F}^I_{1V} + \mathcal{F}^I_{2V})}{\sigma^I}.
+A_{FB}^I = \mp \mathcal{A} N_c \frac{3\beta\mathcal{F}^I_{1A}(\mathcal{F}^I_{1V} + \mathcal{F}^I_{2V})}{\sigma^I_{total}}.
 \label{formula:AfbForm_3}
 \end{equation}
 
@@ -86,14 +86,14 @@ This observable has a large sensitivity to the axial form factor $\mathcal{F}^I_
 \subsection{Observables of interest}
 The conventional approach used to estimate the couplings or form factors of the fermion $f$ to the vector bosons $\gamma /Z^0$ is to measure the total cross section $\sigma_I$ and forward-backward asymmetry \afb.
 
-The total cross section can be measured knowing the number of accepted events $N$, selection efficiency $\epsilon$ and integrated luminosity $\mathcal{L}_I$
+The total cross section is measured knowing the number of accepted events $N$, selection efficiency $\epsilon$ and integrated luminosity $\mathcal{L}_{total}$
 \begin{equation}
-\sigma_I = \frac{N}{\epsilon \mathcal{L}_I}.
+\sigma_{total} = \frac{N}{\epsilon \mathcal{L}_{total}}.
 \label{formula:Xsection_3}
 \end{equation}
-The corresponding uncertainty on the cross section is determined by the knowledge of the luminosity of the machine, the statistics of the signal: 
+The corresponding uncertainty on the cross section is determined by the knowledge of the machine luminosity and the statistics of the signal: 
 \begin{equation}
-	(\frac{\delta \sigma_I}{\sigma_I})^2 = (\frac{\delta N}{N})^2 + (\frac{\delta \mathcal{L}_I}{\mathcal{L}_I})^2.
+	(\frac{\delta \sigma_{total}}{\sigma_{total}})^2 = (\frac{\delta N}{N})^2 + (\frac{\delta \mathcal{L}_{total}}{\mathcal{L}_{total}})^2.
 \end{equation}
 The forward-backward asymmetry is an observable, which counts the difference between the number of events in the forward region and backward regions:
 \begin{equation}
@@ -130,8 +130,9 @@ These models can have different impact on the left-handed or right handed coupli
 \end{figure}
 
 The relative deviations of the left-handed and right-handed couplings of the top quark are predicted by various BSM theories are shown in Fig.~\ref{fig:DeviationsTop}.
-A precise measurement of the top coupling allows for identification of the particular BSM theory.  
-The experiments with polarized beams have an advantage of detection of sign flip of the right-handed coupling $g_R^Z$, which can be produced by the Randall-Sundrum models with $Z^0$-$Z'$ mixing~\cite{bib:RSTOP}.
+A precise measurement of the top coupling allows for identification of the particular BSM theory.
+  
+Concerning the \bbbar\ channel, experiments with polarized beams have an advantage of sign flip detection of the right-handed coupling $g_R^Z$, which can be produced by the Randall-Sundrum models with $Z^0$-$Z'$ mixing~\cite{bib:RSTOP}.
 %
 %Many \bsm\ models predict deviations on the heavy quark couplings to the Higgs and weak bosons.
 
@@ -153,25 +154,35 @@ The measured $R_b$ value, which is the ratio of b-quark cross section over total
 On the other hand, the measured b-quark forward-backward asymmetry $A_{FB}^b$  value at LEP has 2.5\,$\sigma$ tension with the recent electroweak fit predictions~\cite{bib:AfbSMFit}.
 The measurement of the $A_{FB}^b$ value at the SLC have 27\% higher uncertainty than the LEP results~\cite{bib:SLC}.
 
+\begin{figure}[h]
+	{\centering
+		\includegraphics[clip, trim=0.5cm 5cm 0.5cm 7cm, width=0.95\textwidth]{ILD/graphics/epem_sm-hepph.pdf}
+		\caption{\sl Tree-level cross sections of major \sm\ processes at linear colliders as function of center-of-mass energy assuming no polarization of the initial state~\cite{bib:Han}.}
+		\label{fig:LCcrosssection}
+	}
+\end{figure}
+
+
 The measurements outside $Z^0$ pole were done by the LEP~II collider, which collected the most integrated luminosity at around 190\,GeV energy, at the $W^\pm$-pair production threshold. 
 The measured $A_{FB}^b$ at this center-of-mass energy is within 2\,$\sigma$ from the tree level \sm\ prediction.
 
-The precise determination of the $Zb\bar{b}$ vertex at LEP~I experiments allowed to put constraints on the top quark and Higgs boson masses~\cite{bib:LEPTOP}.
+The precise determination of the $Zb\bar{b}$ vertex at LEP~I experiments allowed to put constraints on the top quark and Higgs boson masses.
+The LEP measurement allowed to predict the top quark mass in the region of 133\,GeV $ < m_t < $ 190\,GeV and the Higgs boson mass  10\,GeV $< m_H <$ 440\,GeV~\cite{bib:LEPTOP}, which were later confirmed by the TeVatron and the LHC experiments. 
 %$A_{fb}^b(\sqrt[]{s} = 190.7\,\text{GeV})=0.51\pm0.058$
 %Unfortunately, the beam energies of LEP~II and SLC was not high enough to produce single top or top quark pairs, therefore, the precise determination of the top electroweak couplings is left for the future electron-positron machines.
 
 \subsubsection{LHC and TeVatron measurements}
-The initial state at hadron colliders priviledges the production of the top quark pairs through the strong interaction via high cross section $gg\to t\bar{t}$ or $q\bar{q}\to t\bar{t}$ processes.
+The composite nature of colliding particles at hadron colliders priviledges the production of the top quark pairs through the strong interaction via high cross section $gg\to t\bar{t}$ or $q\bar{q}\to t\bar{t}$ processes.
 Therefore, the hadron machines can measure the top mass and strong couplings of the top quark with a high precision. 
 
-The TeVatron, which has proton-antiproton beams, can produce single top via $q\bar{q}' \to W^\pm \to t\bar{b}$ process at a higher rate than proton-proton machines. 
+The TeVatron, which has proton-antiproton beams, can produce single top via $q\bar{q}' \to W^\pm \to t\bar{b}$ process. %at a higher rate than proton-proton machines. 
 This process involve $tbW$ vertex and therefore, its total cross section depends on the weak couplings of the top quark. 
 The measurement of single top cross section at TeVatron is found to be consistent with the \sm\ predictions~\cite{bib:TeVstop} with about 16\% uncertainty.
 
 The forward-backward asymmetry at hadron colliders for strong interaction vertex $gt\bar{t}$ has been measured to be consistent with the \sm\ expectations~\cite{bib:TeVAfb}. 
 
 To measure the electroweak couplings of the top quark at hadron colliders, the associate production of top quark pair with $Z^0$ or $W^\pm$ bosons is required, which has lower cross section, than the direct electroweak production process.
-Study of the $t\bar{t}Z^0$ process has been done at the LHC experiments using Run I data with $\sqrt{s} = 8$\,TeV shows compatible rates of the signal process with the \sm, but more statistics is required to measure the cross section precisely~\cite{bib:CMSttz2014}. The cross section fit results for the $t\bar{t}Z^0$ and $t\bar{t}W^\pm$ processes are shown in Fig~\ref{fig:LHCTopTopZ_3}.
+Study of the $t\bar{t}Z^0$ process has been done at the LHC experiments using Run I data with $\sqrt{s} = 8$\,TeV shows compatible rates of the signal process with the \sm, but more statistics is required to measure the cross section precisely~\cite{bib:CMSttz2014}. The cross section fit results for the $t\bar{t}Z^0$ and $t\bar{t}W^\pm$ processes are shown in Fig~\ref{fig:LCHTopTopZ_3}.
 Including the Run~II data of the LHC with a higher center-of-mass energy will significantly improve $t\bar{t}Z^0$ measurement.
 %Main channel of the top quark production is gluons
 \begin{figure}[h]
@@ -183,24 +194,23 @@ Including the Run~II data of the LHC with a higher center-of-mass energy will si
 \end{figure}
 %ttZ cross section measurements
 
+The study of the b-quark electroweak couplings is very limited at hadron colliders.
+The possible $Z^0$\bbbar associate production study at the LHC can provide only the cross section magnitude value, which has been measured at LEP~I to have no tension with the \sm\ prediction. 
+Top quark have never been studied at the $e^+e^-$ colliders, benefiting from a direct electroweak production and a high signal over background ratio.
+Hence, precise measurements of the heavy quark electroweak couplings are left for future $e^+e^-$ machines.
+
+
 
 
 %2.5s tension by LEP in bbar asymmetry
 \subsubsection{Future linear colliders}
 
-The acceleration technologies available today allow for the construction and the running of a linear electron-positron collider at center-of-mass energies higher at and well above top pair production threshold. The precision of the linear colliders allows detection and reconstruction of all \sm\ decay modes of the top quark: fully leptonic, semileptonic and fully hadronic decays. 
+The acceleration technologies available today allow for the construction and the running of a linear electron-positron collider at center-of-mass energies well above top pair production threshold. The precision of the linear colliders allows detection and reconstruction of all \sm\ decay modes of the top quark: fully leptonic, semileptonic and fully hadronic decays. 
 
 
 
 As can be seen from expression of the differential cross section~(\ref{formula:DiffSigma_3}), the sensitivity to axial form factors is proportional to the fermion velocity $\beta$, therefore, the higher beam energies, like 500\,GeV stage at the ILC are preferred for study of electroweak top quark couplings. 
 The b-quark coupling analysis can be done at all center-of-mass energies, scheduled at the ILC project.
-\begin{figure}[h]
-{\centering
-    \includegraphics[clip, trim=0.5cm 5cm 0.5cm 7cm, width=0.95\textwidth]{ILD/graphics/epem_sm-hepph.pdf}
-    \caption{\sl Tree-level cross sections of major \sm\ processes at linear colliders as function of center-of-mass energy assuming no polarization of the initial state~\cite{bib:Han}.}
-    \label{fig:LCcrosssection}
-  }
-\end{figure}
 
 
 %Matrix element method fully leptonic
@@ -234,7 +244,7 @@ The main advantage of the combination with the b-jet charge is that this method 
 	\label{fig:ILCTOPAFB}
 \end{figure}
 
-The first attempt to use the jet charge technique in fully hadronic \ttbar\ decays was done by~[Amjad thesis], but it required large simulation-dependent corrections. 
+The first attempt to use the jet charge technique in fully hadronic \ttbar\ decays was done by~\cite{amjad:tel-00949818}, but it required large simulation-dependent corrections. 
 Hence, one needs to investigate the reasons of inefficiency and impurity of the jet charge measurement in the ILD environment and propose a method to fix the problems. 
 
 
