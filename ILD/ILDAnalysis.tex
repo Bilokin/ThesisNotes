@@ -269,11 +269,13 @@ The development of the jet charge measurement will increase the statistics for s
 
 \section{Jet charge reconstruction}
 \label{sec:JetChargeReconstruction}
-An information about the bottom jet charge is useful for all \sm\ processes, where b-jets appear as decay products, particularly, it can be applied for reconstruction of forward-backward asymmetry in $e^+e^-\to t\bar{t}$ and $e^+e^- \to b\bar{b}$ processes. 
-For these processes is high purity and efficiency of the charge reconstruction requires an ultimate performance from all subdetectors of the experiment. 
+An information about the bottom jet charge is useful for all \sm\ processes, where b-jets appear as decay products. 
+In this thesis it is used for quark polar angle reconstruction of $e^+e^-\to t\bar{t}$ and $e^+e^- \to b\bar{b}$ processes. 
+The polar angle spectrum is used to determine the quark couplings. 
+This requires a high purity and a high efficiency of the b-jet charge reconstruction, which is an ultimate challenge for every reconstruction algorithm and all subdetectors of the experiment. 
 
-One of the main goals of this thesis is to develop a method of the b-jet charge measurement with high purity and efficiency. 
-To do so, first, it is necessary to measure performance of the standard reconstruction algorithm and find sources of charge impurities, and then develop an algorithm to improve it. 
+One of the main goals of this thesis is to develop a method of the b-jet charge measurement with high purity and efficiency using the full simulation of the ILD experiment. 
+To do so, first, it is necessary to measure the performance of the standard reconstruction algorithm and find sources of charge impurities, and then develop an algorithm to improve it. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -295,22 +297,24 @@ The distributions have different peak energies, bur the energy range is the same
 \end{figure}
 
 The $B^0-\bar{B}^0$ oscillations are enabled in the {\sc pythia} simulation. 
-The ILD layout and the interaction of particles with the detector material are simulated by the {\sc mokka} framework, that provides the geometry interface to the \geant\ toolkit, that simulates the detector response. 
+The ILD detector layout, the interaction of particles with the detector material and the detector response are simulated by the {\sc mokka} framework, that provides the geometry interface to the \geant\ toolkit. 
 
 All reconstruction algorithms, along with the {\sc mokka} framework are part of the {\sc ilcsoft} software toolkit.
 The modular structure of the {\sc ilcsoft} allows for independent execution of each reconstruction algorithm. 
 
 %The ILD collaboration defines the order of the standard reconstruction chain, which is applied to all studies done using the full simulation of the ILD experiment. 
 
-The most relevant standard reconstruction algorithms of the {\sc ilcsoft} for the jet charge measurement are:
+The most relevant standard reconstruction algorithms of the {\sc ilcsoft} for the jet charge measurement are described below:
 \begin{itemize}
-\item The MarlinTrk package organize the hits, created by particles in the ILD trackers into reconstructed tracks. The track parametrization in described in~\cite{bib:LCIOtrack}. Each reconstructed track has 5 reconstructed fit parameters and the corresponding associated covariance matrix with 15 parameters; The most important for the thesis are the impact parameters $d_0$ and $z_0$ with corresponding uncertainties $\sigma_{d_0}$ and $\sigma_{z_0}$.
+\item The MarlinTrk package organizes the hits, created by particles in the ILD trackers into reconstructed tracks. The track parametrization in described in~\cite{bib:LCIOtrack}. 
 \item The PandoraPFA package is responsible for the clusterization of the calorimeter hits and creation of the Particle Flow Objects. The track covariance matrix is used to compute the covariance matrix of the reconstructed particle momentum; 
-\item The primary and secondary vertex reconstruction is done by the LCFI+ algorithm. 
+\item The primary and secondary vertex reconstruction is done by the Linear Collider Flavour Identification Plus or LCFI+ algorithm~\cite{bib:LCFI}. 
 \end{itemize}
+Each reconstructed track by the MarlinTrk algorithm has 5 parameters and the corresponding associated covariance matrix with 15 parameters; The most important for the thesis are the impact parameters $d_0$ and $z_0$, which are the transverse and longitudinal distance between the point of the closest approach to the reference point $(0,0)$, respectively. The corresponding uncertainties are $\sigma_{d_0}$ and $\sigma_{z_0}$, respectively.
+
 The jet clustering algorithms can be configured and launched according to the analysis requirements. 
-The flavor-tagging at the ILD experiment will serve to separate out jets from bottom and charm quarks from the light quark or gluon jets.
-The flavor-tagging algorithm within the LCFI+ package provides  b- and c-tagging information.
+The flavor-tagging at the ILD experiment will serve to separate out jets from bottom and charm quarks from the light quark or gluon jets, the corresponding separation variables are called b- and c-tagging, respectively. 
+The flavor-tagging algorithm within the LCFI+ package provides  b- and c-tagging information for each reconstructed jet.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -326,8 +330,8 @@ The b-quark hadronization modes are displayed in Table~\ref{table:bhadrons}.
 \input{ILD/tables/b-hadrons}
 
 These branching fractions are approximate and may have a dependency on the initial and final state kinematic and production environment~\cite{bib:PDG}.
-However, the presence of the \Bzs\ meson increase number of the neutral hadronization modes, which will cause additional complications for the charge measurement. 
-The illustration of the b-quark hadronization and common decay modes is given in Fig.~\ref{fig:Bmodes_3}.
+However, the presence of the \Bzs\ meson increase the number of the neutral hadronization modes, which will cause additional complications for the charge measurement. 
+The illustration of the b-quark hadronization and common decay modes are given in Fig.~\ref{fig:Bmodes_3}.
 \begin{figure}[h]
 	{\centering
 		\includegraphics[width=0.55\textwidth]{ILD/plots/b-modes}
@@ -340,11 +344,12 @@ The illustration of the b-quark hadronization and common decay modes is given in
 Due to the Lorentz boost given by the initial b-quark energy, the b-hadron can travel several millimeters before its decay. Due to this flight distance, the charged particles from the b-hadron decays will have an offset with respect to the primary interaction point, which is the main signature of the b-quark jets. 
 
 %Therefore we expect two vertices
-The B meson have $D^0$ or $D^\pm$ meson decay modes of about 80\% decay rate, mediated by the weak interaction. The charmed $D$ mesons have $c\tau \approx 120 - 300$\,$\mu$m, which gives a possibility to the charmed mesons to travel away from the initial B meson decay vertex. 
+The B meson have $D^0$ or $D^\pm$ meson decay modes of about 80\% decay rate, mediated by the weak interaction. The charmed $D$ mesons have a mean lifetime of $c\tau \approx 120 - 300$\,$\mu$m, which gives a possibility to the charmed mesons to travel away from the initial B meson decay vertex. 
 Hence, one expects to detect two vertices from one b-jet in most of the cases: the secondary, which corresponds to the b-hadron decay, and the tertiary vertex created by the c-hadron decays. 
 
 The $K^\pm$ mesons from B meson decays are the end products of the $b\to c\to s$ decay chain mediated by the weak interaction. 
-The $K^\pm$ mesons have a long lifetime with $c\tau = 3.7$\,m and a high mass of 493.6\,MeV comparing with another long-lived charged particles from B meson decays, like pions or leptons, which can be use to identify kaons by the energy deposition. 
+The $K^\pm$ mesons have a long lifetime with $c\tau = 3.7$\,m and a high mass of 493.6\,MeV comparing with another long-lived charged particles from B meson decays, like pions or leptons. 
+Hence, it is possible to identify kaons by their energy deposition in the detector, which depend on particle mass. 
 In the generator, about 87\% of b-hadrons are set to have correlated $K^\pm$ charge in the generator, which makes the $K^\pm$ charge a reliable indication of the initial b-quark charge.
 On contrary, the b-baryons tend to produce protons, which have an opposite sign of charge to the initial b-quark charge. 
 
@@ -352,7 +357,8 @@ On contrary, the b-baryons tend to produce protons, which have an opposite sign 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Generated vertices}
-The output of the event generators is a list of generated particles with parent-child relations.The TruthVertexFinder algorithm was developed to find the generated vertices.%, and included into the {\sc ilcsoft} distribution. 
+The output of the event generators is a list of generated particles with parent-child relations. 
+The TruthVertexFinder algorithm was developed to find the generated vertices.%, and included into the {\sc ilcsoft} distribution. 
 This algorithm detects the generated b-hadrons, finds the related charged particles, which can leave reconstructable tracks and organizes them into the generated secondary or tertiary vertices.
 \begin{figure}
 	{\centering
@@ -371,9 +377,11 @@ This algorithm detects the generated b-hadrons, finds the related charged partic
 %The b-hadrons can be identified by measuring the charged tracks, which have an offset from primary interaction point caused by the b-hadron lifetime.
 %B*
 The high-energy b-quarks can hadronize into excited states of the b-hadrons, which can decay into their ground state by emitting charged or neutral pion. 
-The charged pion from the excited b-hadrons can distort the charge multiplicity distributions and further comparison with the reconstructed vertices. Therefore, the TruthVertexFinder selects only ground state hadrons within a decay chain. 
+The charged pion from the excited b-hadrons can distort the charge multiplicity distributions, leading to an incorrect comparison with the reconstructed vertices. Therefore, the TruthVertexFinder selects only ground state hadrons within a decay chain. 
 
-The TruthVertexFinder finds vertices from b-hadron decays and subsequent c-hadron decay vertices. The distributions of generated b- and c-vertices are displayed in Fig.~\ref{fig:GenVtx_3}. The c-vertex multiplicity distribution is consistent with~\cite{bib:PDG}. One can notice that about 31\% of the b-vertices and 13\% of the c-vertices decay into one generated prong, which poses a challenge to the vertexing algorithms., which will be addressed in Sec.~\ref{sec:MisVertices}.
+The TruthVertexFinder finds vertices from b-hadron decays and subsequent c-hadron decay vertices. The distributions of generated b- and c-vertices are displayed in Fig.~\ref{fig:GenVtx_3}. 
+The c-vertex multiplicity distribution is consistent with~\cite{bib:PDG}. 
+One notices that about 31\% of the b-vertices and 13\% of the c-vertices decay into one generated prong, which poses a challenge to the vertexing algorithms. This problem will be addressed in Sec.~\ref{sec:MisVertices}.
 
 \begin{figure}
 \centering
