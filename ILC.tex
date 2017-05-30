@@ -255,7 +255,7 @@ The major ILD subdetectors, ordered by their radial distance from the interactio
 \subsubsection{Particle flow reconstruction technique}
 The ILD concept is designed to meet all requirements for application of the Particle Flow Algorithms (PFA) for physics analysis. 
 
-The PFA allows reconstruction of individual particles, even inside jets, which significantly improves the jet energy resolution. For each particle, the best-suited detector information is used, i.e. charged particles are measured in the trackers, and neutral particles are measured in the calorimeters.%, by relying on information from inner tracker and calorimeters.
+The PFA allows for the reconstruction of individual particles, even inside jets, which significantly improves the jet energy resolution. For each particle, the best-suited detector information is used, i.e. charged particles are measured in the trackers, and neutral particles are measured in the calorimeters.%, by relying on information from inner tracker and calorimeters.
 These algorithms output Particle Flow Objects (PFO), that are reconstructed using hits in the tracking devices and calorimeters. 
 
 \begin{figure}
@@ -276,16 +276,16 @@ High-granular calorimeters are able to separate close-by energy depositions, lef
 Typically, the PFA creates objects of the following types:
 \begin{itemize}
 \item Muons have a reconstructed track and track-like energy depositions in ECAL and HCAL, and hits in TCMT;
-\item Photons have a compact neutral cluster in ECAL without a connected track;
+\item Photons have a compact cluster in ECAL without a connected track;
 \item Electrons are reconstructed as a compact cluster in ECAL with an associated track;
 
-\item Neutral hadrons (neutrons, neutral kaons, etc.) appear as a hadronic cluster, that starts from ECAL and continues to HCAL and TCMT;
+\item Neutral hadrons (neutrons, neutral kaons, etc.) appear as a hadronic cluster, that starts in the ECAL and continues to HCAL and TCMT;
 \item Charged hadrons (protons, charged kaons, etc.) appear as track, connected to an hadronic cluster.
 \end{itemize}
 
-After creating of PFOs, one can use different algorithms like vertex detection, jet clustering, particle identification, flavor-tagging algorithms, etc.
+After creating of PFOs, one can apply different algorithms like vertex detection, jet clustering, particle identification, flavor-tagging algorithms, etc.
 
-One of the fundamental characteristics of the PFA performance is the jet energy resolution shown for ILD concept in Fig.~\ref{fig:ILCjetrms}. This plot demonstrates that the detector model is able to meet the requirement of 3-4\% jet energy resolution.
+One of the fundamental characteristics of the PFA performance is the jet energy resolution shown for the ILD concept in Fig.~\ref{fig:ILCjetrms}. This plot demonstrates that the detector model is able to meet the requirement of 3-4\% jet energy resolution.
 
 \begin{figure}[H]
 {\centering
