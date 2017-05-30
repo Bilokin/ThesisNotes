@@ -1,14 +1,61 @@
 \begin{thebibliography}{10}
 
+\bibitem{bib:can-047}
+{Tracking within Hadronic Showers in the SDHCAL prototype using Hough Transform
+  Technique}.
+\newblock {\em CALICE Analysis Note CAN-047}.
+
+\bibitem{CALICE:2012aa}
+{Construction and performance of a silicon photomultiplier/extruded
+  scintillator tail-catcher and muon-tracker}.
+\newblock {\em JINST}, 7:P04015, 2012.
+
 \bibitem{bib:TopMass}
 {First combination of Tevatron and LHC measurements of the top-quark mass}.
 \newblock 2014.
+
+\bibitem{bib:HiggsAtlas}
+Georges Aad et~al.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Phys. Lett.}, B716:1--29, 2012.
+
+\bibitem{bib:HiggsAtlas2}
+Georges Aad et~al.
+\newblock {Measurements of Higgs boson production and couplings in the
+  four-lepton channel in pp collisions at center-of-mass energies of 7 and 8
+  TeV with the ATLAS detector}.
+\newblock {\em Phys. Rev.}, D91(1):012006, 2015.
+
+\bibitem{bib:HiggsLhc2}
+Georges Aad et~al.
+\newblock {Measurements of the Higgs boson production and decay rates and
+  constraints on its couplings from a combined ATLAS and CMS analysis of the
+  LHC pp collision data at $ \sqrt{s}=7 $ and 8 TeV}.
+\newblock {\em JHEP}, 08:045, 2016.
 
 \bibitem{bib:TeVAfb}
 Timo~Antero Aaltonen et~al.
 \newblock {Measurement of the forward–backward asymmetry of top-quark and
   antiquark pairs using the full CDF Run II data set}.
 \newblock {\em Phys. Rev.}, D93(11):112005, 2016.
+
+\bibitem{collaboration:2010hb}
+C.~Adloff et~al.
+\newblock {Construction and Commissioning of the CALICE Analog Hadron
+  Calorimeter Prototype}.
+\newblock {\em JINST}, 5:P05004, 2010.
+
+\bibitem{Adloff:2013vra}
+C.~Adloff et~al.
+\newblock {Track segments in hadronic showers in a highly granular
+  scintillator-steel hadron calorimeter}.
+\newblock {\em JINST}, 8:P09001, 2013.
+
+\bibitem{Allison:2006ve}
+John Allison et~al.
+\newblock {Geant4 developments and applications}.
+\newblock {\em IEEE Trans. Nucl. Sci.}, 53:270, 2006.
 
 \bibitem{bib:ILCTOP}
 M.~S. Amjad et~al.
@@ -41,6 +88,28 @@ Ties Behnke, James~E. Brau, Brian Foster, Juan Fuster, Mike Harrison,
   1: Executive Summary}.
 \newblock 2013.
 
+\bibitem{bib:alpha_s}
+Siegfried Bethke.
+\newblock {The 2009 World Average of alpha(s)}.
+\newblock {\em Eur. Phys. J.}, C64:689--703, 2009.
+
+\bibitem{Bilki:2014uep}
+B.~Bilki et~al.
+\newblock {Testing hadronic interaction models using a highly granular
+  silicon--tungsten calorimeter}.
+\newblock {\em Nucl. Instrum. Meth.}, A794:240--254, 2015.
+
+\bibitem{Brient:2002gh}
+Jean-Claude Brient and Henri Videau.
+\newblock {The Calorimetry at the future e+ e- linear collider}.
+\newblock {\em eConf}, C010630:E3047, 2001.
+
+\bibitem{bib:HiggsCms}
+Serguei Chatrchyan et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys. Lett.}, B716:30--61, 2012.
+
 \bibitem{bib:RSTOP}
 Abdelhak Djouadi, Gregory Moreau, and Francois Richard.
 \newblock {Resolving the A(FB)**b puzzle in an extra dimensional model with an
@@ -56,6 +125,14 @@ Philippe Doublet.
 \bibitem{bib:HARP}
 V.~Ammosov et~al.
 \newblock http://harp-cdp.web.cern.ch/harp-cdp/dedx.pdf.
+
+\bibitem{bib:G4pl}
+{GEANT4 Collaboration}.
+\newblock Reference physics lists.
+
+\bibitem{bib:PDGprop}
+PDG~Data Group.
+\newblock http://pdg.lbl.gov/2016/atomicnuclearproperties/.
 
 \bibitem{bib:Han}
 Tao Han.
@@ -77,9 +154,22 @@ Vardan Khachatryan et~al.
   with a W or Z boson in pp collisions at $\sqrt{s} = 8$ $\,\text {TeV}$}.
 \newblock {\em Eur. Phys. J.}, C74(9):3060, 2014.
 
+\bibitem{bib:HiggsCms2}
+Vardan Khachatryan et~al.
+\newblock {Measurement of differential cross sections for Higgs boson
+  production in the diphoton decay channel in pp collisions at
+  $\sqrt{s}=8\,\text {TeV} $}.
+\newblock {\em Eur. Phys. J.}, C76(1):13, 2016.
+
 \bibitem{bib:LCIOtrack}
 Thomas Kraemer.
 \newblock http://www-flc.desy.de/lcnotes/notes/lc-det-2006-004.pdf.
+
+\bibitem{li:tel-00430432}
+H.~Li.
+\newblock {\em {Higgs Recoil Mass and Cross-Section Analysis at ILC AND
+  Calibration of the CALICE SiW ECAL Prototype}}.
+\newblock Theses, {Universit{\'e} Paris Sud - Paris XI}, October 2009.
 
 \bibitem{bib:LEPTOP}
 S.~Matsumoto.
@@ -87,10 +177,24 @@ S.~Matsumoto.
   Higgs masses from updated LEP / SLC data}.
 \newblock {\em Mod. Phys. Lett.}, A10:2553--2570, 1995.
 
+\bibitem{MoradeFreitas:2002kj}
+P.~Mora~de Freitas and H.~Videau.
+\newblock {Detector simulation with MOKKA / GEANT4: Present and future}.
+\newblock In {\em {Linear colliders. Proceedings, International Workshop on
+  physics and experiments with future electron-positron linear colliders, LCWS
+  2002, Seogwipo, Jeju Island, Korea, August 26-30, 2002}}, pages 623--627,
+  2002.
+
 \bibitem{bib:PDG}
 C.~Patrignani et~al.
 \newblock {Review of Particle Physics}.
 \newblock {\em Chin. Phys.}, C40(10):100001, 2016.
+
+\bibitem{Anduze:2008hq}
+J.~Repond et~al.
+\newblock {Design and Electronics Commissioning of the Physics Prototype of a
+  Si-W Electromagnetic Calorimeter for the International Linear Collider}.
+\newblock {\em JINST}, 3:P08001, 2008.
 
 \bibitem{bib:Jeremy}
 J{\'e}r{\'e}my Rou{\"e}n{\'e}.
