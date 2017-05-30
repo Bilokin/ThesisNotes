@@ -1,16 +1,22 @@
-\section{Passage of particles through matter}
-\label{sec:passage}
-The main principle of the particle detection in particle physics is the detection via interaction with an ordinary condensed matter. 
-The particles can interact with free or bound electrons in matter, or with atomic nuclei. 
-The study of high-energy particles is done using the following methods:
+\section{Passage of particles through matter} \label{sec:Passage}
+
+%The main principle of the particle detection in particle physics is the detection via interaction with an ordinary condensed matter. 
+%The particles can interact with free or bound electrons in matter, or with atomic nuclei.
+Primary particles lose energy due to the interation with the detector material. In a simplified way, the following interactions can be distinguished:
+%The study of high-energy particles is done using the following methods:
 \begin{itemize}
-	\item Detection and measurement of radiative light emitted while travelling through matter of tracking devices;
-	\item High-energy photons or electrons in thick absorbers initiate electromagnetic cascades or showers, which are measured in electromagnetic calorimeters;
-	\item High-energy hadrons interact with matter nuclei via strong force creating  hadronic cascades, measured by hadronic calorimeters.
+	\item Ionization - charged particles lose their energy by ionizing the atoms of the detector material;
+	\item Photoelectric effect - a process of an electron emission from an atom due to the interation with a low energy photon;
+	\item Compton scattering - the scattering of a low energy photon by an electron in the material;
+	\item Pair creation - a convertion of an energetic photon to $e^+e^-$ pair in the detector material;
+	\item Hadronic interaction - elastic or inelastic interaction of energetic hadrons with matter nuclei via strong force. 
+	%\item Detection and measurement of radiative light emitted while travelling through matter of tracking devices;
+	%\item High-energy photons or electrons in thick absorbers initiate electromagnetic cascades or showers, which are measured in electromagnetic calorimeters;
+	%\item High-energy hadrons interact with matter nuclei via strong force creating  hadronic cascades, measured by hadronic calorimeters.
 \end{itemize}
 %Different regimes of energy losses
-\subsection{Electronic energy losses}
-The radiated photons by energetic charged particles lead to ionization, atomic, or collective excitation in ordinary matter. 
+\subsection{Electronic energy losses} 
+%The radiated photons by energetic charged particles lead to ionization, atomic, or collective excitation in ordinary matter. 
 The mean rate of energy loss per unit of length $<-dE/dx>$ by relativistic massive particles is described by Bethe-Bloch formula~\cite{bib:PDG}. 
 This equation depends on the particle charge and momentum, as well as on the matter properties, such as atomic mass and atomic number. 
 As an example, the energy loss of muons on copper target as function of particle momentum is demonstrated in Fig.~\ref{fig:BB_2}.
@@ -29,13 +35,13 @@ Eventually, the electron energy falls below the critical energy of the bremsstra
 Below the $e^+e^-$ pair convertion threshold, the photons lose their energy in the material by the Compton scattering process. 
 
 The main characteristic of the material is the radiation length $X^0$, defined as the mean distance over which a high-energy electron loses all but $1/e$ of its energy, or $7/9$ of the mean free path of a high-energy photon. 
-The transverse size of the electromagnetic cascade is described by Moli\`ere radius $R_{m}$, which is defined as an average radius of a cylinder containing 90\% of an electromagnetic cascade. Moli\`ere radius is proportional to the radiation length of the material. 
+The transverse size of the electromagnetic cascade is described by the Moli\`ere radius $R_{m}$, which is defined as an average radius of a cylinder containing 90\% of an electromagnetic cascade. The Moli\`ere radius is proportional to the radiation length of the material. 
 The radiation length and the Moli\`ere radius values for various materials are shown in Table~\ref{table:material}.
 \input{ECAL/tables/material}
 
 \subsection{Hadronic showers}
-All hadrons have an electric and a confined color charge. 
-Thus, the charged hadrons can interact with material via ionization process, and all hadrons, neutral and charged ones, can interact with matter nuclei via the strong force.
+%All hadrons have an electric and a confined color charge. 
+Charged hadrons can interact with material via ionization process, and all hadrons, neutral and charged ones, can interact with matter nuclei via the strong force.
 The strong interaction with matter can be elastic and inelastic. 
 The elastic hadron-matter interaction is the nucleus excitation process, via gluon exchange, which do not change the hadron or nuclei composition. 
 The inelastic hadron-matter interaction often leads to a spallation of the target nuclei creating new stable or unstable hadrons. 
@@ -47,13 +53,14 @@ The material is characterized by the nuclear interaction length $\lambda_{I}$, w
 Specifically, the pion interaction length $\lambda_{\pi^\pm} > \lambda_{I}$, due to longer mean free path of the $\pi^\pm$ in the same type of material. 
 The   $\lambda_{\pi^\pm} $ and $ \lambda_{I}$ values for various materials are given in Table~\ref{table:material}.
 \subsection{Simulations}
-The most famous toolkit to simulate the passage of particles through matter is \geant\ simulation software~\cite{Allison:2006ve}. 
+A widely used toolkit to simulate the passage of particles through matter is \geant\ simulation software~\cite{Allison:2006ve}. 
 It is used in a variety of application domains, including high energy physics, astrophysics and space science, medical physics and radiation protection. 
 The \geant\ physics processes cover variety of particle-matter interactions over a wide energy range.
 The description of highy-fluctuating processes, like hadron-matter interaction, can be done by using different approximations. 
-Thus, simulation of the hadron-matter interaction in \geant\ is implemented in physical models called \textit{physics lists}~\cite{bib:G4pl}.
+The simulation of the hadron-matter interaction in \geant\ is implemented in physical models called \textit{physics lists}~\cite{bib:G4pl}.
 
-\section{Introduction}
+\section{\ecalp}
+\subsection{Introduction}
 %General introduction
 \label{sec:ecalintro}
 The design of particle detectors at future high-energy physics experiments and, in particular, at linear colliders is oriented towards the usage of Particle Flow algorithms (PFA) for the event reconstruction. 
@@ -64,10 +71,10 @@ The primary objective of the CALICE (Calorimeter for the Linear Collider Experim
 A detailed study of the calorimeter response to particle interactions is necessary to verify existing Monte Carlo simulation models and to build a reliable PFA. 
 This implies the precise simulation and reconstruction of the interaction of neutral and charged hadrons and the subsequent particle cascade.
 
-This note reports on a detailed study of hadronic interactions in the CALICE Silicon-Tungsten Electromagnetic Calorimeter (\ecal) physics prototype \cite{Anduze:2008hq}.
+This section reports on a detailed study of hadronic interactions in the CALICE Silicon-Tungsten Electromagnetic Calorimeter (\ecal) physics prototype \cite{Anduze:2008hq}.
 The \ecal\ was tested at Fermi National Accelerator Laboratory (FNAL) in 2008 using a beam of $\pi^-$-mesons in the energy range from 2 to 10\,GeV. 
 %High energy jets are predominantly composed of neutral and charged pions within this energy range and therefore the performance of Monte Carlo simulations with these particles is important.
-The highly granular structure of the \ecal\ permits a detailed measurement of hadronic showers in terms of integral observables \cite{Bilki:2014uep} such as cluster extensions and energy depositions. As will be shown in this note, the high granularity allows in addition for deeper studies of the interactions between the hadrons and the absorber material such as the characterisation of the interaction region and the analysis of secondaries emerging from the interaction. The tracks produced by these secondaries are reconstructed by a new simple \tfa . The resulting observables are subject to comparison of data with predictions from different {\sc Geant}4 Monte Carlo physics lists. The analysis complements studies presented in~\cite{Adloff:2013vra} and~\cite{bib:can-047} for tracking in CALICE prototypes of hadronic calorimeters.  
+The highly granular structure of the \ecal\ permits a detailed measurement of hadronic showers in terms of integral observables \cite{Bilki:2014uep} such as cluster extensions and energy depositions. As will be shown, the high granularity allows in addition for deeper studies of the interactions between the hadrons and the absorber material such as the characterisation of the interaction region and the analysis of secondaries emerging from the interaction. The tracks produced by these secondaries are reconstructed by a new simple \tfa . The resulting observables are subject to comparison of data with predictions from different {\sc Geant}4 Monte Carlo physics lists. The analysis complements studies presented in~\cite{Adloff:2013vra} and~\cite{bib:can-047} for tracking in CALICE prototypes of hadronic calorimeters.  
 
 %and differential observables, like kinematics of secondary particles, that emerge from hadron-detector interactions.
 
@@ -83,7 +90,7 @@ The highly granular structure of the \ecal\ permits a detailed measurement of ha
 %\end{itemize}
 %||||||||||||||||||||||||ECAL|||||||||||||||||||||||%
 
-\section{The \ecalp}
+\subsection{The prototype description}
 \label{sec:ecal}
 The \ecalp\ has a sandwich-like structure comprising 30 layers of silicon (Si) as active material, alternated with tungsten (W) as absorber material. The active layers are made of Si wafers segmented in 1 $\times$ 1\,cm$^2$ pads. As shown in Fig. \ref{fig:ECAL-scheme}, each wafer consists of a square of 6 $\times$ 6 pads and each layer is a matrix of 3 $\times$ 3 of these wafers resulting in an active zone of 18 $\times$ 18\,cm$^2$.
 \begin{figure}[H]
@@ -98,14 +105,14 @@ A more detailed description of the prototype can be found in \cite{Anduze:2008hq
 
 %|||||||||||||||||||Description of a dataset||||||||||||||||||||%
 
-\section{Data and Monte Carlo samples}
+%\subsection{Data and Monte Carlo samples}
 \label{sec:data}
 \subsection{Experimental setup at FNAL}\label{sec:fnal}
 The test beams were carried out at the Fermilab Test Beam Facility\footnote{\label{note1}Fermilab Test Beam Facility web page: \url{http://www-ppd.fnal.gov/MTBF-w}}, FTBF, at FNAL in May and July 2008.
 The \ecal\ was placed in front of two other CALICE physics prototypes: an AHCAL \cite{collaboration:2010hb} and a TailCatcher (TCMT) \cite{CALICE:2012aa}.
 The beam-line comprised in addition two scintillator counters, covering an area of 10 $\times$ 10 cm$^2$, for triggering on incoming particles and two Cherenkov detectors for particle identification.
 The chosen coordinate system is right-handed with the $z$-axis pointing along the beam direction and the $y$-axis being vertical.
-The analysed data in this note comprise runs with primary $\pi^-$-mesons. The energies of the primary particles are 2, 4, 6, 8 and 10 GeV.
+The analysed data comprise runs with primary $\pi^-$-mesons. The energies of the primary particles are 2, 4, 6, 8 and 10 GeV.
 
 \subsection{Monte Carlo simulations}
 
@@ -140,7 +147,7 @@ To select $\pi^-$ showers the data and simulation samples undergo the following 
 \begin{itemize}
 	\item A series of cuts is applied to reject multi-particle events caused by beam impurities or products of decays or upstream interactions of primary particles. The influence of residual multi-particle events will be discussed in Sec.~\ref{sec:results};
 	\item A threshold of 0.6 MIP is chosen to remove noisy hits in the \ecal;
-	\item A hit is removed as being isolated if all the 26 pads in the surrounding cube have no signal above the noise threshold. The analysis presented in this note applies to the non-isolated hits that remain after this removal. The term hits will continue to be used.   
+	\item A hit is removed as being isolated if all the 26 pads in the surrounding cube have no signal above the noise threshold. The analysis applies to the non-isolated hits that remain after this removal. The term hits will continue to be used.   
 	\item The total number of hits in the ECAL is required to be at least 25 to remove particles with large incident angle;
 	\item The barycentres of the transverse coordinates $\bar{x}_{hit}$ and $\bar{y}_{hit}$ of the hits are calculated as:
 	\begin{eqnarray}
@@ -411,7 +418,7 @@ Further dependencies of the \tfa\ on the value of the cone angle of the merging 
 %---------------------------RESULTS--------------------------------
 %------------------------------------------------------------------
 
-\section{Results}
+\section{Data - Monte Carlo comparison}
 %Systematic uncertainties related to the calorimeter calibration, event selection and preprocessing are discussed in Ref. \cite{bib:Naomi}.
 \label{sec:results}
 %\subsection{Comparing Monte Carlo models with data}
@@ -746,7 +753,7 @@ This result is not trivial. It shows that the algorithm has indeed selected MIP-
 \section{Summary and outlook}
 
 This study reveals the outstanding potential of the CALICE \ecalp\ to obtain a detailed picture of the interactions of hadrons with matter. 
-This note describes basic ideas and the application of a new simple \tfa\ for the \ecal. This algorithm allows for the reconstruction of tracks produced by secondary particles created in the interaction of hadrons with the absorber material, and hence to study the interaction region of hadronic showers in the \ecal. The \tfa\ produces a new set of differential observables, based on reconstructed tracks of secondary particles and the interaction region of the hadronic cascades. The results are stable w.r.t. small variations of the main parameter of the \tfa.
+This section describes basic ideas and the application of a new simple \tfa\ for the \ecal. This algorithm allows for the reconstruction of tracks produced by secondary particles created in the interaction of hadrons with the absorber material, and hence to study the interaction region of hadronic showers in the \ecal. The \tfa\ produces a new set of differential observables, based on reconstructed tracks of secondary particles and the interaction region of the hadronic cascades. The results are stable w.r.t. small variations of the main parameter of the \tfa.
 
 Data recorded in test beams at FNAL in 2008 with pions as primary particles with energies between 2 and 10\,GeV are compared with predictions by the physics lists \qgsp\, \ftfp\ and \qbbc as contained in {\sc Geant4} version 10.01. The accuracy with which the simulation describes the data varies with the beam energy and the chosen physics observable. In most of the cases data and Monte Carlo agree within 10\% without revealing a clear preference for one of the chosen physics lists. In this context it is worthwhile to remind that the interaction region is systematically 10\% wider than it is the case for the Monte Carlo simulation.
 

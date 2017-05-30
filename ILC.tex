@@ -303,11 +303,11 @@ One of the fundamental characteristics of the PFA performance is the jet energy 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Vertex Detector}
-The primary purpose of the ILD Vertex Detector is the precise position measurement of charged tracks aimed at the primary interaction point (IP) reconstruction and secondary vertex reconstruction.
+The primary purpose of the ILD Vertex Detector is the precise position measurement of charged tracks aimed at the primary interaction point (IP) and the secondary vertex reconstruction.
 %The Vertex Detector of ILD serves to reconstruct position of primary interaction point (IP) and detect tracks with an offset to the IP and organize them into secondary or ternary vertices. 
-The secondary vertices are created by high energy particles with a relatively short lifetime, like B mesons, D mesons or $\tau$ leptons. These particles appear in major decay modes of the Higgs boson or top quark. Therefore, the accurate measurement of track offsets, efficient tagging of $b$- and $c$-quark jets is essential for top and Higgs physics program. %Another important role of VXD is to reject beam background particles, which requires fast timing of readout devices.
+The secondary vertices are created by high energy particles with a relatively short lifetime, like B mesons, D mesons or $\tau$ leptons. These particles appear in the decay modes of the Higgs boson or the top quark. Therefore, the accurate measurement of track offsets, efficient tagging of $b$- and $c$-quark jets is essential for the top quark and the Higgs physics program. %Another important role of VXD is to reject beam background particles, which requires fast timing of readout devices.
 
-To fulfill the required precision, the VXD is designed to have its first layer at 16\,mm radius from the IP, \~3\,$\mu$m spatial resolution on track impact parameter and a low material budget of the device. To avoid installation of liquid cooling, the ILD Vertex Detector should also have a low power consumption.
+To fulfill the required precision, the VXD is designed to have its first layer at 16\,mm radius from the IP, \~3\,$\mu$m spatial resolution on track impact parameter and a low material budget of the device. To avoid installation of a liquid cooling, the ILD Vertex Detector should also have a low power consumption.
 
 The baseline design of VXD consist of three cylindrical double layers with pixel sensors as readout devices. The VXD layer characteristics are given in Table~\ref{table:ILCvtxparam}.
 The VXD layout and its mechanical support is shown in Fig.~\ref{fig:ILCvtxsupport}. 
@@ -331,25 +331,26 @@ All three technologies are able to provide sensors with up to 50\,$\mu$m thickne
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Forward Tracking Discs}
+\subsubsection{Forward Tracking Disks}
 
-The ILD forward tracking region consist of seven tracking disks placed between the beam pipe and the TPC. The first two are equipped with pixel sensors to provide good impact parameter resolution, the other five have silicon strips as readout devices and serve for momentum and charge reconstruction. The layout of the Forward Tracking Discs is described in Table~\ref{table:ILCftdparam}. 
+The ILD forward tracking region consists of seven tracking disks placed between the beam pipe and the TPC. The first two are equipped with pixel sensors to provide a good impact parameter resolution, the other five disks feature silicon strips as readout devices and serve for momentum and charge reconstruction. The layout of the Forward Tracking Discs is summarized in Table~\ref{table:ILCftdparam}. 
 
 \input{tables/ilcftdparameters}
 
 %The main challenges of the FTD are 
-Solenoidal magnetic field has a reduced influence on particles in the ILD forward region.
-Thus, a precise momentum measurement requires a low material budget and large lever arm. Even small amount of material before the first sensitive layer can disturb impact parameter precision. To archive the required performance, first two inner disks are implemented using high-granular pixels with around 3\,$\mu$m resolution with a minimal material budget. As for Vertex detector, the similar technologies of readout devices are considered: CPS, FPCCD and DEPFET. Outer disks are equipped with AC coupled p-on-n fine-pitch microstrip silicon sensors.
+The solenoidal magnetic field has a reduced influence on particles in the ILD forward region.
+Thus, a precise momentum measurement requires a low material budget and large lever arm. Even small amount of material before the first sensitive layer can compromise the impact parameter precision. To achieve the required performance, first two inner disks featureg high-granular pixels with around 3\,$\mu$m resolution with a minimal material budget. As for the vertex detector, the similar technologies of readout devices are considered: CPS, FPCCD and DEPFET. Outer disks are equipped with AC coupled p-on-n fine-pitch microstrip silicon sensors.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Time Projection Chamber}
 
-The ILD central tracker is required to have low material budget, high precision, good timing resolution and have enough points for track reconstruction. Time Projection Chamber is the device, which fulfills all these requirements. 
+%The ILD central tracker is required to have low material budget, high precision, good timing resolution and have enough points for track reconstruction.
+The Time Projection Chamber was chosen as the central tracker of the ILD concept. %is the device, which fulfills all these requirements. 
 
 The TPC consist of an endplate, where the readout of the amplified signals takes place using custom-designed electronics, and a fieldcage, made from advanced composite materials. 
-Charged particles, that enter the TPC, ionize the gas mixture inside the chamber. Under an influence of an electric field from fieldscage, the electrons from track ionization drift to a TPC endplate, equipped with detection devices. As a result, TPC can provide up to 224 points per track.
+Charged particles, that enter the TPC, ionize the gas mixture inside the chamber. Under an influence of an electric field within the fieldscage, the electrons from track ionization drift to a TPC endplate, equipped with detection devices. The TPC can provide up to 224 points per track.
 A general layout of ILD TPC is shown in Fig.~\ref{fig:ILCtpc}. 
 \begin{figure}
 {\centering
@@ -359,7 +360,7 @@ A general layout of ILD TPC is shown in Fig.~\ref{fig:ILCtpc}.
   }
 \end{figure}
 
-Currently, Micromegas and Gas Electron Multipliers are considered as detection methods. Both types of detection devices allow to measure energy deposition per particle track length $dE/dx$, which can be effectively used for particle identification (PID).
+Currently, Micromegas and Gas Electron Multipliers are considered as detection methods. Both types of detection devices allow measuring the energy deposition per particle track length $dE/dx$, which can be effectively used for particle identification (PID).
 
 A detailed R\&D of TPC for ILD concept is provided by LCTPC collaboration.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -371,7 +372,7 @@ Silicon Inner Tracker, Silicon External Tracker and External Tracking Detector c
 %The general scheme of the system is displayed in Fig.~\ref{fig:ILCtracking}.
 
 
-The SIT is located between Vertex Detector and TPC, it has two double-sided silicon strip layers, which provide necessary connection between VXD and TPC track segments. ETD and SET are realized with one double-sided layer of silicon strips, which provide a precise entry point of a charged track to the ECAL. All silicon envelope detectors use the same sensor type throughout the system.
+The SIT is located between Vertex Detector and TPC. It has two double-sided silicon strip layers, which provide the link between VXD and TPC track segments. ETD and SET are realized with one double-sided layer of silicon strips, which provide a precise entry point of a charged track to the ECAL. All silicon envelope detectors use the same sensor type throughout the system.
 
 The Silicon Envelope of ILD has been developed by the SiLC collaboration.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -391,11 +392,11 @@ Figure \ref{fig:ILCecal} shows the position of the electromagnetic calorimeter i
 	}
 \end{figure}
 
-The principal role of the ECAL in the PFA framework is photon reconstruction in presence of close-by particles. The device should be able to disentangle electromagnetic showers caused by photons or electrons from hadronic ones. Thus, high granularity in three dimensions is required. For these purposes, the ILD ECAL has a sandwich-like structure of 30 active readout layers with tungsten absorber layers in between. The total thickness of the absorber corresponds to 24 radiation lengths $X_0$ and 1 nuclear interaction length $\lambda$. The readout technology is silicon pin diodes of 5 $\times$ 5\,mm$^2$ size. This device is referred as \ecal. Another option for the readout sensors are scintillator strips with silicon photomultipliers.
+The principal role of the ECAL in the PFA framework is photon reconstruction in presence of close-by particles. The device should be able to disentangle electromagnetic showers caused by photons or electrons from hadronic ones. Thus, high granularity in three dimensions is required. For these purposes, the ILD ECAL has a sandwich-like structure of 30 active readout layers with tungsten absorber layers in between. The total thickness of the absorber corresponds to 24 radiation lengths $X_0$ and 1 nuclear interaction length $\lambda$, see Sec.~\ref{sec:Passage}. The readout technology is silicon pin diodes of 5 $\times$ 5\,mm$^2$ size. This device is referred as \ecal. Another option for the readout sensors are scintillator strips with silicon photomultipliers.
 
 The hadronic calorimeter is designed to separate neutral and charged hadrons and precisely measure energy depositions of neutral hadrons. The HCAL has 42 sensitive layers with steel absorber in between. Two baseline readout options are considered, the scintillator-tile based AHCAL and the Glass Resistive Plate Chamber (GRPC) based SDHCAL.
 
-CALICE collaboration made a detailed R\&D of ILD calorimeters, constructed and tested prototypes with different readout options. 
+The CALICE collaboration made a detailed R\&D of highly granular calorimeters, constructed and tested prototypes with different readout options. 
 \ecal\ prototype by CALICE collaboration is described in Section~\ref{sec:ecal}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
