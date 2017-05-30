@@ -7,47 +7,48 @@ Warning--to sort, need author or key in bib:TopMass
 Warning--empty author in bib:TopMass
 Warning--empty journal in bib:TopMass
 Warning--empty journal in bib:H20
+Warning--empty journal in bib:ILC
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
-You've used 20 entries,
+You've used 22 entries,
             2118 wiz_defined-function locations,
-            623 strings with 7214 characters,
-and the built_in function-call counts, 5948 in all, are:
-= -- 568
-> -- 248
+            633 strings with 7783 characters,
+and the built_in function-call counts, 6738 in all, are:
+= -- 631
+> -- 319
 < -- 3
-+ -- 100
-- -- 80
-* -- 387
-:= -- 1003
-add.period$ -- 57
-call.type$ -- 20
-change.case$ -- 96
++ -- 128
+- -- 106
+* -- 450
+:= -- 1146
+add.period$ -- 63
+call.type$ -- 22
+change.case$ -- 115
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 238
-empty$ -- 494
-format.name$ -- 80
-if$ -- 1250
+cite$ -- 29
+duplicate$ -- 262
+empty$ -- 539
+format.name$ -- 106
+if$ -- 1401
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 15
-newline$ -- 100
-num.names$ -- 38
-pop$ -- 101
+int.to.str$ -- 22
+missing$ -- 17
+newline$ -- 110
+num.names$ -- 42
+pop$ -- 126
 preamble$ -- 1
-purify$ -- 76
+purify$ -- 93
 quote$ -- 0
-skip$ -- 183
+skip$ -- 197
 stack$ -- 0
-substring$ -- 347
-swap$ -- 45
+substring$ -- 357
+swap$ -- 47
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
-warning$ -- 6
-while$ -- 54
-width$ -- 22
-write$ -- 207
-(There were 6 warnings)
+type$ -- 88
+warning$ -- 7
+while$ -- 58
+width$ -- 24
+write$ -- 226
+(There were 7 warnings)
