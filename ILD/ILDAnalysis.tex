@@ -419,8 +419,8 @@ As can be seen from Fig.~\ref{fig:GenVtxOffset_3}, the c-vertex prong offsets ar
     \label{fig:GenVtxOffset_3}
 \end{figure}
 
-The distributions of the total charge multiplicity and the flight distance of the b-hadrons are displayed in Fig.~\ref{fig:GenHadronParams_3}.
-The imbalance between the odd and even number of multiplicities is caused by the presence of the \Bzs\ hadronization modes.
+The distributions of the total B-hadron charge multiplicity and the b-jet multiplicity are displayed in Fig.~\ref{fig:GenHadronParams_3}. The mean b-jet multiplicity is almost three times higher than the mean B-hadron multiplicity, which makes the vertex reconstruction not trivial task. 
+The imbalance between the odd and even number of multiplicities shown in Fig.~\ref{fig:GenHadronParams_a_3} is caused by the presence of the \Bzs\ hadronization modes.
 
 Regarding the similarity of the distributions for two processes shown in Figures~\ref{fig:GenVtx_3}, \ref{fig:GenHadronParams_3} and \ref{fig:GenVtxOffset_3}, the performance of a vertexing algorithm should be identical for the same energy and the direction of the b-hadron decays.
 
@@ -507,7 +507,7 @@ The jets with reconstructed vertices have the following statistics:
 \end{figure}
 
 The jets with $N_{rec}=N_{gen}$ have the charge purity of more than 97\%, while all other jets have an almost random reconstructed jet charge with the corresponding charge purity about 35\%.
-The fraction of entries above diagonal in Fig.~\ref{fig:Table_3} is small, comparing to the fraction of events above the diagonal. 
+The fraction of entries below diagonal in Fig.~\ref{fig:Table_3} is small, comparing to the fraction of events above the diagonal. 
 Hence, the purity reduction is mainly caused by the jets, which have lost the prongs from their reconstructed vertices. 
 %The application of cuts, for example on jet b-tag$>0.8$ and reconstructed b-hadron momentum $|p_{had}| > 20$\,GeV, increases the fraction of correctly reconstructed jets up to 55\%, however with an efficiency penalty of 17\%.
 %The cuts on the b-tag value are necessary to reject background processes and will be adjusted to archieve the best background suppression. 
@@ -521,15 +521,15 @@ But first, one needs to study the reasons behind the missing prongs and analyze 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Missing vertices}
 \label{sec:MisVertices}
-%The vertex reconstruction algorithm may fail if the generated b-hadron properties, like number of generated prongs, b-hadron momentum or polar angle, are in the poor acceptance of the detector. 
-%The non-reconstructed vertices contain approximately 22\% of all generated b-hadron prongs. 
-%The b-hadron vertices with generated low momentum prongs or low offset prongs have higher chances to be missed by the reconstruction algorithms. 
-%The distributions of the average prong offset and momentum for reconstructed vertices and missed vertices are shown in Fig.~\ref{fig:RecMissedParams_3}. 
-%On can conclude, that the reconstruction algorithms start to lose their efficiency at below 4\,GeV average prong momentum and below 0.5\,mm average prong offset. 
+The vertex reconstruction algorithm may fail if the generated b-hadron properties, like number of generated prongs, b-hadron momentum or polar angle, are in the poor acceptance of the detector. 
+The non-reconstructed vertices contain approximately 22\% of all generated b-hadron prongs. 
+The b-hadron vertices with generated low momentum prongs or low offset prongs have higher chances to be missed by the reconstruction algorithms. 
+The distributions of the average prong offset and momentum for reconstructed vertices and missed vertices are shown in Fig.~\ref{fig:RecMissedParams_3}. 
+One concludes, that the reconstruction algorithms start to lose their efficiency at below 4\,GeV average prong momentum and below 0.5\,mm average prong offset. 
 
 
 The polar angle distributions of the missing vertices is displayed in Fig.~\ref{fig:MissedCos_3}. 
-One can summarize the reasons for missing vertices as following: 
+One summarizes the reasons for missing vertices as following: 
 \begin{itemize}
 \item Neutral decay vertex - the vertex cannot be reconstructed if it has no generated prongs;
 \item Low energy of the generated b-hadron causes a short flight distance, small offsets or low momentum of the generated prongs, which makes it difficult to separate out the b-hadron prongs from the other particles in a b-jet;
