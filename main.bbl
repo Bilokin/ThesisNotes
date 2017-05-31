@@ -154,20 +154,6 @@ M.~S. Amjad et~al.
   the ILC}.
 \newblock {\em Eur. Phys. J.}, C75(10):512, 2015.
 
-\bibitem{bib:RSTOP}
-Abdelhak Djouadi, Gregory Moreau, and Francois Richard.
-\newblock {Resolving the A(FB)**b puzzle in an extra dimensional model with an
-  extended gauge structure}.
-\newblock {\em Nucl. Phys.}, B773:43--64, 2007.
-
-\bibitem{bib:SLC}
-P.~C. Rowson.
-\newblock {Precision electroweak measurements at the SLC: Overview and
-  perspective}.
-\newblock In {\em {Weak interactions and neutrinos. Proceedings, 17th
-  International Workshop, WIN'99, Cape Town, South Africa, January 24-30,
-  1999}}, pages 82--86, 1999.
-
 \bibitem{bib:Han}
 Tao Han.
 \newblock {Collider phenomenology: Basic knowledge and techniques}.
@@ -193,6 +179,13 @@ Timo~Antero Aaltonen et~al.
 \newblock {Measurement of the forward–backward asymmetry of top-quark and
   antiquark pairs using the full CDF Run II data set}.
 \newblock {\em Phys. Rev.}, D93(11):112005, 2016.
+
+\bibitem{Naranjo:2017etb}
+Roger Naranjo.
+\newblock {Measurements of the charge asymmetry in top-quark pair production in
+  the dilepton final state at $\sqrt{s}=8$ TeV with the ATLAS detector}.
+\newblock In {\em {Proceedings, 9th International Workshop on Top Quark Physics
+  (TOP 2016): Olomouc, Czech Republic, September 19-23, 2016}}, 2017.
 
 \bibitem{bib:CMSttz2014}
 Vardan Khachatryan et~al.
@@ -232,5 +225,17 @@ J{\'e}r{\'e}my Rou{\"e}n{\'e}.
 Jack Steinberger.
 \newblock {A brief history of the running of $R_{b}$}.
 \newblock (CERN-OPEN-97-013. CERN-ALEPH-PUB-97-005):10 p, May 1997.
+
+\bibitem{bib:Lumi}
+C~Rimbault, P~Bambade, K~Mönig, and D~Schulte.
+\newblock Impact of beam-beam effects on precision luminosity measurements at
+  the ilc.
+\newblock {\em Journal of Instrumentation}, 2(09):P09001, 2007.
+
+\bibitem{bib:RSTOP}
+Abdelhak Djouadi, Gregory Moreau, and Francois Richard.
+\newblock {Resolving the A(FB)**b puzzle in an extra dimensional model with an
+  extended gauge structure}.
+\newblock {\em Nucl. Phys.}, B773:43--64, 2007.
 
 \end{thebibliography}
