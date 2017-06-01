@@ -14,45 +14,45 @@ Warning--empty author in bib:TopMass
 Warning--empty journal in bib:TopMass
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
-You've used 41 entries,
+You've used 44 entries,
             1791 wiz_defined-function locations,
-            687 strings with 10312 characters,
-and the built_in function-call counts, 8083 in all, are:
-= -- 677
-> -- 320
+            704 strings with 10711 characters,
+and the built_in function-call counts, 8646 in all, are:
+= -- 726
+> -- 340
 < -- 3
-+ -- 126
-- -- 85
-* -- 491
-:= -- 1300
-add.period$ -- 116
-call.type$ -- 41
-change.case$ -- 41
++ -- 134
+- -- 90
+* -- 520
+:= -- 1388
+add.period$ -- 124
+call.type$ -- 44
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 386
-empty$ -- 854
-format.name$ -- 85
-if$ -- 1809
+cite$ -- 55
+duplicate$ -- 409
+empty$ -- 918
+format.name$ -- 90
+if$ -- 1938
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 34
-newline$ -- 201
-num.names$ -- 38
-pop$ -- 114
+int.to.str$ -- 44
+missing$ -- 36
+newline$ -- 215
+num.names$ -- 41
+pop$ -- 121
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 184
+skip$ -- 199
 stack$ -- 0
-substring$ -- 471
-swap$ -- 68
+substring$ -- 513
+swap$ -- 71
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 11
-while$ -- 68
-width$ -- 43
-write$ -- 420
+while$ -- 73
+width$ -- 46
+write$ -- 449
 (There were 11 warnings)

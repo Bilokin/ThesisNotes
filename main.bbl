@@ -148,6 +148,11 @@ Carl~R. Schmidt.
   annihilation}.
 \newblock {\em Phys. Rev.}, D54:3250--3265, 1996.
 
+\bibitem{Randall:1999ee}
+Lisa Randall and Raman Sundrum.
+\newblock {A Large mass hierarchy from a small extra dimension}.
+\newblock {\em Phys. Rev. Lett.}, 83:3370--3373, 1999.
+
 \bibitem{bib:ILCTOP}
 M.~S. Amjad et~al.
 \newblock {A precise characterisation of the top quark electro-weak vertices at
@@ -207,6 +212,11 @@ Taikan Suehara and Tomohiko Tanabe.
 \newblock {LCFIPlus: A Framework for Jet Analysis in Linear Collider Studies}.
 \newblock {\em Nucl. Instrum. Meth.}, A808:109--116, 2016.
 
+\bibitem{Amjad:2014tha}
+M.~S. Amjad et~al.
+\newblock {Beam test performance of the SKIROC2 ASIC}.
+\newblock {\em Nucl. Instrum. Meth.}, A778:78--84, 2015.
+
 \bibitem{bib:HARP}
 V.~Ammosov et~al.
 \newblock http://harp-cdp.web.cern.ch/harp-cdp/dedx.pdf.
@@ -237,5 +247,10 @@ Abdelhak Djouadi, Gregory Moreau, and Francois Richard.
 \newblock {Resolving the A(FB)**b puzzle in an extra dimensional model with an
   extended gauge structure}.
 \newblock {\em Nucl. Phys.}, B773:43--64, 2007.
+
+\bibitem{bib:ILDNEW}
+Mikael Berggren.
+\newblock Very forward vertexing
+  https://agenda.linearcollider.org/event/7635/contributions/38990/attachments/31581/47577/berggren-ildphone-20170510.pdf.
 
 \end{thebibliography}
