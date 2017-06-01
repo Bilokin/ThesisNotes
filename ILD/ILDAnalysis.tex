@@ -636,28 +636,29 @@ The objective of the vertex recovery algorithm is to add accurately the missing 
 % 
 
 
-In this studies we use the following definition of the offset significance:
+In this study we use the following definition of the offset significance:
 
 \begin{equation}
 	\epsilon/\sigma = |\frac{d_0}{\sigma_{d_0}}| + |\frac{z_0 }{ \sigma_{z_0}}|,
 \end{equation}
 where $\sigma_{d_{0}}$ and $\sigma_{z_0}$ are the covariance matrix elements, provided by the track reconstruction algorithms.
-Value of offset significance strongly depends on the momentum of the particle, its polar angle and number of VXD or FTD hits. 
+The offset significance value depends strongly on the momentum of the particle, its polar angle and number of assigned VXD or FTD hits . 
 
-Typically, the b-hadrons prongs are generated with large offsets (Fig.~\ref{fig:GenHadronParams_b_3}), but the reconstruction can miss a reconstructed prong if it has a small offset deviation. 
-Hence, one needs another spatial separation variable, combined with the offset deviation $\epsilon/\sigma$. 
+Typically, the b-hadrons prongs are generated with large offsets (Fig.~\ref{fig:GenHadronParams_b_3}), but the reconstruction can miss a reconstructed prong if it has a small offset significance. 
+Hence, one needs another spatial separation variable, combined with the offset significance $\epsilon/\sigma$. 
 
 %Another separation variable can make use of the reconstructed vertex position and the reconstructed track candidate parameters. 
 
 The particle trajectory bending because of magnetic field is negligible at the small distance scales, like the b-hadron flight distance in Fig.~\ref{fig:GenHadronParams_b_3}. 
 Therefore, in this studies, the reconstructed track helix is approximated by the reconstructed vector of particle momentum. 
 
-This study uses an angle $\alpha$, as a second separation variable, defined as an angle between the vector of particle momentum $\vec{p}$ and the vector of difference between vertex position $\vec{s}$ and track reference point $\vec{t}$, defined in \cite{bib:LCIOtrack}. The separation variables, the angle $\alpha$ and the offset $\epsilon$, are illustrated in Fig.~\ref{fig:VtxRecovery_3}.
+Suppose, one has a reconstructed secondary vertex in a position $\vec{s}_{vtx}$ and a prong candidate with a momentum $\vec{p}$ and a track reference point $\vec{t}_0$, which is computed from track parameters $d_0$ and $z_0$.
+This study uses an angle $\alpha$, as a second separation variable, defined as an angle between the particle momentum $\vec{p}$ and the vector of difference between the vertex position $\vec{s}_{vtx}$ and the track reference point $\vec{t}$. The angle $\alpha$ is illustrated in Fig.~\ref{fig:VtxRecovery_3}.
 
 \begin{figure}
 {\centering
     \includegraphics[width=0.75\textwidth]{ILD/plots/recovery-graph.pdf}
-    \caption{\sl Illustration of the chosen separation variables of the vertex charge recovery algorithm, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}$ is a reference point of a given particle, defined in \cite{bib:LCIOtrack}, $\alpha$ is the angle between $\vec{p}$ and $\vec{s}$ and $\epsilon$ is an offset distance of the particle. %Right: Same comparison, but after a cut on the b-tag$> 0.8$ and a cut on the b-hadron momentum more than 20\,GeV. The diagonal contains 55\% of the jets after the cuts.
+    \caption{\sl Illustration of the chosen separation variables of the vertex charge recovery algorithm, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}$ is a reference point of a given particle, defined in \cite{bib:LCIOtrack}, $\alpha$ is the angle between $\vec{p}$ and $\vec{s}_{vtx}$ and $\epsilon$ is an offset distance of the particle. %Right: Same comparison, but after a cut on the b-tag$> 0.8$ and a cut on the b-hadron momentum more than 20\,GeV. The diagonal contains 55\% of the jets after the cuts.
     }
     \label{fig:VtxRecovery_3}
   }
@@ -867,7 +868,7 @@ In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\s
 %The integrated luminosity used is 150\ifb\ for the ideal beam polarization and 250\ifb for realistic beam polarization. The number of the generated events is 102255.
 The top quark polar angle in the right-handed beam configuration was successfully reconstructed in \cite{bib:Doublet}\cite{bib:ILCTOP}.
 The chosen center-of-mass energy allows for top pair production free from $t\bar{t}$ threshold QCD effects.
-The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \small\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
+The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \sm\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
 The clear process signature of two b-jets, two light jets from $W^\pm$ boson and an isolated lepton makes the semileptonic decay mode easily reconstructable and usable for the forward-backward asymmetry $A_{FB}$ measurement. 
 An example of a \ttbar\ event in the ILD environment is shown in Fig.~\ref{fig:TopEvent_3}.
@@ -988,7 +989,7 @@ One has the following charge combination rules to accept an event for the top qu
 	\item The kaon and vertex charge should have the same sign within one b-jet;
 	\item The $W^\pm$ lepton charge should be opposite to the b-quark charges within one reconstructed top or anti-top quark decayed leptonically; 
 	\item The  $W^\pm$ lepton charge should have the same charge as the b-quark charge from hadronically decayed top quark.
-	\item The $W^\pm$ lepton charge can be used alone after cuts on the reconstructed top $\chi^2_{t}$.
+	\item The $W^\pm$ lepton charge can be used alone after cuts on the reconstructed top quality.
 \end{itemize}
 
 According to these rules, one has the following charge pair signatures for a semileptonic \ttbar event:
@@ -999,7 +1000,7 @@ According to these rules, one has the following charge pair signatures for a sem
 	\item Vertex charge and kaon charge combination from different b-jets ({\sc vtx+kaon'});
 	\item  Vertex charge from a b-jet  in combination with $W^\pm$ lepton charge ({\sc l+vtx});
 	\item  Kaon charge from a b-jet in combination with $W^\pm$ lepton charge ({\sc l+kaon});
-	\item $W^\pm$ lepton charge after a $\chi^2_{t}$ cut  ({\sc l }cut).
+	\item $W^\pm$ lepton charge after cuts on the reconstructed top quality. ({\sc l }cut).
 \end{itemize}
 Multiple reconstructed charge pair signatures are possible within one event.
 
@@ -1012,7 +1013,7 @@ The concept of the b-quark charge measurement is validated by determining the to
 In case of the left-handed electron beam, the b-quarks are emitted into the direction of the initial top quark, which makes possible the standalone application the b-quark charge measurement. 
 
 The vertex charge and kaon charge methods were used to compute top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}, where one sees a good agreement between the generated and reconstructed top polar angle histograms. 
-The combined b-quark charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with total efficiency of 16\%.
+The b-quark charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with total efficiency of 16\%.
 \begin{figure}
 	{\centering
 		\includegraphics[width=0.55\textwidth]{ILD/plots/top-gamma.pdf}
