@@ -518,7 +518,7 @@ Hence, the purity reduction is mainly caused by the jets, which have lost the pr
 %The cuts on the b-tag value are necessary to reject background processes and will be adjusted to archieve the best background suppression. 
 
 
-Therefore, there is a possibility to develop a recovery algorithm, which can add the missing prongs to the reconstructed vertices, with a slight increase of the number of jets with contaminated vertices. 
+Therefore, there is a possibility to develop a recovery algorithm, which can add the missing prongs to the reconstructed vertices.%, with a slight increase of the number of jets with contaminated vertices. 
 But first, one needs to study the reasons behind the missing prongs and analyze the possibility to recover them. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -557,7 +557,7 @@ One summarizes the reasons for missing vertices as following:
 	\label{fig:RecMissedParams_3}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}
 	{\centering
 		\includegraphics[clip, trim=10.cm 0cm 0.cm 0cm, width=0.55\textwidth]{ILD/plots/missed-cos-vtx.pdf}
 		\caption{\sl Polar angle distribution of the missed vertices subdivided into different categories. This is a stacked histogram. The low momentum or low offset category are the missing vertices, which have the average prong momentum below  4\,GeV or below 0.5\,mm average prong offset.
@@ -599,11 +599,20 @@ The reasons for the missing prongs can be summarized as follows:
     \includegraphics[width=0.95\textwidth]{ILD/plots/missed-momentum.pdf}
 \caption{\label{fig:MissingTracks_p_3} }
 \end{subfigure}
-    \caption{\sl Polar angle~(a) and momentum~(b) distributions of the missing prongs subdivided into different categories. This is a stacked histogram. The peak at $|\cos\theta| \approx 0 $ is caused by the gap between TPC endplates, the peak at  $|\cos\theta| \approx 0.8$ is caused by barrel-endcap transition in the \ecal\ and the rapid increase at $|\cos\theta| \approx 0.9$ is caused by the barrel-endcap transition in the VXD and FTD system. }
+    \caption{\sl Polar angle~(a) and momentum~(b) distributions of the missing prongs subdivided into different categories. This is a stacked histogram. The peak at $|\cos\theta| = 0 $ is caused by the gap between TPC endplates, the peak at  $|\cos\theta| \approx 0.8$ is caused by barrel-endcap transition in the \ecal\ and the rapid increase at $|\cos\theta| \approx 0.9$ is caused by the barrel-endcap transition in the VXD and FTD system. }
     \label{fig:MissingTracks_3}
 \end{figure}
 
-These categories of the missing prongs can be illustrated by the polar angle histogram, shown in Fig.~\ref{fig:MissingTracks_cos_3}, which also reveals the following problems connected to the ILD geometry:
+\begin{figure}
+	{\centering
+		\includegraphics[width=0.55\textwidth]{ILD/graphics/directions.pdf}
+		\caption{\sl Illustration of the polar angle directions in ILD layout, where one has peaks in the missing prongs distribution. 
+		}
+		\label{fig:ILDDirection_3}
+	}
+\end{figure}
+
+These categories of the missing prongs can be illustrated by the polar angle histogram, shown in Fig.~\ref{fig:MissingTracks_cos_3}, which also reveals the following problems connected to the ILD geometry, see Fig.~\ref{fig:ILDDirection_3}:
 \begin{itemize}
 \item Small peak at $|\cos\theta| \approx 0$ is caused by the TPC anode gap. 
 \item Large peak at $|\cos\theta| \approx 0.8$ is caused by the PandoraPFO, which fails to connect a well reconstructed track with an offset to a segmented cluster located in the calorimeter barrel-endcap transition. This problem is specific to the b-hadron tracks;
