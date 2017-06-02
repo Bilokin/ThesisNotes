@@ -835,16 +835,27 @@ Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3}, one
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Top quark production at the ILC}
 \label{sec:TopProduction}
 %Direct electroweak production of the top quark pairs
 This section of the thesis describes an application of the b-quark charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the polar angle measurement for $e^+e^- \to t\bar{t}$ process at ILC, which is used to determine the electroweak couplings of the top quark.
 The end goal of this study is to increase efficiency of the b-quark polar angle reconstruction as comparing to the previous studies~\cite{bib:ILCTOP}.
+
+The studies in this section have the following steps:
+\begin{itemize}
+	\item The setup of the study and the \ttbar\ event reconstruction privided in Sections~\ref{sec:TopProp}-\ref{sec:TopBkg};
+	\item The description of the top quark charge information sources in Sec.~\ref{sec:ChargeOverview};
+	\item The application of the b-quark charge combination as a proof of principle in Sec.~\ref{sec:TopBCharge};
+	\item The final combination of all top quark charge information and the results in Sec.~\ref{sec:TopJetChargeCombo}.
+\end{itemize}
 %The measurements of the top quark properties is one of the key points of the \sm\ physics program at the ILC.
 
 \subsection{Properties of the top quark}
-
+\label{sec:TopProp}
 The top quark is the heaviest elementary particle in the \sm\ with measured mass of 173.34$\pm$0.27(stat)$\pm$0.71(syst) \,GeV~\cite{bib:TopMass}. This implies a very short lifetime of approximately 5$\cdot10^{-25}$\,s.
 The top quark lifetime is short compared to a time needed for hadronization process  (10$^{-23}$\,s). Therefore, the top quark decays too fast to form hadrons. 
 This fact permits to study the bare quark properties, like spin, via its decay particles. 
@@ -866,7 +877,8 @@ At the ILC it is possible to reconstruct and study all decay modes of the $t\bar
 %The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,GeV. 
 In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\sqrt{s}=500$\,GeV in the left-handed beam configuration are studied using full ILD simulation.
 %The integrated luminosity used is 150\ifb\ for the ideal beam polarization and 250\ifb for realistic beam polarization. The number of the generated events is 102255.
-The top quark polar angle in the right-handed beam configuration was successfully reconstructed in \cite{bib:Doublet}\cite{bib:ILCTOP}.
+The top quark polar angle in the right-handed beam configuration was  successfully reconstructed in \cite{bib:Doublet}\cite{bib:ILCTOP}.
+Therefore, this thesis concentrates on the left-handed beam configuration only, where one has inefficiency of the top polar angle reconstruction due to the event migration effect, as it was found in~\cite{bib:Doublet}~\cite{bib:Jeremy}.
 The chosen center-of-mass energy allows for top pair production free from $t\bar{t}$ threshold QCD effects.
 The cross sections at the Born level of the signal process $e^+e^- \to t\bar{t}$ and the major \sm\ background processes at the $\sqrt{s} = 500$\,GeV are summarized in Table~\ref{table:ttbarsigma}.
 
@@ -886,11 +898,11 @@ An example of a \ttbar\ event in the ILD environment is shown in Fig.~\ref{fig:T
 
 %This chapter concentrates only on the left-handed electron polarization case, because of the lepton migration problem caused by the $W^\pm$ kinematics. 
 %The previous studies found  
-The main goal of the study is to develop an alternative method to paper~\cite{bib:ILCTOP} by involving new b-quark charge measurement techniques, which should bring down the statistical uncertainties on the \ttbar Z$^0$ form factors and couplings.  
+The main goal of the study is to extend studies~\cite{bib:ILCTOP}~\cite{bib:Jeremy} by a new b-quark charge measurement techniques, which should bring down the statistical uncertainties on the \ttbar Z$^0$ form factors and couplings.  
 
 %\subsection{Top quark decay modes}
 
-\subsection{Top quark reconstruction}
+\subsection{Top quark reconstruction}\label{sec:TopRec}
 In this thesis, the top reconstruction method, which was developed for~\cite{bib:ILCTOP} is applied. It has the following steps:
 \begin{itemize}
 	\item Isolated lepton identification is done with the LAL LeptonFinder algorithm~\cite{bib:Doublet}, which is designed to find an energetic lepton or a lepton, which has a significant transverse momentum with respect to the neighbored jets. 
@@ -924,7 +936,7 @@ The $W^\pm$ boson kinematics and that of the b-quark in the \ttbar\ process depe
 \end{itemize}
 An incorrect assignment of b-jet and $W^\pm$ jets compromises the top quark charge reconstruction needed for the top polar angle measurement. 
 
-\subsection{Background processes}
+\subsection{Background processes}\label{sec:TopBkg}
 The main background processes are summarized in Table~\ref{table:ttbarsigma}. 
 The previous studies~\cite{bib:ILCTOP}\cite{bib:Doublet} have shown that the major backgrounds to the semileptonic \ttbar\ decay are the single top process and fully hadronic or fully leptonic \ttbar\ decays. 
 %Several \sm\ processes give a rise to the six fermion final state, 
@@ -978,7 +990,7 @@ Hence, the standalone b-quark charges and $W^\pm$ lepton charge signatures are n
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Charge combination}
+\subsubsection{Charge combination}\label{sec:ChargeOverview}
 
 To decrease this charge impurity, one uses the compatible combinations of two or more charge signatures.
 In a semileptonic \ttbar\ event one has two b-jets with vertex and kaon charge signatures each and one $W^\pm$ lepton charge signature. 
@@ -1007,7 +1019,7 @@ Multiple reconstructed charge pair signatures are possible within one event.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Standalone b-quark charge application}
+\subsubsection{Standalone b-quark charge application}\label{sec:TopBCharge}
 The concept of the b-quark charge measurement is validated by determining the top quark polar angle solely from the vertex and the kaon charges. 
 %In this section, to prove the concept of the b-quark charge measurement, only the vertex charge and kaon charge combinations are used to compute the top polar angle. 
 In case of the left-handed electron beam, the b-quarks are emitted into the direction of the initial top quark, which makes possible the standalone application the b-quark charge measurement. 
@@ -1057,7 +1069,7 @@ However, the effects of the vertex charge recovery are much more essential for t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{B-quark charge and lepton charge combination}
-\label{sec:JetChargeCombo}
+\label{sec:TopJetChargeCombo}
 The events with $W^\pm$ lepton charge migration can be efficiently rejected using  a cut on $\chi^2_{top}$~\cite{bib:Jeremy}, which is defined as:
 \begin{equation}
 	\label{formula:Chi2TopLepton_3}
@@ -1117,12 +1129,12 @@ The most used method is combination of the vertex charge with the $W^\pm$ lepton
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Outlook}
+\subsection{Summary and outlook}
 As it was shown, the involvement of the b-quark charge measurement to semileptonic \ttbar pair decays significantly increases the statistics used for the top polar angle computation.
 Besides the b-quark charge application, the statistics in the left-handed case can be largely increased by the reconstruction of the hadronic tau lepton decays, which were not used in present studies. 
 Another way to reduce the charge migration effects is to involve the leptonic top quark decays in the top reconstruction, which can give a hint for correct top decay products association.
 
-The b-quark charge measurement is a completely independent reconstruction tool, which allows to study the top decay kinematics and to control the systematics effects.
+The b-quark charge measurement is a completely independent reconstruction tool, which allows studying and controlling the systematics effects.
 
 The b-quark charge measurement is indispensable in case of the fully hadronic \ttbar\ decays, where there is no other sources of information about the top quark charge. 
 In left-handed electron beam case, one directly applies the b-quark charge measurement, as it was done to produce the top quark polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}. 
@@ -1262,11 +1274,11 @@ The  inefficiency in the forward region of the detector makes impossible the mea
 Thus, the b-quark polar angle analysis limited to the region of $|\cos\theta| < 0.85$.
 The polar angle histogram is fitted by the general differential cross section function:
 \begin{equation}
-	f(A,B) = A(1+\cos^2\theta) + B \cos\theta, %+ C \sin^2\theta,
+	f(A,B) = S(1+\cos^2\theta) + A \cos\theta, %+ C \sin^2\theta,
 	\label{formula:PolarAngleFit_3}
 \end{equation}
-where $A$ and $B$ are the fitted parameters. 
-The parameter $A$ is proportional to the total cross section, while $B$ is proportional to the forward-backward asymmetry.
+where $S$ and $A$ are the fitted parameters. 
+The parameter $S$ is proportional to the total cross section, while $A$ is proportional to the forward-backward asymmetry.
 After the fit, the function is extrapolated to the full polar angle spectrum.
 However, the sensitivity of the current ILD experiment configuration to New Physics effects is lost for $|\cos\theta| > 0.85$.
 
@@ -1473,14 +1485,14 @@ The final uncertainties on the measured total cross section and the forward-back
 \input{ILD/tables/bbbar-final}
 
 One should pay attention to the statistical correlations between the observables, which influence the final precision on the form factors. 
-In general, the correlation factor value proportional to the $A_{FB}$ as \[\rho_{AB} = \frac{8}{3}\frac{\sigma_A}{\sigma_B}A_{FB},\]
-where $\sigma_A$ and $\sigma_B$ are absolute errors on $A$ and $B$ parameters, respectively.
+In general, the correlation factor value proportional to the $A_{FB}$ as \[\rho_{SA} = \frac{8}{3}\frac{\sigma_A}{\sigma_B}A_{FB},\]
+where $\sigma_S$ and $\sigma_A$ are absolute errors on $S$ and $A$ parameters, respectively.
 %Thus, the correlation factor between the left-handed parameters $A^L$ and $B^L$ is $\rho^L_{AB} = 0.86$, while for the right-handed parameters $\rho^R_{AB} = 0.3$.
 
 
 \subsection{Comparison to the LEP results}
 \label{sec:NewResults}
-The ILC is able to provide a definite solution to the LEP tension of the $A_{FB}^b$ measurement with the \sm\ prediction.
+The ILC is able to provide a definite solution to the deviation of the $A_{FB}^b$ measurement at LEP with respect to the \sm\ prediction.
 % The LEP measurement on the $Z^0$ pole is still the most precise b-quark $A_{FB}$ measurement.
 
 
@@ -1549,10 +1561,10 @@ The estimated  central values of the $Z^0b\bar{b}$ couplings obtained at LEP are
 
 
 The precision b-quark couplings at the ILC are estimated by the b-quark polar angle fit by the differential cross section function~\ref{formula:PolarAngleFit_3}.
-The extracted fit parameters $A^I$ and $B^I$ and the corresponding covariance matrix for two beam polarizations allow for extracting the $Z^0b\bar{b}$ couplings with the corresponding uncertainties. 
+The extracted fit parameters $S^I$ and $A^I$ and the corresponding covariance matrix for two beam polarizations allow for extracting the $Z^0b\bar{b}$ couplings with the corresponding uncertainties. 
 The ILC will provide only one definite solution, due to the $Z^0/\gamma$ interference terms in the differential cross section definition. 
 
-The values of the differential cross section parameters $A^I$ and $B^I$ from Table~\ref{table:bbbarfinal} are used to estimate the corresponding $\pm1\,\sigma$ error bands for both beam polarizations in Fig.~\ref{fig:LEPILCResult_b_3}.
+The values of the differential cross section parameters $S^I$ and $A^I$ from Table~\ref{table:bbbarfinal} are used to estimate the corresponding $\pm1\,\sigma$ error bands for both beam polarizations in Fig.~\ref{fig:LEPILCResult_b_3}.
 The numerical calculation agrees with an analytical estimation of the relative uncertainties on the following values:
 \begin{eqnarray}
 	\delta g_R^Z / g_R^Z = \pm 2.1\% \label{formula:ILCgR} \\
