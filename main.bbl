@@ -27,7 +27,7 @@ M.~Baak, J.~Cúth, J.~Haller, A.~Hoecker, R.~Kogler, K.~Mönig, M.~Schott, and
 \bibitem{bib:Han}
 Tao Han.
 \newblock {Collider phenomenology: Basic knowledge and techniques}.
-\newblock In {\em {Physics in D >= 4. Proceedings, Theoretical Advanced Study
+\newblock In {\em {Physics in D $>=$ 4. Proceedings, Theoretical Advanced Study
   Institute in elementary particle physics, TASI 2004, Boulder, USA, June
   6-July 2, 2004}}, pages 407--454, 2005.
 
@@ -65,8 +65,7 @@ Vardan Khachatryan et~al.
 
 \bibitem{bib:Garcia}
 Ignacio~Garcia Garcia.
-\newblock
-  https://indico.cern.ch/event/449801/contributions/1945424/attachments/1214854/1773564/nacho_top_clic2016.pdf.
+\newblock {Top Physics at CLIC; CLIC Workshop 2016}.
 
 \bibitem{amjad:tel-00949818}
 Muhammad~Sohail Amjad.
@@ -139,13 +138,12 @@ C~Rimbault, P~Bambade, K~Mönig, and D~Schulte.
 
 \bibitem{bib:RSTOP}
 Abdelhak Djouadi, Gregory Moreau, and Francois Richard.
-\newblock {Resolving the A(FB)**b puzzle in an extra dimensional model with an
-  extended gauge structure}.
+\newblock {Resolving the $A_{FB}^b$ puzzle in an extra dimensional model with
+  an extended gauge structure}.
 \newblock {\em Nucl. Phys.}, B773:43--64, 2007.
 
 \bibitem{bib:ILDNEW}
 Mikael Berggren.
-\newblock Very forward vertexing
-  https://agenda.linearcollider.org/event/7635/contributions/38990/attachments/31581/47577/berggren-ildphone-20170510.pdf.
+\newblock {Very forward vertexing: ILD Analysis/Software Meeting 10/05/2017}.
 
 \end{thebibliography}

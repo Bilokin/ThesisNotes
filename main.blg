@@ -3,13 +3,22 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: mainbib.bib
+I was expecting a `,' or a `}'---line 228 of file mainbib.bib
+ :  
+ :  url = "https://indico.cern.ch/event/449801/contributions/1945424/attachments/1214854/1773564/Nacho_top_CLIC2016.pdf"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 235 of file mainbib.bib
+ :  title = "{Very forward vertexing: ILD Analysis/Software Meeting  10/05/2017}" 
+ :                                                                                https://agenda.linearcollider.org/event/7635/contributions/38990/attachments/31581/47577/berggren-ildphone-20170510.pdf"
+I'm skipping whatever remains of this entry
 Warning--empty author in bib:TopMass
 Warning--empty journal in bib:TopMass
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
 You've used 26 entries,
             1791 wiz_defined-function locations,
-            606 strings with 7818 characters,
+            606 strings with 7679 characters,
 and the built_in function-call counts, 5261 in all, are:
 = -- 454
 > -- 176
@@ -48,4 +57,4 @@ warning$ -- 4
 while$ -- 45
 width$ -- 28
 write$ -- 266
-(There were 4 warnings)
+(There were 2 error messages)
