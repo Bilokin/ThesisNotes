@@ -3,56 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: mainbib.bib
-Warning--empty journal in bib:ILC
-Warning--empty journal in bib:H20
-Warning--empty journal in bib:G4pl
-Warning--empty year in bib:G4pl
-Warning--empty author in bib:can-047
-Warning--empty year in bib:can-047
-Warning--empty author in CALICE:2012aa
 Warning--empty author in bib:TopMass
 Warning--empty journal in bib:TopMass
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
-You've used 44 entries,
+You've used 25 entries,
             1791 wiz_defined-function locations,
-            704 strings with 10711 characters,
-and the built_in function-call counts, 8646 in all, are:
-= -- 726
-> -- 340
+            602 strings with 7669 characters,
+and the built_in function-call counts, 5147 in all, are:
+= -- 447
+> -- 172
 < -- 3
-+ -- 134
-- -- 90
-* -- 520
-:= -- 1388
-add.period$ -- 124
-call.type$ -- 44
-change.case$ -- 44
++ -- 70
+- -- 45
+* -- 302
+:= -- 801
+add.period$ -- 71
+call.type$ -- 25
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 409
-empty$ -- 918
-format.name$ -- 90
-if$ -- 1938
+cite$ -- 29
+duplicate$ -- 247
+empty$ -- 558
+format.name$ -- 45
+if$ -- 1175
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 36
-newline$ -- 215
-num.names$ -- 41
-pop$ -- 121
+int.to.str$ -- 25
+missing$ -- 19
+newline$ -- 124
+num.names$ -- 24
+pop$ -- 72
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 199
+skip$ -- 130
 stack$ -- 0
-substring$ -- 513
-swap$ -- 71
+substring$ -- 344
+swap$ -- 56
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 73
-width$ -- 46
-write$ -- 449
-(There were 11 warnings)
+warning$ -- 4
+while$ -- 44
+width$ -- 27
+write$ -- 259
+(There were 4 warnings)
