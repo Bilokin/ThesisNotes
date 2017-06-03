@@ -583,7 +583,7 @@ The reasons for the missing prongs can be summarized as follows:
 \item No associated hits in the VXD or FTD - the track segment from the Vertex Detector or Forward Tracking Disks was not connected to the long TPC track segment. These reconstructed particles have large uncertainties on the impact parameters, which makes them not suitable for vertexing algorithms. They constitute 2.\% of the generated prongs;
 \item No reconstructed PFO - the PandoraPFA fails to create the PFO from a reconstructed track. These tracks are discarded by the LCFI+ algorithms - 3.2\%  of the generated prongs;
 \item Low generated momentum or offset  - the reconstructed particle was produced with impact parameters below the detector resolution - 3.1\%  of the generated prongs;
-\item Other reasons, mostly because of the vertex fitting problems - 1.7\% of the generated prongs.
+\item Other reasons connected to vertex fitting problems - 1.7\% of the generated prongs.
 \end{itemize}
 
 
@@ -769,9 +769,9 @@ One can see the following changes induced by the recovery algorithm:
 \item The large improvement can be seen for the jets or reconstructed b-hadrons with low number of reconstructed prongs, especially for $N_{rec}=3$.% For higher multiplicity, the algorithm should recover all tracks correctly, which is not trivial. Hence, almost no improvement is seen for the reconstructed b-hadrons with large $N_{rec}$.
 \item The algorithm is capable to increase the purity in the barrel VXD acceptance and recover the non-reconstructed PFO particles at $|\cos\theta_{vtx}| \approx 0.8$. 
 \end{itemize}
-The b-quark charge purity can be also increased by applying cuts on the reconstructed observables up to 80\% purity with 60\% efficiency or by application of MVA algorithm.
+%The b-quark charge purity can be also increased by applying cuts on the reconstructed observables up to 80\% purity with 60\% efficiency or by application of MVA algorithm.
 
-To summarize, the VertexChargeRecovery is able to significantly improve the b-quark charge purity and equalize it in the polar angle spectrum, which is crucial for reconstruction of heavy quark differential cross section. 
+To summarize, the VertexChargeRecovery is able to significantly improve the b-quark charge purity and equalize it in the polar angle spectrum, which is crucial for the quark polar angle reconstruction. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -830,10 +830,30 @@ The angular correction is now included in the latest version of the {\sc ilcsoft
 
 Given the reconstruction purity illustrated in Fig.~\ref{fig:dEdxResults_3}, one concludes that the reconstructed charged kaons from the reconstructed vertices provide a reliable information on the charge of the initial b-hadron or b-quark. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Summary}
+In this thesis, two basic b-quark charge signatures are used: 
+\begin{itemize}
+	\item \textit{Vertex charge}, which is computed as a sum of the reconstructed secondary and tertiary particle charges;
+	\item\textit{ Kaon charge} - the charge of a kaon from the reconstructed secondary and tertiary vertices. 
+\end{itemize}
+The impurity of the vertex charge is caused by missing particles - particles, that were not assigned to the corresponding reconstructed vertices. 
+Major reasons behind the missing particles are the following:
+\begin{itemize}
+	\item Charged track is not reconstructed;
+	\item No assigned hits from VXD or FTD detectors, therefore the particle offset is not significant;
+	\item Particle Flow Object is not reconstructed;
+	\item Low generated offset.
+\end{itemize}
+A large inefficiency of the vertex reconstruction algorithm 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The developed Vertex Charge Recovery algorithm assigns the missing particles to the reconstructed vertices using reconstructed observables. It increases the overall vertex charge purity by 7\% and the algorithm equalizes the vertex charge purity in the barrel region of the ILD detector. 
+
+The kaons are identified using the dE/dx information from the TPC tracks. The developed angular correction makes dE/dx independent from the polar angle of the reconstructed track. Therefore, it increases the purity and efficiency of the kaon identification algorithms. 
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -864,7 +884,7 @@ The dominant decay mode of the top quark is $t\to bW^+$, which is 99.8\% of all 
 The $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
 \begin{itemize}
 	\item Fully hadronic decay $t\bar{t} \to bq\bar{q} \bar{b} q\bar{q}$ -  46.2\% of branching ratio;
-e	\item Semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ - 43.5\% of branching ratio;
+	\item Semileptonic decay $t\bar{t} \to bq\bar{q} \bar{b} l\nu_l$ - 43.5\% of branching ratio;
 	\item Fully leptonic decay $t\bar{t} \to b l^- \nu_{l^-} \bar{b} l^+\nu_{l^+}$ - 10.3\% of branching ratio.	
 \end{itemize}
 
@@ -1138,7 +1158,13 @@ The most used method is combination of the vertex charge with the $W^\pm$ lepton
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Summary and outlook}
-As it was shown, the involvement of the b-quark charge measurement to semileptonic \ttbar pair decays significantly increases the statistics used for the top polar angle computation.
+
+In this chapter, three basic signatures of the top quark charge were used: the vertex charge, the kaon charge and the $W^\pm$ lepton charge. 
+It was found, that one has an event migration effect if only one signature is used to determine the top quark charge. 
+However, a combination of the charge signatures give a satisfactory results.
+As a proof of principle, only the vertex and kaon charge combination has been applied, which gave a good correspondence between the generated and the reconstructed top polar angle distributions.
+As it was shown, the combination of the b-quark charge and the $W^\pm$ charge signatures significantly increases the statistics used for the top polar angle computation.
+
 Besides the b-quark charge application, the statistics in the left-handed case can be largely increased by the reconstruction of the hadronic tau lepton decays, which were not used in present studies. 
 Another way to reduce the charge migration effects is to involve the leptonic top quark decays in the top reconstruction, which can give a hint for correct top decay products association.
 
@@ -1152,6 +1178,7 @@ However, in the right-handed electron beam, the incorrect $W^\pm$ jets and b-jet
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Bottom quark production at the ILC}
 \label{sec:BProduction}
 %Motivation
@@ -1168,6 +1195,9 @@ Same version of the event generators and the {\sc ilcsoft} distribution as for t
 
 \subsection{Bottom quark reconstruction and the background rejection}
 The bottom quarks hadronize into two b-jets in the detector, that are reconstructed by jet clustering algorithm. %, which significantly simplifies the process reconstruction. 
+
+%The \bbbar\ events are simply reconstructed as a simple two jet event, which are sorted by the b-tag value.
+An example of the \bbbar\ pair event display in the ILD environment is shown in Fig.~\ref{fig:BottomEvent_3}. As one sees from the Table~\ref{table:bbbarselection}, the largest background contribution is coming from the \bbbar\ $Z^0$ return events, which is also true for the right-handed beam configuration, due to large $e^+e^-\to Z^0\gamma$ process cross section.
 \begin{figure}
 	{\centering
 		\includegraphics[clip, trim=0.cm 0cm 7.9cm 0cm, width=0.55\textwidth]{ILD/graphics/ild-bbbar.png}
@@ -1177,9 +1207,6 @@ The bottom quarks hadronize into two b-jets in the detector, that are reconstruc
 	}
 	
 \end{figure}
-%The \bbbar\ events are simply reconstructed as a simple two jet event, which are sorted by the b-tag value.
-An example of the \bbbar\ pair event display in the ILD environment is shown in Fig.~\ref{fig:BottomEvent_3}. As one sees from the Table~\ref{table:bbbarselection}, the largest background contribution is coming from the \bbbar\ $Z^0$ return events, which is also true for the right-handed beam configuration, due to large $e^+e^-\to Z^0\gamma$ process cross section.
-
 % Signal has high cross section -> but, background can distort polar angle spectrum, -> background levels >  cuts -> results 
 
 The main challenge is to reject the background processes, which can distort the reconstructed polar angle spectrum of the b-quark. 
@@ -1213,7 +1240,7 @@ The successive application of the preselection cuts is demonstrated in Table~\re
 
 \input{ILD/tables/bbbar-sigma}
 
-This signal selection technique  aimed at a very high purity, for the left-handed beam configuration the selection purity is 98.2\% and for the right-handed beam thefinal efficiency is the same 48\%, but the purity is decreased - 95\%, because of smaller signal cross section.
+%This signal selection technique  aimed at a very high purity, for the left-handed beam configuration the selection purity is 98.2\% and for the right-handed beam the final efficiency is the same 48\%, but the purity is decreased - 95\%, because of smaller signal cross section.
 
 \input{ILD/tables/bbbar-selection}
 
@@ -1470,7 +1497,7 @@ The ILC running scenarios are described in Sec.~\ref{sec:ILCOperation}. %The  pr
 The realistic running conditions increase the statistical errors by a factor of 1.12 for the left-handed beam and a factor of 1.75 for the right-handed beam configuration assuming the $\sqrt{s} = 250$\gev\ ILC physics program before the luminosity upgrade. 
 
 
-The cross section measurement requires the high purity and the high efficiency signal selection against the background processes to minimize the statistical error and suppress the background systematic effects using double tagging method~\cite{bib:steinberger}. 
+The cross section measurement requires the high purity and the high efficiency signal selection against the background processes to minimize the statistical error and suppress the background systematic effects using the double tagging method used by LEP experiments~\cite{bib:steinberger}. 
 The selection efficiency for the left-handed beam polarization is 40\% and 33\% for the right-handed beam polarization with the purity of more than 97\% for both beam configurations. 
 %One can safely estimate that the uncertainty on the b-tagging efficiency will be as good as for the LEP~I, at 0.2\% level.
 %The systematic luminosity error is 0.1\% at the ILC for both beam polarizations. 
@@ -1505,9 +1532,9 @@ The ILC is able to provide a definite solution to the deviation of the $A_{FB}^b
 
 
 The b-quark forward-backward asymmetry $A_{FB}$ for the tree-level \sm\ as function of the center-of-mass energy along with the experimental results are demonstrated in Fig.~\ref{fig:LEPILC_3}. 
-The most precise $A_{FB}$ measurement was carried out at $Z^0$ pole by LEP~I experiments. 
+The most precise $A_{FB}$ measurement was carried out at the $Z^0$ pole by LEP~I experiments. 
 The ILC will be able to measure the $A_{FB}$ and the b-quark cross section for two different initial state polarizations, shown in  Fig.~\ref{fig:LEPILC_3}. 
-These different measurements can be only compared by the final precision on the b-quark to $Z^0$ couplings, while other b-quark couplings or form factors are assumed to have fixed \sm\ values. 
+These different measurements can be compared by the final precision on the b-quark to $Z^0$ couplings.%, while other b-quark couplings or form factors are assumed to have fixed \sm\ values. 
 %In this thesis, the expected results of the ILC are compared to the LEP~I measurements of the $A_{FB}$ and the $R_b$ values.
 \begin{figure}
 	{\centering
@@ -1518,7 +1545,7 @@ These different measurements can be only compared by the final precision on the 
 	}
 	
 \end{figure}
-The numerical study of the LEP~I measurements was done to compute the LEP precision on the b-quark couplings. 
+%The numerical study of the LEP~I measurements was done to compute the LEP precision on the b-quark couplings. 
 The $\pm$1\,$\sigma$ regions for the $A_{FB}$ and $R_b$ measurements at $Z^0$ pole are shown in Fig.~\ref{fig:LEPILCResult_a_3}.
 The intersection of the error bands gives the relative precision on the $Z^0 b\bar{b}$ couplings.
 This numerical result is obtained by scanning the parameter space of the left-handed $g^Z_L$ and the right-handed $Z^0b\bar{b}$ coupling $g^Z_R$ defined in \ref{formula:EWcouplings_3}, assuming uncorrelated measurements of $A_{FB}$ and $R_b$ values at LEP. 
@@ -1573,7 +1600,7 @@ The extracted fit parameters $S^I$ and $A^I$ and the corresponding covariance ma
 The ILC will provide only one definite solution, due to the $Z^0/\gamma$ interference terms in the differential cross section definition. 
 
 The values of the differential cross section parameters $S^I$ and $A^I$ from Table~\ref{table:bbbarfinal} are used to estimate the corresponding $\pm1\,\sigma$ error bands for both beam polarizations in Fig.~\ref{fig:LEPILCResult_b_3}.
-The numerical calculation agrees with an analytical estimation of the relative uncertainties on the following values:
+The numerical calculation agrees with an analytical estimation of the relative statistical uncertainties on the following values:
 \begin{eqnarray}
 	\delta g_R^Z / g_R^Z = \pm 2.1\% \label{formula:ILCgR} \\
 	\delta  g_L^Z / g_L^Z = \pm 0.2\%,
