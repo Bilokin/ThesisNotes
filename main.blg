@@ -3,58 +3,70 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: mainbib.bib
-I was expecting a `,' or a `}'---line 228 of file mainbib.bib
+I was expecting a `,' or a `}'---line 306 of file mainbib.bib
  :  
  :  url = "https://indico.cern.ch/event/449801/contributions/1945424/attachments/1214854/1773564/Nacho_top_CLIC2016.pdf"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 235 of file mainbib.bib
+I was expecting a `,' or a `}'---line 313 of file mainbib.bib
  :  title = "{Very forward vertexing: ILD Analysis/Software Meeting  10/05/2017}" 
  :                                                                                https://agenda.linearcollider.org/event/7635/contributions/38990/attachments/31581/47577/berggren-ildphone-20170510.pdf"
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 558 of file mainbib.bib
+ :  
+ :  url = "http://flc.desy.de/lcnotes/notes/localfsExplorer_read?currentPath=/afs/desy.de/group/flc/lcnotes/LC-REP-2013-009.pdf"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in bib:ILC
+Warning--empty journal in bib:H20
+Warning--empty journal in bib:G4pl
+Warning--empty year in bib:G4pl
+Warning--empty author in bib:can-047
+Warning--empty year in bib:can-047
+Warning--empty author in CALICE:2012aa
 Warning--empty author in bib:TopMass
 Warning--empty journal in bib:TopMass
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
-You've used 26 entries,
+You've used 54 entries,
             1791 wiz_defined-function locations,
-            606 strings with 7679 characters,
-and the built_in function-call counts, 5261 in all, are:
-= -- 454
-> -- 176
-< -- 3
-+ -- 72
-- -- 46
-* -- 302
-:= -- 817
-add.period$ -- 73
-call.type$ -- 26
-change.case$ -- 26
+            770 strings with 12559 characters,
+and the built_in function-call counts, 10783 in all, are:
+= -- 924
+> -- 392
+< -- 4
++ -- 157
+- -- 103
+* -- 637
+:= -- 1706
+add.period$ -- 152
+call.type$ -- 54
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 252
-empty$ -- 576
-format.name$ -- 46
-if$ -- 1202
+cite$ -- 65
+duplicate$ -- 505
+empty$ -- 1161
+format.name$ -- 103
+if$ -- 2438
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 19
-newline$ -- 128
-num.names$ -- 25
-pop$ -- 77
+int.to.str$ -- 54
+missing$ -- 44
+newline$ -- 263
+num.names$ -- 51
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 137
+skip$ -- 256
 stack$ -- 0
-substring$ -- 344
-swap$ -- 57
-text.length$ -- 3
+substring$ -- 708
+swap$ -- 93
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 45
-width$ -- 28
-write$ -- 266
-(There were 2 error messages)
+warning$ -- 11
+while$ -- 92
+width$ -- 56
+write$ -- 551
+(There were 3 error messages)

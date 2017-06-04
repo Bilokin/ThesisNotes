@@ -793,7 +793,7 @@ The $dE/dx$ as a function of particle momentum and $|\cos\theta|$ for different 
     \label{formula:dEdxCorrection}
 \end{equation}
 where $\theta$ is the polar angle of the particle. 
-This angular is known to be applied at other experiments, which have the TPC devices~\cite{bib:HARP}.
+This angular is known to be applied at other experiments, which have the TPC devices~\cite{bib:HARP}~\cite{buskulic:in2p3-00002096}.
 
 The distributions of the $dE/dx$ as a function of particle momentum and $|\cos\theta|$ after the angular correction (\ref{formula:dEdxCorrection}) are displayed in Fig.~\ref{fig:dEdxAfter_3}.
 %116.90%
@@ -1355,7 +1355,7 @@ The main improvements of the vertex charge recovery are the following:
 	\item The vertex charge purity is increased by 4\%;
 	\item The kaon charge purity stays the same, but the number of kaons is increased by 10\%; 
 	\item The vertex charge recovery provides close to constant charge purity in the barrel region of the ILD experiment, as can be seen in Fig.~\ref{fig:BAsymmetryRecZ_3}. This is the consequence of the recovery of the peaks of missing vertex particles as it is described in Sec.~\ref{sec:VtxRecovery}.
-	The residual efficiency decrease in the $|\cos\theta|\approx 0.8$ bin is caused by the jet energy resolution decrease.  
+	The residual efficiency decrease in the $|\cos\theta|\approx 0.8$ bin is caused by the jet energy resolution.  
 \end{itemize}
 
 \begin{figure}
@@ -1379,7 +1379,7 @@ The main improvements of the vertex charge recovery are the following:
 %Make sure no generated quantity used
 \subsubsection{Charge purity measurement}
 \label{sec:ChargePurity}
-The knowledge of the charge purity from the reconstructed events, or the future ILC data is crucial for the present analysis. 
+The knowledge of the charge purity from the reconstructed events, or the future ILC data is essential for the present analysis. 
 %The adopted system of the
 The measurement of the b-quark charge purity is done using the number of accepted events $N_a$ and the number of rejected events $N_r$. 
 The b-quark charge measurement uses two compatible charge combinations, either the vertex charge or the kaon charge.
@@ -1389,7 +1389,7 @@ The b-quark charge measurement uses two compatible charge combinations, either t
 	\item The rejected event has one charge correctly reconstructed and another incorrectly reconstructed. 
 \end{itemize}
 
-Let $p$ be a probability of correct charge measurement or the charge purity, then $q = 1-p$ is a probability of the incorrect charge measurement. 
+Let $p$ be a probability of a correct charge measurement, then $q = 1-p$ is a probability of the incorrect charge measurement. 
 %Suppose, one has $N$ events, which is a sum of accepted event number $N_a$ and rejected event number $N_r$. 
 Then, the number of accepted events is:
 \begin{equation}
@@ -1417,7 +1417,6 @@ Thus, the true $B_0$ hadron will be reconstructed wrongly as a charged hadron.
 The $B^0-\bar{B}^0$ oscillations can flip the charge of the $K$-meson, which will create a fake compatibility between the kaon and vertex charges.
 Hence, the measured purity of the kaon-vertex charge combination is biased by the accidental kaon-vertex charge correlation.
 %This is caused by charge correlations induced by the $B^0-\bar{B}^0$ oscillations. 
-Therefore, to avoid the charge correlations, the b-quark polar  angle and the corrections to the polar angle are calculated without the mixed charge combinations.
 
 Again, the main advantage of this charge purity measurement procedure is its independence from the generator information. 
 Therefore, it can be directly applied to the future data, taken by the ILC.
@@ -1440,6 +1439,7 @@ The terms proportional to $q^2$ are responsible for the event migration effect s
 The equation (\ref{formula:Correction_3}) is true for the forward and the backward bins in the b-quark polar angle histogram.
 %This computation is carried out for each bin of the b-quark polar angle histogram. 
 
+To avoid the charge correlations, the  corrections to the b-quark polar angle are calculated without the mixed charge combinations.
 To simplify the procedure, the purity $p$ is calculated as an average for all bins of the polar angle histogram and charge pair combinations. 
 
 %One calculates the correction to the polar angle using expression (\ref{formula:Correction_3}). 
@@ -1510,7 +1510,7 @@ The systematic uncertainties are the following:
 \begin{itemize}
 	\item Luminosity - the luminosity is the critical parameter for cross section estimation and for the polar angle measurement. The luminosity is known to 0.1\% precision~\cite{bib:Lumi};
 	
-	\item Polarization - the polarization can be controlled to 0.1\% for the electron beam and 0.35\% for the positron beam;
+	\item Polarization - the polarization can be controlled to 0.1\% for the electron beam and 0.35\% for the positron beam~\cite{bib:ILCPol}. This translates into an uncertainty of 0.35%;
 	
 	\item Contamination by opposite helicity state - the ILC beam will not be 100\% polarized, which mixes two polar angle distributions together. The procedure of the pure polar angle distribution recovery will introduce a systematic error in right-handed beam polarization.  
 	
@@ -1540,9 +1540,9 @@ The ILC is able to provide a definite solution to the deviation of the $A_{FB}^b
 The b-quark forward-backward asymmetry $A_{FB}$ for the tree-level \sm\ as function of the center-of-mass energy along with the experimental results are demonstrated in Fig.~\ref{fig:LEPILC_3}. 
 The most precise $A_{FB}$ measurement was carried out at the $Z^0$ pole by LEP~I experiments. 
 %The ILC will be able to measure the $A_{FB}$ and the b-quark cross section for two different initial state polarizations, shown in  Fig.~\ref{fig:LEPILC_3}. 
-These studies take the advantage of the b-quark polar angle, which will be precisely measured at the ILC. 
-The b-quark polar angle is fitted by the function, defined in Exp.~\ref{formula:PolarAngleFit_3} and the fitted parameters are used instead of $A_{FB}$ and the b-quark cross section.
-The measurements are compared by the final precision on the b-quark to $Z^0$ couplings.%, while other b-quark couplings or form factors are assumed to have fixed \sm\ values. 
+The studies, presented in this thesis, take the advantage of the b-quark polar angle, which will be precisely measured at the ILC. 
+The b-quark polar angle is fitted by the function, defined in Exp.~\ref{formula:PolarAngleFit_3} and the fitted parameters are used instead of $A_{FB}$ and the b-quark cross section to define the precision on b-quark electroweak couplings.
+The LEP and ILC measurements are compared by the final precision on the b-quark to $Z^0$ couplings.%, while other b-quark couplings or form factors are assumed to have fixed \sm\ values. 
 %In this thesis, the expected results of the ILC are compared to the LEP~I measurements of the $A_{FB}$ and the $R_b$ values.
 \begin{figure}
 	{\centering
@@ -1576,7 +1576,7 @@ This study leads to the following conclusions:
 \end{itemize}
 These two coupling modification scenarios are called RSa for the flipped $g_R^Z$ coupling sign and RSb for the \sm\ $g_R^Z$ coupling sign in~\cite{bib:RSTOP}.
 The corresponding modifications of the b-quark polar angle are shown in Fig.~\ref{fig:dsResult_3}.
-The LEP measurements allow for a sign flip of the right-handed coupling $g_R^Z$, however, it will produce 2\,$\sigma$ deviation from TRISTAN data at 60\,GeV, as found in~\cite{bib:RSTOP}.
+The LEP measurements allow for a sign flip of the right-handed coupling $g_R^Z$, however, it will produce 2\,$\sigma$ deviation from TRISTAN data at $\sqrt{s}=60$\,GeV, as found in~\cite{bib:RSTOP}.
 The $g_R^Z$ sign flip is easily detectable at the ILC, because the b-polar angle in right-handed beam configuration will be reflected around $\cos\theta_b = 0$ as demonstrated in Fig.~\ref{fig:dsResult_b_3}. 
 \begin{figure}
 	\centering
@@ -1657,10 +1657,10 @@ The systematics effect are smaller, than statistical errors, therefore the measu
 
 
 \subsection{Discussion and outlook}
-
+The ILC will be able to provide a definite solution to the LEP \afbb\ anomaly and it allows to extract four electroweak form factors independently, using the two-parameter fits of the b-quark polar angle distributions. 
 One can use three parameter b-quark polar angle fit with $\sin^2 \theta$ term, included in \ref{formula:DiffSigma_3}. 
 This will allow an independent computation of the tensorial form factors $F^\gamma_{2V}$ and $F^Z_{2V}$.
-The tensorial form factors in the \sm\ are caused by the higher order corrections to the \bbbar\ process, and they can be modified by  heavy BSM bosons. 
+The tensorial form factors in the \sm\ are caused by the higher order corrections to the \bbbar\ process, and they can be modified by heavy BSM bosons. 
 However, one need to control well the polar angle distribution, because  even small variation of the histogram will have a large impact on the $\sin^2 \theta$ term reconstruction.
 
 The study of the b-quark charge purity and the b-quark polar angle reconstruction revealed a large detector inefficiency in the forward region. The ILD collaboration started revisiting the forward region design of the Vertex Detector and the innermost Forward Tracking Disks~\cite{bib:ILDNEW}. 
