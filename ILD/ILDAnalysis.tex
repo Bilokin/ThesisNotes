@@ -1212,12 +1212,12 @@ An example of the \bbbar\ pair event display in the ILD environment is shown in 
 \end{figure}
 % Signal has high cross section -> but, background can distort polar angle spectrum, -> background levels >  cuts -> results 
 
-The main challenge is to reject the background processes, which can distort the reconstructed polar angle spectrum of the b-quark. 
-T1he most significant background processes are the so called $Z^0$ return background and the hadronic decays of diboson processes, like the hadronic decays of $e^+e^-\to Z^0Z^0$ or $e^+e^-\to Z^0H$ process. The process $e^+e^-\to W^\pm W^\mp$ has higher cross section than the signal, but the $W^\pm$ bosons have small branching ratio to the b-quark, hence, this process is easily rejected by b-tag cuts. 
+%The main challenge is to reject the background processes, which can distort the reconstructed polar angle spectrum of the b-quark. 
+The most significant background processes are the so called $Z^0$ return background and the hadronic decays of diboson processes, like the hadronic decays of $e^+e^-\to Z^0Z^0$ or $e^+e^-\to Z^0H$ process. The process $e^+e^-\to W^\pm W^\mp$ has higher cross section than the signal, but the $W^\pm$ bosons have small branching ratio to the b-quark, hence, this process is easily rejected by b-tag cuts. 
 The analysis benefits from the large production cross section, as compared to the background processes, as shown in Table~\ref{table:bbbarsigma}.
 
 The $Z^0Z^0$ and $Z^0H$ pairs have large branching fractions to the b-quarks. 
-As one sees from the Table~\ref{table:bbbarselection}, the largest background contribution is coming from the \bbbar\ $Z^0$ return events, which is also true for the right-handed beam configuration, due to large $e^+e^-\to Z^0\gamma$ process cross section.
+As one sees from the Table~\ref{table:bbbarselection}, the largest background contribution is coming from the \bbbar\ $Z^0$ return events, which is also true for the right-handed beam configuration, due to the large $e^+e^-\to Z^0\gamma$ process cross section.
 
 The defined cuts against the background processes are the following:
 \begin{itemize}
@@ -1286,7 +1286,7 @@ The difference in the generated b-quark polar angle distributions for two polari
 %Both polarizations
 The reconstructed b-quark polar angle distributions have two major problems:
 \begin{itemize}
-	\item The residual charge impurity contaminates the backward region $\cos\theta < 0$ of both distributions in Fig.~\ref{fig:BAsymmetryFirst_3}. Due to the strong b-quark production asymmetry in the left-handed case the backward region is contaminated entirely by the events with misreconstructed b-quark charge as seen in Fig.~\ref{fig:BAsymmetryProblem_a_3}.
+	\item The residual charge impurity flips the polar angle from $\cos\theta$ to $-\cos\theta$ and it contaminates the backward region $\cos\theta < 0$ of both distributions in Fig.~\ref{fig:BAsymmetryFirst_3}. Due to the strong b-quark production asymmetry in the left-handed case the backward region is fully contaminated by the events with misreconstructed b-quark charge as seen in Fig.~\ref{fig:BAsymmetryProblem_a_3}.
 	\item The large efficiency decrease in the forward region $|\cos\theta| > 0.85$. The main reason of this decrease is the inefficiency of the vertexing algorithms, which tend to not find any reconstructed vertex in the forward region, as seen in Fig.~\ref{fig:MissedCos_3}. The zoom into the problematic region is shown in Fig.~\ref{fig:BAsymmetryProblem_b_3};
 
 \end{itemize}
@@ -1309,7 +1309,7 @@ The reconstructed b-quark polar angle distributions have two major problems:
 
 The  inefficiency in the forward region of the detector makes impossible the measurement of the $A_{FB}^b$ using a simple counting method. 
 %This problem can be avoided by the fitting the unaffected central bins with a function and extrapolating the fitted function on the full polar angle range $(-1,1)$. 
-Thus, the b-quark polar angle analysis limited to the region of $|\cos\theta| < 0.85$.
+Thus, the b-quark polar angle analysis limited to the region of $|\cos\theta| < 0.8$.
 The polar angle histogram is fitted by a general differential cross section function as:
 \begin{equation}
 	f(A,B) = S(1+\cos^2\theta) + A \cos\theta, %+ C \sin^2\theta,
@@ -1320,6 +1320,7 @@ The parameter $S$ is proportional to the total cross section, while $A$ is propo
 After the fit, the function is extrapolated to the full polar angle spectrum.
 However, the sensitivity of the current ILD experiment configuration to New Physics effects is lost for $|\cos\theta| > 0.85$.
 
+In this chapter, the forward-backward asymmetry is used as a measure of the polar angle reconstruction quality.
 Using the extracted polar angle function the reconstructed $A_{FB}^b$ value is calculated as
 \begin{eqnarray}
 	A_{FB} = \frac{3}{8}\frac{A}{S}.
@@ -1513,7 +1514,7 @@ The systematic uncertainties are the following:
 	
 	\item Contamination by opposite helicity state - the ILC beam will not be 100\% polarized, which mixes two polar angle distributions together. The procedure of the pure polar angle distribution recovery will introduce a systematic error in right-handed beam polarization.  
 	
-	\item Event selection -  the main selection uncertainty comes from the b-tag cuts. On need to extract selection efficiency $\epsilon_{b-tag}$ from the data to reduce the generator uncertainty. For a given b-tag selection with an efficiency $\epsilon_{b-tag}$, one compares the amount of events with double b-tag, proportional to $\epsilon_{b-tag}^2$ to the amount of the events with a single b-tag, which is proportional to $\epsilon_{b-tag}$. From the ratio it is possible to extract $\epsilon_{b-tag}$ and the corresponding uncertainty. The systematic error on the cross section is 0.2\%.
+	\item Event preselection -  the mainn preselection uncertainty comes from the b-tag cuts. On need to extract selection efficiency $\epsilon_{b-tag}$ from the data to reduce the generator uncertainty. For a given b-tag selection with an efficiency $\epsilon_{b-tag}$, one compares the amount of events with double b-tag, proportional to $\epsilon_{b-tag}^2$ to the amount of the events with a single b-tag, which is proportional to $\epsilon_{b-tag}$. From the ratio it is possible to extract $\epsilon_{b-tag}$ and the corresponding uncertainty. The systematic error due to the b-tag selection is 0.2\%.
 	
 	\item Background contamination - one simply takes the $\pm$10\% uncertainty on the residual background events contribution. 
 \end{itemize}
@@ -1521,9 +1522,12 @@ The systematic uncertainties are the following:
 The final uncertainties on the measured total cross section and the forward-backward asymmetry values for the first $\sqrt{s}=$250\,GeV run of the ILC are summarized in Table~\ref{table:bbbarfinal}. These uncertainties are used to calculate the precision on the b-quark electroweak couplings and the b-quark electroweak form factor values.
 \input{ILD/tables/bbbar-final}
 
-One should pay attention to the statistical correlations between the observables, which influence the final precision on the form factors. 
-In general, the correlation factor value proportional to the $A_{FB}$ as \[\rho_{SA} = \frac{8}{3}\frac{\sigma_A}{\sigma_B}A_{FB},\]
-where $\sigma_S$ and $\sigma_A$ are absolute errors on $S$ and $A$ parameters, respectively.
+One should pay attention to the statistical correlations between the observables, which influence the final precision on the b-quark form factors. 
+%In general, the correlation factor value proportional to the $A_{FB}$ as \[\rho_{SA} = \frac{8}{3}\frac{\sigma_A}{\sigma_B}A_{FB},\]
+%where $\sigma_S$ and $\sigma_A$ are absolute errors on $S$ and $A$ parameters, respectively.
+The correlation factors from the fit are given in Table~\ref{table:bbbarfinal}. To confirm the result of the fit with a simple counting approach was used. One predicts a correlation coefficient $\rho = A_{FB}$, which comes pretty close to the results of the fits. One also predicts a ratio 
+between the errors $(dS/S)/(dA/A)\approx A_{FB}$ again in agreement with the findings. To fully take into  account the fitting approach, one can use a likelihood method which says that $\rho=(dS/S)/(dA/A)$, 
+the ratio of errors, which is the exact result from the fit. 
 %Thus, the correlation factor between the left-handed parameters $A^L$ and $B^L$ is $\rho^L_{AB} = 0.86$, while for the right-handed parameters $\rho^R_{AB} = 0.3$.
 
 
