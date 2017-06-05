@@ -252,7 +252,7 @@ During the clusterisation step the energy depositions that are not associated to
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/graphics/demo-v2.png}
-	\caption{\label{fig:democluster} \sl {\bf Check comment by Eigen on clarity of image} Illustration of the clusterisation step. The \ecal\ hits are represented by blue cubes, and the search region for adjacent hits is indicated by red cubes. The blue arrows point in the direction of the clusterisation flow. }
+	\caption{\label{fig:democluster} \sl Illustration of the clusterisation step. The \ecal\ hits are represented by blue cubes, and the search region for adjacent hits is indicated by red cubes. The blue arrows point in the direction of the clusterisation flow. }
 \end{figure}
 
 %A clusterisation scheme, developed for this study, is called directional recursive clusterisation. 
@@ -264,7 +264,7 @@ The algorithm is described in the following. The description is supported by Fig
 	\item The separation of tracks improves with increasing distance from the interaction layer. Therefore, hits, isolated within one of the rear layers, seed a cluster. The search for these hits is carried out progressively starting from the last layer in the direction of decreasing $z$.
 	Typically, seeding hits are found in the last layer of the detector;
 	%For each iteration, the seeding hits for the clusters are taken starting from the last layers of pads to the front layer;
-	\item A hit can be associated to a cluster if it was not yet joined to another cluster. This condition excludes the double counting of hits. Effects, arising from ambiguities in the assignment of hits to clusters such as the order in which clusters are created, are expected to be small, but will be addressed in future studies {\bf We haven't addressed this yet!};
+	\item A hit can be associated to a cluster if it was not yet joined to another cluster. This condition excludes the double counting of hits. Effects, arising from ambiguities in the assignment of hits to clusters such as the order in which clusters are created, are expected to be small;%, but will be addressed in future studies {\bf We haven't addressed this yet!};
 	\item For the clusterisation a usual nearest neighbour clustering scheme is applied. More precisely, for each newly associated hit with coordinates $(x_n,y_n,z_n)$ the algorithm finds nearby hits with the following conditions:
 	\begin{itemize}
 		\item A neighbour hit should have a $z$ coordinate within $[z_n-2,z_n]$
