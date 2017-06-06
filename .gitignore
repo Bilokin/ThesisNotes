@@ -8,3 +8,9 @@ main.aux
 tmp.tex
 main.pdf
 *.log
+poster/*.log
+poster/*.aux
+poster/*.toc
+poster/*.blg
+poster/*.gz
+poster/*.bbl
