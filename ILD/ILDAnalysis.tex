@@ -870,18 +870,18 @@ The end goal of this study is to increase efficiency of the b-quark polar angle 
 
 The studies in this section have the following steps:
 \begin{itemize}
-	\item The setup of the study and the \ttbar\ event reconstruction privided in Sections~\ref{sec:TopProp}-\ref{sec:TopBkg};
-	\item The description of the top quark charge information sources in Sec.~\ref{sec:ChargeOverview};
-	\item The application of the b-quark charge combination as a proof of principle in Sec.~\ref{sec:TopBCharge};
-	\item The final combination of all top quark charge information and the results in Sec.~\ref{sec:TopJetChargeCombo}.
+	\item The setup of the study and the \ttbar\ event reconstruction provided in Sections~\ref{sec:TopProp}-\ref{sec:TopBkg};
+	\item The description of the top quark charge information sources is given in Sec.~\ref{sec:ChargeOverview};
+	\item The application of the b-quark charge combination as a proof of concept is in Sec.~\ref{sec:TopBCharge};
+	\item The final combination of all top quark charge information and the results is described in Sec.~\ref{sec:TopJetChargeCombo}.
 \end{itemize}
 %The measurements of the top quark properties is one of the key points of the \sm\ physics program at the ILC.
 
 \subsection{Properties of the top quark}
 \label{sec:TopProp}
-The top quark is the heaviest elementary particle in the \sm\ with measured mass of 173.34$\pm$0.27(stat)$\pm$0.71(syst) \,GeV~\cite{bib:TopMass}. This implies a very short lifetime of approximately 5$\cdot10^{-25}$\,s.
+The top quark is the heaviest elementary particle in the \sm\ with measured mass of around 173\,GeV~\cite{bib:TopMass}. This implies a very short lifetime of approximately 5$\cdot10^{-25}$\,s.
 The top quark lifetime is short compared to a time needed for hadronization process  (10$^{-23}$\,s). Therefore, the top quark decays too fast to form hadrons. 
-This fact permits to study the bare quark properties, like spin, via its decay particles. 
+This fact permits to study the bare quark properties, like spin, via te quark decay particles. 
 
 The dominant decay mode of the top quark is $t\to bW^+$, which is 99.8\% of all top decays in the \sm. The $W^\pm$ boson decays either into a lepton-neutrino pair or into a pair of quarks. The top quark decays thus leads to a six fermion final state of the $e^+e^-\to t\bar{t}$ process.
 The $t\bar{t}$  decays are classified by the $W^\pm$ decay modes:
@@ -931,7 +931,7 @@ In this thesis, the top reconstruction method, which was developed for~\cite{bib
 	\item Isolated lepton identification is done with the LAL LeptonFinder algorithm~\cite{bib:Doublet}, which is designed to find an energetic lepton or a lepton, which has a significant transverse momentum with respect to the neighbored jets. 
 	\item The events, after excluding the isolated lepton, are clustered into four jets by the Durham jet clustering algorithm.
 	\item The b-jet tagging done by LCFI+ is used to identify the two b-jets and sorted by btag value for the background rejection cuts. 
-	\item The last step of the top quark reconstruction is to associate one of the b-jets with the two light jets, which come from the hadronic $W^\pm$ decay.  One has two possibilities to combine the jets and one chooses the best combination by minimizing the following expression:
+	\item The last step of the top quark reconstruction is to associate one of the b-jets with the two light jets from the hadronic $W^\pm$ decay.  One has two possibilities to combine the jets and one chooses the best combination by minimizing the following expression:
 	\begin{equation}
 	\label{formula:Chi2Top_3}
 	d^2_{t} = (\frac{m_{cand}-m_{t}}{\sigma_{m_t}})^2 + (\frac{E_{cand}-E_{beam}}{\sigma_{E_{beam}}})^2+(\frac{p^*_b-68\,GeV}{\sigma_{p^*_b}})^2 + (\frac{\cos\theta_{bW}-0.23}{\sigma_{\cos\theta_{bW}}})^2,
@@ -965,10 +965,10 @@ The previous studies~\cite{bib:ILCTOP}\cite{bib:Doublet} have shown that the maj
 %Several \sm\ processes give a rise to the six fermion final state, 
 \input{ILD/tables/ttbar-sigma}
 
-One can use the kinematical cuts to suppress the background processes, which were originally developed in ~\cite{bib:Doublet}~\cite{bib:Jeremy} and defined in Table~\ref{table:ttbarselection}
+One uses the kinematical cuts to suppress the background processes, which were originally developed in ~\cite{bib:Doublet}~\cite{bib:Jeremy} and defined in Table~\ref{table:ttbarselection}
 \input{ILD/tables/ttbar-selection}
-The prevoius studies demonstrated, that the purity of the full semileptonic \ttbar\ process selection is 91\% and final event selection efficiency is 54\%~\cite{bib:ILCTOP}.
-The residual background is homogeneously distributed in $\cos\theta$, as it is shown in Fig.~\ref{fig:ILCTOPAFB}, which allows to concentrate our studies on the signal process only. 
+The previous studies demonstrated, that the purity of the full semileptonic \ttbar\ process selection is 91\% and final event selection efficiency is 54\%~\cite{bib:ILCTOP}.
+The residual background is homogeneously distributed in $\cos\theta$, as it is shown in Fig.~\ref{fig:ILCTOPAFB}, which allows to concentrate the present studies on the signal process only. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1008,7 +1008,7 @@ These deviations are a consequence of a significant charge impurity which leads 
 \end{figure}
 
 The quality of the top quark polar angle reconstruction is estimated by the ratio of the reconstructed forward-backward asymmetry $A_{FB}^{rec}$ over the generated $A^{gen}_{FB}$ values.
-For single vertex and kaon charge methods the $A_{FB}^{rec}/A^{gen}_{FB} \approx 63\%$, while for the $W^\pm$ lepton charge method is 74\% without any additional cuts. 
+For the vertex and the kaon charge methods the $A_{FB}^{rec}/A^{gen}_{FB} \approx 63\%$, while for the $W^\pm$ lepton charge method is 74\% without any additional cuts. 
 Hence, the standalone b-quark charges and $W^\pm$ lepton charge signatures are not reliable enough to compute the top quark polar angle and $A_{FB}$ precisely. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1020,11 +1020,11 @@ In a semileptonic \ttbar\ event one has two b-jets with vertex and kaon charge s
 %The general charge combination rules are:
 One has the following charge combination rules to accept an event for the top quark polar angle measurement:
 \begin{itemize}
-	\item Two b-jets should have opposite both vertex and kaon charges;
+	\item Two b-jets should have opposite vertex and kaon charges;
 	\item The kaon and vertex charge should have the same sign within one b-jet;
 	\item The $W^\pm$ lepton charge should be opposite to the b-quark charges within one reconstructed top or anti-top quark decayed leptonically; 
-	\item The  $W^\pm$ lepton charge should have the same charge as the b-quark charge from hadronically decayed top quark.
-	\item The $W^\pm$ lepton charge can be used alone after cuts on the reconstructed top quality.
+	\item The  $W^\pm$ lepton charge should have the same charge as the b-quark charge from the top quark decayed hadronically.
+	\item The $W^\pm$ lepton charge can be used standalone after a cut on the reconstructed top quality.
 \end{itemize}
 
 According to these rules, one has the following charge pair signatures for a semileptonic \ttbar\ event:
@@ -1033,8 +1033,8 @@ According to these rules, one has the following charge pair signatures for a sem
 	\item Kaon charge from one b-jet in combination with kaon charge from another b-jet ({\sc kaon+kaon});
 	\item Vertex charge and kaon charge combination from the same b-jet ({\sc vtx+kaon});
 	\item Vertex charge and kaon charge combination from different b-jets ({\sc vtx+kaon'});
-	\item  Vertex charge from a b-jet  in combination with $W^\pm$ lepton charge ({\sc l+vtx});
-	\item  Kaon charge from a b-jet in combination with $W^\pm$ lepton charge ({\sc l+kaon});
+	\item Vertex charge from a b-jet  in combination with $W^\pm$ lepton charge ({\sc l+vtx});
+	\item Kaon charge from a b-jet in combination with $W^\pm$ lepton charge ({\sc l+kaon});
 	\item $W^\pm$ lepton charge after cuts on the reconstructed top quality. ({\sc l }cut).
 \end{itemize}
 Multiple reconstructed charge pair signatures are possible within one event.
