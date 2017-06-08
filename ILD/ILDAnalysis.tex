@@ -172,6 +172,9 @@ On the other hand, the measured b-quark forward-backward asymmetry $A_{FB}^b$, d
 The measurements outside $Z^0$ pole were carried out by the LEP~II programme, which collected the most integrated luminosity at around 190\,GeV energy, at the $W^\pm$-pair production threshold. 
 The measured $A_{FB}^b$ at this center-of-mass energy agrees within 2\,$\sigma$ with the tree level \sm\ prediction.
 
+The polarized initial state at the SLC allowed to introduce the left-right asymmetry $A(SLD)$.
+This observable measures the difference between the left-handed and right-handed initial state polarization cross sections. The measured value of the left-right asymmetry for leptons $A_l(SLD)$ has 2\,$\sigma$ deviation from the \sm\ prediction~\cite{bib:AfbSMFit}. The computed values of $\sin^2\theta_W^{lep}$ using $A_{FB}^b$ from LEP and $A_l(SLD)$ differ significantly.
+
 The precise determination of the $Zb\bar{b}$ vertex at LEP~I and SLC experiments allowed to put constraints on the top quark and Higgs boson masses.
 The LEP measurement allowed to predict the top quark mass in the region of 133\,GeV $ < m_t < $ 190\,GeV and the Higgs boson mass  10\,GeV $< m_H <$ 440\,GeV~\cite{bib:LEPTOP}, which were later confirmed by the TeVatron and the LHC experiments. 
 %$A_{fb}^b(\sqrt[]{s} = 190.7\,\text{GeV})=0.51\pm0.058$
@@ -779,7 +782,7 @@ To summarize, the VertexChargeRecovery is able to significantly improve the b-qu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Using the $dE/dx$ information}
-
+\label{sec:Kaons}
 A complementary method to measure the b-quark charge is to identify among the reconstructed b-hadron prongs the charged kaon $K^\pm$, which carry the information about the initial b-quark charge. 
 
 The charged kaons have much higher mass than the charged pions and lower mass than protons, which give a possibility to identify charged kaons by the energy deposition of the hits in the subdetectors. 
@@ -865,7 +868,7 @@ The kaons are identified using the dE/dx information from the TPC tracks. The de
 \section{Top quark production at the ILC}
 \label{sec:TopProduction}
 %Direct electroweak production of the top quark pairs
-This section of the thesis describes an application of the b-quark charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the polar angle measurement for $e^+e^- \to t\bar{t}$ process at ILC, which is used to determine the electroweak couplings of the top quark.
+This section of the thesis describes an application of the b-quark charge measurement technique, described in Sec.~\ref{sec:JetChargeReconstruction}, to the polar angle measurement for $e^+e^- \to t\bar{t}$ process at ILC.%, which is used to determine the electroweak couplings of the top quark.
 The end goal of this study is to increase efficiency of the b-quark polar angle reconstruction as comparing to the previous studies~\cite{bib:ILCTOP}.
 
 The studies in this section have the following steps:
@@ -899,6 +902,7 @@ At the ILC it is possible to reconstruct and study all decay modes of the $t\bar
 \subsection{Setup of the study}
 %The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,GeV. 
 In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\sqrt{s}=500$\,GeV in the left-handed beam configuration are studied using full ILD simulation.
+The total integrated luminosity used correspond to the 330\ifb\.
 %The integrated luminosity used is 150\ifb\ for the ideal beam polarization and 250\ifb for realistic beam polarization. The number of the generated events is 102255.
 The top quark polar angle in the right-handed beam configuration was  successfully reconstructed in \cite{bib:Doublet}\cite{bib:ILCTOP}.
 Therefore, this thesis concentrates on the left-handed beam configuration only, where one has inefficiency of the top polar angle reconstruction due to the event migration effect, as it was found in~\cite{bib:Doublet}~\cite{bib:Jeremy}.
@@ -1048,7 +1052,7 @@ In this section, the concept of the b-quark charge measurement is validated by d
 In case of the left-handed electron beam, the b-quarks are emitted into the direction of the initial top quark, which makes possible the standalone application of the b-quark charge measurement. 
 
 The vertex charge and kaon charge methods were used to compute top polar angle distribution shown in Fig.~\ref{fig:TopAsymmetryNoCutBjet_3}, where one sees a good agreement between the generated and reconstructed top polar angle histograms. 
-The b-quark charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with total efficiency of 16\%.
+The b-quark charge measurement shows a good precision on the asymmetry $A_{FB}^{rec}/A^{gen}_{FB} \approx 93\%$ with the total efficiency of 16\%.
 
 \begin{figure}
 	\centering
@@ -1194,13 +1198,14 @@ The $e^+e^-\to b\bar{b}$ process has never been studied using the ILC environmen
 In this studies the signal process is $e^+e^-\to b\bar{b}$ on the center-of-mass energy of 250\,GeV. 
 A large statistics sample of integrated luminosity $L_{int}= 250$\,fb{$^{-1}$} is used for both polarizations in the ILD simulation environment. 
 Same version of the event generators and the {\sc ilcsoft} distribution as for the \ttbar\ study are used.
+The kaons from the secondary or tertiary vertices are reconstructed using the generator information, but with impurity and inefficiency of the direct kaon reconstruction, described in Sec.~\ref{sec:Kaons}.
 
 
 \subsection{Bottom quark reconstruction and the background rejection}
 The bottom quarks hadronize into two b-jets in the detector, that are reconstructed by jet clustering algorithm. %, which significantly simplifies the process reconstruction. 
 
 %The \bbbar\ events are simply reconstructed as a simple two jet event, which are sorted by the b-tag value.
-An example of the \bbbar\ pair event display in the ILD environment is shown in Fig.~\ref{fig:BottomEvent_3}. As one sees from the Table~\ref{table:bbbarselection}, the largest background contribution is coming from the \bbbar\ $Z^0$ return events, which is also true for the right-handed beam configuration, due to large $e^+e^-\to Z^0\gamma$ process cross section.
+An example of the \bbbar\ pair event display in the ILD environment is shown in Fig.~\ref{fig:BottomEvent_3}. As one sees from the Table~\ref{table:bbbarselection}, the largest background is the \bbbar\ $Z^0$ return events, which is also true for the right-handed beam configuration, due to large $e^+e^-\to Z^0\gamma$ process cross section.
 \begin{figure}
 	{\centering
 		\includegraphics[clip, trim=0.cm 0cm 7.9cm 0cm, width=0.55\textwidth]{ILD/graphics/ild-bbbar.png}
@@ -1440,6 +1445,7 @@ The equation (\ref{formula:Correction_3}) is true for the forward and the backwa
 %This computation is carried out for each bin of the b-quark polar angle histogram. 
 
 To avoid the charge correlations, the  corrections to the b-quark polar angle are calculated without the mixed charge combinations.
+
 To simplify the procedure, the purity $p$ is calculated as an average for all bins of the polar angle histogram and charge pair combinations. 
 
 %One calculates the correction to the polar angle using expression (\ref{formula:Correction_3}). 
@@ -1465,6 +1471,7 @@ The errors on the $A_{FB}^{rec}$ are calculated using the fit uncertainties.
 
 
 The data-driven polar angle correction algorithm have been tested to work with and without vertex charge recovery algorithm with satisfactory results. 
+The final selection efficiency is 13\%.
 
 The final b-quark polar angle distributions with the overlaid background processes after vertex recovery are shown in Fig.~\ref{fig:BAsymmetryFinal_3}.
 \begin{figure}
