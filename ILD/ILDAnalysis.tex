@@ -676,7 +676,7 @@ An algorithm, called VertexChargeRecovery, was developed to increase the b-quark
 \item Preparation of the prong candidates - the algorithm uses all charged particles within a given jet as prong candidates. To recover the prongs, which has no reconstructed PFO, the program iterates throughout all reconstructed tracks and reconstructs them as charged PFOs without an associated calorimeter cluster. These new Particle Flow particles are used only if they have no duplicates in the previously selected jet particles;
 \item All prong candidates are compared to the reconstructed prongs to avoid duplicates;
 \item The separation variables $\alpha$ and $\epsilon$ are calculated for each prong candidate and a given reconstructed vertex;
-\item The selection condition can be defined using the $\alpha$ and $\epsilon$ distributions for true b-hadron prongs and background particles, which are displayed in Fig.~\ref{fig:RecoveryPurity_3}, suggest the following cuts:
+\item The selection condition is defined using the $\alpha$ and $\epsilon$ distributions for true b-hadron prongs and background particles, which are displayed in Fig.~\ref{fig:RecoveryPurity_3}, suggest the following cuts:
 \begin{equation}
 \epsilon/\sigma > 2 + 25\cdot\alpha\text{ and } \alpha < 0.08.
 \end{equation}
@@ -687,20 +687,20 @@ The recovery algorithm might have different behavior in simulation, than in real
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.33\textwidth}
-		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
+		\includegraphics[clip, trim=0.1cm 0cm 13.8cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
 		\caption{\label{fig:RecoveryPurity_a_3} Missing particles}
 	\end{subfigure}% 
 	\begin{subfigure}{0.33\textwidth}
 		\centering
-		\includegraphics[clip, trim=6.78cm 0cm 7.3cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
+		\includegraphics[clip, trim=6.78cm 0cm 7.1cm 0cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
 		\caption{\label{fig:RecoveryPurity_b_3} Background}
 	\end{subfigure}
 	\begin{subfigure}{0.33\textwidth}
 		\centering
-		\includegraphics[clip, trim=13.6cm 0cm 0.4cm 0.cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
+		\includegraphics[clip, trim=13.5cm 0cm 0.4cm 0.cm,width=0.99\textwidth]{ILD/plots/recovery-purity.pdf}
 		\caption{\label{fig:RecoveryPurity_c_3} Purity map}
 	\end{subfigure}
-	\caption{\sl Distribution of the separation variables, the angle $\alpha$ and the offset significance $\epsilon/\sigma$ for the missing generated prongs and the background charged particles. Purity map shows the highest concentration of the missing generated prongs as compare to all charged particles. The black line demonstrates a possible cut function. }
+	\caption{\sl Distribution of the separation variables, the angle $\alpha$ and the offset significance $\epsilon/\sigma$ for the missing generated prongs and the background charged particles. Purity map shows the highest concentration of the missing generated prongs as compare to all charged particles. The black line demonstrates the chosen cut function. }
 	
 	\label{fig:RecoveryPurity_3}
 \end{figure}
@@ -853,7 +853,7 @@ Major reasons behind the missing particles are the following:
 	\item Particle Flow Object is not reconstructed;
 	\item Low generated offset.
 \end{itemize}
-A large inefficiency of the vertex reconstruction algorithm 
+A large inefficiency of the vertex reconstruction algorithm in forward region of ILD is observed.
 
 The developed Vertex Charge Recovery algorithm assigns the missing particles to the reconstructed vertices using reconstructed observables. It increases the overall vertex charge purity by 7\% and the algorithm equalizes the vertex charge purity in the barrel region of the ILD detector. 
 
@@ -902,7 +902,7 @@ At the ILC it is possible to reconstruct and study all decay modes of the $t\bar
 \subsection{Setup of the study}
 %The top quark pairs at the ILC can be produced at $\sqrt{s}=350$\,GeV and 500\,GeV. 
 In this section of the thesis, the semileptonic $t\bar{t}$ pairs produced at $\sqrt{s}=500$\,GeV in the left-handed beam configuration are studied using full ILD simulation.
-The total integrated luminosity used correspond to the 330\ifb\.
+The total integrated luminosity used correspond to the 330\ifb.
 %The integrated luminosity used is 150\ifb\ for the ideal beam polarization and 250\ifb for realistic beam polarization. The number of the generated events is 102255.
 The top quark polar angle in the right-handed beam configuration was  successfully reconstructed in \cite{bib:Doublet}\cite{bib:ILCTOP}.
 Therefore, this thesis concentrates on the left-handed beam configuration only, where one has inefficiency of the top polar angle reconstruction due to the event migration effect, as it was found in~\cite{bib:Doublet}~\cite{bib:Jeremy}.
@@ -1117,12 +1117,12 @@ The distributions of the events with correctly assigned leptons and migrated lep
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.33\textwidth}
-		\includegraphics[clip, trim=0.1cm 0cm 13.9cm 0cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
+		\includegraphics[clip, trim=0.1cm 0cm 13.75cm 0cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
 		\caption{\label{fig:TopChiVariables_a_3} }
 	\end{subfigure}% 
 	\begin{subfigure}{0.33\textwidth}
 		\centering
-		\includegraphics[clip, trim=6.78cm 0cm 7.3cm 0cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
+		\includegraphics[clip, trim=6.78cm 0cm 7.1cm 0cm,width=0.99\textwidth]{ILD/plots/top-lepton-variables.pdf}
 		\caption{\label{fig:TopChiVariables_b_3} }
 	\end{subfigure}
 	\begin{subfigure}{0.33\textwidth}
