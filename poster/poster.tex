@@ -28,7 +28,9 @@
 \usepackage{lineno}
 \usepackage{array}
 \usepackage{lscape}
-
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
 \usepackage{multicol} % This is so we can have multiple columns of text side-by-side
 \usepackage{amsmath}
 \columnsep=100pt % This is the amount of white space between the columns in the poster
@@ -179,27 +181,31 @@ where $\mathcal{A} = 4\pi\alpha^2/3s$ with $\alpha$ as the electromagnetic runni
 \section*{Results}
 
 Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan. Aenean vitae risus ante.
-%
-\begin{wraptable}{l}{12cm} % Left or right alignment is specified in the first bracket, the width of the table is in the second
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\captionof{table}{\color{Green} Table caption}
-\end{wraptable}
+
 %
 Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin. Proin sollicitudin. Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh.
 
 Nulla ut porttitor enim. Suspendisse venenatis dui eget eros gravida tempor. Mauris feugiat elit et augue placerat ultrices. Morbi accumsan enim nec tortor consectetur non commodo. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing. Quisque vestibulum eros eu. Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin.
 
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{plots/basymmetry-final-left.pdf}
+		\caption{\label{fig:BAsymmetryFinal_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{plots/basymmetry-final-right.pdf}
+		\caption{\label{fig:BAsymmetryFinal_b_3} }
+	\end{subfigure}
+	\caption{\sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (a) and right-handed case (b) with overlaid background processes.  }
+	\label{fig:BAsymmetryFinal_3}
+\end{figure}
+
 \begin{center}\vspace{1cm}
-\includegraphics[width=0.8\linewidth]{placeholder}
-\captionof{figure}{\color{Green} Figure caption}
+\includegraphics[width=0.49\linewidth]{plots/basymmetry-final-left.pdf}
+\includegraphics[width=0.49\linewidth]{plots/basymmetry-final-right.pdf}
+\captionof{figure}{ \sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (a) and right-handed case (b) with overlaid background processes. }
 \end{center}\vspace{1cm}
 
 In hac habitasse platea dictumst. Etiam placerat, risus ac.
