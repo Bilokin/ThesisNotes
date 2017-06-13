@@ -20,11 +20,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[a0,portrait]{a0poster}
-\newcommand{\bbbar}{$b\bar{b}$}
-\newcommand{\afb}{$A_{FB}$}
-\newcommand{\sm}{Standard Model}
-\newcommand{\bsm}{Beyond Standard Model}
-\newcommand{\mF}{\mathcal{F}^I}
+
 \usepackage{lineno}
 \usepackage{array}
 \usepackage{lscape}
@@ -48,30 +44,34 @@
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
 \usepackage{wrapfig} % Allows wrapping text around tables and figures
 
+\newcommand{\bbbar}{$b\bar{b}$}
+\newcommand{\afb}{$A_{FB}^b$}
+\newcommand{\sm}{Standard Model}
+\newcommand{\bsm}{Beyond Standard Model}
+\newcommand{\mF}{\mathcal{F}^I}
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	POSTER HEADER 
 %----------------------------------------------------------------------------------------
 
-% The header is divided into two boxes:
-% The first is 75% wide and houses the title, subtitle, names, university/organization and contact information
-% The second is 25% wide and houses a logo for your university/organization or a photo of you
-% The widths of these boxes can be easily edited to accommodate your content as you see fit
 
 \begin{minipage}[b]{1.\linewidth}
-\veryHuge \color{NavyBlue} \textbf{Studies of $e^+e^-\to b\bar{b}$ channel at International Linear Collider} \color{Black}\\ % Title
-\Huge\textit{Using the b-quark charge measurement}%\\[1cm] % Subtitle
+\veryHuge \color{NavyBlue} \textbf{Studies of $e^+e^-\to b\bar{b}$ channel at the International Linear Collider} \color{Black} % Title
+ % Subtitle
 \end{minipage}
 \begin{minipage}[b]{0.5\linewidth}
+\Huge\textit{Final word on LEP \afb\ anomaly}\\[1cm]
 \huge \textbf{\underline{BILOKIN S.}, P\"OSCHL R., RICHARD F.}\\[0.5cm] % Author(s)
-\huge Laboratoire de'Acceler\'ateur Lin\'eare\\[0.4cm] % University/organization
+\huge Laboratoire de l'Acceler\'ateur Lin\'eare\\[0.4cm] % University/organization
 \Large \texttt{bilokin@lal.in2p3.fr}\\
 \end{minipage}
 %
 \begin{minipage}[b]{0.5\linewidth}
-\includegraphics[height=10cm]{figures/LAL.png}
-\includegraphics[height=10cm]{figures/UPSUD.jpg}\\
+\includegraphics[height=9cm]{figures/LAL.jpg}
+\includegraphics[height=9cm]{figures/UPSUD.jpg}
+\includegraphics[height=9cm]{figures/logo-ild.png}\\
 \end{minipage}
 
 \vspace{1cm} % A bit of extra whitespace between the header and poster content
@@ -187,22 +187,10 @@ Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et
 
 Nulla ut porttitor enim. Suspendisse venenatis dui eget eros gravida tempor. Mauris feugiat elit et augue placerat ultrices. Morbi accumsan enim nec tortor consectetur non commodo. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing. Quisque vestibulum eros eu. Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin.
 
-\begin{figure}
-	\centering
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.95\textwidth]{plots/basymmetry-final-left.pdf}
-		\caption{\label{fig:BAsymmetryFinal_a_3} }
-	\end{subfigure}% 
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[width=0.95\textwidth]{plots/basymmetry-final-right.pdf}
-		\caption{\label{fig:BAsymmetryFinal_b_3} }
-	\end{subfigure}
-	\caption{\sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (a) and right-handed case (b) with overlaid background processes.  }
-	\label{fig:BAsymmetryFinal_3}
-\end{figure}
+
 
 \begin{center}\vspace{1cm}
+	\label{fig:BAsymmetryFinal_3}
 \includegraphics[width=0.49\linewidth]{plots/basymmetry-final-left.pdf}
 \includegraphics[width=0.49\linewidth]{plots/basymmetry-final-right.pdf}
 \captionof{figure}{ \sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (a) and right-handed case (b) with overlaid background processes. }
@@ -228,8 +216,10 @@ Treatment 3 & 0.0009271 & 0.296 \\
 Vivamus sed nibh ac metus tristique tristique a vitae ante. Sed lobortis mi ut arcu fringilla et adipiscing ligula rutrum. Aenean turpis velit, placerat eget tincidunt nec, ornare in nisl. In placerat.
 
 \begin{center}\vspace{1cm}
-\includegraphics[width=0.8\linewidth]{placeholder}
-\captionof{figure}{\color{Green} Figure caption}
+	\label{fig:LEPILCResult_3}
+	\includegraphics[width=0.49\linewidth]{../ILD/plots/lep-result-zoom.pdf}
+	\includegraphics[width=0.49\linewidth]{../ILD/plots/ilc-result.pdf}
+	\captionof{figure}{ Tree level $\pm 1\,\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (a) and ILC via the differential cross section fit (b). Dashed guidelines show the \sm\ value. The allowed region expected at the ILC is centered at \sm\ values of couplings. }
 \end{center}\vspace{1cm}
 
 %----------------------------------------------------------------------------------------
