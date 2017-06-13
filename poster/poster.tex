@@ -69,9 +69,10 @@
 \end{minipage}
 %
 \begin{minipage}[b]{0.5\linewidth}
-\includegraphics[height=9cm]{figures/LAL.jpg}
-\includegraphics[height=9cm]{figures/UPSUD.jpg}
-\includegraphics[height=9cm]{figures/logo-ild.png}\\
+	\centering
+\includegraphics[height=7cm]{figures/LAL.jpg}
+\includegraphics[height=7cm]{figures/UPSUD.jpg}
+\includegraphics[height=7cm]{figures/logo-ild.png}\\
 \end{minipage}
 
 \vspace{1cm} % A bit of extra whitespace between the header and poster content
@@ -101,9 +102,19 @@ The results of the detector study allow for an estimation of the ILC precision o
 
 \section*{Introduction}
 
-Aliquam non lacus dolor, \textit{a aliquam quam} \cite{Smith:2012qr}. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in nibh mauris. Donec vel ligula nisi, a lacinia arcu. Sed mi dui, malesuada vel consectetur et, egestas porta nisi. Sed eleifend pharetra dolor, et dapibus est vulputate eu. \textbf{Integer faucibus elementum felis vitae fringilla.} In hac habitasse platea dictumst. Duis tristique rutrum nisl, nec vulputate elit porta ut. Donec sodales sollicitudin turpis sed convallis. Etiam mauris ligula, blandit adipiscing condimentum eu, dapibus pellentesque risus.
 
-\textit{Aliquam auctor}, metus id ultrices porta, risus enim cursus sapien, quis iaculis sapien tortor sed odio. Mauris ante orci, euismod vitae tincidunt eu, porta ut neque. Aenean sapien est, viverra vel lacinia nec, venenatis eu nulla. Maecenas ut nunc nibh, et tempus libero. Aenean vitae risus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+\begin{center}\vspace{1cm}
+	\label{fig:ILCScheme}
+	\includegraphics[width=0.95\linewidth]{../graphics/ILC_scheme.jpg}
+	\captionof{figure}{ \sl Schematic view of the ILC accelerator complex. }
+\end{center}\vspace{1cm}
+
+\begin{center}\vspace{1cm}
+	\label{fig:ILВScheme}
+	\includegraphics[width=0.95\linewidth]{figures/ild.png}
+	\captionof{figure}{ \sl Schematic view of the ILD concept. }
+\end{center}\vspace{1cm}
+
 
 %----------------------------------------------------------------------------------------
 %	OBJECTIVES
@@ -129,50 +140,6 @@ Aliquam non lacus dolor, \textit{a aliquam quam} \cite{Smith:2012qr}. Cum sociis
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-
-\subsection*{Description of the heavy quark production}
-%First, one needs to define the most convenient parametrization of coupling or form factors of interest, and then express the observable quantities in terms of defined form factors. 
-Electroweak production of the fermion pairs proceeds through the $f\bar{f}X$ vertex, where $X$ represents neutral vector bosons, photon or $Z^0$ boson.  The current at the $f\bar{f}X$ vertex can be expressed via form factors $F$ as 
-\begin{equation}
-\Gamma^{f\bar{f}X}_\mu (k^2,q,\bar{q}) = ie\{ \gamma_\mu (F^X_{1V}(k^2) + \gamma^5 F^X_{1A}(k^2)) - \frac{\sigma_{\mu\nu}(q-\bar{q})^\nu}{2m_f}(iF^X_{2V}(k^2) + \gamma^5 F^X_{2A}(k^2)) \},
-\end{equation}
-where $k^2= (q+\bar{q})^2$ is the four momentum squared of the exchanged vector boson, $q$ and $\bar{q}$ are the four vectors of the fermion $f$ and antifermion $\bar{f}$ and $m_f$ is the fermion mass. Further, $\gamma_\mu$ and $\gamma_5$ are the Dirac matrices, and $\sigma_{\mu\nu} = i/2(\gamma_\mu\gamma_\nu - \gamma_\nu\gamma_\mu)$.
-
-The \sm\ values of the form factors are the following:
-\begin{equation}
-F^{f\gamma}_{1V} = Q^{f}, \ F^{f\gamma}_{1A} = 0, \ F^{fZ}_{1V} = \frac{I^f - 2Q^f\sin^2\theta_W}{2\cos\theta_W\sin\theta_W}, \ F^{fZ}_{1A} = - \frac{I^f}{2\cos\theta_W\sin\theta_W},
-\label{formula:SMformFactors_3}
-\end{equation}
-and all $F_2$ factor are zero. In the Eq.~\ref{formula:SMformFactors_3} $I^f$ is the weak isospin number, $I^t = 1/2$ for top and $I^b = -1/2$ for bottom quark and $Q^f$ is the electric charge, $Q^t = 2/3$ and $Q^b = -1/3$.
-
-%The form factors are related to fermion couplings with left and right-handed helicity to $Z^0$ boson:
-The following definition of the left-handed and right handed $Z^0b\bar{b}$ couplings is used throughout the thesis: 
-\begin{equation}
-%g_L^Z = (F_{1V}^Z - F_{1A}^Z), \  g_R^Z = F_{1V}^Z + F_{1A}^Z, 
-g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W, 
-\label{formula:EWcouplings_3}
-\end{equation}
-%the same relations are applied to the corresponding photon couplings $g^\gamma_L$.
-%At the tree level, the \sm\ differential cross for the production
-%of a fermion $f$ pair in $e^+e^-\to f\bar{f}$ at center-of-mass energy $\sqrt[]{s}$ can be written as
-
-In case of the polarized beams, the fermion form factors can be expressed in terms of the helicity of the initial electrons~\cite{bib:Schmidt}:
-\begin{eqnarray}
-\mathcal{F}^L_{ij} = - F^\gamma_{ij} +  \frac{-1/2 + \sin^2\theta_W}{\cos\theta_W\sin\theta_W}\frac{s}{s-M^2_Z+i\Gamma_ZM_Z}F^Z_{ij},\\
-\mathcal{F}^R_{ij} = - F^\gamma_{ij} +  \frac{\sin^2\theta_W}{\cos\theta_W\sin\theta_W}\frac{s}{s-M^2_Z+i\Gamma_ZM_Z}F^Z_{ij}    
-\label{formula:PolFF_3}
-\end{eqnarray}
-
-where $i=1,2$ and $j=V,A$, $M_Z$ and $\Gamma_Z$ are the $Z^0$ boson mass and width, respectively.
-
-The key expression for the studies is the differential cross section of $f\bar{f}$ production for electron beam polarization $I=L,R$, expressed via the defined form factors:
-
-\begin{multline}
- %\frac{\pi\alpha^2 N_c\beta}{s}
-\label{formula:DiffSigma_3}
-\frac{d\sigma^I}{d\cos\theta} = \frac{3}{4} \mathcal{A} N_c \beta[ (1+\cos^2\theta) [(\mF_{1V}+\mF_{2V})^2+(\beta \mF_{1A})^2] -\\-4 \cos\theta (\mF_{1V}+\mF_{2V})\beta \mF_{1A} + \sin^2\theta [\gamma ^{-2} (\mF_{1V} +\gamma^2 \mF_{2V})^2] ]
-\end{multline}
-where $\mathcal{A} = 4\pi\alpha^2/3s$ with $\alpha$ as the electromagnetic running coupling, $N_c$ is the number of quark colors, $\beta$ and $\gamma$ are the velocity and the Lorentz factor of the produced fermion, respectively. 
 
 %----------------------------------------------------------------------------------------
 %	RESULTS 
