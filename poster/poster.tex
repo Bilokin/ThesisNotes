@@ -123,9 +123,10 @@ The high-granularity of the ILD subdetectors allows for an individual particle r
 The schematic view of the ILD concept and the subdetector layout is given in Fig.~\ref{fig:ILDScheme}.
 \begin{center}\vspace{1cm}
 	\centering
-	\label{fig:ILDScheme}
+
 	\includegraphics[width=0.8\linewidth]{figures/ild.png}
 	\captionof{figure}{ \sl Schematic view of the ILD concept~\cite{bib:ILC}. }
+		\label{fig:ILDScheme}
 \end{center}\vspace{1cm}
 The Vertex Detector (VXD) has 3 double layers equipped with silicon pixels, which allows for an excellent accuracy of the track impact parameter measurement.  
 %The vertex reconstruction algorithms are able to separate the secondary and tertiary vertices from b-hadrons.
@@ -161,10 +162,11 @@ The kaon identification is possible using the TPC $dE/dx$ information. After equ
 
 The plots of the vertex charge purity and the $dE/dx$ as function of particle momentum for different hadrons are shown in Fig.~\ref{fig:Charges_3}.
 \begin{center}\vspace{1cm}
-	\label{fig:Charges_3}
+
 	\includegraphics[clip, trim=10cm 0cm 0cm 10cm,width=0.4\linewidth]{../ILD/plots/recovery-purity-comparison.pdf}\label{fig:Charges_a_3}
 	\includegraphics[width=0.37\linewidth]{plots/dedx.png}\label{fig:Charges_b_3}
 	\captionof{figure}{\sl Vertex charge purity as function of $\cos\theta$ (left) and energy deposition per unit of length $dE/dx$ as function of particle momentum $p$ (right).}
+		\label{fig:Charges_3}
 \end{center}\vspace{1cm}
 
 
@@ -180,36 +182,36 @@ The plots of the vertex charge purity and the $dE/dx$ as function of particle mo
 
 \section*{B-quark polar angle reconstruction}
 
-
+The reconstructed b-quark polar angle distributions at $\sqrt{s} = 250$\,GeV using a combination of kaon and vertex charge signatures are demonstrated in Fig.~\ref{fig:BAsymmetryFinal_3}.
 \begin{center}\vspace{1cm}
-	\label{fig:BAsymmetryFinal_3}
+
 	\includegraphics[width=0.4\linewidth]{../ILD/plots/basymmetry-final-left.pdf}
 	\includegraphics[width=0.4\linewidth]{../ILD/plots/basymmetry-final-right.pdf}
 	\captionof{figure}{ \sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (left) and right-handed case (right) with overlaid background processes. }
+		\label{fig:BAsymmetryFinal_3}
 \end{center}\vspace{1cm}
-
+%There are two major problems found in the initial reconstructed distributions:
+%\begin{itemize}
+%	\item \textbf{Event migration}, caused by b-quark charge impurity;
+%	\item \textbf{Acceptance effect}, which is the reduced efficiency of the vertexing algorithms in the very forward region $|\cos\theta| > 0.8$;
+%\end{itemize}
+The kaon and vertex charge purity is defined using the measured events with misreconstructed charges. Using the measured purities, the reconstructed spectrum is corrected using a data-driven procedure.
 The background contribution is small. 
 The distributions are fitted by the general cross section function, defined as 
 \begin{equation}
 {\color{Blue}	S (1+\cos^2\theta) + A \cos\theta,}
 \end{equation}
-where the fitted $S$ and $A$ parameters are proportional to the total cross section and \afb\, respectively.
+where the fitted $S$ and $A$ parameters are proportional to the total cross section and \afb\, respectively. 
+The b-quark elecroweak couplings are derived using the fitted parameters. 
 \section*{Interpretation}
 
-
-
-In hac habitasse platea dictumst. Etiam placerat, risus ac.
-
-Adipiscing lectus in magna blandit:
-
-
-Vivamus sed nibh ac metus tristique tristique a vitae ante. Sed lobortis mi ut arcu fringilla et adipiscing ligula rutrum. Aenean turpis velit, placerat eget tincidunt nec, ornare in nisl. In placerat.
-
+The relative precisions on the $Z^0b\bar{b}$ couplings, $g_L^Z$ and $g_R^Z$, for the LEP~I measurements and for the expected ILC performance are shown in Fig.~\ref{fig:LEPILCResult_3}.
 \begin{center}\vspace{1cm}
-	\label{fig:LEPILCResult_3}
+
 	\includegraphics[width=0.4\linewidth]{../ILD/plots/lep-result-zoom.pdf}
 	\includegraphics[width=0.4\linewidth]{../ILD/plots/ilc-result.pdf}
 	\captionof{figure}{ Tree level $\pm 1\,\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (left) and ILC via the differential cross section fit (right). Dashed guidelines show the \sm\ value. The allowed region expected at the ILC is centered at \sm\ values of couplings. }
+		\label{fig:LEPILCResult_3}
 \end{center}\vspace{1cm}
 
 %----------------------------------------------------------------------------------------
