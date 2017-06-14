@@ -65,9 +65,8 @@
 \Huge\textit{Final word on LEP \afb\ anomaly}\\[1cm]
 \huge \textbf{\underline{BILOKIN S.}, P\"OSCHL R., RICHARD F.}\\[0.5cm] % Author(s)
 \huge Laboratoire de l'Acceler\'ateur Lin\'eare\\[0.4cm] % University/organization
-\Large \texttt{bilokin@lal.in2p3.fr}\\
+\Large \texttt{bilokin@lal.in2p3.fr}
 \end{minipage}
-%
 \begin{minipage}[b]{0.5\linewidth}
 	\centering
 \includegraphics[height=7cm]{figures/LAL.jpg}
@@ -88,10 +87,9 @@
 \color{Navy} % Navy color for the abstract
 
 \begin{abstract}
+The heavy quark doublet plays a central role in the quest for new physics. The complementary between studies of electroweak top quark production and bottom quark production is therefore intuitively clear and pointed out in the literature. Let us remind that the tension between the LEP measurement and the Standard Model prediction of the forward-backward asymmetry \afb\ is still one of the unsolved questions in the field and may be interpreted as a first manifestation of new physics in the heavy quark sector. The process $e^+e^-\to b\bar{b}$ at the ILC offers a unique opportunity for a final word on the tension. Polarised beams allow for a large disentangling of the coupling constants or form factors that govern the $Z^0/\gamma b \bar{b}$ vertex.
 
-This poster presents studies for the International Linear Collider (ILC), a linear electron-positron collider with a nominal center-of-mass energy from 250\,GeV to 500\,GeV.
-
-The results of the detector study allow for an estimation of the ILC precision on the b-quark electroweak couplings and form factors. The ILC will be able to resolve the LEP anomaly in the \bbbar\ production process. The ILC precision on the right-handed $Z^0b\bar{b}$ coupling, a prime candidate for effects of new physics, is calculated to be at least 5 times better than the LEP experiments. 
+This poster presents a detailed simulation study of the process $e^+e^-\to b\bar{b}$ at 250\,GeV with the ILD Detector. Besides the phenomenological implications, the studies demonstrate that with a careful analysis of the final state the charge of the b-quarks can be determined on an event-by-event basis with the ILD Detector. Such a capability is unprecedented by past and present particle physics experiments.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -102,19 +100,41 @@ The results of the detector study allow for an estimation of the ILC precision o
 
 \section*{Introduction}
 
+So far, LEP~I has determined the b-quark couplings to the $Z^0$ boson by measuring the b partial width 
+and the forward-backward asymmetry called \afb. 
+These quantities provide the most precise value of $\sin^2\theta_W$ at LEP~I. It turns out that this value is at three standard deviation away from the very precise value from SLD using beam polarization~\cite{bib:AfbSMFit}. 
+Redoing precisely this measurement is therefore a priority for future e+e‐ colliders. 
 
+
+In this study, we intend to prove that the International Linear Collider~\cite{bib:ILC}, with polarized beams and 
+high luminosity, offers a unique opportunity for precise measurements well above the resonance, where both $Z^0$ and photon exchanges are present. 
+This additional complexity may turn up to be of a great advantage since it allows, through $\gamma - Z^0$ interference, to be sensitive to the sign of $Z^0$ couplings and fully solve the LEP~I puzzle in an unambiguous way. 
+Recall that the LEP~I anomaly can be interpreted up to a sign ambiguity for what concerns the right‐handed coupling $Z^0 b\bar{b}$, referred 
+hereafter as $g_R^Z$, which shows the largest deviation~\cite{bib:RSTOP}.  
+
+%\begin{center}\vspace{1cm}
+%	\label{fig:ILCScheme}
+%	\includegraphics[width=0.95\linewidth]{../graphics/ILC_scheme.jpg}
+%	\captionof{figure}{ \sl Schematic view of the ILC accelerator complex. }
+%\end{center}\vspace{1cm}
+
+The $e^+ e^-\to b\bar{b}$ channel is studied at $\sqrt{s}=250$\,GeV using full simulation of the ILD experiment.
+The high-granularity of the ILD subdetectors allows for an individual particle reconstruction using the Particle Flow approach.
+The schematic view of the ILD concept and the subdetector layout is given in Fig.~\ref{fig:ILDScheme}.
 \begin{center}\vspace{1cm}
-	\label{fig:ILCScheme}
-	\includegraphics[width=0.95\linewidth]{../graphics/ILC_scheme.jpg}
-	\captionof{figure}{ \sl Schematic view of the ILC accelerator complex. }
+	\centering
+	\label{fig:ILDScheme}
+	\includegraphics[width=0.8\linewidth]{figures/ild.png}
+	\captionof{figure}{ \sl Schematic view of the ILD concept~\cite{bib:ILC}. }
 \end{center}\vspace{1cm}
+The Vertex Detector (VXD) has 3 double layers equipped with silicon pixels, which allows for an excellent accuracy of the track impact parameter measurement.  
+%The vertex reconstruction algorithms are able to separate the secondary and tertiary vertices from b-hadrons.
+This enables a highly efficient b- and c-tagging of the jets and a detailed b-hadron vertex reconstruction. 
+The central tracker of the ILD detector is Time Projection Chamber (TPC), which provides up to 224 points per track and allows $dE/dx$-based particle identification.
 
-\begin{center}\vspace{1cm}
-	\label{fig:ILВScheme}
-	\includegraphics[width=0.95\linewidth]{figures/ild.png}
-	\captionof{figure}{ \sl Schematic view of the ILD concept. }
-\end{center}\vspace{1cm}
 
+The main goal of the study is to reconstruct the b-quark polar angle distributions for both beam polarization cases. 
+These histograms are used to determine the precision on the b-quark electroweak couplings, which are compared to the LEP~I anomaly. 
 
 %----------------------------------------------------------------------------------------
 %	OBJECTIVES
@@ -122,18 +142,31 @@ The results of the detector study allow for an estimation of the ILC precision o
 
 \color{DarkSlateGray} % DarkSlateGray color for the rest of the content
 
-\section*{Main Objectives}
+\section*{B-quark charge measurement}
+{\color{Blue}
+The b-quark polar angle reconstruction requires an accurate b-quark charge measurement. 
+The b-quark charge is identified using two basic signatures:
+\begin{itemize}
+	\item \textbf{Vertex charge} is a sum of all reconstructed particles charges, which are associated to the b-hadron vertices. 
+	\item \textbf{Kaon charge} is a charge of kaons found in b-hadron vertices. 
+\end{itemize}
+}
 
-\begin{enumerate}
-\item Lorem ipsum dolor sit amet, consectetur.
-\item Nullam at mi nisl. Vestibulum est purus, ultricies cursus volutpat sit amet, vestibulum eu.
-\item Praesent tortor libero, vulputate quis elementum a, iaculis.
-\item Phasellus a quam mauris, non varius mauris. Fusce tristique, enim tempor varius porta, elit purus commodo velit, pretium mattis ligula nisl nec ante.
-\item Ut adipiscing accumsan sapien, sit amet pretium.
-\item Estibulum est purus, ultricies cursus volutpat
-\item Nullam at mi nisl. Vestibulum est purus, ultricies cursus volutpat sit amet, vestibulum eu.
-\item Praesent tortor libero, vulputate quis elementum a, iaculis.
-\end{enumerate}
+Sometimes, the vertex reconstruction algorithms may fail and lose one or several particles form reconstructed b-hadron vertices. This leads to a wrong vertex charge measurement. 
+The reasons behind the missing b-hadron particles are connected to reconstruction shortcomings or to a low momentum or a low offset of the b-hadron particles. 
+The developed Vertex Charge Recovery procedure enhances the vertex charge purity by adding the missing particles back to the reconstructed vertices. 
+
+
+The kaon identification is possible using the TPC $dE/dx$ information. After equalizing the $dE/dx$ in angular spectrum, the kaons from b-hadron vertices can be identified with 97.\% purity and 87\% efficiency. However, the $B-\bar{B}$ oscillations will degrade the kaon charge signature purity for neutral b-hadrons.
+
+The plots of the vertex charge purity and the $dE/dx$ as function of particle momentum for different hadrons are shown in Fig.~\ref{fig:Charges_3}.
+\begin{center}\vspace{1cm}
+	\label{fig:Charges_3}
+	\includegraphics[clip, trim=10cm 0cm 0cm 10cm,width=0.4\linewidth]{../ILD/plots/recovery-purity-comparison.pdf}\label{fig:Charges_a_3}
+	\includegraphics[width=0.37\linewidth]{plots/dedx.png}\label{fig:Charges_b_3}
+	\captionof{figure}{\sl Vertex charge purity as function of $\cos\theta$ (left) and energy deposition per unit of length $dE/dx$ as function of particle momentum $p$ (right).}
+\end{center}\vspace{1cm}
+
 
 %----------------------------------------------------------------------------------------
 %	MATERIALS AND METHODS
@@ -142,57 +175,41 @@ The results of the detector study allow for an estimation of the ILC precision o
 %------------------------------------------------
 
 %----------------------------------------------------------------------------------------
-%	RESULTS 
+%	POLAR ANGLE 
 %----------------------------------------------------------------------------------------
 
-\section*{Results}
-
-Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan. Aenean vitae risus ante.
-
-%
-Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin. Proin sollicitudin. Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh.
-
-%
-Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin. Proin sollicitudin. Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh.
-
-%
-Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin. Proin sollicitudin. Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh.
-
-Nulla ut porttitor enim. Suspendisse venenatis dui eget eros gravida tempor. Mauris feugiat elit et augue placerat ultrices. Morbi accumsan enim nec tortor consectetur non commodo. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing. Quisque vestibulum eros eu. Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin.
-
+\section*{B-quark polar angle reconstruction}
 
 
 \begin{center}\vspace{1cm}
 	\label{fig:BAsymmetryFinal_3}
-\includegraphics[width=0.49\linewidth]{../ILD/plots/basymmetry-final-left.pdf}
-\includegraphics[width=0.49\linewidth]{../ILD/plots/basymmetry-final-right.pdf}
-\captionof{figure}{ \sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (a) and right-handed case (b) with overlaid background processes. }
+	\includegraphics[width=0.4\linewidth]{../ILD/plots/basymmetry-final-left.pdf}
+	\includegraphics[width=0.4\linewidth]{../ILD/plots/basymmetry-final-right.pdf}
+	\captionof{figure}{ \sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (left) and right-handed case (right) with overlaid background processes. }
 \end{center}\vspace{1cm}
+
+The background contribution is small. 
+The distributions are fitted by the general cross section function, defined as 
+\begin{equation}
+{\color{Blue}	S (1+\cos^2\theta) + A \cos\theta,}
+\end{equation}
+where the fitted $S$ and $A$ parameters are proportional to the total cross section and \afb\, respectively.
+\section*{Interpretation}
+
+
 
 In hac habitasse platea dictumst. Etiam placerat, risus ac.
 
 Adipiscing lectus in magna blandit:
 
-\begin{center}\vspace{1cm}
-\begin{tabular}{l l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\captionof{table}{\color{Green} Table caption}
-\end{center}\vspace{1cm}
 
 Vivamus sed nibh ac metus tristique tristique a vitae ante. Sed lobortis mi ut arcu fringilla et adipiscing ligula rutrum. Aenean turpis velit, placerat eget tincidunt nec, ornare in nisl. In placerat.
 
 \begin{center}\vspace{1cm}
 	\label{fig:LEPILCResult_3}
-	\includegraphics[width=0.49\linewidth]{../ILD/plots/lep-result-zoom.pdf}
-	\includegraphics[width=0.49\linewidth]{../ILD/plots/ilc-result.pdf}
-	\captionof{figure}{ Tree level $\pm 1\,\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (a) and ILC via the differential cross section fit (b). Dashed guidelines show the \sm\ value. The allowed region expected at the ILC is centered at \sm\ values of couplings. }
+	\includegraphics[width=0.4\linewidth]{../ILD/plots/lep-result-zoom.pdf}
+	\includegraphics[width=0.4\linewidth]{../ILD/plots/ilc-result.pdf}
+	\captionof{figure}{ Tree level $\pm 1\,\sigma$ allowed regions defined by the forward-backward asymmetry and total cross section measurements at LEP (left) and ILC via the differential cross section fit (right). Dashed guidelines show the \sm\ value. The allowed region expected at the ILC is centered at \sm\ values of couplings. }
 \end{center}\vspace{1cm}
 
 %----------------------------------------------------------------------------------------
@@ -224,9 +241,9 @@ Vivamus molestie, risus tempor vehicula mattis, libero arcu volutpat purus, sed 
 %	REFERENCES
 %----------------------------------------------------------------------------------------
 
-\nocite{*} % Print all references regardless of whether they were cited in the poster or not
-\bibliographystyle{plain} % Plain referencing style
-\bibliography{sample} % Use the example bibliography file sample.bib
+%\nocite{*} % Print all references regardless of whether they were cited in the poster or not
+\bibliographystyle{abbrv} % Plain referencing style
+\bibliography{../mainbib} % Use the example bibliography file sample.bib
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
