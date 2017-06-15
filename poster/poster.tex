@@ -21,12 +21,26 @@
 
 \documentclass[a0,portrait]{a0poster}
 \input{definitions}
+\usepackage{pstricks}
+\usepackage[pages=some,placement=top]{background}
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=0.2,
+	angle=0,
+	hshift=1in,
+	vshift=-1in,
+	contents={%
+		\includegraphics[width=0.95\paperwidth]{figures/ILC_scheme.jpg}
+	}%
+}
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	POSTER HEADER 
 %----------------------------------------------------------------------------------------
-
+\BgThispage
 
 \begin{minipage}[b]{1.\linewidth}
 \veryHuge \color{NavyBlue} \textbf{Studies of $e^+e^-\to b\bar{b}$ channel at the International Linear Collider} \color{Black} % Title
