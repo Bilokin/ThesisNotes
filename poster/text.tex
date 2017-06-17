@@ -22,7 +22,12 @@ This poster presents a detailed simulation study of the process $e^+e^-\to b\bar
 	\includegraphics[width=0.15\textwidth]{figures/bbbar.pdf}
 	\caption{\sl The leading order Feynman diagram of the $e^+ e^-\to b\bar{b}$ channel.}
 	\label{fig:bbbar}
+	\includegraphics[width=0.15\textwidth]{figures/deviation.png}
+	\caption{\sl A high deviation part of the global electroweak fit results from~\cite{bib:AfbSMFit}.}
+	\label{fig:deviation}
 \end{wrapfigure}
+
+
 
 So far, LEP~I has determined the b-quark couplings to the $Z^0$ boson by measuring the b partial width 
 and the forward-backward asymmetry called \afb. 
@@ -30,11 +35,9 @@ These quantities provide the most precise value of $\sin^2\theta_W$ at LEP~I. It
 Redoing precisely this measurement is therefore a priority for future e+e‐ colliders. 
 
 
-
-
-In this study, we intend to prove that the International Linear Collider~\cite{bib:ILC}, with polarized beams and 
-high luminosity, offers a unique opportunity for precise measurements well above the resonance, where both $Z^0$ and photon exchanges are present. 
-This additional complexity may turn up to be of a great advantage since it allows, through $\gamma - Z^0$ interference, to be sensitive to the sign of $Z^0$ couplings and fully solve the LEP~I puzzle in an unambiguous way. 
+In this study, we intend to prove that the International Linear Collider~\cite{bib:ILC}, with \textbf{polarized beams and 
+high luminosity}, offers a unique opportunity for precise measurements well above the resonance, where both $Z^0$ and photon exchanges are present. 
+%This additional complexity may turn up to be of a great advantage since it allows, through $\gamma - Z^0$ interference, to be sensitive to the sign of $Z^0$ couplings and fully solve the LEP~I puzzle in an unambiguous way. 
 Recall that the LEP~I anomaly can be interpreted up to a sign ambiguity for what concerns the right‐handed coupling $Z^0 b\bar{b}$, referred 
 hereafter as $g_R^Z$, which shows the largest deviation~\cite{bib:RSTOP}.  
 
@@ -43,26 +46,28 @@ hereafter as $g_R^Z$, which shows the largest deviation~\cite{bib:RSTOP}.
 %	\includegraphics[width=0.95\linewidth]{../graphics/ILC_scheme.jpg}
 %	\captionof{figure}{ \sl Schematic view of the ILC accelerator complex. }
 %\end{center}\vspace{1cm}
-
+\color{Blue}
 The $e^+ e^-\to b\bar{b}$ channel (see Fig.~\ref{fig:bbbar}) is studied at $\sqrt{s}=250$\,GeV using full simulation of the ILD experiment.
+\color{DarkSlateGray}
 The high-granularity of the ILD subdetectors allows for an individual particle reconstruction using the Particle Flow approach.
 The schematic view of the ILD concept and the subdetector layout is presented in Fig.~\ref{fig:ILDScheme}.
-\begin{center}\vspace{1cm}
-	\centering
 
-	\includegraphics[width=0.8\linewidth]{figures/ild2.png}
-	\captionof{figure}{ \sl Event display of the $e^+ e^-\to b\bar{b}$ process in a full simulation of the ILD detector (left) and schematic view of the ILD concept~\cite{bib:ILC} (right). }
-		\label{fig:ILDScheme}
-\end{center}\vspace{1cm}
-The Vertex Detector (VXD) has 3 double layers with about $3\,\mu$m  resolution on the track impact parameters.  
+%The Vertex Detector (VXD) has 3 double layers with about $3\,\mu$m  resolution on the track impact parameters.  
 %The vertex reconstruction algorithms are able to separate the secondary and tertiary vertices from b-hadrons.
-This enables a highly efficient b- and c-tagging of the jets and a detailed b-hadron vertex reconstruction. 
-The central tracker of the ILD detector is Time Projection Chamber (TPC), which provides up to 224 points per track and allows $dE/dx$-based particle identification.
+
+%This enables a highly efficient b- and c-tagging of the jets and a detailed b-hadron vertex reconstruction. 
+%The central tracker of the ILD detector is Time Projection Chamber (TPC), which will provide up to 224 points per track allowing for $dE/dx$-based particle identification.
 
 
 The main goal of the study is to reconstruct the b-quark polar angle distributions for both beam polarization cases at the ILC. 
 These histograms are used to determine the precision on the b-quark electroweak couplings, which are compared to the LEP~I anomaly. 
-
+\begin{center}\vspace{1cm}
+	\centering
+	
+	\includegraphics[width=0.9\linewidth]{figures/ild2.png}
+	\captionof{figure}{ \sl Event display of the $e^+ e^-\to b\bar{b}$ process in a full simulation of the ILD detector (left) and schematic view of the ILD concept~\cite{bib:ILC} (right). }
+	\label{fig:ILDScheme}
+\end{center}\vspace{1cm}
 %----------------------------------------------------------------------------------------
 %	OBJECTIVES
 %----------------------------------------------------------------------------------------
@@ -70,16 +75,26 @@ These histograms are used to determine the precision on the b-quark electroweak 
 \color{DarkSlateGray} % DarkSlateGray color for the rest of the content
 
 \section*{B-quark charge measurement}
-{\color{Blue}
+\setlength{\columnsep}{20pt}%
+\begin{wrapfigure}{R}{0.2\textwidth}
+	%\centering
+	
+	\includegraphics[width=0.2\textwidth]{figures/vtx.png}
+	\caption{\sl B-hadron vertices.}
+	\label{fig:vtx}
+
+\end{wrapfigure}
+
+\color{Blue}
 The b-quark polar angle reconstruction requires an accurate b-quark charge measurement. 
 The b-quark charge is identified using two basic signatures:
 \begin{itemize}
 	\item \textbf{Vertex charge} is a sum of all reconstructed particles charges, which are associated to the b-hadron vertices. 
 	\item \textbf{Kaon charge} is a charge of kaons found in b-hadron vertices. 
 \end{itemize}
-}
 
-Sometimes, the vertex reconstruction algorithms may fail and lose one or several particles from the reconstructed b-hadron vertices. This leads to a wrong vertex charge measurement. 
+\color{DarkSlateGray}
+%Sometimes, the vertex reconstruction algorithms may fail and lose one or several particles from the reconstructed b-hadron vertices. This leads to a wrong vertex charge measurement. 
 %The reasons behind the missing b-hadron particles are connected to reconstruction shortcomings or to a low momentum or a low offset of the b-hadron particles. 
 The developed Vertex Charge Recovery procedure enhances the vertex charge purity by adding the missing particles back to the reconstructed vertices. 
 
@@ -92,7 +107,7 @@ The kaon identification is possible using the TPC $dE/dx$ information. After equ
 	\captionof{figure}{\sl Vertex charge purity as function of $\cos\theta$ (left) and energy deposition per unit of length $dE/dx$ as function of particle momentum $p$ (right).}
 	\label{fig:Charges_3}
 \end{center}\vspace{1cm}
-The plots of the vertex charge purity and the $dE/dx$ as function of particle momentum for different hadrons are shown in Fig.~\ref{fig:Charges_3}.
+%The plots of the vertex charge purity and the $dE/dx$ as function of particle momentum for different hadrons are shown in Fig.~\ref{fig:Charges_3}.
 
 
 
