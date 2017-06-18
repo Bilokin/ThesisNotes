@@ -173,7 +173,7 @@ The measurements outside $Z^0$ pole were carried out by the LEP~II programme, wh
 The measured $A_{FB}^b$ at this center-of-mass energy agrees within 2\,$\sigma$ with the tree level \sm\ prediction.
 
 The polarized initial state at the SLC allowed to introduce the left-right asymmetry $A(SLD)$.
-This observable measures the difference between the left-handed and right-handed initial state polarization cross sections. The measured value of the left-right asymmetry for leptons $A_l(SLD)$ has 2\,$\sigma$ deviation from the \sm\ prediction~\cite{bib:AfbSMFit}. The computed values of $\sin^2\theta_W^{lep}$ using $A_{FB}^b$ from LEP and $A_l(SLD)$ differ significantly.
+This observable measures the difference between the left-handed and the right-handed initial state polarization cross sections. The measured value of the left-right asymmetry for leptons $A_l(SLD)$ has 2\,$\sigma$ deviation from the \sm\ prediction~\cite{bib:AfbSMFit}. The computed values of $\sin^2\theta_W$ using $A_{FB}^b$ from LEP and $A_l(SLD)$ differ significantly.
 
 The precise determination of the $Zb\bar{b}$ vertex at LEP~I and SLC experiments allowed to put constraints on the top quark and Higgs boson masses.
 The LEP measurement allowed to predict the top quark mass in the region of 133\,GeV $ < m_t < $ 190\,GeV and the Higgs boson mass  10\,GeV $< m_H <$ 440\,GeV~\cite{bib:LEPTOP}, which were later confirmed by the TeVatron and the LHC experiments. 
@@ -181,7 +181,7 @@ The LEP measurement allowed to predict the top quark mass in the region of 133\,
 %Unfortunately, the beam energies of LEP~II and SLC was not high enough to produce single top or top quark pairs, therefore, the precise determination of the top electroweak couplings is left for the future electron-positron machines.
 
 \subsubsection{LHC and TeVatron measurements}
-The composite nature of colliding particles at hadron colliders priviledges the production of the top quark pairs through the strong interaction via high cross section $gg\to t\bar{t}$ or $q\bar{q}\to t\bar{t}$ processes.
+The composite nature of colliding particles at the hadron colliders priviledges the production of the top quark pairs through the strong interaction via high cross section $gg\to t\bar{t}$ or $q\bar{q}\to t\bar{t}$ processes.
 Therefore, the hadron machines can measure the top mass as the cross section parameter with a high precision. 
 
 The TeVatron has a high production rate of the single top-quark via $q\bar{q}' \to W^\pm \to t\bar{b}$ process. %at a higher rate than proton-proton machines. 
@@ -204,7 +204,7 @@ Including the Run~II data of the LHC with a higher center-of-mass energy will si
 %ttZ cross section measurements
 
 The study of the b-quark electroweak couplings is very limited at hadron colliders.
-The possible $Z^0$\bbbar associate production study at the LHC can provide only the cross section magnitude value, which has been measured at LEP~I to have no deviation from the \sm\ prediction. 
+The possible $Z^0b\bar{b}$ associate production study at the LHC can provide only the cross section magnitude value, which has been measured at LEP~I to have no deviation from the \sm\ prediction. 
 Top quark have never been studied at the $e^+e^-$ colliders, benefiting from a direct electroweak production and a high signal over background ratio.
 Hence, precise measurements of the heavy quark electroweak couplings are left for future $e^+e^-$ machines.
 
@@ -226,7 +226,7 @@ The b-quark coupling analysis can be done at all center-of-mass energies, schedu
 %Such assets of the future $e^+e^-$ colliders as high signal-to-noise ratio and high-granularity of the detectors allow to use Matrix Element Method to compute the form factors from a kinematical fit of the top pair decay products. 
 %This method can be applied at the ILC for fully leptonic decay of the top quark pair. 
 
-The first top quark electroweak coupling analysis at the ILC was published in Ref.~\cite{bib:ILCTOP}, where the uncertainties on the form factors \ref{formula:SMformFactors_3} and the couplings \ref{formula:EWcouplings_3} were estimated using the ILD environment.
+The first top quark electroweak coupling analysis at the ILC was published in Ref.~\cite{bib:ILCTOP}, where the uncertainties on the form factors (\ref{formula:SMformFactors_3}) and the couplings (\ref{formula:EWcouplings_3}) were estimated using the ILD environment.
 
 
 The semileptonic top decays were used in~\cite{bib:ILCTOP}, where  a lepton from leptonic top quark decay $t\to b l \bar{\nu_l}$ provides the charge information, and jets from hadronic top quark decays $t \to b q \bar{q}'$ are used for top polar angle reconstruction. 
@@ -359,7 +359,7 @@ The B meson have $D^0$ or $D^\pm$ meson decay modes of about 80\% decay rate, me
 Hence, one expects to detect two vertices from one b-jet in most of the cases: the secondary, which corresponds to the b-hadron decay, and the tertiary vertex created by the c-hadron decays. 
 
 The $K^\pm$ mesons from B meson decays are the end products of the $b\to c\to s$ decay chain mediated by the weak interaction. 
-The $K^\pm$ mesons have a long lifetime with $c\tau = 3.7$\,m and a high mass of 493.6\,MeV comparing with another long-lived charged particles from B meson decays, like pions or leptons. 
+The $K^\pm$ mesons have a long lifetime with $c\tau = 3.7$\,m and a high mass of 493.6\,MeV comparing with another long-lived charged particles from the B meson decays, like pions or leptons. 
 Hence, it is possible to identify kaons by their energy deposition in the detector, which depend on particle mass. 
 In the generator, about 87\% of b-hadrons are set to have correlated $K^\pm$ charge in the generator, which makes the $K^\pm$ charge a reliable indication of the initial b-quark charge. The kaon charge was used to determine the b-quark charge at the SLC~\cite{Falciai:1996jv} and the LEP experiments~\cite{Abreu:1999ui}.
 On contrary, the b-baryons tend to produce protons, which have an opposite sign of charge to the initial b-quark charge.
@@ -371,16 +371,23 @@ On contrary, the b-baryons tend to produce protons, which have an opposite sign 
 The output of the event generators is a list of generated particles with parent-child relations. 
 The TruthVertexFinder algorithm was developed to find the generated vertices.%, and included into the {\sc ilcsoft} distribution. 
 This algorithm detects the generated b-hadrons, finds the related charged particles, which can leave reconstructable tracks and organizes them into the generated secondary or tertiary vertices.
+
+
+
 \begin{figure}
-	{\centering
-		\includegraphics[width=0.75\textwidth]{ILD/plots/offset-graph.pdf}
-		\caption{\sl Illustration of particle offset variable $\epsilon$, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}_0$ is a point of the closest approach of a given particle. 
-		}
-		\label{fig:OffsetPic_3}
-	}
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.95\textwidth]{ILD/plots/gen-b-vtx.pdf}
+		\caption{\label{fig:GenVtx_a_3} }
+	\end{subfigure}% 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ILD/plots/gen-c-vtx.pdf}
+		\caption{\label{fig:GenVtx_b_3} }
+	\end{subfigure}
+	\caption{\sl Distributions of the b-vertex charge multiplicity~(a) and c-vertex charge multiplicity~(b). }
+	\label{fig:GenVtx_3}
 \end{figure}
-
-
 
 %Generator distributions
 
@@ -395,18 +402,12 @@ The c-vertex multiplicity distribution is consistent with~\cite{bib:PDG}.
 One notices that about 31\% of the b-vertices and 13\% of the c-vertices decay into one generated prong, which poses a challenge to the vertexing algorithms. This problem will be addressed in Sec.~\ref{sec:MisVertices}.
 
 \begin{figure}
-\centering
-\begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=0.95\textwidth]{ILD/plots/gen-b-vtx.pdf}
-\caption{\label{fig:GenVtx_a_3} }
-\end{subfigure}% 
-  \begin{subfigure}{0.5\textwidth}
-\centering
-    \includegraphics[width=0.95\textwidth]{ILD/plots/gen-c-vtx.pdf}
-\caption{\label{fig:GenVtx_b_3} }
-\end{subfigure}
-    \caption{\sl Distributions of the b-vertex charge multiplicity~(a) and c-vertex charge multiplicity~(b). }
-    \label{fig:GenVtx_3}
+	{\centering
+		\includegraphics[width=0.75\textwidth]{ILD/plots/offset-graph.pdf}
+		\caption{\sl Illustration of particle offset variable $\epsilon$, where $\vec{p}$ is a vector of a given particle momentum, $B$ is a flight distance of a b-hadron, $\vec{IP}$ is a primary vertex position, $\vec{t}_0$ is a point of the closest approach of a given particle. 
+		}
+		\label{fig:OffsetPic_3}
+	}
 \end{figure}
 
 The particle offset or the impact parameter is the minimal distance between the particle trajectory and the interaction point, as illustrated in Fig.~\ref{fig:OffsetPic_3}.
@@ -430,7 +431,7 @@ As can be seen from Fig.~\ref{fig:GenVtxOffset_3}, the c-vertex prong offsets ar
     \label{fig:GenVtxOffset_3}
 \end{figure}
 
-The distributions of the total B-hadron charge multiplicity and the b-jet multiplicity are displayed in Fig.~\ref{fig:GenHadronParams_3}. The mean b-jet multiplicity is almost three times higher than the mean B-hadron multiplicity, which makes the vertex reconstruction non trivial. 
+The distributions of the total B-hadron charge multiplicity and the b-jet multiplicity are displayed in Fig.~\ref{fig:GenHadronParams_3}. The mean b-jet multiplicity is almost three times higher than the mean B-hadron multiplicity, which makes the vertex reconstruction a non trivial task. 
 The imbalance between the odd and even number of multiplicities shown in Fig.~\ref{fig:GenHadronParams_a_3} is caused by the presence of the \Bzs\ hadronization modes.
 
 Regarding the similarity of the distributions for two processes shown in Figures~\ref{fig:GenVtx_3}, \ref{fig:GenHadronParams_3} and \ref{fig:GenVtxOffset_3}, the performance of a vertexing algorithm should be identical for the same energy and the direction of the b-hadron decays.
@@ -483,7 +484,7 @@ In this section, only the standard reconstruction chain is used to study the b-q
 The b-quark charge is computed as a sum of the reconstructed particles charges, associated to the reconstructed vertices, which belong to a given jet. 
 Therefore, the vertexing algorithm should correctly associate all secondary or tertiary vertex particles to have a correct b-quark charge measurement. 
 The correctly reconstructed b-quark charge should have the same  charge as the generated b-hadron. 
-Regarding the b-hadron multiplicity, shown in Fig.~\ref{fig:GenHadronParams_a_3}, and the b-jet multiplicity in Fig.~\ref{fig:GenHadronParams_b_3} this task is not trivial. 
+%Regarding the b-hadron multiplicity, shown in Fig.~\ref{fig:GenHadronParams_a_3}, and the b-jet multiplicity in Fig.~\ref{fig:GenHadronParams_b_3} this task is not trivial. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -518,13 +519,14 @@ The jets with reconstructed vertices have the following statistics:
 \end{figure}
 
 The jets with $N_{rec}=N_{gen}$ have the charge purity of more than 97\%, while all other jets have an almost random reconstructed b-quark charge with the corresponding charge purity about 35\%.
-The fraction of entries below diagonal in Fig.~\ref{fig:Table_3} is small, comparing to the fraction of events above the diagonal. 
+The fraction of entries below the diagonal in Fig.~\ref{fig:Table_3} is small, comparing to the fraction of events above the diagonal. 
 Hence, the purity reduction is mainly caused by the jets, which have lost the prongs from their reconstructed vertices. 
 %The application of cuts, for example on jet b-tag$>0.8$ and reconstructed b-hadron momentum $|p_{had}| > 20$\,GeV, increases the fraction of correctly reconstructed jets up to 55\%, however with an efficiency penalty of 17\%.
 %The cuts on the b-tag value are necessary to reject background processes and will be adjusted to archieve the best background suppression. 
 
 
-Therefore, there is a possibility to develop a recovery algorithm, which can add the missing prongs to the reconstructed vertices.%, with a slight increase of the number of jets with contaminated vertices. 
+Therefore, there is a possibility to develop a recovery algorithm, which can add the missing prongs to the reconstructed vertices.
+%, with a slight increase of the number of jets with contaminated vertices. 
 But first, one needs to study the reasons behind the missing prongs and analyze the possibility to recover them. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -579,7 +581,7 @@ The missing vertices are difficult to recover, however they have essentially no 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Missing prongs from the reconstructed vertices}
 \label{sec:MissingProngs}
-The quality of the vertex reconstruction strongly depends on all reconstruction algorithms as well as on various geometry aspects of the ILD experiment. 
+%The quality of the vertex reconstruction strongly depends on all reconstruction algorithms as well as on various geometry aspects of the ILD experiment. 
 
 %Using TruthVertexFinder information and truth links to the reconstructed particles, one can find, that the 
 The missing reconstructed prongs are approximately 10.4\% of the total generated prongs for the standard vertex reconstruction. 
@@ -650,7 +652,7 @@ In this study we use the following definition of the offset significance:
 where $\sigma_{d_{0}}$ and $\sigma_{z_0}$ are the covariance matrix elements, provided by the track reconstruction algorithms.
 The offset significance value depends strongly on the momentum of the particle, its polar angle and number of assigned VXD or FTD hits . 
 
-Typically, the b-hadrons prongs are generated with large offsets (Fig.~\ref{fig:GenHadronParams_b_3}), but the reconstruction can miss a reconstructed prong if it has a small offset significance. 
+Typically, the b-hadron prongs are generated with large offsets (Fig.~\ref{fig:GenHadronParams_b_3}), but the reconstruction can miss a reconstructed prong if it has a small offset significance. 
 Hence, one needs another spatial separation variable, combined with the offset significance $\epsilon/\sigma$. 
 
 %Another separation variable can make use of the reconstructed vertex position and the reconstructed track candidate parameters. 
@@ -680,7 +682,7 @@ An algorithm, called VertexChargeRecovery, was developed to increase the b-quark
 \begin{equation}
 \epsilon/\sigma > 2 + 25\cdot\alpha\text{ and } \alpha < 0.08.
 \end{equation}
-The recovery algorithm might have different behavior in simulation, than in real experiment, therefore, one should use a data-driven charge purity measurements, described in Sec.~\ref{sec:ChargePurity}, to test and tune the recovery parameters.
+The recovery algorithm might have a different behavior in simulation, than in the real experiment, therefore, one should use a data-driven charge purity measurements, described in Sec.~\ref{sec:ChargePurity}, to test and tune the recovery parameters.
 \item The algorithm creates new reconstructed vertices with old and recovered reconstructed prongs and links them to a given jet.
 \end{itemize}
 
@@ -705,7 +707,7 @@ The recovery algorithm might have different behavior in simulation, than in real
 	\label{fig:RecoveryPurity_3}
 \end{figure}
 
-Hence, VertexChargeRecovery is made to have an output, identical to the output of the LCFI+ algorithms, which allows for a clear comparison of the b-quark charge reconstruction performance before and after vertex recovery usage.
+The VertexChargeRecovery is made to have an output, identical to the output of the LCFI+ algorithms, which allows for a clear comparison of the b-quark charge reconstruction performance before and after vertex recovery usage.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -785,12 +787,12 @@ To summarize, the VertexChargeRecovery is able to significantly improve the b-qu
 \label{sec:Kaons}
 A complementary method to measure the b-quark charge is to identify among the reconstructed b-hadron prongs the charged kaon $K^\pm$, which carry the information about the initial b-quark charge. 
 
-The charged kaons have much higher mass than the charged pions and lower mass than protons, which give a possibility to identify charged kaons by the energy deposition of the hits in the subdetectors. 
+The charged kaons have much higher mass than the charged pions and lower mass than protons, which makes possible to identify charged kaons by the energy deposition of the hits in the subdetectors. 
 
 The most suitable device to calculate the energy deposition per distance passed, the $dE/dx$ value, is the ILD TPC due to its bulk gaseous environment. 
 
 
-The $dE/dx$ as a function of particle momentum and $|\cos\theta|$ for different hadrons is shown in Fig.~\ref{fig:dEdxBefore_3}. One can immediately spot the dependence of the $dE/dx$ value on the polar angle of the particles. This happens because of the knocked-out electron emittance or $\delta$-ray probability is increased with increasing length of the TPC track. Therefore, one needs to apply an angular correction to remove the angular dependence of the $dE/dx$ value, which is 
+The $dE/dx$ as a function of the particle momentum and $|\cos\theta|$ for different hadrons is shown in Fig.~\ref{fig:dEdxBefore_3}. One can immediately spot the dependence of the $dE/dx$ value on the polar angle of the particles. This happens because of the knocked-out electron emittance or $\delta$-ray probability is increased with increasing length of the TPC track. Therefore, one needs to apply an angular correction to remove the angular dependence of the $dE/dx$ value, which is 
 \begin{equation}
 	\frac{dE}{dx}\to\frac{dE}{dx}\theta^{0.15},
     \label{formula:dEdxCorrection}

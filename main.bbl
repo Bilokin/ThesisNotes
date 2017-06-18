@@ -1,173 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{bib:HiggsCms}
-Serguei Chatrchyan et~al.
-\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
-  experiment at the LHC}.
-\newblock {\em Phys. Lett.}, B716:30--61, 2012.
-
-\bibitem{bib:HiggsAtlas}
-Georges Aad et~al.
-\newblock {Observation of a new particle in the search for the Standard Model
-  Higgs boson with the ATLAS detector at the LHC}.
-\newblock {\em Phys. Lett.}, B716:1--29, 2012.
-
-\bibitem{bib:ILC}
-Ties Behnke, James~E. Brau, Brian Foster, Juan Fuster, Mike Harrison,
-  James~McEwan Paterson, Michael Peskin, Marcel Stanitzki, Nicholas Walker, and
-  Hitoshi Yamamoto.
-\newblock {The International Linear Collider Technical Design Report - Volume
-  1: Executive Summary}.
-\newblock 2013.
-
-\bibitem{Glashow:1961tr}
-S.~L. Glashow.
-\newblock {Partial Symmetries of Weak Interactions}.
-\newblock {\em Nucl. Phys.}, 22:579--588, 1961.
-
-\bibitem{Weinberg:1967tq}
-Steven Weinberg.
-\newblock {A Model of Leptons}.
-\newblock {\em Phys. Rev. Lett.}, 19:1264--1266, 1967.
-
-\bibitem{Salam:1968rm}
-Abdus Salam.
-\newblock {Weak and Electromagnetic Interactions}.
-\newblock {\em Conf. Proc.}, C680519:367--377, 1968.
-
-\bibitem{Hasert:1973ff}
-F.~J. Hasert et~al.
-\newblock {Observation of Neutrino Like Interactions Without Muon Or Electron
-  in the Gargamelle Neutrino Experiment}.
-\newblock {\em Phys. Lett.}, 46B:138--140, 1973.
-
-\bibitem{BAGNAIA1983130}
-P.~Bagnaia et~al.
-\newblock {Evidence for $Z_0\rightarrow e^+e^-$ at the CERN pp collider}.
-\newblock {\em Physics Letters B}, 129(1):130 -- 140, 1983.
-
-\bibitem{bib:alpha_s}
-Siegfried Bethke.
-\newblock {The 2009 World Average of alpha(s)}.
-\newblock {\em Eur. Phys. J.}, C64:689--703, 2009.
-
-\bibitem{bib:HiggsAtlas2}
-Georges Aad et~al.
-\newblock {Measurements of Higgs boson production and couplings in the
-  four-lepton channel in pp collisions at center-of-mass energies of 7 and 8
-  TeV with the ATLAS detector}.
-\newblock {\em Phys. Rev.}, D91(1):012006, 2015.
-
-\bibitem{bib:HiggsCms2}
-Vardan Khachatryan et~al.
-\newblock {Measurement of differential cross sections for Higgs boson
-  production in the diphoton decay channel in pp collisions at
-  $\sqrt{s}=8\,\text {TeV} $}.
-\newblock {\em Eur. Phys. J.}, C76(1):13, 2016.
-
-\bibitem{bib:HiggsLhc2}
-Georges Aad et~al.
-\newblock {Measurements of the Higgs boson production and decay rates and
-  constraints on its couplings from a combined ATLAS and CMS analysis of the
-  LHC pp collision data at $ \sqrt{s}=7 $ and 8 TeV}.
-\newblock {\em JHEP}, 08:045, 2016.
-
-\bibitem{bib:AfbSMFit}
-M.~Baak, J.~Cúth, J.~Haller, A.~Hoecker, R.~Kogler, K.~Mönig, M.~Schott, and
-  J.~Stelzer.
-\newblock {The global electroweak fit at NNLO and prospects for the LHC and
-  ILC}.
-\newblock {\em Eur. Phys. J.}, C74:3046, 2014.
-
-\bibitem{bib:H20}
-T.~Barklow, J.~Brau, K.~Fujii, J.~Gao, J.~List, N.~Walker, and K.~Yokoya.
-\newblock {ILC Operating Scenarios}.
-\newblock 2015.
-
-\bibitem{bib:LumiUp}
-Mike Harrison, Marc Ross, and Nicholas Walker.
-\newblock {Luminosity Upgrades for ILC}.
-\newblock In {\em {Proceedings, 2013 Community Summer Study on the Future of
-  U.S. Particle Physics: Snowmass on the Mississippi (CSS2013): Minneapolis,
-  MN, USA, July 29-August 6, 2013}}, 2013.
-
-\bibitem{bib:PDG}
-C.~Patrignani et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
-
-\bibitem{bib:PDGprop}
-PDG~Data Group.
-\newblock http://pdg.lbl.gov/2016/atomicnuclearproperties/.
-
-\bibitem{Allison:2006ve}
-John Allison et~al.
-\newblock {Geant4 developments and applications}.
-\newblock {\em IEEE Trans. Nucl. Sci.}, 53:270, 2006.
-
-\bibitem{bib:G4pl}
-{GEANT4 Collaboration}.
-\newblock Reference physics lists.
-
-\bibitem{Brient:2002gh}
-Jean-Claude Brient and Henri Videau.
-\newblock {The Calorimetry at the future e+ e- linear collider}.
-\newblock {\em eConf}, C010630:E3047, 2001.
-
-\bibitem{Anduze:2008hq}
-J.~Repond et~al.
-\newblock {Design and Electronics Commissioning of the Physics Prototype of a
-  Si-W Electromagnetic Calorimeter for the International Linear Collider}.
-\newblock {\em JINST}, 3:P08001, 2008.
-
-\bibitem{Bilki:2014uep}
-B.~Bilki et~al.
-\newblock {Testing hadronic interaction models using a highly granular
-  silicon--tungsten calorimeter}.
-\newblock {\em Nucl. Instrum. Meth.}, A794:240--254, 2015.
-
-\bibitem{Adloff:2013vra}
-C.~Adloff et~al.
-\newblock {Track segments in hadronic showers in a highly granular
-  scintillator-steel hadron calorimeter}.
-\newblock {\em JINST}, 8:P09001, 2013.
-
-\bibitem{bib:can-047}
-{Tracking within Hadronic Showers in the SDHCAL prototype using Hough Transform
-  Technique}.
-\newblock {\em CALICE Analysis Note CAN-047}.
-
-\bibitem{collaboration:2010hb}
-C.~Adloff et~al.
-\newblock {Construction and Commissioning of the CALICE Analog Hadron
-  Calorimeter Prototype}.
-\newblock {\em JINST}, 5:P05004, 2010.
-
-\bibitem{CALICE:2012aa}
-{Construction and performance of a silicon photomultiplier/extruded
-  scintillator tail-catcher and muon-tracker}.
-\newblock {\em JINST}, 7:P04015, 2012.
-
-\bibitem{MoradeFreitas:2002kj}
-P.~Mora~de Freitas and H.~Videau.
-\newblock {Detector simulation with MOKKA / GEANT4: Present and future}.
-\newblock In {\em {Linear colliders. Proceedings, International Workshop on
-  physics and experiments with future electron-positron linear colliders, LCWS
-  2002, Seogwipo, Jeju Island, Korea, August 26-30, 2002}}, pages 623--627,
-  2002.
-
-\bibitem{li:tel-00430432}
-H.~Li.
-\newblock {\em {Higgs Recoil Mass and Cross-Section Analysis at ILC AND
-  Calibration of the CALICE SiW ECAL Prototype}}.
-\newblock Theses, {Universit{\'e} Paris Sud - Paris XI}, October 2009.
-
-\bibitem{bib:Doublet}
-Philippe Doublet.
-\newblock {\em {Hadrons in a highly granular SiW ECAL -- Top quark production
-  at the ILC}}.
-\newblock Theses, {Universit{\'e} Paris Sud - Paris XI}, October 2011.
-
 \bibitem{bib:Schmidt}
 Carl~R. Schmidt.
 \newblock {Top quark production and decay at next-to-leading order in e+ e-
@@ -184,6 +16,13 @@ M.~S. Amjad et~al.
 \newblock {A precise characterisation of the top quark electro-weak vertices at
   the ILC}.
 \newblock {\em Eur. Phys. J.}, C75(10):512, 2015.
+
+\bibitem{bib:AfbSMFit}
+M.~Baak, J.~Cúth, J.~Haller, A.~Hoecker, R.~Kogler, K.~Mönig, M.~Schott, and
+  J.~Stelzer.
+\newblock {The global electroweak fit at NNLO and prospects for the LHC and
+  ILC}.
+\newblock {\em Eur. Phys. J.}, C74:3046, 2014.
 
 \bibitem{bib:Han}
 Tao Han.
@@ -242,6 +81,11 @@ Taikan Suehara and Tomohiko Tanabe.
 \newblock {LCFIPlus: A Framework for Jet Analysis in Linear Collider Studies}.
 \newblock {\em Nucl. Instrum. Meth.}, A808:109--116, 2016.
 
+\bibitem{bib:PDG}
+C.~Patrignani et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
+
 \bibitem{Falciai:1996jv}
 Donatella Falciai.
 \newblock {Z0 pole measurements of parity violation parameters A(b) and A(c) at
@@ -275,6 +119,12 @@ Buskulic~D. et~al. ALEPH~Collaboration.
 \bibitem{bib:TopMass}
 {First combination of Tevatron and LHC measurements of the top-quark mass}.
 \newblock 2014.
+
+\bibitem{bib:Doublet}
+Philippe Doublet.
+\newblock {\em {Hadrons in a highly granular SiW ECAL -- Top quark production
+  at the ILC}}.
+\newblock Theses, {Universit{\'e} Paris Sud - Paris XI}, October 2011.
 
 \bibitem{bib:Jeremy}
 J{\'e}r{\'e}my Rou{\"e}n{\'e}.

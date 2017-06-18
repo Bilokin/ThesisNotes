@@ -32,7 +32,7 @@ This poster presents a detailed simulation study of the process $e^+e^-\to b\bar
 So far, LEP~I has determined the b-quark couplings to the $Z^0$ boson by measuring the b partial width 
 and the forward-backward asymmetry called \afb. 
 These quantities provide the most precise value of $\sin^2\theta_W$ at LEP~I. It turns out that this value is at three standard deviation away from the very precise value from SLD using beam polarization~\cite{bib:AfbSMFit}. 
-Redoing precisely this measurement is therefore a priority for future e+e‐ colliders. 
+Redoing precisely this measurement is therefore a priority for future $e^+e^-$ colliders. 
 
 
 In this study, we intend to prove that the International Linear Collider~\cite{bib:ILC}, with \textbf{polarized beams and 
@@ -47,10 +47,10 @@ hereafter as $g_R^Z$, which shows the largest deviation~\cite{bib:RSTOP}.
 %	\captionof{figure}{ \sl Schematic view of the ILC accelerator complex. }
 %\end{center}\vspace{1cm}
 \color{Blue}
-The $e^+ e^-\to b\bar{b}$ channel (see Fig.~\ref{fig:bbbar}) is studied at $\sqrt{s}=250$\,GeV using full simulation of the ILD experiment.
+The $e^+ e^-\to b\bar{b}$ channel is studied at $\sqrt{s}=250$\,GeV using full simulation of the ILD experiment.
 \color{DarkSlateGray}
 The high-granularity of the ILD subdetectors allows for an individual particle reconstruction using the Particle Flow approach.
-The schematic view of the ILD concept and the subdetector layout is presented in Fig.~\ref{fig:ILDScheme}.
+%The schematic view of the ILD concept and the subdetector layout is presented in Fig.~\ref{fig:ILDScheme}.
 
 %The Vertex Detector (VXD) has 3 double layers with about $3\,\mu$m  resolution on the track impact parameters.  
 %The vertex reconstruction algorithms are able to separate the secondary and tertiary vertices from b-hadrons.
@@ -79,7 +79,7 @@ These histograms are used to determine the precision on the b-quark electroweak 
 \begin{wrapfigure}{R}{0.2\textwidth}
 	%\centering
 	
-	\includegraphics[width=0.2\textwidth]{figures/vtx.png}
+	\includegraphics[width=0.2\textwidth]{figures/vtx.pdf}
 	\caption{\sl B-hadron vertices.}
 	\label{fig:vtx}
 
@@ -99,7 +99,8 @@ The b-quark charge is identified using two basic signatures:
 The developed Vertex Charge Recovery procedure enhances the vertex charge purity by adding the missing particles back to the reconstructed vertices. 
 
 
-The kaon identification is possible using the TPC $dE/dx$ information. After equalizing the $dE/dx$ in angular spectrum, the kaons from b-hadron vertices can be identified with 97.\% purity and 87\% efficiency. However, the $B-\bar{B}$ oscillations will degrade the kaon charge signature purity for $B^0$ mesons.
+The kaon identification is possible using the TPC $dE/dx$ information. After equalizing the $dE/dx$ in angular spectrum, the kaons from b-hadron vertices can be identified with 97.\% purity and 87\% efficiency.
+% However, the $B-\bar{B}$ oscillations will degrade the kaon charge signature purity for $B^0$ mesons.
 \begin{center}\vspace{1cm}
 	
 	\includegraphics[clip, trim=10cm 0cm 0cm 10cm,width=0.4\linewidth]{../ILD/plots/recovery-purity-comparison.pdf}\label{fig:Charges_a_3}
@@ -127,10 +128,16 @@ The reconstructed b-quark polar angle distributions at $\sqrt{s} = 250$\,GeV usi
 \begin{center}\vspace{1cm}
 
 	\includegraphics[width=0.4\linewidth]{../ILD/plots/basymmetry-final-left.pdf}
+	\llap{\shortstack{%
+			\includegraphics[clip, trim=0cm 0cm 1cm 1cm, scale=.3]{../ILD/plots/zoom-final.pdf}\\
+			\rule{0ex}{0.9in}%
+		}
+		\rule{3.9in}{0ex}}
 	\includegraphics[width=0.4\linewidth]{../ILD/plots/basymmetry-final-right.pdf}
 	\captionof{figure}{ \sl Generated b-quark polar angle distribution compared to the final reconstructed b-quarks polar angle in left-handed case (left) and right-handed case (right) with overlaid background processes. }
 		\label{fig:BAsymmetryFinal_3}
 \end{center}\vspace{1cm}
+%../ILD/plots/zoom-final.pdf
 %There are two major problems found in the initial reconstructed distributions:
 %\begin{itemize}
 %	\item \textbf{Event migration}, caused by b-quark charge impurity;

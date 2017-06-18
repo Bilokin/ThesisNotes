@@ -17,56 +17,49 @@ I was expecting a `,' or a `}'---line 558 of file mainbib.bib
  :  url = "http://flc.desy.de/lcnotes/notes/localfsExplorer_read?currentPath=/afs/desy.de/group/flc/lcnotes/LC-REP-2013-009.pdf"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty journal in bib:ILC
-Warning--empty journal in bib:H20
-Warning--empty journal in bib:G4pl
-Warning--empty year in bib:G4pl
-Warning--empty author in bib:can-047
-Warning--empty year in bib:can-047
-Warning--empty author in CALICE:2012aa
 Warning--empty author in bib:TopMass
 Warning--empty journal in bib:TopMass
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
-You've used 54 entries,
+You've used 28 entries,
             1791 wiz_defined-function locations,
-            770 strings with 12559 characters,
-and the built_in function-call counts, 10783 in all, are:
-= -- 924
-> -- 392
-< -- 4
-+ -- 157
-- -- 103
-* -- 637
-:= -- 1706
-add.period$ -- 152
-call.type$ -- 54
-change.case$ -- 54
+            617 strings with 8088 characters,
+and the built_in function-call counts, 5582 in all, are:
+= -- 481
+> -- 184
+< -- 3
++ -- 76
+- -- 48
+* -- 315
+:= -- 866
+add.period$ -- 78
+call.type$ -- 28
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 65
-duplicate$ -- 505
-empty$ -- 1161
-format.name$ -- 103
-if$ -- 2438
+cite$ -- 32
+duplicate$ -- 266
+empty$ -- 617
+format.name$ -- 48
+if$ -- 1276
 int.to.chr$ -- 0
-int.to.str$ -- 54
-missing$ -- 44
-newline$ -- 263
-num.names$ -- 51
-pop$ -- 144
+int.to.str$ -- 28
+missing$ -- 20
+newline$ -- 137
+num.names$ -- 27
+pop$ -- 83
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 256
+skip$ -- 147
 stack$ -- 0
-substring$ -- 708
-swap$ -- 93
-text.length$ -- 4
+substring$ -- 365
+swap$ -- 59
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 92
-width$ -- 56
-write$ -- 551
+warning$ -- 4
+while$ -- 48
+width$ -- 30
+write$ -- 284
 (There were 3 error messages)
