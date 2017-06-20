@@ -15,3 +15,7 @@ poster/*.blg
 poster/*.gz
 poster/*.bbl
 poster/*.pdf
+Cover_PHENIICS/*.aux
+Cover_PHENIICS/*.log
+Cover_PHENIICS/*.pdf
+Cover_PHENIICS/*.gz
