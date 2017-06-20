@@ -132,11 +132,6 @@ J{\'e}r{\'e}my Rou{\"e}n{\'e}.
   and Top Quark Production at the International Linear Collider}}.
 \newblock Theses, {Universit{\'e} Paris Sud - Paris XI}, June 2014.
 
-\bibitem{bib:steinberger}
-Jack Steinberger.
-\newblock {A brief history of the running of $R_{b}$}.
-\newblock (CERN-OPEN-97-013. CERN-ALEPH-PUB-97-005):10 p, May 1997.
-
 \bibitem{bib:Lumi}
 C~Rimbault, P~Bambade, K~Mönig, and D~Schulte.
 \newblock Impact of beam-beam effects on precision luminosity measurements at
@@ -147,6 +142,11 @@ C~Rimbault, P~Bambade, K~Mönig, and D~Schulte.
 A.~Rosca.
 \newblock {Measurement of the beam polarization at the ILC using $e^+e^-\to
   W^+W^-\to q q l\nu$ data. lc-rep-2013-009}.
+
+\bibitem{bib:steinberger}
+Jack Steinberger.
+\newblock {A brief history of the running of $R_{b}$}.
+\newblock (CERN-OPEN-97-013. CERN-ALEPH-PUB-97-005):10 p, May 1997.
 
 \bibitem{bib:RSTOP}
 Abdelhak Djouadi, Gregory Moreau, and Francois Richard.
