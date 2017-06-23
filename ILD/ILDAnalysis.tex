@@ -680,7 +680,7 @@ An algorithm, called VertexChargeRecovery, was developed to increase the b-quark
 \item The separation variables $\alpha$ and $\epsilon$ are calculated for each prong candidate and a given reconstructed vertex;
 \item The selection condition is defined using the $\alpha$ and $\epsilon$ distributions for true b-hadron prongs and background particles, which are displayed in Fig.~\ref{fig:RecoveryPurity_3}, suggest the following cuts:
 \begin{equation}
-\epsilon/\sigma > 2 + 25\cdot\alpha\text{ and } \alpha < 0.08.
+\epsilon/\sigma > 2 + 25\cdot\sqrt{\alpha}\text{ and } \alpha < 0.08.
 \end{equation}
 The recovery algorithm might have a different behavior in simulation, than in the real experiment, therefore, one should use a data-driven charge purity measurements, described in Sec.~\ref{sec:ChargePurity}, to test and tune the recovery parameters.
 \item The algorithm creates new reconstructed vertices with old and recovered reconstructed prongs and links them to a given jet.
