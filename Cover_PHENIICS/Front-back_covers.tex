@@ -17,6 +17,7 @@
 \usepackage[francais]{babel}
 \usepackage{ragged2e}
 \usepackage{lipsum}
+\usepackage{float}
 \newcommand{\ecal}{Si-W ECAL}
 \newcommand{\geant}{{\sc geant4}}
 \newcommand{\sm}{Standard Model}
@@ -36,12 +37,12 @@
 
 %%% the purple border line %%%
 \begin{tikzpicture}[remember picture, overlay]
-    \draw[line width=1.2 pt, violet!80!red] 
-    ($(current page.south west)+(1 cm,+1. cm)$) 
-    -- ($(current page.north west)+(1 cm,-1. cm)$) 
-    -- ($(current page.north east)+(-1 cm,-1. cm)$) 
-    -- ($(current page.south east)+(-1 cm,1. cm)$)
-    -- ($(current page.south west)+(1 cm,1. cm)$);
+    %\draw[line width=1.2 pt, violet!80!red] 
+    %($(current page.south west)+(1 cm,+1. cm)$) 
+    %-- ($(current page.north west)+(1 cm,-1. cm)$) 
+    %-- ($(current page.north east)+(-1 cm,-1. cm)$) 
+    %-- ($(current page.south east)+(-1 cm,1. cm)$)
+    %-- ($(current page.south west)+(1 cm,1. cm)$);
 \end{tikzpicture}
 
 {\begin{center}
@@ -57,27 +58,50 @@
 	\'{E}COLE DOCTORALE N°576\\
 	Particules Hadrons \'{E}nergie et Noyau : Instrumentation, Image, Cosmos et Simulation (PHENIICS)\\
 	Sp\'{e}cialit\'{e} de doctorat : Physique des particules\par
-	\vspace{1.5cm}
+	\vspace{1.cm}
 	%%% name %%%
  	Par\par  \large \textbf{M. Sviatoslav Bilokin} \par
-	\vspace{1cm}
+	\vspace{0.5cm}
 	%%% thesis title %%%
 	\Large \textsc{\textcolor{SchoolColor}{
 	\textbf{Hadronic showers in a highly granular silicon-tungsten calorimeter and production of bottom and top quarks at the ILC}}}\par
 \end{center}
 
-\vspace{1.cm}
-\hspace{-1cm}{\textit{Th\`{e}se pr\'{e}sent\'{e}e et soutenue \`{a} Orsay, le 18 juillet 2017} \par}
+\vspace{0.5cm}
+
+\hspace{1.5cm}{\textit{Th\`{e}se pr\'{e}sent\'{e}e et soutenue \`{a} Orsay, le 18 juillet 2017} \par}
 \vspace{1cm}
 \hspace{-1cm}{  Composition de jury: \par}
-\hspace{-1cm}{  Prof. Achille Stocchi, Pr\'esident du jury \par}
-\hspace{-1cm}{  Dr. Keisuke Fujii, Rapporteur \par}
-\hspace{-1cm}{  Dr. Christian Schwahnenberger,  Rapporteur \par}
-\hspace{-1cm}{  Dr. Marc Winter, Examinateur \par}
-\hspace{-1cm}{  Dr. Gregory Moreau, Examinateur \par}
-\hspace{-1cm}{  Dr. Roman P\"oschl, Directeur de th\`{e}se \par}
-\hspace{-1cm}{  Dr. Fran\c cois Richard, Membre invit\'{e} \par}
+%\hspace{-1cm}{  Prof. Achille Stocchi, Pr\'esident du jury \par}
+%\hspace{-1cm}{  Dr. Keisuke Fujii,  Rapporteur \par}
+%\hspace{-1cm}{  Dr. Christian Schwahnenberger,  Rapporteur \par}
+%\hspace{-1cm}{  Dr. Marc Winter, Examinateur \par}
+%\hspace{-1cm}{  Dr. Gregory Moreau, Examinateur \par}
+%\hspace{-1cm}{  Dr. Roman P\"oschl, Directeur de th\`{e}se \par}
+%\hspace{-1cm}{  Dr. Fran\c cois Richard, Membre invit\'{e} \par}
 }
+\begin{table}[H]
+	\begin{tabular}{l l l }
+		Prof.& Achille Stocchi & Pr\'esident du jury\\
+		Prof.& Keisuke Fujii  &Rapporteur \\
+		Dr.& Christian Schwahnenberger  &Rapporteur\\
+		Prof.& Marc Winter &Examinateur\\
+		Dr.& Gregory Moreau &Examinateur\\
+		Dr.& Roman P\"oschl &Directeur de th\`{e}se\\
+		Dr.& Fran\c cois Richard &Membre invit\'{e} \\
+		
+	\end{tabular}
+\end{table}
+
+\vspace{0.3cm}
+
+\begin{table}[H]
+	\begin{tabular}{c r}
+\hline
+Laboratoire de l'Acc\'el\'erateur Lin\'eaire \hspace{4cm} &LAL 17-050
+	\end{tabular}
+\end{table}
+
 \clearpage
 
 
