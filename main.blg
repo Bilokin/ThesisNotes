@@ -12,13 +12,18 @@ I was expecting a `,' or a `}'---line 313 of file mainbib.bib
  :  title = "{Very forward vertexing: ILD Analysis/Software Meeting  10/05/2017}" 
  :                                                                                https://agenda.linearcollider.org/event/7635/contributions/38990/attachments/31581/47577/berggren-ildphone-20170510.pdf"
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 558 of file mainbib.bib
+I was expecting a `,' or a `}'---line 561 of file mainbib.bib
  :  
  :  url = "http://flc.desy.de/lcnotes/notes/localfsExplorer_read?currentPath=/afs/desy.de/group/flc/lcnotes/LC-REP-2013-009.pdf"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 1231 of file mainbib.bib
+ : @article{Behnke:2013lya
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in bib:ILC
 Warning--empty journal in bib:H20
+Warning--empty journal in Behnke:2013lya
 Warning--empty journal in bib:G4pl
 Warning--empty year in bib:G4pl
 Warning--empty author in bib:can-047
@@ -28,45 +33,45 @@ Warning--empty author in bib:TopMass
 Warning--empty journal in bib:TopMass
 Warning--empty journal in bib:steinberger
 Warning--there's a number but no volume in bib:steinberger
-You've used 54 entries,
+You've used 57 entries,
             1791 wiz_defined-function locations,
-            770 strings with 12559 characters,
-and the built_in function-call counts, 10783 in all, are:
-= -- 924
-> -- 392
+            786 strings with 13001 characters,
+and the built_in function-call counts, 11244 in all, are:
+= -- 955
+> -- 420
 < -- 4
-+ -- 157
-- -- 103
-* -- 637
-:= -- 1706
-add.period$ -- 152
-call.type$ -- 54
-change.case$ -- 54
++ -- 168
+- -- 111
+* -- 654
+:= -- 1784
+add.period$ -- 160
+call.type$ -- 57
+change.case$ -- 56
 chr.to.int$ -- 0
-cite$ -- 65
-duplicate$ -- 505
-empty$ -- 1161
-format.name$ -- 103
-if$ -- 2438
+cite$ -- 69
+duplicate$ -- 528
+empty$ -- 1212
+format.name$ -- 111
+if$ -- 2540
 int.to.chr$ -- 0
-int.to.str$ -- 54
-missing$ -- 44
-newline$ -- 263
-num.names$ -- 51
-pop$ -- 144
+int.to.str$ -- 57
+missing$ -- 47
+newline$ -- 277
+num.names$ -- 54
+pop$ -- 160
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 256
+skip$ -- 268
 stack$ -- 0
 substring$ -- 708
-swap$ -- 93
+swap$ -- 95
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 92
-width$ -- 56
-write$ -- 551
-(There were 3 error messages)
+warning$ -- 12
+while$ -- 95
+width$ -- 59
+write$ -- 578
+(There were 4 error messages)

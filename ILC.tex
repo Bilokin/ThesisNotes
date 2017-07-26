@@ -87,7 +87,7 @@ The foreseen luminosity upgrade of the accelerator complex~\cite{bib:LumiUp} all
 	}
 \end{figure}
 In the H-20 scenario, the ILC physics program starts directly at 500\,GeV center-of-mass energy by collecting 500\ifb\ integrated luminosity. This choice makes possible to study all \sm\ processes from the beginning of the ILC physics operation.
-The ILC will collect 500\ifb\ integrated luminosity at $\sqrt{s} = 250$\,GeV before the luminosity upgrade.
+The ILC will next collect 500\ifb\ integrated luminosity at $\sqrt{s} = 250$\,GeV before the luminosity upgrade.
 The luminosity sharing between the different beam polarizations is described in Table~\ref{tab:H20}. 
 
 \input{tables/h20}
@@ -101,6 +101,7 @@ Currently, the ILC community considers the start of the physics program at $\sqr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Accelerator complex}
+\label{sec:ILCacc}
 Electrons and positrons are the lightest charged particles, therefore they have preference to emit a synchrotron radiation in a magnetic field. For circular accelerators the synchrotron radiation $E_{rad}$ strongly depends on the radius of accelerator $r$, particle mass $m$ and particle energy $E$ as
 \begin{equation}
 	E_{rad} \propto \frac{E^4}{m^4r}.
@@ -155,10 +156,11 @@ Both damping rings are connected to the main linear accelerators by transfer lin
 The acceleration is provided by approximately 7400 superconducting radio-frequency nine-cell niobium cavities (see Fig.~\ref{fig:ILCcavity}) operating at 2\,K temperature. 
 The baseline accelerating gradient of the cavities is 31.5\,MV/m. 
 The industrial mass production of the cavities can cause a random gradient variation of $\pm$20\%. 
+The linac is able to produce bunches with a 554\,$\mu$m interval with 1312 bunches per beam pulse.
 The balance between key parameters is a result of years of intensive R\&D by a wide scientific community. 
 The cavities are assembled into two types of cryomodules: type A with nine SCRF cavities and type B with eight SCRF cavities and one superconducting quadrupole magnet located at the center of the module. 
 The technology of industrial production of the cavities for ILC is a great challenge and there is room for improvement in accelerating gradient and efficiency. 
-Same technology of SCRF cavities with lower average accelerating gradient is already implemented for electron acceleration at XFEL project in DESY. 
+Same technology of SCRF cavities with lower average accelerating gradient is already implemented for electron acceleration at XFEL project in DESY~\cite{Abela:77248}. 
 \begin{figure}
 {\centering
     \includegraphics[width=0.95\textwidth]{graphics/Cavity.jpg}
@@ -168,7 +170,7 @@ Same technology of SCRF cavities with lower average accelerating gradient is alr
 \end{figure}
 
 \textit{The beam delivery system} is responsible for transporting electrons and positrons from the main high-energy linacs to the interaction point (IP). These systems monitor and focus the electron and positron beams to meet the luminosity requirements and after the collision it transports the residual particles to the beam dumps. 
-The beams cross each other at 14\,mrad angle, which provide enough space for separate extraction lines. 
+The beams cross each other at 14\,mrad angle, which provide enough space to separate extraction lines. 
 
 The design of ILC detector hall and beam delivery systems allow hosting of two experiments, SiD and ILD, sharing one interaction point using a push-pull approach. 
 %Both detectors are designed as multi-purpose detectors, developed for a wide physics program. 
@@ -200,10 +202,10 @@ In particular, the reconstruction of the top and the Higgs decays into $b$-quark
 The required impact parameter resolution depending on track momentum $p$ and track polar angle $\theta$ should be $\sigma_b < 5  \oplus 10/p/\sin^{4/3}\theta$\,$\mu$m.
 
 % ---> Low material deposit
-To fit these requirements, all tracking devices should have minimal material budget to minimize multiple scattering, therefore, lightweight detectors, such as silicon or gaseous readout devices are preferred.
+To fit these requirements, all tracking devices should have minimal material budget to minimize multiple scattering, therefore, lightweight detectors, such as thin silicon or gaseous readout devices are preferred.
 
 % Power pulsing
-The ILC beam parameters allow for powering off many detector subsystems between bunch trains, which reduces heat production and need for active cooling. This method is called power pulsing, and allows reducing the insensitive volumes and reduce material budget for inner trackers, which could be taken by active cooling systems. 
+The ILC beam parameters allow for powering off many detector subsystems between bunch trains, introduced in Sec.~\ref{sec:ILCacc}, which reduces heat production and need for active cooling. This method is called power pulsing, and allows reducing the insensitive volumes and reduce material budget for inner trackers, which could be taken by active cooling systems. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -212,14 +214,14 @@ The ILC beam parameters allow for powering off many detector subsystems between 
 \subsection{The International Large Detector}
 
 
-The International Large Detector (ILD) is a concept for a high precision multi-purpose detector, designed to meet the physics goals.
-The ILD design is a result of physics driven approach in developing of detector concept by a wide scientific community. 
+The International Large Detector (ILD) is a concept for a high precision multi-purpose detector, designed to meet the ILC physics goals~\cite{Behnke:2013lya}.
+%The ILD design is a result of physics driven approach in developing of detector concept by a wide scientific community. 
 
 %The ILD Detector Baseline Design (DBD) is the only approved ILD model within the ILC community, which
 The ILD detector baseline design (DBD) is optimized for best resolution and a flexibility towards higher center-of-mass energies up to the TeV range.
 The major ILD subdetectors, ordered by their radial distance from the interaction point, are the following, see Fig.~\ref{fig:ILDScheme}:
 \begin{itemize}
-\item Vertex Detector (VXD) and Forward Tracking Disks (FTD) are the innermost detectors of ILD, which serve to measure impact parameters of particles;
+\item Vertex Detector (VXD) and Forward Tracking Disks (FTD) are the innermost detectors of ILD, which serve to measure impact parameters of particles and track reconstruction up to 36$\degres$;
 \item Silicon Inner Tracker (SIT) is used to connect track segments from VXD and TPC;
 \item Time Projection Chamber (TPC) serves for charge and momentum reconstruction and particle identification
 \item External Tracking Detector (ETD) and Silicon External Tracker (SET) provide a connection between tracks and calorimeter energy depositions 
@@ -228,7 +230,7 @@ The major ILD subdetectors, ordered by their radial distance from the interactio
 \item Superconducting solenoid creates 3.5~T magnetic field;
 \item Tail Catcher and Muon Tracker (TCMT) serves for muon identification and hadron energy measurement.
 \end{itemize}
-
+The ILD tracking system can measure tracks up to very small polar angles, as shown in Fig.~\ref{fig:ILDcoverage}.
 
 
 \begin{figure}
@@ -245,6 +247,16 @@ The major ILD subdetectors, ordered by their radial distance from the interactio
     \caption{\sl Left: Schematic view of the ILD concept. Right: Zoom in the inner detectors.}
     \label{fig:ILDScheme}
 \end{figure}
+
+
+\begin{figure}
+	{\centering
+		\includegraphics[width=0.45\textwidth]{graphics/ILDcoverage.png}
+		\caption{\sl Number of hits as function of track polar angle $\theta$. }
+		\label{fig:ILDcoverage}
+	}
+\end{figure}
+%Tracking
 
 % L* models
 %However, there are many variations of the baseline model in order to achieve a better physics performance, push-pull synchronization with SiD or cost-performance optimization. 
@@ -268,7 +280,7 @@ These algorithms output Particle Flow Objects (PFO), that are reconstructed usin
 \end{figure}
 %Tracking
 
-First stage of the PFO formation is an individual track reconstruction using tracker information. Tracks have the form of a helix, as a consequence of magnetic field influence on charged particles.  The most common algorithm used is Kalman Filter.
+First stage of the PFO formation is an individual track reconstruction using tracker information. Tracks have the form of a helix, as a consequence of magnetic field influence on charged particles.  The most common algorithm used is Kalman Filter~\cite{bib:KalTest}.
 %clusterization
 Then, the energy depositions in the ECAL and HCAL are organized into topological clusters, which are grouped into showers, that correspond to the individual interactions of final-state particles. 
 In the general case, the showers, left by hadrons, differ from photon or electron clusters. %The granularity of the calorimeter plays an essential role in the clusterization process. 
@@ -280,11 +292,11 @@ Typically, the PFA creates objects of the following types:
 \item Photons have a compact cluster in ECAL without a connected track;
 \item Electrons are reconstructed as a compact cluster in ECAL with an associated track;
 
-\item Neutral hadrons (neutrons, neutral kaons, etc.) appear as a hadronic cluster, that starts in the ECAL and continues to HCAL and TCMT;
+\item Neutral hadrons (neutrons, neutral kaons, etc.) appear as a hadronic cluster, that can start in the ECAL or HCAL and continues to TCMT;
 \item Charged hadrons (protons, charged kaons, etc.) appear as track, connected to an hadronic cluster.
 \end{itemize}
 
-After creating of PFOs, one can apply different algorithms like vertex detection, jet clustering, particle identification, flavor-tagging algorithms, etc.
+After creating PFOs, one can apply different algorithms like vertex detection, jet clustering, particle identification, flavor-tagging algorithms, etc.
 
 One of the fundamental characteristics of the PFA performance is the jet energy resolution shown for the ILD concept in Fig.~\ref{fig:ILCjetrms}. This plot demonstrates that the detector model is able to meet the requirement of 3-4\% jet energy resolution.
 
@@ -306,9 +318,9 @@ One of the fundamental characteristics of the PFA performance is the jet energy 
 \subsubsection{Vertex Detector}
 The primary purpose of the ILD Vertex Detector is the precise position measurement of charged tracks aimed at the primary interaction point (IP) and the secondary vertex reconstruction.
 %The Vertex Detector of ILD serves to reconstruct position of primary interaction point (IP) and detect tracks with an offset to the IP and organize them into secondary or ternary vertices. 
-The secondary vertices are created by high energy particles with a relatively short lifetime, like B mesons, D mesons or $\tau$ leptons. These particles appear in the decay modes of the Higgs boson or the top quark. Therefore, the accurate measurement of track offsets, efficient tagging of $b$- and $c$-quark jets is essential for the top quark and the Higgs physics program. %Another important role of VXD is to reject beam background particles, which requires fast timing of readout devices.
+The secondary vertices are created by particles with a relatively short lifetime, like B mesons, D mesons or $\tau$ leptons. These particles appear in the decay modes of the Higgs boson or the top quark. Therefore, the accurate measurement of track offsets, efficient tagging of $b$- and $c$-quark jets is essential for the top quark and the Higgs physics program. %Another important role of VXD is to reject beam background particles, which requires fast timing of readout devices.
 
-To fulfill the required precision, the VXD is designed to have its first layer at 16\,mm radius from the IP, \~3\,$\mu$m spatial resolution on track impact parameter and a low material budget of the device. To avoid installation of a liquid cooling, the ILD Vertex Detector should also have a low power consumption.
+To fulfill the required precision, the VXD is designed to have its first layer at 16\,mm radius from the IP, $\sim 3\,\mu$m single point resolution and a low material budget of the device. To avoid installation of a liquid cooling, the ILD Vertex Detector should also have a low power consumption.
 
 The baseline design of VXD consist of three cylindrical double layers with pixel sensors as readout devices. The VXD layer characteristics are given in Table~\ref{table:ILCvtxparam}.
 The VXD layout and its mechanical support is shown in Fig.~\ref{fig:ILCvtxsupport}. 

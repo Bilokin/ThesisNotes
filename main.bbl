@@ -91,6 +91,23 @@ Mike Harrison, Marc Ross, and Nicholas Walker.
   U.S. Particle Physics: Snowmass on the Mississippi (CSS2013): Minneapolis,
   MN, USA, July 29-August 6, 2013}}, 2013.
 
+\bibitem{Abela:77248}
+Abela~R. et~al.
+\newblock {\em {XFEL}: {T}he {E}uropean {X}-{R}ay {F}ree-{E}lectron {L}aser -
+  {T}echnical {D}esign {R}eport}.
+\newblock DESY, Hamburg, 2006.
+
+\bibitem{Behnke:2013lya}
+Ties Behnke, James~E. Brau, Philip~N. Burrows, Juan Fuster, Michael Peskin,
+  et~al.
+\newblock {The International Linear Collider Technical Design Report - Volume
+  4: Detectors}.
+\newblock 2013.
+
+\bibitem{bib:KalTest}
+{KalTest Software}.
+\newblock https://github.com/ilcsoft/kaltest.
+
 \bibitem{bib:PDG}
 C.~Patrignani et~al.
 \newblock {Review of Particle Physics}.
