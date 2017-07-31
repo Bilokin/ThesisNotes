@@ -18,13 +18,14 @@ Other sources of the electroweak production as e.g. single top are not covered i
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of the heavy quark production}
 %First, one needs to define the most convenient parametrization of coupling or form factors of interest, and then express the observable quantities in terms of defined form factors. 
+In this thesis the form factor formalism, defined in~\cite{bib:Schmidt}, is adopted.
 Electroweak production of the fermion pairs proceeds through the $f\bar{f}X$ vertex, where $X$ represents neutral vector bosons, photon or $Z^0$ boson.  The current at the $f\bar{f}X$ vertex can be expressed via form factors $F$ as 
 \begin{equation}
 \Gamma^{f\bar{f}X}_\mu (k^2,q,\bar{q}) = ie\{ \gamma_\mu (F^X_{1V}(k^2) + \gamma^5 F^X_{1A}(k^2)) - \frac{\sigma_{\mu\nu}(q-\bar{q})^\nu}{2m_f}(iF^X_{2V}(k^2) + \gamma^5 F^X_{2A}(k^2)) \},
 \end{equation}
 where $k^2= (q+\bar{q})^2$ is the four momentum squared of the exchanged vector boson, $q$ and $\bar{q}$ are the four vectors of the fermion $f$ and antifermion $\bar{f}$ and $m_f$ is the fermion mass. Further, $\gamma_\mu$ and $\gamma_5$ are the Dirac matrices, and $\sigma_{\mu\nu} = i/2(\gamma_\mu\gamma_\nu - \gamma_\nu\gamma_\mu)$.
 
-The \sm\ values of the form factors are the following:
+The tree level \sm\ values of the form factors are weak and electric charges:
 \begin{equation}
 F^{f\gamma}_{1V} = Q^{f}, \ F^{f\gamma}_{1A} = 0, \ F^{fZ}_{1V} = \frac{I^f - 2Q^f\sin^2\theta_W}{2\cos\theta_W\sin\theta_W}, \ F^{fZ}_{1A} = - \frac{I^f}{2\cos\theta_W\sin\theta_W},
 \label{formula:SMformFactors_3}
@@ -42,7 +43,7 @@ g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W,
 %At the tree level, the \sm\ differential cross for the production
 %of a fermion $f$ pair in $e^+e^-\to f\bar{f}$ at center-of-mass energy $\sqrt[]{s}$ can be written as
 
-In case of the polarized beams, the fermion form factors can be expressed in terms of the helicity of the initial electrons~\cite{bib:Schmidt}:
+In case of polarized beams, the fermion form factors can be expressed in terms of the helicity of the initial electrons~\cite{bib:Schmidt}:
 \begin{eqnarray}
 \mathcal{F}^L_{ij} = - F^\gamma_{ij} +  \frac{-1/2 + \sin^2\theta_W}{\cos\theta_W\sin\theta_W}\frac{s}{s-M^2_Z+i\Gamma_ZM_Z}F^Z_{ij},\\
 \mathcal{F}^R_{ij} = - F^\gamma_{ij} +  \frac{\sin^2\theta_W}{\cos\theta_W\sin\theta_W}\frac{s}{s-M^2_Z+i\Gamma_ZM_Z}F^Z_{ij}    
@@ -84,9 +85,10 @@ The conventional approach used to estimate the couplings or form factors of the 
 
 The total cross section is measured knowing the number of accepted events $N$, selection efficiency $\epsilon$ and integrated luminosity $\mathcal{L}_{total}$
 \begin{equation}
-\sigma_{total} = \frac{N}{\epsilon \mathcal{L}_{total}}.
+\sigma_{total} = \frac{N}{\epsilon \mathcal{L}_{total}},
 \label{formula:Xsection_3}
 \end{equation}
+%where $\bar{B}$ is an average irreducible background estimate. 
 The corresponding uncertainty on the cross section is determined by the knowledge of the machine luminosity and the statistics of the signal: 
 \begin{equation}
 	(\frac{\delta \sigma_{total}}{\sigma_{total}})^2 = (\frac{\delta N}{N})^2 + (\frac{\delta \mathcal{L}_{total}}{\mathcal{L}_{total}})^2.
@@ -109,7 +111,7 @@ The statistical uncertainty on the \afb\ as for a simple counting experiment is 
 \delta A_{FB} = \sqrt{\frac{1-A_{FB}^2}{N}},
 \end{equation}
 where $N$ is the number of reconstructed events. 
-
+The influence of irreducible background is considered as a systematic uncertainty. 
 %For the proper \afb\ measurement,  it is crucial to measure the charge of the quarks with a high purity. 
 %single top
 %Another source of top quark production at linear colliders is the single top process. %which is shown in Fig. \ref{fig:singletop_3}. 
@@ -169,8 +171,8 @@ On the other hand, the measured b-quark forward-backward asymmetry $A_{FB}^b$, d
 \end{figure}
 
 
-The measurements outside $Z^0$ pole were carried out by the LEP~II programme, which collected the most integrated luminosity at around 190\,GeV energy, at the $W^\pm$-pair production threshold. 
-The measured $A_{FB}^b$ at this center-of-mass energy agrees within 2\,$\sigma$ with the tree level \sm\ prediction.
+The measurements outside $Z^0$ pole were carried out within LEP~II programme, which collected the most integrated luminosity at around 190\,GeV energy, at the $W^\pm$-pair production threshold. 
+The measured $A_{FB}^b$ at this center-of-mass energy agrees at 2\,$\sigma$ level with the \sm\ prediction.
 
 The polarized initial state at the SLC allowed to introduce the left-right asymmetry $A(SLD)$.
 This observable measures the difference between the left-handed and the right-handed initial state polarization cross sections. The measured value of the left-right asymmetry for leptons $A_l(SLD)$ has 2\,$\sigma$ deviation from the \sm\ prediction~\cite{bib:AfbSMFit}. The computed values of $\sin^2\theta_W$ using $A_{FB}^b$ from LEP and $A_l(SLD)$ differ significantly.
@@ -182,7 +184,7 @@ The LEP measurement allowed to predict the top quark mass in the region of 133\,
 
 \subsubsection{LHC and TeVatron measurements}
 The composite nature of colliding particles at the hadron colliders priviledges the production of the top quark pairs through the strong interaction via high cross section $gg\to t\bar{t}$ or $q\bar{q}\to t\bar{t}$ processes.
-Therefore, the hadron machines can measure the top mass as the cross section parameter with a high precision. 
+Therefore, the hadron machines can measure the top quark mass as a cross section parameter with a high precision. 
 
 The TeVatron has a high production rate of the single top-quark via $q\bar{q}' \to W^\pm \to t\bar{b}$ process. %at a higher rate than proton-proton machines. 
 This process involve $tbW$ vertex and therefore, its total cross section depends on the weak couplings of the top quark. 
@@ -413,7 +415,7 @@ One notices that about 31\% of the b-vertices and 13\% of the c-vertices decay i
 The particle offset or the impact parameter is the minimal distance between the particle trajectory and the interaction point, as illustrated in Fig.~\ref{fig:OffsetPic_3}.
 This is the main observable used by the vertex reconstruction algorithms. 
 The offset distributions of the generated b-vertex and c-vertex prongs are shown in Fig.~\ref{fig:GenVtxOffset_3}.
-Majority of the generated prongs have large offsets above the ILD impact parameter resolution of 5\,$\mu$m. 
+Majority of the generated prongs have large offsets and an average momentum of $\sim$9\gev, which is above the ILD impact parameter resolution of 5\,$\mu$m. 
 As can be seen from Fig.~\ref{fig:GenVtxOffset_3}, the c-vertex prong offsets are larger than b-vertex prong offsets, because of the additional distance traveled by c-hadron from the b-hadron decay point. 
 
 \begin{figure}
@@ -966,6 +968,7 @@ The $W^\pm$ boson kinematics and that of the b-quark in the \ttbar\ process depe
 An incorrect assignment of b-jet and $W^\pm$ jets compromises the top quark charge reconstruction needed for the top polar angle measurement. 
 
 \subsection{Background processes}\label{sec:TopBkg}
+
 The main background processes are summarized in Table~\ref{table:ttbarsigma}. 
 The previous studies~\cite{bib:ILCTOP}\cite{bib:Doublet} have shown that the major backgrounds to the semileptonic \ttbar\ decay are the single top process and fully hadronic or fully leptonic \ttbar\ decays. 
 %Several \sm\ processes give a rise to the six fermion final state, 
@@ -973,6 +976,8 @@ The previous studies~\cite{bib:ILCTOP}\cite{bib:Doublet} have shown that the maj
 
 One uses the kinematical cuts to suppress the background processes, which were originally developed in ~\cite{bib:Doublet}~\cite{bib:Jeremy} and defined in Table~\ref{table:ttbarselection}
 \input{ILD/tables/ttbar-selection}
+
+
 The previous studies demonstrated, that the purity of the full semileptonic \ttbar\ process selection is 91\% and final event selection efficiency is 54\%~\cite{bib:ILCTOP}.
 The residual background is homogeneously distributed in $\cos\theta$, as it is shown in Fig.~\ref{fig:ILCTOPAFB}, which allows to concentrate the present studies on the signal process only. 
 
@@ -1261,14 +1266,14 @@ The b-quark polar angle is defined as a polar angle of the vector
 \begin{equation}
 	\vec{p}_{b\bar{b}} = \vec{p}_{b} - \vec{p}_{\bar{b}},
 \end{equation}
-where $\vec{p}_{b}$ and $\vec{p}_{\bar{b}}$ are the momentum vector of the reconstructed b-quark jet and anti b-quark jet, respectively.
+where $\vec{p}_{b}$ and $\vec{p}_{\bar{b}}$ are the momentum vectors of the reconstructed b-quark jet and anti b-quark jet, respectively.
 %computed as the vector difference polar angle of two b-jets after charge calculation. 
 Figure~\ref{fig:BAsymmetryFirst_3} demonstrates the reconstructed b-quark polar angle compared to the generated distribution for both beam polarizations. 
 The generated $A_{FB}^{gen}$ values are:
 \begin{equation}
 	A_{FB}^{gen}(e^-_L e^+_R) = 0.705\text{ and }A_{FB}^{gen}(e^-_R e^+_L) = 0.26.
 \end{equation} 
-The difference in the generated b-quark polar angle distributions for two polarization configurations are caused by the different the $Z^0$ boson couplings to the left-handed and the right-handed fermions. 
+The difference in the generated b-quark polar angle distributions for two polarization configurations are caused by the difference between the $Z^0$ boson couplings to the left-handed and the right-handed fermions. 
 
 \begin{figure}
 	\centering
