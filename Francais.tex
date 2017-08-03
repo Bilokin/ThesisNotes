@@ -6,7 +6,7 @@
 \begin{figure}
 	{\centering
 		\includegraphics[width=0.95\textwidth]{graphics/ILC_scheme.jpg}
-		\caption{\sl Schematic view of the ILC accelerator complex.}
+		\caption{\sl Vue sch\'ematique de l'ILC.}
 		\label{fig:ILCSchemeF}
 	}
 \end{figure}
@@ -22,7 +22,7 @@
 		\includegraphics[width=0.9\textwidth]{graphics/ILDtracking.png}
 		
 	\end{subfigure}
-	\caption{\sl Left: Schematic view of the ILD concept. Right: Zoom in the inner detectors.}
+	\caption{\sl Gauche: Vue sch\'ematique de l'ILD. Droite: Zoom sur les détecteurs internes.}
 	\label{fig:ILDSchemeF}
 \end{figure}
 %-----------------------------------------------------------------------------
@@ -33,7 +33,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.55\textwidth]{ECAL/graphics/ecal-new.png}
-	\caption{\label{fig:ECAL-schemeF} \sl A schematic view of the \ecalp.}
+	\caption{\label{fig:ECAL-schemeF} \sl  Vue sch\'ematique de \ecal.}
 \end{figure}
 
 %-----------------------------------------------------------------------------
@@ -46,14 +46,14 @@
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\includegraphics[width=.90\linewidth]{ECAL/graphics/before.png}
-		\caption{\label{fig:beforeF} \sl with interaction region.}
+		\caption{\label{fig:beforeF} \sl avec région d'interaction.}
 	\end{subfigure}% 
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\includegraphics[width=.90\linewidth]{ECAL/graphics/after2.png}
-		\caption{\label{fig:afterF} \sl without interaction region.}
+		\caption{\label{fig:afterF} \sl sans région d'interaction.}
 	\end{subfigure}
-	\caption{ \sl Event display of a primary pion with an energy of 10\,GeV recorded at FNAL 2008 testbeam before \textit{(a)} and after removal of the interaction region \textit{(b)}. Smaller cubes are pads that are part of the interaction region and are not processed by the \tfa . In this event the hits in the first ten layers are classified as hits left by a primary particle.}
+	\caption{ \sl Visualisation d'événement de l'interaction pion primaire avec 10\,GeV d'energie enregistré au FNAL 2008 avant \textit{(a)} et apr\'es suppression de la région d'interaction\textit{(b)}. }
 	%Event 16-17 in Data10.root
 	\label{fig:testF}
 \end{figure}
@@ -62,7 +62,7 @@
 \begin{figure}
 	\centering
 	\includegraphics[width=0.55\textwidth]{ECAL/graphics/demo-v3.pdf}
-	\caption{\label{fig:democlusterF} \sl Illustration of the clusterisation step. The \ecal\ hits are represented by blue cubes, and the search region for adjacent hits is indicated by red cubes. The blue arrows point in the direction of the clusterisation flow. }
+	\caption{\label{fig:democlusterF} \sl Illustration de l'étape de clusterization. Les pixels actives sont représentés par des cubes bleus, et la zone de recherche pour les impacts adjacents est indiquée par des cubes rouges. Les flèches bleues indiquent la direction du flux de clusterization.}
 \end{figure}
 
 %-----------------------------------------------------------------------------
@@ -86,13 +86,13 @@
 		\caption{\label{fig:efr10F} }
 	\end{subfigure}
 	\caption{\label{fig:irexampleF} \sl% {\bf Fig.~\ref{fig:efr2}: Remind me how the linear plot looks like} 
-		Comparison of $f_{IR}$ between data and Monte Carlo simulations for three {\sc Geant}4 physics lists for energies of 2 (a) and 10 (b) GeV of the primary particle, respectively. The first bin contains events without a detected interaction region. All histograms are normalised to unity. Error bars represent statistical uncertainties only.}
+		Comparaison de $f_{IR}$ entre les données et les simulations pour trois {\sc Geant}4  listes physiques de l'\'energies 2 (a) et 10 (b) GeV de particule primordiale.}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{ECAL/plots/e-ir-graph.pdf}
-	\caption{\label{fig:irgraphF} \sl  Mean fraction of energy deposition in the interaction region in \ecal\ for data and  Monte Carlo simulations for three {\sc Geant}4 physics lists as a function of the beam energy (2\,GeV to 10\,GeV). Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. The error bars represent statistical uncertainties and the error band the systematic error from the correction for double $\pi$ events.}
+	\caption{\label{fig:irgraphF} \sl  Fraction moyenne du dépôt d'énergie dans la région d'interaction pour les données et les simulations  pour trois listes physiques \geant\ comme une fonction de l'énergie du faisceau (2 \, GeV à 10 \, GeV).}
 \end{figure}
 
 \begin{figure}
@@ -199,29 +199,6 @@ g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W,
 %-----------------------------------------------------------------------------
 
 \subsection*{Reconstruction de la charge du quark bottom}
-\begin{figure}
-	{\centering
-		\includegraphics[width=0.55\textwidth]{ILD/plots/rec-gen-table.pdf}
-		\caption{\sl Comparison of the number of reconstructed tracks $N_{gen}$ to the number of generated tracks $N_{rec}$ for a given b-jet. The number of entries is color-coded for each cell. The diagonal has 49\% of all entries and it contains the jets, which have the correctly reconstructed vertices. The b-jets below diagonal have vertices with one or more particles missed by reconstruction. The row $N_{rec} = 0$ corresponds to the b-jets with no reconstructed vertices. %Right: Same comparison, but after a cut on the b-tag$> 0.8$ and a cut on the b-hadron momentum more than 20\,GeV. The diagonal contains 55\% of the jets after the cuts.
-		}
-		\label{fig:Table_3F}
-	}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.95\textwidth]{ILD/plots/missed-tracks.pdf}
-		\caption{\label{fig:MissingTracks_cos_3F} }
-	\end{subfigure}% 
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[width=0.95\textwidth]{ILD/plots/missed-momentum.pdf}
-		\caption{\label{fig:MissingTracks_p_3F} }
-	\end{subfigure}
-	\caption{\sl Polar angle~(a) and momentum~(b) distributions of the missing prongs subdivided into different categories. This is a stacked histogram. The peak at $|\cos\theta| = 0 $ is caused by the gap between TPC endplates, the peak at  $|\cos\theta| \approx 0.8$ is caused by barrel-endcap transition in the \ecal\ and the rapid increase at $|\cos\theta| \approx 0.9$ is caused by the barrel-endcap transition in the VXD and FTD system. }
-	\label{fig:MissingTracks_3F}
-\end{figure}
 
 \begin{figure}
 	{\centering
