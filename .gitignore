@@ -16,6 +16,8 @@ poster/*.gz
 poster/*.bbl
 poster/*.pdf
 proceedings/*.log
+proceedings/*.bbl
+proceedings/*.blg
 proceedings/*.aux
 proceedings/*.gz
 proceedings/*.toc
