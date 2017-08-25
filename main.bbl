@@ -104,9 +104,10 @@ Ties Behnke, James~E. Brau, Philip~N. Burrows, Juan Fuster, Michael Peskin,
   4: Detectors}.
 \newblock 2013.
 
-\bibitem{bib:KalTest}
-{KalTest Software}.
-\newblock https://github.com/ilcsoft/kaltest.
+\bibitem{Fruhwirth:1987fm}
+R.~Fruhwirth.
+\newblock {Application of Kalman filtering to track and vertex fitting}.
+\newblock {\em Nucl. Instrum. Meth.}, A262:444--450, 1987.
 
 \bibitem{bib:PDG}
 C.~Patrignani et~al.
