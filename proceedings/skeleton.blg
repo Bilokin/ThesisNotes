@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: skeleton.aux
+The style file: unsrt.bst
+Database file #1: ../mainbib.bib
+I was expecting a `,' or a `}'---line 306 of file ../mainbib.bib
+ :  
+ :  url = "https://indico.cern.ch/event/449801/contributions/1945424/attachments/1214854/1773564/Nacho_top_CLIC2016.pdf"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 313 of file ../mainbib.bib
+ :  title = "{Very forward vertexing: ILD Analysis/Software Meeting  10/05/2017}" 
+ :                                                                                https://agenda.linearcollider.org/event/7635/contributions/38990/attachments/31581/47577/berggren-ildphone-20170510.pdf"
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 574 of file ../mainbib.bib
+ :  
+ :  url = "http://flc.desy.de/lcnotes/notes/localfsExplorer_read?currentPath=/afs/desy.de/group/flc/lcnotes/LC-REP-2013-009.pdf"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in bib:ILC
+You've used 3 entries,
+            1791 wiz_defined-function locations,
+            466 strings with 4257 characters,
+and the built_in function-call counts, 763 in all, are:
+= -- 47
+> -- 69
+< -- 0
++ -- 24
+- -- 21
+* -- 65
+:= -- 147
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 26
+empty$ -- 56
+format.name$ -- 21
+if$ -- 152
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 3
+pop$ -- 7
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 9
+stack$ -- 0
+substring$ -- 27
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 5
+width$ -- 4
+write$ -- 33
+(There were 3 error messages)
