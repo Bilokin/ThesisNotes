@@ -1,5 +1,6 @@
+\pdfobjcompresslevel 0
 \documentclass[a4paper, 12pt]{article}
-
+\pagenumbering{gobble}
 
 \include{definitions}
 \title{Hadronic showers in a highly granular silicon-tungsten calorimeter and production of bottom and top quarks at the ILC \\ Cascades hadroniques dans un calorimetre electromagn\'etique silicium-tungst\`ene hautement granulaire et production du quarks top et bottom \`a l'ILC}
@@ -7,11 +8,6 @@
 
 \begin{document}
 	
-	\epigraph{Hodor!}{\textit{ - Hodor \\ A Song of Ice and Fire} \\George R. R. Martin}	\newpage
-	
-	\newpage
-%\maketitle
-%\include{TitlePage}
 
 \renewcommand{\abstractname}{Abstract}
 \begin{abstract}
@@ -47,11 +43,22 @@ The results of the detector study allow for an estimation of the ILC precision o
 \newpage
 \input{ack}
 \newpage
+
+	%\epigraph{Hodor!}{\textit{ - Hodor \\ A Song of Ice and Fire} \\George R. R. Martin}	\newpage
+	\epigraph{I believe it is worthwhile trying to discover more about the world, even if this only teaches us how little we know.}{\textit{Karl Popper}} 
+	\newpage
+
+	\newpage
+	%\maketitle
+	%\include{TitlePage}
+\pagenumbering{roman}
 \tableofcontents
 
+%\linenumbers
+\newpage
+\pagenumbering{arabic}
 
-\linenumbers
-\newpage\part{Introduction}\label{PARTI}
+\part{Introduction}\label{PARTI}
 \input{Introduction}
 \newpage
 \input{StandardModel}
