@@ -1,4 +1,6 @@
 \section{R\'esum\'e en fran\c cais}
+
+\renewcommand{\sm}{Modèle standard}
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
@@ -129,7 +131,7 @@
 		\includegraphics[width=.90\linewidth]{ECAL/plots/ntracks-10.pdf}
 		\caption{\label{fig:tr10F} }
 	\end{subfigure}
-	\caption{\label{fig:trackexampleF} \sl Comparison of the number of secondary tracks between data Monte Carlo simulations for three {\sc Geant}4 physics lists  for energies of the primary particle of 2 (a) and 10 (b) GeV. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical errors only.}
+	\caption{\label{fig:trackexampleF} \sl Comparaison de $N_{tracks}$ entre les données et les simulations pour trois {\sc Geant}4  listes physiques de l'\'energies 2 (a) et 10 (b) GeV de particule primordiale.}
 \end{figure}
 
 \begin{figure}
@@ -144,53 +146,33 @@
 		\includegraphics[width=.90\linewidth]{ECAL/plots/ntracks-graph-delta.pdf}
 		\caption{\label{fig:dtracksgraphF}}
 	\end{subfigure}
-	\caption{\label{fig:fulltrackgraphF} \sl Mean number of secondary tracks $\left<N_{tracks}\right>$ for $\varepsilon = 0.03$ (a) and the corresponding sensitivity according to Eq.~\ref{eq:sens} of $\left<N_{tracks}\right>$ on the \ep\,(b) for data and Monte Carlo simulations for three {\sc Geant}4 physics lists as a function of the beam energy (from 2 to 10\,GeV). }
+	\caption{\label{fig:fulltrackgraphF} \sl Moyenne du nombre des traces trouvées pour les données et les simulations  pour trois listes physiques \geant\ comme une fonction de l'énergie du faisceau (2 \, GeV à 10 \, GeV). }
 \end{figure}
 
-\begin{figure}
-	\centering
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[width=.90\linewidth]{ECAL/plots/calibrationfit-2.pdf}
-		\caption{\label{fig:calib2F} }
-	\end{subfigure}% 
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[width=.90\linewidth]{ECAL/plots/calibrationfit-10.pdf}
-		\caption{\label{fig:calib10F} }
-	\end{subfigure}
-	\caption{\label{fig:calibF} \sl Histograms of the energy deposition in secondary tracks for the data with 2 (a) and 10 (b) GeV beam energies. The spectra are fitted by the convolution of a Landau and a Gaussian. Events without a detected interaction region according to Sec.~\ref{sec:iazone} are discarded. Error bars represent statistical uncertainties only.}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\textwidth]{ECAL/plots/calibrationfit-graph.pdf}
-	\caption{\label{fig:calibrationgraphF} \sl MPV of the Landau fit to the $E_{dep}^t$ distributions of the pencil-like secondary tracks as a function of the beam energy for $\pi^-$ data and three Monte Carlo samples. The MPV point the of 2\,GeV data sample is excluded because of the small statistics left after selection. Events without a detected interaction region  according to Sec.~\ref{sec:iazone} are discarded.  Error bars represent the statistical fit uncertainty.}
-\end{figure}
 
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 
 \subsection*{Les quarks top et bottom \'a l'ILC}
-Electroweak production of the fermion pairs proceeds through the $f\bar{f}X$ vertex, where $X$ represents neutral vector bosons, photon or $Z^0$ boson.  The current at the $f\bar{f}X$ vertex can be expressed via form factors $F$ as 
+La production electrofaible des paires de fermions se déroule à travers le $f\bar{f}X$ vertex, où $X$ représente des bosons vectoriels neutres, un photon ou $Z^0$ boson. Le courant au $f\bar{f}X$ vertex peut être exprimé via les facteurs de forme $F$ comme:
 \begin{equation}
 \Gamma^{f\bar{f}X}_\mu (k^2,q,\bar{q}) = ie\{ \gamma_\mu (F^X_{1V}(k^2) + \gamma^5 F^X_{1A}(k^2)) - \frac{\sigma_{\mu\nu}(q-\bar{q})^\nu}{2m_f}(iF^X_{2V}(k^2) + \gamma^5 F^X_{2A}(k^2)) \},
 \end{equation}
-where $k^2= (q+\bar{q})^2$ is the four momentum squared of the exchanged vector boson, $q$ and $\bar{q}$ are the four vectors of the fermion $f$ and antifermion $\bar{f}$ and $m_f$ is the fermion mass. Further, $\gamma_\mu$ and $\gamma_5$ are the Dirac matrices, and $\sigma_{\mu\nu} = i/2(\gamma_\mu\gamma_\nu - \gamma_\nu\gamma_\mu)$.
+où $k^2= (q+\bar{q})^2$ st le quatri-moment au carré du boson du vecteur échangé, $q$ et $\bar{q} $ sont les quatri-momentes du fermion $f$ et antifermion $\bar{f}$ et $m_f$ est la masse fermion. Les $\gamma_\mu$ et $\gamma_5$ sont les matrices de Dirac, et $\sigma_{\mu\nu} = i/2(\gamma_\mu\gamma_\nu - \gamma_\nu\gamma_\mu)$.
 
-The \sm\ values of the form factors are the following:
+Les valeurs de \sm\ du facteurs de forme sont les suivantes:
 \begin{equation}
 F^{f\gamma}_{1V} = Q^{f}, \ F^{f\gamma}_{1A} = 0, \ F^{fZ}_{1V} = \frac{I^f - 2Q^f\sin^2\theta_W}{2\cos\theta_W\sin\theta_W}, \ F^{fZ}_{1A} = - \frac{I^f}{2\cos\theta_W\sin\theta_W},
 \label{formula:SMformFactors_3F}
 \end{equation}
-and all $F_2$ factor are zero. In the Eq.~\ref{formula:SMformFactors_3F} $I^f$ is the weak isospin number, $I^t = 1/2$ for top and $I^b = -1/2$ for bottom quark and $Q^f$ is the electric charge, $Q^t = 2/3$ and $Q^b = -1/3$.
+et toutes les facteurs $F_2$ sont zéros. Dans l'equation~\ref{formula:SMformFactors_3F} $I^f$ est  l'isospin faible, $I^t = 1/2$ pour top et $I^b = -1/2$ pour quark bottom  et $Q^f$ est le charge electrique, $Q^t = 2/3$ et $Q^b = -1/3$.
 
 %The form factors are related to fermion couplings with left and right-handed helicity to $Z^0$ boson:
-The following definition of the left-handed and right handed $Z^0b\bar{b}$ couplings is used throughout the thesis: 
+La définition suivante des couplages gauches et droites $Z^0b\bar{b}$ est utilisée tout au long de la thèse: 
 \begin{equation}
 %g_L^Z = (F_{1V}^Z - F_{1A}^Z), \  g_R^Z = F_{1V}^Z + F_{1A}^Z, 
-g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W, 
+g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W.
 \label{formula:EWcouplings_3F}
 \end{equation}
 
@@ -203,7 +185,7 @@ g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W,
 \begin{figure}
 	{\centering
 		\includegraphics[width=0.95\textwidth]{ILD/plots/recovery-purity-comparison.pdf}
-		\caption{\sl Comparison of the purity as function of the jet b-tag, reconstructed b-hadron momentum, $N_{rec}$ and the polar angle $|\cos\theta|$ before and after the vertex recovery algorithm.  
+		\caption{\sl Comparaison de la pureté en fonction de b-tag, moment de b-hadron reconstruit, $N_ {rec}$ et l'angle polaire $|\cos\theta|$ avant et après l'algorithme de récupération de vertex. 
 		}
 		\label{fig:RecoveryPurityComparison_3F}
 	}
@@ -212,7 +194,7 @@ g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W,
 \begin{figure}
 	{\centering
 		\includegraphics[clip, trim=8cm 18.5cm 7cm 4cm,width=0.95\textwidth]{ILD/plots/dedx-before.png}
-		\caption{\sl The energy deposition per track length $dE/dx$ as function of the particle momentum, the particle polar angle $|\cos\theta|$ for different particles. Two gray lines separate out the region with a maximal kaon concentration. 
+		\caption{\sl Le dépôt d'énergie par longueur de trace $dE/dx$ en fonction de moment des particules, l'angle polaire des particules $|\cos\theta|$ pour différentes types des particules. Deux lignes grises séparent la région avec une concentration maximale de kaon.
 		}
 		\label{fig:dEdxBefore_3F}
 	}
@@ -221,7 +203,7 @@ g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W,
 \begin{figure}
 	{\centering
 		\includegraphics[clip, trim=8cm 18.5cm 7cm 4cm, width=0.95\textwidth]{ILD/plots/dedx-after.png}
-		\caption{\sl The energy deposition per track length $dE/dx$ as function of the particle momentum, the particle polar angle $|\cos\theta|$ for different particles after application of the angular correction, described in text. Two gray lines separate out the region with a maximal kaon concentration. 
+		\caption{\sl Le dépôt d'énergie par longueur de trace $dE/dx$ en fonction de moment des particules, l'angle polaire des particules $|\cos\theta|$ pour différentes particules. apr\'es l'application de correction angulaire.  Deux lignes grises séparent la région avec une concentration maximale de kaon.
 		}
 		\label{fig:dEdxAfter_3F}
 	}
