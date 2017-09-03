@@ -64,9 +64,9 @@ In this work, the $e^+ e^-\to b\bar{b}$ channel is studied at $\sqrt{s}=250$\,Ge
 The high-granularity of the ILD subdetectors allows for an individual particle reconstruction using the Particle Flow approach.
 The schematic view of the ILD concept and the subdetector layout is presented in Fig.~\ref{fig:ILDScheme}.
 
-\begin{figure}[h]
+\begin{figure}
 	{\centering
-		\includegraphics[width=0.9\linewidth]{../poster/figures/ild3.png}
+		\includegraphics[width=0.8\linewidth]{../poster/figures/ild3.png}
 		\caption{\sl Event display of the $e^+ e^-\to b\bar{b}$ process in a full simulation of the ILD detector (left) and schematic view of the ILD concept~\cite{bib:ILC} (right). }
 		\label{fig:ILDScheme}
 	}
@@ -77,11 +77,11 @@ The schematic view of the ILD concept and the subdetector layout is presented in
 The $b$-quark polar angle reconstruction requires an accurate $b$-quark charge measurement. 
 The $b$-quark charge is identified using two basic signatures:
 \begin{itemize}
-	\item \textbf{Vertex charge} is a sum of all reconstructed particles charges, which are associated to the $b$-hadron vertices. 
+	\item \textbf{Vertex charge} is a sum of all reconstructed charges, which are associated to the $b$-hadron vertices. 
 	\item \textbf{Kaon charge} is a charge of kaons found in $b$-hadron vertices. 
 \end{itemize}
 
-The schematic appearance of a $b$-hadron decays in the ILD Vertex Detector is presented in Fig.~\ref{fig:vtx}.
+The schematic appearance of $b$-hadron decays in the ILD Vertex Detector is presented in Fig.~\ref{fig:vtx}.
 
 \begin{figure}
 	{\centering
@@ -90,8 +90,8 @@ The schematic appearance of a $b$-hadron decays in the ILD Vertex Detector is pr
 		\label{fig:vtx}
 	}
 \end{figure}
-
-The developed Vertex Charge Recovery procedure enhances the vertex charge purity by adding the missing particles back to the reconstructed vertices. 
+It was found, that vertexing algorithms can miss one or more b-hadron decay particles from the reconstructed vertices. This effect decreases vertex charge purity.
+The developed Vertex Charge Recovery procedure enhances the vertex charge purity by adding the missing b-hadron particles back to the measured vertices using a set of reconstructed observables. 
 
 
 The kaon identification is possible using the TPC $dE/dx$ information. After equalizing the $dE/dx$ in angular spectrum, the kaons from $b$-hadron vertices can be identified with 97\% purity and 87\% efficiency.
