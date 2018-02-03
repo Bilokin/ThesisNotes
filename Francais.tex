@@ -223,59 +223,65 @@ Par conséquent, des mesures précises des couplages de quarks lourds sont des p
 
 Cette section se concentre sur la production électrofaible des paires de quarks top et bottom.
 
-La production electrofaible des paires de fermions se déroule à travers le vertex $f\bar{f}X$, où $X$ représente des bosons vectoriels neutres, le photon ou le boson de $Z^0$. Le courant au $f\bar{f}X$ vertex peut être exprimé via les facteurs de forme $F$ comme:
+La production electrofaible des paires de fermions se déroule à travers le vertex $f\bar{f}X$, où $X$ représente des bosons vectoriels neutres, le photon ou le boson de $Z^0$. Le courant au $f\bar{f}X$ vertex peut être exprimé comme suit:
 \begin{equation}
 \Gamma^{f\bar{f}X}_\mu (k^2,q,\bar{q}) = ie\{ \gamma_\mu (F^X_{1V}(k^2) + \gamma^5 F^X_{1A}(k^2)) - \frac{\sigma_{\mu\nu}(q-\bar{q})^\nu}{2m_f}(iF^X_{2V}(k^2) + \gamma^5 F^X_{2A}(k^2)) \},
 \end{equation}
-où $k^2= (q+\bar{q})^2$ st le quatri-moment au carré du boson du vecteur échangé, $q$ et $\bar{q} $ sont les quatri-momentes du fermion $f$ et antifermion $\bar{f}$ et $m_f$ est la masse fermion. Les $\gamma_\mu$ et $\gamma_5$ sont les matrices de Dirac, et $\sigma_{\mu\nu} = i/2(\gamma_\mu\gamma_\nu - \gamma_\nu\gamma_\mu)$.
+où $k^2= (q+\bar{q})^2$ st le quatri-moment au carré du boson du vecteur échangé, $q$ et $\bar{q} $ sont les quatri-impulsions du fermion $f$ et du antifermion $\bar{f}$ et $m_f$ est la masse des deux. Les $\gamma_\mu$ et $\gamma_5$ sont les matrices de Dirac, et $\sigma_{\mu\nu} = i/2(\gamma_\mu\gamma_\nu - \gamma_\nu\gamma_\mu)$.
 
-Les valeurs de \sm\ du facteurs de forme sont les suivantes:
+Finalement, les $F$ sont des facteurs de forme, qui contiennent les corrections quantiques du vertex. Au niveau Born les $F$ prennent les valeurs suivantes:  
+%Les valeurs de \sm\ du facteurs de forme sont les suivantes:
 \begin{equation}
 F^{f\gamma}_{1V} = Q^{f}, \ F^{f\gamma}_{1A} = 0, \ F^{fZ}_{1V} = \frac{I^f - 2Q^f\sin^2\theta_W}{2\cos\theta_W\sin\theta_W}, \ F^{fZ}_{1A} = - \frac{I^f}{2\cos\theta_W\sin\theta_W},
 \label{formula:SMformFactors_3F}
 \end{equation}
-et toutes les facteurs $F_2$ sont zéros. Dans l'equation~\ref{formula:SMformFactors_3F} $I^f$ est  l'isospin faible, $I^t = 1/2$ pour top et $I^b = -1/2$ pour quark bottom  et $Q^f$ est le charge electrique, $Q^t = 2/3$ et $Q^b = -1/3$.
+et toutes les facteurs $F_2$ sont 0. Dans l'équation~\ref{formula:SMformFactors_3F} $I^f$ est  l'isospin faible, $I^t = 1/2$ pour top et $I^b = -1/2$ pour quark bottom  et $Q^f$ est laa charge electrique, $Q^t = 2/3$ et $Q^b = -1/3$.
 
+
+Le facteurs de forme permettent la définition des couplages des fermions des hélicités droite et gauche au boson de $Z^0$. Il est $g_L = F^Z_{1V} - F^Z_{1A}$  et $gR = F^Z_{1V} + F^Z_{1A}$.
+Les resultats obtenus dans cette these sont exprimés sous forme de $g_L$ et $g_R$.  
 %The form factors are related to fermion couplings with left and right-handed helicity to $Z^0$ boson:
-La définition suivante des couplages gauches et droites $Z^0b\bar{b}$ est utilisée tout au long de la thèse: 
+%La définition suivante des couplages gauches et droites $Z^0b\bar{b}$ est utilisée tout au long de la thèse: 
 \begin{equation}
 %g_L^Z = (F_{1V}^Z - F_{1A}^Z), \  g_R^Z = F_{1V}^Z + F_{1A}^Z, 
 g_L^Z = I^f - Q^f\sin^2\theta_W, \  g_R^Z = -Q^f\sin^2\theta_W.
 \label{formula:EWcouplings_3F}
 \end{equation}
 
-L'expression clé pour les études est la section efficace différentielle de $f\bar{f}$ production pour la polarisation du faisceau d'électrons $I=L,R$, exprimée par les facteurs de forme définis:
+L'observable clé de la thèse est la section efficace differentielle par rapport de l'angle polaire $\theta$ de la diffusion du pair des fermions. La section efficace peut être definié en fonction de la polarisaion $I=L, R$ du faisceau des electrons.    
+%L'expression clé pour les études est la section efficace différentielle de $f\bar{f}$ production pour la polarisation du faisceau d'électrons $I=L,R$, exprimée par les facteurs de forme définis:
 
 \begin{multline}
 % \frac{\pi\alpha^2 N_c\beta}{s}
 \label{formula:DiffSigma_3F}
 \frac{d\sigma^I}{d\cos\theta} = \frac{3}{4} \mathcal{A} N_c \beta[ (1+\cos^2\theta) [(\mF_{1V}+\mF_{2V})^2+(\beta \mF_{1A})^2] - \\-4 \cos\theta (\mF_{1V}+\mF_{2V})\beta \mF_{1A} +\\+ \sin^2\theta [\gamma ^{-2} (\mF_{1V} +\gamma^2 \mF_{2V})^2] ]
 \end{multline}
-où $\mathcal{A} = 4\pi\alpha^2/3s$ avec $\alpha$ comme couplage électromagnétique, $N_c$ est le nombre de couleurs, $\beta$ et $\gamma$ sont la vitesse et le facteur de Lorentz du fermion produit, respectivement.
+Les facteurs $\mathcal{F}$ sont une rédéfinition des facteurs de forme $F$ selon la référence~\cite{bib:Schmidt}
+En plus, $\mathcal{A} = 4\pi\alpha^2/3s$ avec $\alpha$ comme couplage électromagnétique et $N_c$ est le nombre de couleurs. Finalement, $\beta$ et $\gamma$ sont la vitesse et le facteur de Lorentz du fermion produit, respectivement.
 
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 \newpage
 \subsection*{Reconstruction de la charge du quark bottom}
-La reconstruction de la section efficace différentielle de quarks lourdes nécessite une mesure de charge précise du quark bottom.
+La reconstruction de la section efficace différentielle de quarks lourds nécessite une mesure de charge précise du quark bottom.
 La charge du quark bottom est identifiée en utilisant deux signatures de base:
 \begin{itemize}
-	\item \textbf{Vertex charge} est une somme de toutes les charges reconstruites, qui sont associées aux sommets de $b$-hadrons.
-	\item \textbf{Kaon charge} est une charge de kaons trouvée dans les sommets du hadrons bottom.
+	\item \textbf{Vertex charge} est la somme de toutes les charges reconstruites, qui sont associées aux vertices de desintégration des hadrons de $b$;
+	\item \textbf{Kaon charge} est la charge de kaons trouvée dans les produits de la desintégration des hadrons de $b$. 
 \end{itemize}
 
-On a constaté que les algorithmes de vertexing peuvent manquer une ou plusieurs particules des sommets de b-hadron reconstruits. Cet effet diminue la pureté de la charge de vertex.
-La procédure de récupération de sommets développée améliore la pureté de la charge de sommets en ajoutant les particules de b-hadron manquantes aux sommets mesurés à l'aide d'un ensemble d'observables reconstruits.
+On a constaté que les algorithmes de vertexing peuvent manquer une ou plusieurs particules de la desintégration des hadrons de $b$. Cela  diminuit evidemment sur la bonne reconstruction de  la charge de vertex.
+La procédure de récupération de toutes les traces issues de la desintégration des hadrons de $b$  améliore la reconstruction de la charge de vertex en ajoutant les particules de b-hadron ratées aux vertices mesurés à l'aide d'un ensemble d'observables reconstruits.
 
 L'identification kaon est possible en utilisant les informations TPC $dE/dx$. Après avoir égalisé le $dE/dx$ dans le spectre angulaire, les kaons des sommets des b-hadrons peuvent être identifiés avec 97\% de pureté et 87\% d'efficacité.
 
-Les graphiques de la pureté de la charge de vertex et le $dE/dx$ en fonction de moment des particules pour hadrons différents sont représentés dans la Fig.~\ref{fig:RecoveryPurityComparison_3F} et la Fig.~\ref{fig:dEdxBefore_3F}, respectivement.
+Les graphiques de la pureté de la charge de vertex et le $dE/dx$ en fonction de l'impulsion des particules pour hadrons différents sont représentés dans la Fig.~\ref{fig:RecoveryPurityComparison_3F} et la Fig.~\ref{fig:dEdxBefore_3F}, respectivement.
 
 \begin{figure}
 	{\centering
 		\includegraphics[width=0.95\textwidth]{ILD/plots/recovery-purity-comparison.pdf}
-		\caption{\sl Comparaison de la pureté en fonction de b-tag, moment de b-hadron reconstruit, $N_ {rec}$ et l'angle polaire $|\cos\theta|$ avant et après l'algorithme de récupération de vertex. 
+		\caption{\sl Comparaison de la pureté en fonction de b-tag, l'impulsion du hadron de $b$ reconstruit, $N_ {rec}$ et l'angle polaire $|\cos\theta|$ avant et après l'algorithme de récupération de vertex. 
 		}
 		\label{fig:RecoveryPurityComparison_3F}
 	}
@@ -284,7 +290,7 @@ Les graphiques de la pureté de la charge de vertex et le $dE/dx$ en fonction de
 \begin{figure}
 	{\centering
 		\includegraphics[clip, trim=8cm 18.5cm 7cm 4cm,width=0.95\textwidth]{ILD/plots/dedx-before.png}
-		\caption{\sl Le dépôt d'énergie par longueur de trace $dE/dx$ en fonction de moment des particules, l'angle polaire des particules $|\cos\theta|$ pour différentes types des particules. Deux lignes grises séparent la région avec une concentration maximale de kaon.
+		\caption{\sl Le dépôt d'énergie par longueur de trace $dE/dx$ en fonction de l'impulsion des particules, l'angle polaire des particules $|\cos\theta|$ pour pions, kaons et protons. Deux lignes grises séparent la région avec une concentration maximale de kaons.
 		}
 		\label{fig:dEdxBefore_3F}
 	}
@@ -293,7 +299,7 @@ Les graphiques de la pureté de la charge de vertex et le $dE/dx$ en fonction de
 \begin{figure}
 	{\centering
 		\includegraphics[clip, trim=8cm 18.5cm 7cm 4cm, width=0.95\textwidth]{ILD/plots/dedx-after.png}
-		\caption{\sl Le dépôt d'énergie par longueur de trace $dE/dx$ en fonction de moment des particules, l'angle polaire des particules $|\cos\theta|$ pour différentes particules. apr\'es l'application de correction angulaire.  Deux lignes grises séparent la région avec une concentration maximale de kaon.
+		\caption{\sl Le dépôt d'énergie par longueur de trace $dE/dx$ en fonction de l'impulsion des particules, l'angle polaire des particules $|\cos\theta|$ pour pions, kaons et protons. apr\'es l'application de la correction angulaire.  Deux lignes grises séparent la région avec une concentration maximale de kaons.
 		}
 		\label{fig:dEdxAfter_3F}
 	}
@@ -308,7 +314,7 @@ Les graphiques de la pureté de la charge de vertex et le $dE/dx$ en fonction de
 
 L'application de toutes les combinaisons de paires possibles de la charge de sommet, de la charge de kaon et de la charge de $W^\pm$ lepton à la reconstruction de l'angle polaire supérieur illustrée dans la Fig.~\ref {fig:TopAsymmetryChi_3F}.
 
-Cette méthode permet de reconstituer l'asymétrie aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite {bib:ILCTOP} par 25\%.
+Cette méthode permet de reconstruire l'asymétrie avant-arriere $A_{FB}$ aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite {bib:ILCTOP} par 25\%.
 
 La méthode la plus utilisée est la combinaison de la charge de vertex avec la charge $W^\pm$ lepton car le $ W^\pm$ lepton doit être reconstruit dans chaque événement sélectionné.
 
@@ -330,7 +336,7 @@ La méthode la plus utilisée est la combinaison de la charge de vertex avec la 
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
-Les répartitions angulaires polaires reconstruites $b$ à $\sqrt{s} = 250$\,GeV utilisant une combinaison de signatures de charge kaon et vertex sont affich\`ees dans la Fig. ~\ref{fig:BAsymmetryFinal_3F}. La luminosité intégrée $\mathcal{L}_I=250$\,fb$^{-1}$ est supposée pour chaque polarisation du faisceau.
+Les spectres de l'angle polaire reconstruits du quark $b$ à $\sqrt{s} = 250$\,GeV utilisant une combinaison de signatures des charges des kaons et du vertex sont affich\`ees dans la Fig. ~\ref{fig:BAsymmetryFinal_3F}. La luminosité intégrée $\mathcal{L}_I=250$\,fb$^{-1}$ est supposée pour chaque polarisation du faisceau.
 
 %\subsection*{Reconstruction de l'angle polaire du quark bottom et top}
 
@@ -350,17 +356,17 @@ Les répartitions angulaires polaires reconstruites $b$ à $\sqrt{s} = 250$\,GeV
 		\includegraphics[width=0.95\textwidth]{ILD/plots/basymmetry-final-right.pdf}
 		\caption{\label{fig:BAsymmetryFinal_b_3F} }
 	\end{subfigure}
-	\caption{\sl Distribution d'angle polaire b-quark générée par rapport à l'angle polaire des quarks b reconstruits final dans le cas de gaucher (a) et le cas droitier (b) avec des processus de fond superposés.}
+	\caption{\sl Distributions de l'angle polaire des quarks b générée comparées aux distrbutions de l'angle polaire des quarks b reconstruites pour la configuration $P_{e}-=-1, P_{e^+}=+1$ (a) et $P_{e}-=+1, P_{e^+}=-1$(b) les processus de fond sont superposés.}
 	\label{fig:BAsymmetryFinal_3F}
 \end{figure}
 
-La pureté de la charge kaon et vertex est définie à l'aide des événements mesurés avec des charges erronées. En utilisant les puretés mesurées, le spectre reconstruit est corrigé à l'aide d'une procédure basée sur les données.
-Les distributions corrigées sont ajustées par une fonction transversale générale, définie comme $S(1+\cos^2\theta) + A\cos\theta$. La précision extraite sur les paramètres $S$ et $A$ est redessinée à la polarisation réaliste $e^-_L, e^+_R = \pm 0.8, \mp 0.3$ et à le partage de luminosité du programme de physique de l'ILC.
-Comme on peut le voir à partir de la Fig.~\ref{fig:BAsymmetryFinal_3F}, la contribution des processus de fond de diboson est faible.
+La pureté de la charge des kaons et du vertex est définie à l'aide des événements mesurés avec des charges contradictoires. En utilisant les puretés mesurées, le spectre reconstruit est corrigé à l'aide d'une procédure basée sur les données.
+Les distributions corrigées sont ajustées par une fonction transversale générale, définie comme $S(1+\cos^2\theta) + A\cos\theta$. La précision extraite sur les paramètres $S$ et $A$ est extrapolée à la polarisation réaliste $\pm 0.8, \mp 0.3$ et à le répartition de la luminosité du programme de physique de l'ILC.
+Comme on peut le voir à partir dans la Fig.~\ref{fig:BAsymmetryFinal_3F}, la contribution des processus de fond, comme cf. celle de la production d'un pair de bosons est faible.
 
 
 Les précisions relatives sur les couplages $Z^0 b\bar{b}$, $g_L^Z$ et $g_R^Z$, pour les mesures LEP~I et pour les performances ILC attendues sont affichées dans la Fig.~\ref{fig:LEPILCResult_3F}.
-La précision de l'ILC sur la couplage $g_R^Z$ est suffisante pour confirmer ou rejeter complètement l'influence de New Physics sur les accouplements electroweak $b$ -quark.
+La précision de l'ILC sur la couplage $g_R^Z$ est suffisante pour confirmer ou rejeter complètement l'influence de la nouvelle physique sur les couplages électrofaibles du quark $b$.
 
 \begin{figure}
 	\centering
@@ -373,26 +379,28 @@ La précision de l'ILC sur la couplage $g_R^Z$ est suffisante pour confirmer ou 
 		\includegraphics[width=0.99\textwidth]{ILD/plots/ilc-result.pdf}
 		\caption{\label{fig:LEPILCResult_b_3F} }
 	\end{subfigure}
-	\caption{\sl Les régions de $\pm 1\,\sigma$ sur les couplages $Z^0b\bar{b}$ définies par l'asymétrie avant-arrière et les mesures transversales totales au LEP (a) et ILC via l'ajustement de la section transversale différentielle (b). Les lignes directrices détaillées montrent la valeur \sm. La région autorisée attendue à l'ILC est centrée sur les valeurs de couplage de \sm.}
+	\caption{\sl Les régions de $\pm 1\,\sigma$ sur les couplages $Z^0b\bar{b}$ définies par l'asymétrie avant-arrière et les mesures des sections efficaces totales au LEP (a) et à l'ILC via l'ajustement de la section transversale différentielle (b). Les lignes directrices détaillées montrent la valeur \sm. Quant à l'ILC les bandes d'erreurs se chevauchent aux valeurs des couplages attendues par le Modèle standard.  }
 	\label{fig:LEPILCResult_3F}
 \end{figure}
 
 \subsection*{Conclusions}
 
-Cette thèse présente de nouvelles méthodes et études développées pour le projet de l'ILC.
-Les détecteurs de l'ILC sont conçus pour l'application d'algorithmes de flux de particules, qui améliorent les performances physiques en utilisant les informations des calorimètres hautement granulaires.
+Cette thèse présente de nouvelles méthodes et études développées pour l'analyse de données qui seront enregistrées avec les detecteurs au sein de l'ILC. 
+Ces détecteurs sont conçus pour l'application d'algorithmes de flux de particules, qui améliorent la reconstruction des etats finaux des collisions $e^+e^-$ en utilisant les informations des calorimètres hautement granulaires.
 
-Le prototype de calorim\`etre \'electromagn\'etique hautement granulaire a été construit et testé par la collaboration CALICE.
-Au cours de cette thèse, un algorithme de recherche de traces a été développé permettant de reconstruire des traces secondaires issues des interactions hadroniques dans le prototype SiW-ECAL.
-La simulation de SiW-ECAL a été comparée aux données en utilisant les nouvelles observables de l'algorithme de recherche de traces.
+Le prototype du calorim\`etre \'electromagn\'etique hautement granulaire a été construit et testé par la collaboration CALICE.
+Au cours de cette thèse, un algorithme de recherche de traces a été développé permettant de reconstruire pour la première fois des traces secondaires issues des interactions hadroniques dans le prototype SiW-ECAL.
+%La simulation de SiW-ECAL a été comparée aux données en utilisant les nouvelles observables de l'algorithme de recherche de traces.
+Les données enregistrées avec ce prototype lors des campagnes de test en faisceau sont comparées avec des predictions des modeles des gerbes hadroniques proposés par le logiciel GEANT4. L'algorithme donne accès aux nouvelles observables répresentées par le no,bre de traces dans ce resumé. 
 
-Tous les modèles de simulation testés montrent une bonne performance en termes de nouveaux observables.
+
+Tous les modèles de simulation testés montrent une bonne performance en termes de nouvelles observables.
 
 Dans cette thèse, la technique de charge du quark bottom est utilisée pour la reconstruction de la distribution de l'angle polaire du quark top et bottom.
-Les méthodes développées sont appliquées dans deux canaux $e^+ e^- \to t\bar{t}$ et $e^+ e^- \to b\bar{b}$ processes à $\sqrt {s} = 500$\,GeV et 250\,GeV, respectivement.
+Les méthodes développées sont appliquées aux deux canaux $e^+ e^- \to t\bar{t}$ et $e^+ e^- \to b\bar{b}$ processes à $\sqrt {s} = 500$\,GeV et 250\,GeV, respectivement.
 
-La procédure de mesure de la pureté de charge par les données permet de corriger la distribution  de l'angle polaire pour la contamination résiduelle.
+La thèse propose des méthodes pour la determination de la charge du quark $b$ avec une haute pureté. Cela permet de reconstruire précisement l'angle polaire du quark $b$ et d'en extraire les couplages électrofaibles du quark $b$ au boson de $Z^0$.% permet de corriger la distribution  de l'angle polaire pour la contamination résiduelle.
 En conséquence, l'angle polaire du quark bottom reconstruit est utilisable pour l'extraction des couplages  et des facteurs de forme électrofaibles du quark bottom.
-La précision prévue à l'ILC sur le couplage droite $Zb\bar{b}$ est 5 fois meilleur qu'au LEP, l'anomalie LEP sera soit totalement confirmée, ou soit définitivement écartée.
+La précision prévue à l'ILC sur le couplage $g_R$ est 5 fois meilleure qu'au LEP. L'anomalie LEP sera soit donc confirmée, ou soit définitivement écartée.
 
 
