@@ -265,12 +265,11 @@ La charge du quark bottom est identifiée en utilisant deux signatures de base:
 	\item \textbf{Kaon charge} est une charge de kaons trouvée dans les sommets du hadrons bottom.
 \end{itemize}
 
-On a constaté que les algorithmes de vertexing peuvent manquer une ou plusieurs particules des sommets de b-hadron reconstruits. Cet effet diminue la pureté de la charge de vertex.
-La procédure de récupération de sommets développée améliore la pureté de la charge de sommets en ajoutant les particules de b-hadron manquantes aux sommets mesurés à l'aide d'un ensemble d'observables reconstruits.
+On a constaté que les algorithmes de vertexing peuvent manquer une ou plusieurs particules des sommets de b-hadron reconstruits. Cet effet diminue la pureté de la charge de vertex, qui est défini comme  un nombre de charges correctes divisé par le nombre total de charges.
+La procédure de récupération de sommets développée améliore la pureté de la charge de sommets en ajoutant les particules de b-hadron manquantes aux sommets mesurés à l'aide d'un ensemble d'observables reconstruits. Les graphiques de la pureté de la charge de vertex avant et apr\'es d'application de la procedure sont représentés dans la Fig.~\ref{fig:RecoveryPurityComparison_3F}.
 
 L'identification kaon est possible en utilisant les informations TPC $dE/dx$. Après avoir égalisé le $dE/dx$ dans le spectre angulaire, les kaons des sommets des b-hadrons peuvent être identifiés avec 97\% de pureté et 87\% d'efficacité.
-
-Les graphiques de la pureté de la charge de vertex et le $dE/dx$ en fonction de moment des particules pour hadrons différents sont représentés dans la Fig.~\ref{fig:RecoveryPurityComparison_3F} et la Fig.~\ref{fig:dEdxBefore_3F}, respectivement.
+Les graphiques de le $dE/dx$ en fonction de moment des particules pour hadrons différents sont représentés dans  la Fig.~\ref{fig:dEdxBefore_3F}.
 
 \begin{figure}
 	{\centering
@@ -305,10 +304,10 @@ Les graphiques de la pureté de la charge de vertex et le $dE/dx$ en fonction de
 %-----------------------------------------------------------------------------
 \newpage
 \subsection*{Reconstruction de l'angle polaire du quark top et bottom}
-
+Dans un premier temps, les nouvelles méthodes ont été appliquées dans le canal semi-leptonique du  quark top pour améliorer un résultat existant~\cite{bib:ILCTOP}.
 L'application de toutes les combinaisons de paires possibles de la charge de sommet, de la charge de kaon et de la charge de $W^\pm$ lepton à la reconstruction de l'angle polaire supérieur illustrée dans la Fig.~\ref {fig:TopAsymmetryChi_3F}.
 
-Cette méthode permet de reconstituer l'asymétrie aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite {bib:ILCTOP} par 25\%.
+Cette méthode permet de reconstituer l'asymétrie aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite{bib:ILCTOP} par 25\%.
 
 La méthode la plus utilisée est la combinaison de la charge de vertex avec la charge $W^\pm$ lepton car le $ W^\pm$ lepton doit être reconstruit dans chaque événement sélectionné.
 
