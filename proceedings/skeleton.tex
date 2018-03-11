@@ -47,7 +47,7 @@
 \begin{document}
 
 \section{Introduction}
-The LEP~I collaborations have determined the $b$-quark couplings to the $Z^0$ boson by measuring the $b$ partial width and the forward-backward asymmetry called \afb. These quantities provide the most precise value of $\sin^2\theta_W$ at LEP~I. It turns out that this value is about three standard deviations~\cite{Djouadi:2006rk} away from the very precise value from SLD using beam polarisation, see Fig.~\ref{fig:ewfit}. Redoing precisely this measurement is therefore a priority for future $e^+e^-$ colliders. 
+The LEP~I collaborations have determined the $b$-quark couplings to the $Z^0$ boson by measuring the $b$ partial width and the forward-backward asymmetry called \afb. These quantities provide the most precise value of $\sin^2\theta_W$ at LEP~I. It turns out that this value is about three standard deviations~\cite{Baak:2014ora} away from the very precise value from SLD using beam polarisation, see Fig.~\ref{fig:ewfit}. Redoing precisely this measurement is therefore a priority for future $e^+e^-$ colliders. 
 
 
 \begin{figure}
@@ -55,7 +55,7 @@ The LEP~I collaborations have determined the $b$-quark couplings to the $Z^0$ bo
 		%\includegraphics[width=0.55\linewidth]{../graphics/2014_07_16_PullPlotTwoBarsTwoTheos_logo-eps-converted-to.pdf}
 		\includegraphics[width=0.45\linewidth]{../poster/figures/deviation2.png}
 		\caption{\sl Deviations of the electroweak precision
-			observables in the Standard Model. Extracted from~\cite{Djouadi:2006rk}. }
+			observables in the Standard Model. Extracted from~\cite{Baak:2014ora}. }
 		\label{fig:ewfit}
 	}
 \end{figure}
@@ -68,13 +68,13 @@ Recall that the LEP~I anomaly can be interpreted up to a sign ambiguity for what
 \begin{figure}
 	{\centering
 		\includegraphics[width=0.8\linewidth]{../poster/figures/ild3.png}
-		\caption{\sl Event display of the $e^+ e^-\to b\bar{b}$ process in a full simulation of the ILD detector (left) and schematic view of the ILD concept~\cite{Behnke:2013lya} (right). }
+		\caption{\sl Example of the event display of the $e^+ e^-\to b\bar{b}$ process in a full simulation of the ILD detector (left) and schematic view of the ILD concept~\cite{Behnke:2013lya} (right). }
 		\label{fig:ILDScheme}
 	}
 \end{figure}
 
 %The schematic view of the ILC accelerator complex is shown in Fig.~\ref{fig:ILCScheme}.
-In this work, the $e^+ e^-\to b\bar{b}$ channel is studied at $\sqrt{s}=250$\,GeV using full simulation of the ILD experiment, which include beam spectrum and initial state radiation modelling.
+In this work, the $e^+ e^-\to b\bar{b}$ channel is studied at $\sqrt{s}=250$\,GeV using full simulation of the ILD experiment~\cite{Behnke:2013lya}, which include beam spectrum and initial state radiation modelling.
 The high-granularity of the ILD subdetectors allows for an individual particle reconstruction using the Particle Flow approach~\cite{Marshall:2015rfa}.
 The schematic view of the ILD concept and the subdetector layout is presented in Fig.~\ref{fig:ILDScheme}.
 
@@ -107,7 +107,7 @@ A vertex recovery procedure has been developed to identify the missed tracks and
 %The kaon identification is possible using the TPC $dE/dx$ information. 
 The charged kaons are identified using the specific energy-loss
 $dE/dx$ in the TPC.
-After correcting for the angular dependence of $dE/dx$, the charged kaons from $b$-hadron vertices can be identified with 97\% purity and 87\% efficiency.
+After correcting for the angular dependence of $dE/dx$, the charged kaons from $b$-hadron vertices can be identified with 97\% purity and 87\% efficiency, assuming 5\% precision on the energy loss value.
 The plots of the $dE/dx$ as function of particle momentum for different hadrons are shown in Fig.~\ref{fig:lepsilonsys}.
 
 	\begin{figure}
@@ -186,7 +186,7 @@ The ILC precision on the $g_R^Z$ coupling is enough to fully confirm or discard 
 \begin{itemize}
 	\item The developed procedure of the $b$-quark charge reconstruction allows for measuring the $b$-quark polar angle. The residual impurity is corrected by a data-driven procedure;
 	\item The $b$-quark polar angle fit allows for an independent determination of four electroweak couplings of the $b$-quark. The fit can be extended to also include a term proportional to $\sin^2\theta$, giving access to an independent determination of the tensorial couplings;
-	\item  The relative precision on the right-handed coupling $dg^Z_R/g^Z_R\approx 2$\% at the ILC is sufficient to confirm at $>5\,\sigma$ or to discard the LEP~I effect, which is at the 25\% level;
+	\item  The relative precision on the right-handed coupling $dg^Z_R/g^Z_R\approx 2$\% at the ILC is sufficient to confirm at $>5\,\sigma$ or to discard the LEP~I effect, which is at the 25\% level.
 	%\item A reach of new particle mass scale $\Lambda \approx 10$\,TeV is achievable for indirect New Physics searches using Effective Field theory approach.
 	%\item The statistical precision after the first $\sqrt{s} = 250\,$GeV ILC program will be almost 5 times better than at LEP;
 \end{itemize}
@@ -198,8 +198,8 @@ The kaon charge method can be extended on the $c$-quark polar angle analysis, wh
 %Hence, at the ILC one can measure the top, bottom and charm quark electroweak couplings with an excellent sensitivity to New Physics effects.
 
 \section*{Acknowledgements}
-
-These studies are done using the full ILD simulation and we acknowledge the work of the ILD software and simulation groups.
+We would like to thank our collegues in the ILD group, in particular the software group, which developed the the simulation framework and produced the data samples used in this study.
+%These studies are done using the full ILD simulation and we acknowledge the work of the ILD software and simulation groups.
 
 
 
@@ -210,53 +210,63 @@ These studies are done using the full ILD simulation and we acknowledge the work
 %\bibliography{../../OLD/Paper/mainbib}
 
 \begin{thebibliography}{99}
-	%\cite{Djouadi:2006rk}
-	\bibitem{Djouadi:2006rk} 
-	A.~Djouadi, G.~Moreau and F.~Richard,
-	``Resolving the A(FB)**b puzzle in an extra dimensional model with an extended gauge structure,''
-	Nucl.\ Phys.\ B {\bf 773}, 43 (2007)
-	doi:10.1016/j.nuclphysb.2007.03.019
-	[hep-ph/0610173].
-	%%CITATION = doi:10.1016/j.nuclphysb.2007.03.019;%%
-	%103 citations counted in INSPIRE as of 05 Oct 2017
-	
-	
-	%\cite{Behnke:2013xla}
-	\bibitem{Behnke:2013xla} 
-	T.~Behnke {\it et al.},
-	``The International Linear Collider Technical Design Report - Volume 1: Executive Summary,''
-	arXiv:1306.6327 [physics.acc-ph].
-	%%CITATION = ARXIV:1306.6327;%%
-	%224 citations counted in INSPIRE as of 05 Oct 2017
-	
-	
-	%\cite{Bilokin:2017lco}
-	\bibitem{Bilokin:2017lco} 
-	S.~Bilokin, R.~Pöschl and F.~Richard,
-	``Measurement of b quark EW couplings at ILC,''
-	arXiv:1709.04289 [hep-ex].
-	%%CITATION = ARXIV:1709.04289;%%
-	
-	
-	%\cite{Behnke:2013lya}
-	\bibitem{Behnke:2013lya} 
-	T.~Behnke {\it et al.},
-	``The International Linear Collider Technical Design Report - Volume 4: Detectors,''
-	arXiv:1306.6329 [physics.ins-det].
-	%%CITATION = ARXIV:1306.6329;%%
-	%279 citations counted in INSPIRE as of 05 Oct 2017
-	
-	
-	%\cite{Marshall:2015rfa}
-	\bibitem{Marshall:2015rfa} 
-	J.~S.~Marshall and M.~A.~Thomson,
-	``The Pandora Software Development Kit for Pattern Recognition,''
-	Eur.\ Phys.\ J.\ C {\bf 75}, no. 9, 439 (2015)
-	doi:10.1140/epjc/s10052-015-3659-3
-	[arXiv:1506.05348 [physics.data-an]].
-	%%CITATION = doi:10.1140/epjc/s10052-015-3659-3;%%
-	%19 citations counted in INSPIRE as of 05 Oct 2017
-	
+%\cite{Baak:2014ora}
+\bibitem{Baak:2014ora} 
+M.~Baak {\it et al.} [Gfitter Group],
+%``The global electroweak fit at NNLO and prospects for the LHC and ILC,''
+Eur.\ Phys.\ J.\ C {\bf 74}, 3046 (2014)
+doi:10.1140/epjc/s10052-014-3046-5
+[arXiv:1407.3792 [hep-ph]].
+%%CITATION = doi:10.1140/epjc/s10052-014-3046-5;%%
+%344 citations counted in INSPIRE as of 08 Oct 2017
+
+
+%\cite{Behnke:2013xla}
+\bibitem{Behnke:2013xla} 
+T.~Behnke {\it et al.},
+%``The International Linear Collider Technical Design Report - Volume 1: Executive Summary,''
+arXiv:1306.6327 [physics.acc-ph].
+%%CITATION = ARXIV:1306.6327;%%
+%224 citations counted in INSPIRE as of 08 Oct 2017
+
+
+%\cite{Bilokin:2017lco}
+\bibitem{Bilokin:2017lco} 
+S.~Bilokin, R.~Pöschl and F.~Richard,
+%``Measurement of b quark EW couplings at ILC,''
+arXiv:1709.04289 [hep-ex].
+%%CITATION = ARXIV:1709.04289;%%
+
+
+%\cite{Djouadi:2006rk}
+\bibitem{Djouadi:2006rk} 
+A.~Djouadi, G.~Moreau and F.~Richard,
+%``Resolving the A(FB)**b puzzle in an extra dimensional model with an extended gauge structure,''
+Nucl.\ Phys.\ B {\bf 773}, 43 (2007)
+doi:10.1016/j.nuclphysb.2007.03.019
+[hep-ph/0610173].
+%%CITATION = doi:10.1016/j.nuclphysb.2007.03.019;%%
+%103 citations counted in INSPIRE as of 08 Oct 2017
+
+
+%\cite{Behnke:2013lya}
+\bibitem{Behnke:2013lya} 
+T.~Behnke {\it et al.},
+%``The International Linear Collider Technical Design Report - Volume 4: Detectors,''
+arXiv:1306.6329 [physics.ins-det].
+%%CITATION = ARXIV:1306.6329;%%
+%279 citations counted in INSPIRE as of 08 Oct 2017
+
+
+%\cite{Marshall:2015rfa}
+\bibitem{Marshall:2015rfa} 
+J.~S.~Marshall and M.~A.~Thomson,
+%``The Pandora Software Development Kit for Pattern Recognition,''
+Eur.\ Phys.\ J.\ C {\bf 75}, no. 9, 439 (2015)
+doi:10.1140/epjc/s10052-015-3659-3
+[arXiv:1506.05348 [physics.data-an]].
+%%CITATION = doi:10.1140/epjc/s10052-015-3659-3;%%
+%19 citations counted in INSPIRE as of 08 Oct 2017
 	
 \end{thebibliography}
 
