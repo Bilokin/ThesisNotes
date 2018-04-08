@@ -32,14 +32,14 @@ Cette th\'es\`e est concentr\'e sur l'experiance ILD.
 
 L'International Large Detector (ILD) est un concept pour un détecteur multi-usages de haute précision. %, conçu pour atteindre les objectifs de physique de l'ILC~\cite{Behnke:2013lya}.
 %La vue schématique de l'ILD est présentée dans la Figure~\ref {fig:ILCSchemeF}.
-Comme montr\'e dans la vue schématique, Fig.~\ref {fig:ILDSchemeF}, ILD est compos\'e de plusieurs sous-d\'etecteurs, plac\'es les uns autour des autres:
+Comme montr\'e dans la vue schématique, Fig.~\ref {fig:ILDSchemeF}, ILD est compos\'e de plusieurs sous-d\'etecteurs, plac\'es les uns autour les autres:
 \begin{itemize}
 	\item un d\'etecteur de vertex \'a pixel multicouche (VTX);
-	\item Le large de la tube de faisceau la trajectométrie est completée par un système de disque avec des pixels et des bandes de silicium;
+	\item Le large de la tube de faisceau la trajectométrie est completée par un système des disques avec des pixels et des bandes de silicium;
 	\item une ”Time Projection Chamber” (TPC) comme d\'etecteur des traces centrale;
 	\item un calorim\`etre \'electromagn\'etique hautement granulaire (ECAL);
 	\item un calorim\`etre hadronique hautement granulaire (HCAL);
-	\item une bobine supraconductrice, qui cr\'ee un champ B axial de 3.5~Tesla.
+	\item une bobine supraconductrice, qui cr\'ee un champ magn\'etique axial de 3.5~Tesla.
 	\item un d\'etecteur de muons et des queues des cascades hadroniques (TCMT).
 \end{itemize}
 
@@ -320,12 +320,15 @@ Les spectres $dE/dx$ en fonction de l'impulsion des particules pour trois types 
 %-----------------------------------------------------------------------------
 \newpage
 \subsection*{Reconstruction de l'angle polaire du quark top et bottom}
-L’\'etude du quark top suppose une \'energie dans le centre de masse de $\sqrt{s} = 500$\,GeV et une luminosit\'e int\'egr\'ee de $500$\ifb. L'analyse precendant a \'et\'e fait  en utilisant de methode de la charge de $W^\pm$ lepton~\cite{bib:ILCTOP}.
-Dans un premier temps, les nouvelles méthodes ont été appliquées dans le canal semi-leptonique du  quark top pour améliorer l'efficasit\'e de reconstruction de la charge du quark top.
+L’\'etude du quark top suppose une \'energie dans le centre de masse de $\sqrt{s} = 500$\,GeV et une luminosit\'e int\'egr\'ee de $500$\ifb. L'analyse precendant~\cite{bib:ILCTOP} a \'et\'e fait  en utilisant de methode de la charge de $W^\pm$ lepton pour reconstruire  l'asymétrie avant-arrière $A_ {FB}$, qui est definie comme le nombre d’\'ev\'enements
+dans les h\'emisph\`eres du d\'etecteur par rapport \'a l'angle polaire.  Cette observable permet de calculer les facteurs de forme axiales $F_{1A}^{Z/\gamma}$.
+
+
+Dans un premier temps, les nouvelles méthodes de reconstruction de la charge de quark $b$ ont été appliquées dans le canal semi-leptonique du quark top pour améliorer l'efficasit\'e de reconstruction de la charge du quark top.
 Le resultat après l'application de toutes les combinaisons de paires possibles de la charge de sommet, de la charge de kaon et de la charge de $W^\pm$ lepton à la reconstruction de l'angle polaire supérieur illustrée dans la Fig.~\ref {fig:TopAsymmetryChi_3F}.
 
 %<<<<<<< HEAD
-Cette méthode permet de reconstituer l'asymétrie aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite{bib:ILCTOP} par 25\%.
+Cette méthode permet de reconstituer l'asymétrie avant-arrière du quark top aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite{bib:ILCTOP} par 25\%.
 %=======
 %Cette méthode permet de reconstruire l'asymétrie avant-arriere $A_{FB}$ aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite {bib:ILCTOP} par 25\%.
 %>>>>>>> 8e36eba08c2388bfd3f0081d6e8eb96636cb3e72
@@ -381,7 +384,7 @@ Les distributions corrigées sont ajustées par $S(1+\cos^2\theta) + A\cos\theta
 Comme on peut le voir à partir dans la Fig.~\ref{fig:BAsymmetryFinal_3F}, la contribution des processus de fond, comme cf. celle de la production d'un pair de bosons est faible.
 
 
-Les précisions relatives sur les couplages $Z^0 b\bar{b}$, $g_L^Z$ et $g_R^Z$, pour les mesures LEP~I et pour les performances ILC attendues sont affichées dans la Fig.~\ref{fig:LEPILCResult_3F}.
+Les précisions relatives sur les couplages $Z^0 b\bar{b}$, $g_L^Z$ et $g_R^Z$, pour les mesures LEP~I et pour les performances ILC attendues sont affichées dans la Fig.~\ref{fig:LEPILCResult_3F}. Le 
 La précision de l'ILC sur la couplage $g_R^Z$ est suffisante pour confirmer ou rejeter complètement l'influence de la nouvelle physique sur les couplages électrofaibles du quark $b$.
 
 \begin{figure}
@@ -416,7 +419,8 @@ Tous les modèles de simulation testés montrent une bonne performance en termes
 Dans cette thèse, les spectres de l'angle polaire des quarks top et bottom sont obtenus à l'aide de la charge du quark b.  
 Les méthodes développées sont appliquées aux deux canaux $e^+ e^- \to t\bar{t}$ et $e^+ e^- \to b\bar{b}$ processes à $\sqrt {s} = 500$\,GeV et 250\,GeV, respectivement.
 
-La thèse propose des méthodes pour la determination de la charge du quark $b$ avec une haute pureté. Cela permet de reconstruire précisement l'angle polaire du quark $b$ et d'en extraire les couplages électrofaibles du quark $b$ au boson de $Z^0$.% permet de corriger la distribution  de l'angle polaire pour la contamination résiduelle.
+La thèse propose des méthodes pour la determination de la charge du quark $b$ avec une haute pureté: la somme de toutes les charges reconstruites, qui sont associées aux vertices de desintégration des hadrons de $b$ et la charge de kaons trouvée dans les produits de la desintégration des hadrons de $b$. 
+Cela permet de reconstruire précisement l'angle polaire du quark $b$ et d'en extraire les couplages électrofaibles du quark $b$ au boson de $Z^0$. % permet de corriger la distribution  de l'angle polaire pour la contamination résiduelle.
 En conséquence, l'angle polaire du quark bottom reconstruit est utilisable pour l'extraction des couplages  et des facteurs de forme électrofaibles du quark bottom.
 La précision previsible pour l'ILC sur le couplage $g_R$ est 5 fois meilleure que c'\'etait le cas pour LEP. L'anomalie LEP sera soit donc confirmée, soit définitivement écartée.
 
