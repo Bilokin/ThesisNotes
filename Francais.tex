@@ -35,7 +35,8 @@ L'International Large Detector (ILD) est un concept pour un détecteur multi-usa
 Comme montr\'e dans la vue schématique, Fig.~\ref {fig:ILDSchemeF}, ILD est compos\'e de plusieurs sous-d\'etecteurs, plac\'es les uns autour les autres:
 \begin{itemize}
 	\item un d\'etecteur de vertex \'a pixel multicouche (VTX);
-	\item Le large de la tube de faisceau la trajectométrie est completée par un système des disques avec des pixels et des bandes de silicium;
+	\item le large de la tube de faisceau la trajectométrie est completée par un système des disques avec des pixels et des bandes de silicium;
+	\item deux couches des bandes de silicium (SIT) en forme de tonneau;
 	\item une ”Time Projection Chamber” (TPC) comme d\'etecteur des traces centrale;
 	\item un calorim\`etre \'electromagn\'etique hautement granulaire (ECAL);
 	\item un calorim\`etre hadronique hautement granulaire (HCAL);
@@ -68,8 +69,8 @@ choix favorisé d'ILD.
 
 La collaboration de CALICE (CAlorimetry for the LInear Collider Experiments) a construit et testé un prototype SiW-ECAL dont la vue schématique du prototype est présentée dans la Figure~\ref {fig:ECAL-schemeF}.
 
-L'avantage du tungstène est sa grande longueur d'interaction ($\lambda_I = 96$\,mm), compar\'ee \`a son longueur de radiation  $X_0 = 3.5$\,mm. Cela conduit \`a une bonne s\'eparation longitudinale entre les photons et les hadrons. 
-Des capteurs de silicium sous-divisés en pixels d'une taille de $1\times1$\,cm$^2$ servent comme mat\'eriau actif dans le prototype. 
+L'avantage du tungstène est sa grande longueur d'interaction ($\lambda_I = 96$\,mm), compar\'ee \`a son longueur de radiation  $X_0 = 3.5$\,mm. Cela permet une bonne s\'eparation longitudinale entre les photons et les hadrons. 
+Des capteurs de silicium sous-divisés en pixels d'une taille de $1\times1$\,cm$^2$ servent comme mat\'eriau actif. 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.55\textwidth]{ECAL/graphics/ecal-new.png}
@@ -84,7 +85,8 @@ Cette thèse présente une analyse de donnéés enregistrées avec le prototype 
 \subsection*{L'algorithme de reconstruction de traces}
 L'objectif principal de l'algorithme de traces developpé pour cette thèse est la détection de traces diffusées vers l'avant qui jaillissent de l'interaction entre les pions primaires et le matériau absorbant en absence d'un champ magnétique.
 
-L'algorithme suit le sch\'ema d'ex\'ecution suivant:
+Le schema d'execution de l'agorithme est comme suit:
+%L'algorithme suit le sch\'ema d'ex\'ecution suivant:
 \begin{itemize}
 	\item La région d'interaction est identifiée par un critère topologique et séparée pour une analyse plus approfondie, voir Fig.~\ref{fig:testF};
 	\item Les dépôts d'énergie restants sont regroupés dans des amas de pixels appellés  clusters dans la suite, voir Fig.~\ref{fig:democlusterF};
@@ -113,7 +115,7 @@ L'algorithme suit le sch\'ema d'ex\'ecution suivant:
 \begin{figure}
 	\centering
 	\includegraphics[width=0.55\textwidth]{ECAL/graphics/demo-v3.pdf}
-	\caption{\label{fig:democlusterF} \sl Illustration des étapes de la clusterization. Les pixels actives sont représentés par des cubes bleus, et la zone de recherche pour les impacts adjacents est indiquée par des cubes rouges. Les flèches bleues indiquent la direction du flux de clusterization.}
+	\caption{\label{fig:democlusterF} \sl Illustration des étapes de la clusterization. Les pixels actives sont représentés par des cubes bleus, et la zone de recherche pour des signaux avoisinés est indiquée par des cubes rouges. Les flèches bleues indiquent la direction du flux de clusterization.}
 \end{figure}
 
 %-----------------------------------------------------------------------------
@@ -121,7 +123,7 @@ L'algorithme suit le sch\'ema d'ex\'ecution suivant:
 %-----------------------------------------------------------------------------
 \newpage
 \subsection*{Comparaison des simulations avec les données réelles}
-La figure \ref{fig:irexampleF} montre les distributions du rapport entre l'énergie deposée dans la zone d'interaction sur l'énergie totale dans le detecteur. Les données sont comparées aux predictions de trois modèles de simulation des gerbes hadroniques proposés par le logiciel GEANT4.  
+La figure \ref{fig:irexampleF} montre les distributions du rapport entre l'énergie deposée dans la zone d'interaction sur l'énergie totale dans le détecteur. Les données sont comparées aux predictions de trois modèles de simulation des gerbes hadroniques proposés par le logiciel GEANT4.  
 %La figure \ref{fig:irexampleF} montre les comparaisons des distributions d'énergie de la région d'interaction sur le dépôt d'énergie total $f_ {IR}$ entre les données et les trois listes de physique de {\sc Geant4}.
 Le premier bac de chaque histogram  réprésent à la fraction d'événements pour laquelle aucune region d'interaction n'est trouvée par l'algorithme.
 
@@ -142,7 +144,7 @@ Le premier bac de chaque histogram  réprésent à la fraction d'événements po
 		Comparaison de $f_{IR}$ entre les données et les simulations pour trois {\sc Geant}4  listes physiques de l'\'energies 2 (a) et 10 (b) GeV de particule primordiale.}
 \end{figure}
 
-Dans la figure \ref{fig:irgraphF}, la valeur moyenne de $f_ {IR}$ est représentée en fonction de l'énergie du faisceau.% pour les énergies du faisceau de 2, 4, 6, 8 et 10 \, GeV.
+Dans la figure \ref{fig:irgraphF} la valeur moyenne de $f_ {IR}$ est présentée en fonction de l'énergie du faisceau.% pour les énergies du faisceau de 2, 4, 6, 8 et 10 \, GeV.
 La valeur moyenne de $f_{IR}$ prédit par les modèles de simulation est jusqu'à 20\% inférieure à celle observée dans les données.
 
 \begin{figure}
@@ -215,10 +217,10 @@ La valeur moyenne des nombres de traces est présentée en Fig. 1.9 en fonction 
 \newpage
 \subsection*{Les quarks top et bottom \'a l'ILC}
 
-La masse du quark top est comparable à la valeur d'anticipation du vide électrofaible et elle est beaucoup plus grande que les masses de toutes les autres particules connues aujourd'hui et notammeent de celles des bosons de la force électrofaible.
-\c Ca fait du top quark un sujet de nombreuses théories de la nouvelle physique.
+La masse du quark top est comparable à la valeur d'anticipation du vide électrofaible et elle est beaucoup plus grande que les masses de toutes les autres particules connues aujourd'hui et notamment de celles des bosons de la force électrofaible.
+\c C'est ainsi pourquoi le top quark est un sujet de nombreuses théories de la nouvelle physique.
 
-Des mesures précises des couplages de quarks lourds sont donc des pistes prometteuses de la recherche indirecte pour des nouvelles particules et la discrimination entre différentes théories.
+Des mesures précises des couplages des quarks lourds sont donc des pistes prometteuses pour la recherche indirecte pour des nouvelles particules et la discrimination entre différentes théories.
 
 Cette section porte sur la production électrofaible des paires de quarks top et bottom.
 
@@ -237,7 +239,7 @@ F^{f\gamma}_{1V} = Q^{f}, \ F^{f\gamma}_{1A} = 0, \ F^{fZ}_{1V} = \frac{I^f - 2Q
 et toutes les facteurs $F_2$ sont 0. Dans l'équation~\ref{formula:SMformFactors_3F} $I^f$ est  l'isospin faible, $I^t = 1/2$ pour top et $I^b = -1/2$ pour quark bottom  et $Q^f$ est la charge electrique, $Q^t = 2/3$ et $Q^b = -1/3$.
 
 
-Le facteurs de forme sont liés aux couplages des fermions des hélicités droite et gauche au boson de $Z^0$. Il est $g_L = F^Z_{1V} - F^Z_{1A}$  et $gR = F^Z_{1V} + F^Z_{1A}$.
+Le facteurs de forme sont liés aux couplages des fermions des hélicités droite et gauche au boson de $Z^0$. Il est $g_L = F^Z_{1V} - F^Z_{1A}$  et $g_R = F^Z_{1V} + F^Z_{1A}$.
 Les resultats obtenus dans cette these sont exprimés en termes de $g_L$ et $g_R$.  
 %The form factors are related to fermion couplings with left and right-handed helicity to $Z^0$ boson:
 %La définition suivante des couplages gauches et droites $Z^0b\bar{b}$ est utilisée tout au long de la thèse: 
@@ -258,8 +260,9 @@ L'observable clé de la thèse est la section efficace differentielle par rappor
 Les facteurs $\mathcal{F}$ sont une rédéfinition des facteurs de forme $F$ selon la référence~\cite{bib:Schmidt}
 En plus, $\mathcal{A} = 4\pi\alpha^2/3s$ avec $\alpha$ comme couplage électromagnétique et $N_c$ est le nombre de couleurs des fermions (i.e. 3 en cas de quarks). Finalement, $\beta$ et $\gamma$ sont la vitesse et le facteur de Lorentz du fermion produit, respectivement.
 
-Les mesures de $sin^2\theta_W$ avec un processus de $e^+e^- \to b \bar{b}$ aux les expériences du collisionneurs LEP et SLC, ont révélé une déviation avec la prédiction de la \sm~\cite{bib:AfbSMFit}.
-De nombreuses théories au delà du modèle standard prédisent des modifications de la production électro-électrique des paires de quarks lourds par rapport aux attentes du modèle standard.
+%Les mesures de $sin^2\theta_W$ avec un processus de $e^+e^- \to b \bar{b}$ aux les expériences du collisionneurs LEP et SLC, ont révélé une déviation avec la prédiction de la \sm~\cite{bib:AfbSMFit}.
+Les mesures de $\sin^2\theta_W$ par SLD en utilisant l'asymétrie gauche-droite et au LEP en utilisant l'asymétrie avant-arrière dans le processus $e^+e^-\to b\bar{b}$ sont contradictoires entre eux et en desaccord avec la prédiction du modele standard.  
+De nombreuses théories au delà du modèle standard prédisent notamment des modifications de la production électro-faible des paires des quarks lourds par rapport du modèle standard.
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
@@ -276,8 +279,8 @@ A cette fin, cette thèse exploitent deux méthodes complémentaires:
 Dans leurs versions actuelles les algorithmes de vertexing ignore une ou plusieurs particules produites lors de la desintégration des hadrons de $b$. La qualité de la reconstruction des vertex de desintégration des hadrons de $b$ est appreciée par l'observable pureté, definie comme un nombre de charges correctes divis\'e par le nombre total de charges.
 Cette thèse propose un algoithme pour recuperer les traces ignorées. Cet algorithme mène à une amélioration significante de la pureté comme demontrer dans la Fig.~\ref{fig:RecoveryPurityComparison_3F}.%  Les graphiques de la pureté de la charge de vertex avant et apr\'es d'application de la procedure sont représentés dans la Fig.~\ref{fig:RecoveryPurityComparison_3F}.
 
-Le volume gazeuse de la TPC permet de mesurer le dépôt d'énergie par longueur de trace, $dE/dx$. La valeur  $dE/dx$ varie en fonction du type et de la vitesse d'une particule et est donc un moyen pour l'identification des partcules.   Après avoir égalisé le $dE/dx$ dans le spectre angulaire, les kaons issus de la desintégration des hadrons de $b$ peuvent être identifiés avec 97\% de pureté et 87\% d'efficacité.
-Les spectres $dE/dx$ en fonction de l'impulsion des particules pour trois types de hadrons apr\'es et avant de l'égalisation sont représentés dans la Fig.~\ref{fig:dEdxBefore_3F}.
+Le volume gazeuse de la TPC permet de mesurer le dépôt d'énergie par longueur de trace, $dE/dx$. La valeur  $dE/dx$ varie en fonction du type et de la vitesse d'une particule et est donc un moyen pour l'identification des particules.  Après avoir corrigé le $dE/dx$ dans le spectre angulaire, les kaons issus de la desintégration des hadrons de $b$ peuvent être identifiés avec 97\% de pureté et 87\% d'efficacité.
+Les spectres $dE/dx$ en fonction de l'impulsion des particules pour trois types de hadrons apr\'es et avant de la correction sont représentés dans la Fig.~\ref{fig:dEdxBefore_3F}.
 %=======
 %On a constaté que les algorithmes de vertexing peuvent manquer une ou plusieurs particules de la desintégration des hadrons de $b$. Cela  diminuit evidemment sur la bonne reconstruction de  la charge de vertex.
 %La procédure de récupération de toutes les traces issues de la desintégration des hadrons de $b$  améliore la reconstruction de la charge de vertex en ajoutant les particules de b-hadron ratées aux vertices mesurés à l'aide d'un ensemble d'observables reconstruits.
@@ -320,15 +323,21 @@ Les spectres $dE/dx$ en fonction de l'impulsion des particules pour trois types 
 %-----------------------------------------------------------------------------
 \newpage
 \subsection*{Reconstruction de l'angle polaire du quark top et bottom}
-L’\'etude du quark top suppose une \'energie dans le centre de masse de $\sqrt{s} = 500$\,GeV et une luminosit\'e int\'egr\'ee de $500$\ifb. L'analyse precendant~\cite{bib:ILCTOP} a \'et\'e fait  en utilisant de methode de la charge de $W^\pm$ lepton pour reconstruire  l'asymétrie avant-arrière $A_ {FB}$, qui est definie comme le nombre d’\'ev\'enements
-dans les h\'emisph\`eres du d\'etecteur par rapport \'a l'angle polaire.  Cette observable permet de calculer les facteurs de forme axiales $F_{1A}^{Z/\gamma}$.
+L’\'etude du quark top suppose une \'energie dans le centre de masse de $\sqrt{s} = 500$\,GeV et une luminosit\'e int\'egr\'ee de $500$\ifb. 
+Le quark top d\`esint\'egre en quark bottom et boson $W$. Le desint\'egration du boson faible $W$ fait trois etats finale du processus $e^+e^-\to t\bar{t}$:
+\begin{itemize}
+	\item le canal leptonique $ t\bar{t} \to b\bar{b} l^+ \nu l^- \bar{\nu}$;
+	\item le canal semi-leptonique $ t\bar{t} \to b\bar{b} l \nu q \bar{q}'$;
+	\item le canal hadronique $ t\bar{t} \to b\bar{b} q \bar{q}' q \bar{q}'$.
+\end{itemize}
+ L'analyse précédante~\cite{bib:ILCTOP} a utilisé la de methode de la charge de $W^\pm$ lepton pour reconstruire  l'asymétrie avant-arrière $A_ {FB}$, qui est definie comme le defference normalisé entre les nombres d’\'ev\'enements dans les h\'emisph\`eres du d\'etecteur par rapport \'a l'angle polaire.  Cette observable permet est sensible aux facteurs de forme axiales $F_{1A}^{Z/\gamma}$.
 
 
-Dans un premier temps, les nouvelles méthodes de reconstruction de la charge de quark $b$ ont été appliquées dans le canal semi-leptonique du quark top pour améliorer l'efficasit\'e de reconstruction de la charge du quark top.
+Dans un premier temps, les nouvelles méthodes de reconstruction de la charge du quark $b$ ont été appliquées dans le canal semi-leptonique du quark top pour améliorer l'efficacit\'e de la reconstruction de la charge du quark top.
 Le resultat après l'application de toutes les combinaisons de paires possibles de la charge de sommet, de la charge de kaon et de la charge de $W^\pm$ lepton à la reconstruction de l'angle polaire supérieur illustrée dans la Fig.~\ref {fig:TopAsymmetryChi_3F}.
 
 %<<<<<<< HEAD
-Cette méthode permet de reconstituer l'asymétrie avant-arrière du quark top aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite{bib:ILCTOP} par 25\%.
+Cette méthode permet de reconstituer l'asymétrie avant-arrière du quark top aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$, avec l'efficacité finale de la selection est de 38,6\%, ce qui améliore le résultat précédent~\cite{bib:ILCTOP} par 25\%.
 %=======
 %Cette méthode permet de reconstruire l'asymétrie avant-arriere $A_{FB}$ aussi bon que $A_ {FB}^{rec} / A^{gen}_{FB} = 94\%$ avec l'efficacité finale de 38,6\%, ce qui améliore le résultat précédent~\cite {bib:ILCTOP} par 25\%.
 %>>>>>>> 8e36eba08c2388bfd3f0081d6e8eb96636cb3e72
@@ -353,7 +362,7 @@ La méthode la plus utilisée est la combinaison de la charge de vertex avec la 
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
 %-----------------------------------------------------------------------------
-En suit, on peux appliquer les nouvelles methodes pour reconstruction des couplages \'electrofaibles de la quark $b$. 
+En suit, on peut appliquer les nouvelles methodes pour extraction des couplages \'electrofaibles du quark $b$. 
 Les spectres de l'angle polaire reconstruits du quark $b$ à $\sqrt{s} = 250$\,GeV utilisant une combinaison de signatures des charges des kaons et du vertex sont affich\`ees dans la Fig. ~\ref{fig:BAsymmetryFinal_3F}. La luminosité intégrée $\mathcal{L}_I=250$\,fb$^{-1}$ est supposée pour chaque polarisation du faisceau.
 
 %\subsection*{Reconstruction de l'angle polaire du quark bottom et top}
@@ -381,11 +390,11 @@ Les spectres de l'angle polaire reconstruits du quark $b$ à $\sqrt{s} = 250$\,G
 Le spectre final est obtenu par une correction supplémentaire qui se sert des mesures contradictoires des charges sans faisant appel à l'information du générateur.  % En utilisant les puretés mesurées, le spectre reconstruit est corrigé à l'aide d'une procédure basée sur les données.
 Les distributions corrigées sont ajustées par $S(1+\cos^2\theta) + A\cos\theta$ inspiré par Eq.~\ref{formula:DiffSigma_3F}. Les parametres $S$ et $A$ sont donc liés au constants de couplage. 
 %La précision extraite sur les paramètres $S$ et $A$ est extrapolée à la polarisation réaliste $\pm 0.8, \mp 0.3$ et à le répartition de la luminosité du programme de physique de l'ILC.
-Comme on peut le voir à partir dans la Fig.~\ref{fig:BAsymmetryFinal_3F}, la contribution des processus de fond, comme cf. celle de la production d'un pair de bosons est faible.
+Comme on peut le voir dans la Fig.~\ref{fig:BAsymmetryFinal_3F}, la contribution des processus de fond, comme cf. la production d'un pair de bosons est faible.
 
 
-Les précisions relatives sur les couplages $Z^0 b\bar{b}$, $g_L^Z$ et $g_R^Z$, pour les mesures LEP~I et pour les performances ILC attendues sont affichées dans la Fig.~\ref{fig:LEPILCResult_3F}. Le 
-La précision de l'ILC sur la couplage $g_R^Z$ est suffisante pour confirmer ou rejeter complètement l'influence de la nouvelle physique sur les couplages électrofaibles du quark $b$.
+Les précisions relatives sur les couplages $Z^0 b\bar{b}$, $g_L^Z$ et $g_R^Z$, pour les mesures LEP~I et pour les performances attendues à l'ILC sont affichées dans la Fig.~\ref{fig:LEPILCResult_3F}. 
+La précision de l'ILC sur le couplage $g_R^Z$ est suffisante pour confirmer ou rejeter complètementl'anomalie observée au LEP dans le processus $e^+e^-\to b\bar{b}$.
 
 \begin{figure}
 	\centering
@@ -405,11 +414,11 @@ La précision de l'ILC sur la couplage $g_R^Z$ est suffisante pour confirmer ou 
 \subsection*{Conclusions}
 
 Cette thèse présente de nouvelles méthodes et études développées pour l'analyse de données qui seront enregistrées avec les detecteurs au sein de l'ILC. 
-D'une cote ces détecteurs sont conçus pour l'application d'algorithmes de flux de particules, qui améliorent la reconstruction des etats finaux des collisions $e^+e^-$ en utilisant les informations des calorimètres hautement granulaires.
-A l'autre coté ces detecteurs sont egalement conçus pour une mesure superbe des vertex secondaires.
+Ces détecteurs sont conçus pour l'application d'algorithmes de flux de particules, qui améliorent la reconstruction des etats finaux des collisions $e^+e^-$ en utilisant les informations des calorimètres hautement granulaires.
+En plus ces detecteurs sont egalement conçus pour une mesure superbe des vertices secondaires.
 
 Le prototype du calorim\`etre \'electromagn\'etique hautement granulaire a été construit et testé par la collaboration CALICE.
-Au cours de cette thèse, un algorithme de reconstruction des traces a été développé permettant d'étudier pour la première fois des traces secondaires issues des interactions hadroniques dans le prototype SiW-ECAL.
+Dans cette thèse, un algorithme de reconstruction des traces a été développé permettant d'étudier pour la première fois des traces secondaires issues des interactions hadroniques dans le prototype SiW-ECAL.
 %La simulation de SiW-ECAL a été comparée aux données en utilisant les nouvelles observables de l'algorithme de recherche de traces.
 Les données enregistrées avec ce prototype lors des campagnes de test en faisceau sont comparées avec des predictions des modèles des gerbes hadroniques proposés par le logiciel GEANT4. L'algorithme donne accès aux nouvelles observables répresentées par le nombre de traces dans ce resumé. 
 
@@ -417,11 +426,11 @@ Les données enregistrées avec ce prototype lors des campagnes de test en faisc
 Tous les modèles de simulation testés montrent une bonne performance en termes de nouvelles observables.
 
 Dans cette thèse, les spectres de l'angle polaire des quarks top et bottom sont obtenus à l'aide de la charge du quark b.  
-Les méthodes développées sont appliquées aux deux canaux $e^+ e^- \to t\bar{t}$ et $e^+ e^- \to b\bar{b}$ processes à $\sqrt {s} = 500$\,GeV et 250\,GeV, respectivement.
+Les méthodes développées sont appliquées aux deux canaux, $e^+ e^- \to t\bar{t}$ et $e^+ e^- \to b\bar{b}$ à $\sqrt {s} = 500$\,GeV et 250\,GeV, respectivement.
 
-La thèse propose des méthodes pour la determination de la charge du quark $b$ avec une haute pureté: la somme de toutes les charges reconstruites, qui sont associées aux vertices de desintégration des hadrons de $b$ et la charge de kaons trouvée dans les produits de la desintégration des hadrons de $b$. 
+La thèse propose des méthodes pour la determination de la charge du quark $b$ avec une haute pureté: la somme de toutes les charges reconstruites, qui sont associées aux vertices de desintégration des hadrons de $b$ et la charge de kaons trouvés dans les produits de la desintégration des hadrons de $b$. 
 Cela permet de reconstruire précisement l'angle polaire du quark $b$ et d'en extraire les couplages électrofaibles du quark $b$ au boson de $Z^0$. % permet de corriger la distribution  de l'angle polaire pour la contamination résiduelle.
-En conséquence, l'angle polaire du quark bottom reconstruit est utilisable pour l'extraction des couplages  et des facteurs de forme électrofaibles du quark bottom.
-La précision previsible pour l'ILC sur le couplage $g_R$ est 5 fois meilleure que c'\'etait le cas pour LEP. L'anomalie LEP sera soit donc confirmée, soit définitivement écartée.
+%En conséquence, l'angle polaire du quark bottom reconstruit est utilisable pour l'extraction des couplages  et des facteurs de forme électrofaibles du quark bottom.
+La précision previsible à l'ILC sur le couplage $g_R$ est 5 fois meilleure que c'\'etait le cas pour LEP. L'anomalie LEP sera soit donc confirmée, soit définitivement écartée.
 
 
